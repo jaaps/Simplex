@@ -8,14 +8,6 @@
 				<width>598</width>
 				<height>415</height>
 				<posx>50</posx>
-				<posy>44</posy>
-				<visible>!Container.Content(Secondary) + !IsEmpty(ListItem.Plot)</visible>
-			</control>
-			<control type="image">
-				<texture>poster_background.png</texture>
-				<width>598</width>
-				<height>415</height>
-				<posx>50</posx>
 				<posy>234</posy>
 				<visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes)] + IsEmpty(ListItem.Plot)</visible>
 			</control>
@@ -213,7 +205,7 @@
 				</control>
 				<control type="textbox">
 					<description>Plot/Details</description>
-					<width>503</width>
+					<width>504</width>
 					<height>98</height>
 					<info>ListItem.Plot</info>
 					<textcolor>Gray</textcolor>
@@ -224,8 +216,8 @@
 				<control type="group">
 					<height>100</height>
 					<control type="label">
-						<posx>90</posx>
-						<posy>3</posy>
+						<posx>89</posx>
+						<posy>2</posy>
 						<width>83</width>
 						<height>25</height>
 						<font>info2</font>
@@ -235,8 +227,8 @@
 						<label>Year:</label>
 					</control>
 					<control type="label">
-						<posx>90</posx>
-						<posy>28</posy>
+						<posx>89</posx>
+						<posy>26</posy>
 						<width>83</width>
 						<height>25</height>
 						<font>info2</font>
@@ -246,8 +238,8 @@
 						<label>Genre:</label>
 					</control>
 					<control type="label">
-						<posx>90</posx>
-						<posy>53</posy>
+						<posx>89</posx>
+						<posy>50</posy>
 						<width>83</width>
 						<height>25</height>
 						<font>info2</font>
@@ -257,8 +249,8 @@
 						<label>Length:</label>
 					</control>
 					<control type="label">
-						<posx>97</posx>
-						<posy>3</posy>
+						<posx>96</posx>
+						<posy>2</posy>
 						<width>400</width>
 						<height>25</height>
 						<font>info1</font>
@@ -268,8 +260,8 @@
 						<info>ListItem.Year</info>
 					</control>
 					<control type="label">
-						<posx>97</posx>
-						<posy>28</posy>
+						<posx>96</posx>
+						<posy>26</posy>
 						<width>400</width>
 						<height>25</height>
 						<font>info1</font>
@@ -279,8 +271,8 @@
 						<info>ListItem.Genre</info>
 					</control>
 					<control type="label">
-						<posx>97</posx>
-						<posy>53</posy>
+						<posx>96</posx>
+						<posy>50</posy>
 						<width>400</width>
 						<height>25</height>
 						<font>info1</font>
@@ -304,7 +296,7 @@
 					<height>29</height>
 					<control type="label">
 						<posx>0</posx>
-						<posy>1</posy>
+						<posy>0</posy>
 						<width>360</width>
 						<height>22</height>
 						<font>title1</font>
@@ -335,7 +327,7 @@
 				</control>
 				<control type="textbox">
 					<description>Plot/Details</description>
-					<width>503</width>
+					<width>504</width>
 					<height>120</height>
 					<info>ListItem.Plot</info>
 					<textcolor>Gray</textcolor>
@@ -346,8 +338,8 @@
 				<control type="group">
 					<height>100</height>
 					<control type="label">
-						<posx>95</posx>
-						<posy>3</posy>
+						<posx>89</posx>
+						<posy>4</posy>
 						<width>90</width>
 						<height>25</height>
 						<font>info2</font>
@@ -357,7 +349,7 @@
 						<label>Year:</label>
 					</control>
 					<control type="label">
-						<posx>95</posx>
+						<posx>89</posx>
 						<posy>28</posy>
 						<width>90</width>
 						<height>25</height>
@@ -368,8 +360,8 @@
 						<label>Episodes:</label>
 					</control>
 					<control type="label">
-						<posx>95</posx>
-						<posy>53</posy>
+						<posx>89</posx>
+						<posy>52</posy>
 						<width>90</width>
 						<height>25</height>
 						<font>info2</font>
@@ -379,8 +371,8 @@
 						<label>Genre:</label>
 					</control>
 					<control type="label">
-						<posx>104</posx>
-						<posy>3</posy>
+						<posx>96</posx>
+						<posy>4</posy>
 						<width>400</width>
 						<height>25</height>
 						<font>info1</font>
@@ -390,7 +382,7 @@
 						<info>ListItem.Year</info>
 					</control>
 					<control type="label">
-						<posx>104</posx>
+						<posx>96</posx>
 						<posy>28</posy>
 						<width>400</width>
 						<height>25</height>
@@ -401,8 +393,8 @@
 						<label>$INFO[ListItem.Episode] $INFO[ListItem.Property(UnWatchedEpisodes),(, unwatched)]</label>
 					</control>
 					<control type="label">
-						<posx>104</posx>
-						<posy>53</posy>
+						<posx>96</posx>
+						<posy>52</posy>
 						<width>400</width>
 						<height>25</height>
 						<font>info1</font>
@@ -424,7 +416,7 @@
 					<height>29</height>
 					<control type="label">
 						<posx>0</posx>
-						<posy>1</posy>
+						<posy>0</posy>
 						<width>360</width>
 						<height>22</height>
 						<font>title1</font>
@@ -455,8 +447,8 @@
 				</control>
 				<control type="textbox">
 					<description>Plot/Details</description>
-					<width>503</width>
-					<height>120</height>
+					<width>504</width>
+					<height>144</height>
 					<label>$INFO[Container.Property(description)]</label>
 					<textcolor>Gray</textcolor>
 					<font>plot1</font>
@@ -466,19 +458,8 @@
 				<control type="group">
 					<height>100</height>
 					<control type="label">
-						<posx>95</posx>
-						<posy>3</posy>
-						<width>90</width>
-						<height>25</height>
-						<font>info2</font>
-						<align>right</align>
-						<aligny>center</aligny>
-						<textcolor>DarkGray</textcolor>
-						<label>Year:</label>
-					</control>
-					<control type="label">
-						<posx>95</posx>
-						<posy>28</posy>
+						<posx>89</posx>
+						<posy>4</posy>
 						<width>90</width>
 						<height>25</height>
 						<font>info2</font>
@@ -488,8 +469,8 @@
 						<label>Episodes:</label>
 					</control>
 					<control type="label">
-						<posx>95</posx>
-						<posy>53</posy>
+						<posx>89</posx>
+						<posy>28</posy>
 						<width>90</width>
 						<height>25</height>
 						<font>info2</font>
@@ -499,19 +480,8 @@
 						<label>Genre:</label>
 					</control>
 					<control type="label">
-						<posx>104</posx>
-						<posy>3</posy>
-						<width>400</width>
-						<height>25</height>
-						<font>info1</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>Gray</textcolor>
-						<info>Container.Property(year)</info>
-					</control>
-					<control type="label">
-						<posx>104</posx>
-						<posy>28</posy>
+						<posx>96</posx>
+						<posy>4</posy>
 						<width>400</width>
 						<height>25</height>
 						<font>info1</font>
@@ -521,128 +491,8 @@
 						<label>$INFO[ListItem.Episode] $INFO[ListItem.Property(UnWatchedEpisodes),(, unwatched)]</label>
 					</control>
 					<control type="label">
-						<posx>104</posx>
-						<posy>53</posy>
-						<width>400</width>
-						<height>25</height>
-						<font>info1</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>Gray</textcolor>
-						<info>ListItem.Genre</info>
-					</control>
-				</control>
-			</control>
-			<control type="grouplist">
-				<visible>Container.Content(seasons)</visible>
-				<posx>91</posx>
-				<posy>426</posy>
-				<itemgap>6</itemgap>
-				<orientation>vertical</orientation>
-				<usecontrolcoords>false</usecontrolcoords>
-				<control type="group">
-					<height>29</height>
-					<control type="label">
-						<posx>0</posx>
-						<posy>1</posy>
-						<width>360</width>
-						<height>22</height>
-						<font>title1</font>
-						<align>left</align>
-						<aligny>bottom</aligny>
-						<textcolor>Orange</textcolor>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-					<control type="image">
-						<width>98</width>
-						<height>17</height>
-						<info>ListItem.StarRating</info>
-						<align>right</align>
-						<posx>357</posx>
-						<posy>6</posy>
-						<aspectratio aligny="bottom" align="left">keep</aspectratio>
-					</control>
-					<control type="image">
-						<align>right</align>
-						<posx>478</posx>
-						<posy>0</posy>
-						<height>28</height>
-						<width>80</width>
-						<texture>$INFO[ListItem.Property(mediaTag::contentRating)]</texture>
-						<aspectratio aligny="bottom" align="left">keep</aspectratio>
-						<include>ratingsFlag</include>
-					</control>
-				</control>
-				<control type="textbox">
-					<description>Plot/Details</description>
-					<width>503</width>
-					<height>120</height>
-					<label>$INFO[Container.Property(description)]</label>
-					<textcolor>Gray</textcolor>
-					<font>plot1</font>
-					<autoscroll>false</autoscroll>
-					<align>justify</align>
-				</control>
-				<control type="group">
-					<height>100</height>
-					<control type="label">
-						<posx>95</posx>
-						<posy>3</posy>
-						<width>90</width>
-						<height>25</height>
-						<font>info2</font>
-						<align>right</align>
-						<aligny>center</aligny>
-						<textcolor>DarkGray</textcolor>
-						<label>Year:</label>
-					</control>
-					<control type="label">
-						<posx>95</posx>
+						<posx>96</posx>
 						<posy>28</posy>
-						<width>90</width>
-						<height>25</height>
-						<font>info2</font>
-						<align>right</align>
-						<aligny>center</aligny>
-						<textcolor>DarkGray</textcolor>
-						<label>Episodes:</label>
-					</control>
-					<control type="label">
-						<posx>95</posx>
-						<posy>53</posy>
-						<width>90</width>
-						<height>25</height>
-						<font>info2</font>
-						<align>right</align>
-						<aligny>center</aligny>
-						<textcolor>DarkGray</textcolor>
-						<label>Genre:</label>
-					</control>
-					<control type="label">
-						<posx>104</posx>
-						<posy>3</posy>
-						<width>400</width>
-						<height>25</height>
-						<font>info1</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>Gray</textcolor>
-						<info>Container.Property(year)</info>
-					</control>
-					<control type="label">
-						<posx>104</posx>
-						<posy>28</posy>
-						<width>400</width>
-						<height>25</height>
-						<font>info1</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>Gray</textcolor>
-						<label>$INFO[ListItem.Episode] $INFO[ListItem.Property(UnWatchedEpisodes),(, unwatched)]</label>
-					</control>
-					<control type="label">
-						<posx>104</posx>
-						<posy>53</posy>
 						<width>400</width>
 						<height>25</height>
 						<font>info1</font>
@@ -664,7 +514,7 @@
 					<height>29</height>
 					<control type="label">
 						<posx>0</posx>
-						<posy>1</posy>
+						<posy>0</posy>
 						<width>360</width>
 						<height>22</height>
 						<font>title1</font>
@@ -695,7 +545,7 @@
 				</control>
 				<control type="textbox">
 					<description>Plot/Details</description>
-					<width>503</width>
+					<width>504</width>
 					<height>120</height>
 					<label>$INFO[ListItem.Plot]</label>
 					<textcolor>Gray</textcolor>
@@ -706,7 +556,7 @@
 				<control type="group">
 					<height>100</height>
 					<control type="label">
-						<posx>95</posx>
+						<posx>89</posx>
 						<posy>3</posy>
 						<width>90</width>
 						<height>25</height>
@@ -717,7 +567,7 @@
 						<label>Episode:</label>
 					</control>
 					<control type="label">
-						<posx>95</posx>
+						<posx>89</posx>
 						<posy>28</posy>
 						<width>90</width>
 						<height>25</height>
@@ -728,8 +578,8 @@
 						<label>Aired:</label>
 					</control>
 					<control type="label">
-						<posx>95</posx>
-						<posy>53</posy>
+						<posx>89</posx>
+						<posy>52</posy>
 						<width>90</width>
 						<height>25</height>
 						<font>info2</font>
@@ -739,7 +589,7 @@
 						<label>Length:</label>
 					</control>
 					<control type="label">
-						<posx>104</posx>
+						<posx>96</posx>
 						<posy>3</posy>
 						<width>400</width>
 						<height>25</height>
@@ -747,10 +597,10 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>Gray</textcolor>
-						<label>$INFO[ListItem.Episode] ($INFO[ListItem.TVShowTitle] Season $INFO[ListItem.Season])</label>
+						<label>$INFO[ListItem.Episode] ($INFO[ListItem.TVShowTitle], Season $INFO[ListItem.Season])</label>
 					</control>
 					<control type="label">
-						<posx>104</posx>
+						<posx>96</posx>
 						<posy>28</posy>
 						<width>400</width>
 						<height>25</height>
@@ -761,8 +611,8 @@
 						<label>$INFO[ListItem.Date]</label>
 					</control>
 					<control type="label">
-						<posx>104</posx>
-						<posy>53</posy>
+						<posx>96</posx>
+						<posy>52</posy>
 						<width>400</width>
 						<height>25</height>
 						<font>info1</font>
@@ -854,7 +704,7 @@
 				</control>
 				<control type="textbox">
 					<description>Plot/Details</description>
-					<width>503</width>
+					<width>504</width>
 					<height>180</height>
 					<info>ListItem.Plot</info>
 					<textcolor>Gray</textcolor>
@@ -865,10 +715,10 @@
 			</control>
 			<!-- ### LIST VIEW ITSELF ### -->
 			<control type="list" id="50">
-				<posx>663</posx>
-				<posy>252</posy>
+				<posx>659</posx>
+				<posy>253</posy>
 				<width>551</width>
-				<height>440</height>
+				<height>435</height>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<onup>50</onup>
@@ -920,14 +770,14 @@
 							<control type="image">
 								<posy>0</posy>
 								<posx>12</posx>
-								<width>16</width>
+								<width>15</width>
 								<height>54</height>
 								<texture>$INFO[ListItem.Overlay]</texture>
 								<aspectratio align="left" alingy="center">keep</aspectratio>
 							</control>
 							<control type="image">
 								<posy>0</posy>
-								<posx>447</posx>
+								<posx>455</posx>
 								<width>36</width>
 								<height>54</height>
 								<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution/unfocus/,.png]</texture>
@@ -985,7 +835,7 @@
 								<aligny>center</aligny>
 								<height>50</height>
 								<label>$INFO[ListItem.Episode]. $INFO[ListItem.Label]</label>
-								<textcolor>White</textcolor>
+								<textcolor>Orange</textcolor>
 								<scroll>true</scroll>
 								<font>list1</font>
 							</control>
@@ -1004,22 +854,14 @@
 							<control type="image">
 								<posy>0</posy>
 								<posx>12</posx>
-								<width>16</width>
+								<width>15</width>
 								<height>54</height>
 								<texture>$INFO[ListItem.Overlay]</texture>
 								<aspectratio align="left" alingy="center">keep</aspectratio>
 							</control>
 							<control type="image">
 								<posy>0</posy>
-								<posx>12</posx>
-								<width>16</width>
-								<height>54</height>
-								<texture>$INFO[ListItem.Overlay]</texture>
-								<aspectratio align="left" alingy="center">keep</aspectratio>
-							</control>
-							<control type="image">
-								<posy>0</posy>
-								<posx>447</posx>
+								<posx>455</posx>
 								<width>36</width>
 								<height>54</height>
 								<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution/focus/,.png]</texture>
@@ -1035,7 +877,7 @@
 								<height>50</height>
 								<aligny>center</aligny>
 								<info>ListItem.Label</info>
-								<textcolor>White</textcolor>
+								<textcolor>Orange</textcolor>
 								<scroll>true</scroll>
 								<font>list1</font>
 							</control>

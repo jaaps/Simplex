@@ -45,7 +45,7 @@
 			</control>
 			<control type="group">
 				<posx>104</posx>
-				<posy>561</posy>
+				<posy>563</posy>
 				<width>1072</width>
 				<height>118</height>
 				<control type="image">
@@ -121,25 +121,25 @@
 					<posx>507</posx>
 					<posy>18</posy>
 					<control type="image">
-						<texture>osd/osd_button_play.png</texture>
+						<texture>osd/osd_button_pause.png</texture>
 						<width>58</width>
 						<height>38</height>
 						<visible>!Player.Paused + !Control.HasFocus(1012)</visible>
 					</control>
 					<control type="image">
-						<texture>osd/osd_button_pause.png</texture>
+						<texture>osd/osd_button_play.png</texture>
 						<width>58</width>
 						<height>38</height>
 						<visible>Player.Paused + !Control.HasFocus(1012)</visible>
 					</control>
 					<control type="image">
-						<texture>osd/osd_button_play_fo.png</texture>
+						<texture>osd/osd_button_pause_fo.png</texture>
 						<width>58</width>
 						<height>38</height>
 						<visible>!Player.Paused + Control.HasFocus(1012)</visible>
 					</control>
 					<control type="image">
-						<texture>osd/osd_button_pause_fo.png</texture>
+						<texture>osd/osd_button_play_fo.png</texture>
 						<width>58</width>
 						<height>38</height>
 						<visible>Player.Paused + Control.HasFocus(1012)</visible>
@@ -188,14 +188,14 @@
 				<control type="progress" id="23">
 					<description>Progressbar</description>
 					<posx>117</posx>
-					<posy>67</posy>
+					<posy>64</posy>
 					<width>838</width>
 					<height>16</height>
 					<info>Player.Progress</info>
 					<visible>true</visible>
 				</control>
 				<control type="label">
-					<posx>28</posx>
+					<posx>36</posx>
 					<posy>26</posy>
 					<width>270</width>
 					<height>16</height>
@@ -207,8 +207,8 @@
 					<scroll>false</scroll>
 				</control>
 				<control type="label">
-					<posx>100</posx>
-					<posy>65</posy>
+					<posx>113</posx>
+					<posy>62</posy>
 					<width>160</width>
 					<height>16</height>
 					<font>info1</font>
@@ -218,7 +218,7 @@
 				</control>
 				<control type="label">
 					<posx>972</posx>
-					<posy>65</posy>
+					<posy>62</posy>
 					<width>160</width>
 					<height>16</height>
 					<font>info1</font>
