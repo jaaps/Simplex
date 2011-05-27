@@ -25,7 +25,7 @@
 				<height>330</height>
 				<posx>100</posx>
 				<posy>300</posy>
-				<aspectratio aligny="bottom" align="center">keep</aspectratio>
+				<aspectratio aligny="bottom" align="center" scalediffuse="false">keep</aspectratio>
 				<visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes)] + IsEmpty(ListItem.Plot)</visible>
 			</control>
 			<control type="image">
@@ -34,7 +34,7 @@
 				<height>280</height>
 				<posx>100</posx>
 				<posy>124</posy>
-				<aspectratio aligny="bottom" align="center">keep</aspectratio>
+				<aspectratio aligny="bottom" align="center" scalediffuse="false">keep</aspectratio>
 				<visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes)] + !IsEmpty(ListItem.Plot)</visible>
 			</control>
 			<control type="image">
@@ -43,7 +43,7 @@
 				<height>330</height>
 				<posx>100</posx>
 				<posy>630</posy>
-				<aspectratio aligny="top" align="center">keep</aspectratio>
+				<aspectratio aligny="top" align="center" scalediffuse="false">keep</aspectratio>
 				<visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes)] + IsEmpty(ListItem.Plot)</visible>
 			</control>
 			<control type="image">
@@ -52,7 +52,7 @@
 				<height>280</height>
 				<posx>100</posx>
 				<posy>404</posy>
-				<aspectratio aligny="top" align="center">keep</aspectratio>
+				<aspectratio aligny="top" align="center" scalediffuse="false">keep</aspectratio>
 				<visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes)] + !IsEmpty(ListItem.Plot)</visible>
 			</control>
 			<control type="group">
@@ -68,7 +68,7 @@
 					<texture diffuse="poster_mask.png">$INFO[ListItem.Thumb]</texture>
 					<posy>124</posy>
 					<posx>249</posx>
-					<aspectratio>scale</aspectratio>
+					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>187</width>
 					<height>280</height>
 				</control>
@@ -76,7 +76,7 @@
 					<texture diffuse="poster_fade.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<posy>404</posy>
 					<posx>249</posx>
-					<aspectratio>scale</aspectratio>
+					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>187</width>
 					<height>280</height>
 				</control>
@@ -84,7 +84,7 @@
 					<texture>poster_overlay.png</texture>
 					<posy>110</posy>
 					<posx>224</posx>
-					<aspectratio>keep</aspectratio>
+					<aspectratio scalediffuse="false">keep</aspectratio>
 					<width>237</width>
 					<height>308</height>
 				</control>
@@ -102,7 +102,7 @@
 					<texture diffuse="thumb_mask.png">$INFO[ListItem.Thumb]</texture>
 					<posy>177</posy>
 					<posx>145</posx>
-					<aspectratio>scale</aspectratio>
+					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>400</width>
 					<height>225</height>
 				</control>
@@ -110,7 +110,7 @@
 					<texture diffuse="thumb_fade.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<posy>403</posy>
 					<posx>145</posx>
-					<aspectratio>scale</aspectratio>
+					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>400</width>
 					<height>225</height>
 				</control>
