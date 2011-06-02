@@ -847,7 +847,7 @@
 								<aligny>center</aligny>
 								<height>50</height>
 								<label>$INFO[ListItem.Label]</label>
-								<textcolor>White</textcolor>
+								<textcolor>Orange</textcolor>
 								<scroll>true</scroll>
 								<font>list1</font>
 							</control>
