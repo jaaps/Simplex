@@ -8,6 +8,12 @@
 			<size>21</size>
 		</font>
 		<font>
+			<name>title2</name>
+			<filename>HelveticaNeue</filename>
+			<variant>Bold</variant>
+			<size>28</size>
+		</font>
+		<font>
 			<name>HomeMenuItem</name>
 			<filename>Helvetica</filename>
 			<variant>Bold</variant>
@@ -82,6 +88,12 @@
 			<filename>HelveticaNeue</filename>
 			<variant>Bold</variant>
 			<size>19</size>
+		</font>
+		<font>
+			<name>info3</name>
+			<filename>HelveticaNeue</filename>
+			<variant>Bold</variant>
+			<size>17</size>
 		</font>
 		<font>
 			<name>info3</name>
