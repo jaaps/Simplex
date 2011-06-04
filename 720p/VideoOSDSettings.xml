@@ -9,18 +9,15 @@
 	<controls>
 		<control type="image" id="9209">
 			<description>background top image</description>
-			<posx>0</posx>
+			<posx>264</posx>
 			<posy>0</posy>
-			<width>1280</width>
+			<width>752</width>
 			<height>720</height>
-			<texture border="0">black.png</texture>
+			<texture border="0">osd/osd_settings.png</texture>
 			<aspectratio>stretch</aspectratio>
-			<animation type="WindowOpen">
-				<effect type="fade" start="100" end="90" time="0"/>
-			</animation>
 		</control>
 		<control type="group">
-			<posy>100</posy>
+			<posy>62</posy>
 			<animation effect="fade" start="97" end="50" time="500" condition="Window.IsActive(103)">Conditional</animation>
 			<control type="label" id="1">
 				<description>heading label</description>
@@ -30,24 +27,23 @@
 				<height>56</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>homeheader</font>
+				<font>list1</font>
 				<textcolor>White</textcolor>
 				<label>Settings</label>
 			</control>
 			<control type="grouplist" id="5">
 				<description>control area</description>
-				<posx>240</posx>
-				<posy>75</posy>
-				<width>800</width>
-				<height>361</height>
-				<itemgap>-20</itemgap>
+				<posx>384</posx>
+				<posy>60</posy>
+				<width>512</width>
+				<height>516</height>
+				<itemgap>2</itemgap>
 				<onleft>-</onleft>
 				<onright>-</onright>
 				<onup>300</onup>
 				<ondown>300</ondown>
 			</control>
 			<control type="sliderex" id="10">
-
 			</control>
 			<control type="button" id="7">
 			</control>

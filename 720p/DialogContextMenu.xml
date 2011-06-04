@@ -26,9 +26,9 @@
 <control type="image" id="998">
 <description>background bottom image</description>
 <posx>0</posx>
-<posy>92</posy>
+<posy>91</posy>
 <width>662</width>
-<height>92</height>
+<height>91</height>
 <texture>dialogs/contextmenu-bottom.png</texture>
 </control>
 <control type="button" id="1000">

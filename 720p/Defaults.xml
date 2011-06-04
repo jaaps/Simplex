@@ -37,15 +37,15 @@
 	<default type="button">
 		<posx>0</posx>
 		<posy>0</posy>
-		<width>800</width>
-		<height>80</height>
-		<align>center</align>
-		<textoffsetx>50</textoffsetx>
+		<height>55</height>
+		<width>512</width>
+		<align>left</align>
+		<textoffsetx>16</textoffsetx>
 		<aligny>center</aligny>
-		<font>list2</font>
+		<font>list1</font>
 		<label>-</label>
 		<textcolor>White</textcolor>
-		<focusedcolor>White</focusedcolor>
+		<focusedcolor>Orange</focusedcolor>
 		<disabledcolor>Gray</disabledcolor>
 		<texturefocus>button_settings.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
@@ -70,23 +70,23 @@
 	</default>
 	<default type="radiobutton">
 		<description>Default Radiobutton</description>
-		<width>800</width>
-		<height>80</height>
-		<font>list2</font>
+		<height>55</height>
+		<width>512</width>
+		<font>list1</font>
 		<textcolor>White</textcolor>
 		<align>left</align>
-		<textoffsetx>50</textoffsetx>
+		<textoffsetx>16</textoffsetx>
 		<texturefocus>button_settings.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<textureradiofocus>LEDOn.png</textureradiofocus>
 		<textureradionofocus>LEDOff.png</textureradionofocus>
 		<radiowidth>27</radiowidth>
 		<radioheight>27</radioheight>
-		<focusedcolor>White</focusedcolor>
+		<focusedcolor>Orange</focusedcolor>
 		<selectedcolor>White</selectedcolor>
 		<disabledcolor>Gray</disabledcolor>
 		<aligny>center</aligny>
-		<radioposx>730</radioposx>
+		<radioposx>470</radioposx>
 	</default>
 	<default type="spincontrol">
 		<description>Default Spin Control</description>
@@ -110,9 +110,9 @@
 		<aligny>center</aligny>
 	</default>
 	<default type="spincontrolex">
-		<width>800</width>
-		<height>80</height>
-		<font>list2</font>
+		<height>55</height>
+		<width>512</width>
+		<font>list1</font>
 		<textcolor>White</textcolor>
 		<align>left</align>
 		<aligny>center</aligny>
@@ -125,11 +125,11 @@
 		<spinwidth>16</spinwidth>
 		<spinheight>16</spinheight>
 		<reverse>yes</reverse>
-		<focusedcolor>White</focusedcolor>
+		<focusedcolor>Orange</focusedcolor>
 		<selectedcolor>White</selectedcolor>
 		<disabledcolor>Gray</disabledcolor>
 		<aligny>center</aligny>
-		<textoffsetx>50</textoffsetx>
+		<textoffsetx>16</textoffsetx>
 	</default>
 	<default type="progress">
 		<description>Default Progress Bar</description>
@@ -141,18 +141,19 @@
 		<overlaytexture>-</overlaytexture>
 	</default>
 	<default type="sliderex">
-		<sliderwidth>105</sliderwidth>
-		<sliderheight>32</sliderheight>
-		<texturesliderbar>osd/osd_sliderback.png</texturesliderbar>
-		<textureslidernib>osd/osd_slidernub.png</textureslidernib>
-		<textureslidernibfocus>osd/osd_slidernubf.png</textureslidernibfocus>
+		<sliderwidth>102</sliderwidth>
+		<sliderheight>16</sliderheight>
+		<texturesliderbar>dialogs/sliderbackground.png</texturesliderbar>
+		<textureslidernib>dialogs/slidernib.png</textureslidernib>
+		<textureslidernibfocus>dialogs/slidernibfocus.png</textureslidernibfocus>
 		<texturefocus>button_settings.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
-		<font>list2</font>
-		<height>80</height>
+		<font>list1</font>
+		<height>55</height>
+		<width>512</width>
 		<textcolor>White</textcolor>
-		<focusedcolor>White</focusedcolor>
-		<textoffsetx>50</textoffsetx>
+		<focusedcolor>Orange</focusedcolor>
+		<textoffsetx>16</textoffsetx>
 		<aligny>center</aligny>
 		<pulseonselect>false</pulseonselect>
 	</default>
