@@ -5,7 +5,7 @@
 	<controls>
 		<include>Background_Home</include>
 		<control type="group">
-			<control type="wraplist" id="300">
+			<control type="list" id="300">
 				<posx>662</posx>
 				<posy>250</posy>
 				<width>551</width>

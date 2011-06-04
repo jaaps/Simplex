@@ -73,13 +73,22 @@
 				</control>
 			</control>
 			<animation effect="slide" start="0" end="250" time="600" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus">Conditional</animation>
+			<control type="image">
+				<posx>1042</posx>
+				<posy>260</posy>
+			<width>128</width>
+			<height>60</height>
+			<aspectratio align="right">keep</aspectratio>
+			<texture>$INFO[Listitem.Property(mediaTag-Studio),flags/Studios/,.png]</texture>
+			<colordiffuse>White</colordiffuse>
+			</control>
 			<control type="grouplist">
 				<posx>380</posx>
 				<orientation>vertical</orientation>
 				<itemgap>0</itemgap>
 				<posy>260</posy>
 				<control type="group">
-					<height>40</height>
+					<height>63</height>
 					<control type="label">
 						<description>First title</description>
 						<label>$INFO[ListItem.TVShowTitle]: $INFO[ListItem.Title]</label>
@@ -102,20 +111,20 @@
 						<textcolor>Orange</textcolor>
 						<visible>!Container.Content(episodes)</visible>
 					</control>
+					<control type="label">
+						<width>800</width>
+						<posy>40</posy>
+						<font>info3</font>
+						<align>left</align>
+						<aligny>bottom</aligny>
+						<textcolor>White</textcolor>
+						<label>$INFO[ListItem.Tagline]</label>
+						<visible>!IsEmpty(ListItem.Tagline)</visible>
+					</control>
 				</control>
 				<control type="label">
 					<width>800</width>
-					<height>23</height>
-					<font>info3</font>
-					<align>left</align>
-					<aligny>bottom</aligny>
-					<textcolor>White</textcolor>
-					<label>$INFO[ListItem.Tagline]</label>
-					<visible>!IsEmpty(ListItem.Tagline)</visible>
-				</control>
-				<control type="label">
-					<width>800</width>
-					<height>9</height>
+					<height>6</height>
 					<label/>
 				</control>
 				<control type="group" id="9001">
@@ -257,7 +266,7 @@
 						<posy>95</posy>
 						<posx>206</posx>
 						<control type="label">
-							<width>650</width>
+							<width>280</width>
 							<height>20</height>
 							<font>info1</font>
 							<align>left</align>
@@ -272,7 +281,7 @@
 						<posy>95</posy>
 						<posx>506</posx>
 						<control type="label">
-							<width>650</width>
+							<width>280</width>
 							<height>20</height>
 							<font>info1</font>
 							<align>left</align>
