@@ -328,12 +328,11 @@
 	</include>
 	<include name="ButtonPaused">
 		<texturenofocus>osd/osd_button_play.png</texturenofocus>
-						<texturefocus>osd/osd_button_play_fo.png</texturefocus>
+		<texturefocus>osd/osd_button_play_fo.png</texturefocus>
 	</include>
-	
 	<include name="ButtonNotPaused">
 		<texturenofocus>osd/osd_button_pause.png</texturenofocus>
-						<texturefocus>osd/osd_button_pause_fo.png</texturefocus>
+		<texturefocus>osd/osd_button_pause_fo.png</texturefocus>
 	</include>
 	<include name="videoPageLabel">
 		<posx>30</posx>
@@ -375,7 +374,7 @@
 		-->
 	</include>
 	<include name="HeaderVideo">
-	<!--	<control type="label">
+		<!--	<control type="label">
 			<description>First title</description>
 			<label>Videos</label>
 			<posx>700</posx>
@@ -533,6 +532,26 @@
 	<include name="Background">
 		<control type="largeimage">
 			<info>ListItem.Property(fanart_image)</info>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<visible>true</visible>
+		</control>
+		<control type="largeimage">
+			<animation effect="fade" start="100" end="0" time="400" tween="cubic" easing="inout" delay="50">Hidden</animation>
+			<info>ListItem(-1).Property(fanart_image)</info>
+			<visible>Container.OnNext</visible>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<visible>true</visible>
+		</control>
+		<control type="largeimage">
+			<animation effect="fade" start="100" end="0" time="400" tween="cubic" easing="inout" delay="50">Hidden</animation>
+			<info>ListItem.Property(fanart_image)</info>
+			<visible>Container.OnPrevious</visible>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>

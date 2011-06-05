@@ -200,36 +200,37 @@
 						<orientation>vertical</orientation>
 						<posy>25</posy>
 						<control type="label">
-							<width>206</width>
+							<width>190</width>
 							<height>20</height>
 							<font>info1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
 							<textcolor>Gray</textcolor>
 							<label>$INFO[ListItem.Genre]</label>
-							<wrapmultiline>true</wrapmultiline>
+							<wrapmultiline>false</wrapmultiline>
 							<visible>!IsEmpty(ListItem.Genre)</visible>
+							<scroll>false</scroll>
 						</control>
 						<control type="label">
-							<width>206</width>
+							<width>190</width>
 							<height>20</height>
 							<font>info1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
 							<textcolor>Gray</textcolor>
 							<label>Released $INFO[ListItem.Year]</label>
-							<wrapmultiline>true</wrapmultiline>
+							<wrapmultiline>false</wrapmultiline>
 							<visible>!IsEmpty(ListItem.Year)</visible>
 						</control>
 						<control type="label">
-							<width>206</width>
+							<width>190</width>
 							<height>20</height>
 							<font>info1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
 							<textcolor>Gray</textcolor>
 							<label>Length $INFO[ListItem.Duration]</label>
-							<wrapmultiline>true</wrapmultiline>
+							<wrapmultiline>false</wrapmultiline>
 							<visible>!IsEmpty(ListItem.Duration)</visible>
 						</control>
 						<control type="label">

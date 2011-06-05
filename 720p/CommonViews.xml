@@ -64,7 +64,10 @@
 					<posx>50</posx>
 					<posy>44</posy>
 				</control>
+				<!-- Current Thumb -->
 				<control type="image">
+					<animation effect="fade" start="0" end="100" time="400" tween="cubic" easing="inout" delay="50">Visible</animation>
+					<visible>!Container.OnNext + !Container.OnPrevious</visible>
 					<texture diffuse="poster_mask.png">$INFO[ListItem.Thumb]</texture>
 					<posy>124</posy>
 					<posx>249</posx>
@@ -72,7 +75,33 @@
 					<width>187</width>
 					<height>280</height>
 				</control>
+				<!-- /Current Thumb -->
+				<!-- Old thumb fade out -->
 				<control type="image">
+					<animation effect="fade" start="100" end="0" time="400" tween="cubic" easing="inout" delay="50">Hidden</animation>
+					<visible>Container.OnPrevious</visible>
+					<texture diffuse="poster_mask.png">$INFO[ListItem(1).Thumb]</texture>
+					<posy>124</posy>
+					<posx>249</posx>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<width>187</width>
+					<height>280</height>
+				</control>
+				<control type="image">
+					<animation effect="fade" start="100" end="0" time="400" tween="cubic" easing="inout" delay="50">Hidden</animation>
+					<visible>Container.OnNext</visible>
+					<texture diffuse="poster_mask.png">$INFO[ListItem(-1).Thumb]</texture>
+					<posy>124</posy>
+					<posx>249</posx>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<width>187</width>
+					<height>280</height>
+				</control>
+				<!-- /Old thumb fade out -->
+				<!-- Current Thumb reflection-->
+				<control type="image">
+					<animation effect="fade" start="0" end="100" time="400" tween="cubic" easing="inout" delay="50">Visible</animation>
+					<visible>!Container.OnNext + !Container.OnPrevious</visible>
 					<texture diffuse="poster_fade.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<posy>404</posy>
 					<posx>249</posx>
@@ -80,6 +109,30 @@
 					<width>187</width>
 					<height>280</height>
 				</control>
+				<!-- /Current Thumb reflection-->
+				<!-- Old Thumb reflection fade out -->
+				<control type="image">
+					<texture diffuse="poster_fade.png" flipy="true">$INFO[ListItem(1).Thumb]</texture>
+					<animation effect="fade" start="100" end="0" time="400" tween="cubic" easing="inout" delay="50">Hidden</animation>
+					<visible>Container.OnPrevious</visible>
+					<posy>404</posy>
+					<posx>249</posx>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<width>187</width>
+					<height>280</height>
+				</control>
+				<control type="image">
+					<texture diffuse="poster_fade.png" flipy="true">$INFO[ListItem(-1).Thumb]</texture>
+					<animation effect="fade" start="100" end="0" time="400" tween="cubic" easing="inout" delay="50">Hidden</animation>
+					<visible>Container.OnNext</visible>
+					<posy>404</posy>
+					<posx>249</posx>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<width>187</width>
+					<height>280</height>
+				</control>
+				<!-- /Old Thumb reflection fade out -->
+				<!-- Overlay (glass, border, shadow) -->
 				<control type="image">
 					<texture>poster_overlay.png</texture>
 					<posy>110</posy>
@@ -88,6 +141,7 @@
 					<width>237</width>
 					<height>308</height>
 				</control>
+				<!-- /Overlay -->
 			</control>
 			<control type="group">
 				<visible>Container.Content(episodes)</visible>
@@ -125,9 +179,9 @@
 			</control>
 			<!-- ### INFO/METADATA ### -->
 			<control type="grouplist">
-				<animation effect="fade" start="0" end="100" delay="280" time="100">Visible</animation>
-				<animation effect="fade" start="100" end="0" delay="0" time="100">Hidden</animation>
 				<visible>Container.Content(Movies)</visible>
+				<animation effect="fade" start="0" end="100" time="300" tween="cubic" easing="inout" delay="50">Visible</animation>
+				<visible>!Container.OnNext + !Container.OnPrevious</visible>
 				<posx>91</posx>
 				<posy>426</posy>
 				<itemgap>6</itemgap>
@@ -210,7 +264,8 @@
 					<info>ListItem.Plot</info>
 					<textcolor>Gray</textcolor>
 					<font>plot1</font>
-					<autoscroll>false</autoscroll>
+					<scroll>false</scroll>
+					<wrapmultiline>true</wrapmultiline>
 					<align>justify</align>
 				</control>
 				<control type="group">

@@ -69,7 +69,7 @@
 						<onclick>Plex.ActivateWindow(Favourites)</onclick>
 					</item>
 					<item id="2">
-						<description>Channels</description>
+						<description>Video Channels</description>
 						<label>Video Channels</label>
 						<onclick>xbmc.activatewindow(6)</onclick>
 					</item>
