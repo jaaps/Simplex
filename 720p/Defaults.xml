@@ -122,8 +122,8 @@
 		<textureupfocus>ArrowUpFO.png</textureupfocus>
 		<texturedown>ArrowDownNF.png</texturedown>
 		<texturedownfocus>ArrowDownFO.png</texturedownfocus>
-		<spinwidth>16</spinwidth>
-		<spinheight>16</spinheight>
+		<spinwidth>11</spinwidth>
+		<spinheight>11</spinheight>
 		<reverse>yes</reverse>
 		<focusedcolor>Orange</focusedcolor>
 		<selectedcolor>White</selectedcolor>

@@ -66,7 +66,7 @@
 				</control>
 				<!-- Current Thumb -->
 				<control type="image">
-					<animation effect="fade" start="0" end="100" time="400" tween="cubic" easing="inout" delay="50">Visible</animation>
+					<animation effect="fade" start="0" end="100" time="500" tween="cubic" easing="inout" delay="0">Visible</animation>
 					<visible>!Container.OnNext + !Container.OnPrevious</visible>
 					<texture diffuse="poster_mask.png">$INFO[ListItem.Thumb]</texture>
 					<posy>124</posy>
@@ -78,7 +78,7 @@
 				<!-- /Current Thumb -->
 				<!-- Old thumb fade out -->
 				<control type="image">
-					<animation effect="fade" start="100" end="0" time="400" tween="cubic" easing="inout" delay="50">Hidden</animation>
+					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
 					<visible>Container.OnPrevious</visible>
 					<texture diffuse="poster_mask.png">$INFO[ListItem(1).Thumb]</texture>
 					<posy>124</posy>
@@ -88,7 +88,7 @@
 					<height>280</height>
 				</control>
 				<control type="image">
-					<animation effect="fade" start="100" end="0" time="400" tween="cubic" easing="inout" delay="50">Hidden</animation>
+					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
 					<visible>Container.OnNext</visible>
 					<texture diffuse="poster_mask.png">$INFO[ListItem(-1).Thumb]</texture>
 					<posy>124</posy>
@@ -100,7 +100,7 @@
 				<!-- /Old thumb fade out -->
 				<!-- Current Thumb reflection-->
 				<control type="image">
-					<animation effect="fade" start="0" end="100" time="400" tween="cubic" easing="inout" delay="50">Visible</animation>
+					<animation effect="fade" start="0" end="100" time="500" tween="cubic" easing="inout" delay="0">Visible</animation>
 					<visible>!Container.OnNext + !Container.OnPrevious</visible>
 					<texture diffuse="poster_fade.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<posy>404</posy>
@@ -113,7 +113,7 @@
 				<!-- Old Thumb reflection fade out -->
 				<control type="image">
 					<texture diffuse="poster_fade.png" flipy="true">$INFO[ListItem(1).Thumb]</texture>
-					<animation effect="fade" start="100" end="0" time="400" tween="cubic" easing="inout" delay="50">Hidden</animation>
+					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
 					<visible>Container.OnPrevious</visible>
 					<posy>404</posy>
 					<posx>249</posx>
@@ -123,7 +123,7 @@
 				</control>
 				<control type="image">
 					<texture diffuse="poster_fade.png" flipy="true">$INFO[ListItem(-1).Thumb]</texture>
-					<animation effect="fade" start="100" end="0" time="400" tween="cubic" easing="inout" delay="50">Hidden</animation>
+					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
 					<visible>Container.OnNext</visible>
 					<posy>404</posy>
 					<posx>249</posx>
@@ -180,7 +180,7 @@
 			<!-- ### INFO/METADATA ### -->
 			<control type="grouplist">
 				<visible>Container.Content(Movies)</visible>
-				<animation effect="fade" start="0" end="100" time="300" tween="cubic" easing="inout" delay="50">Visible</animation>
+				<animation effect="fade" start="0" end="100" time="700" tween="cubic" easing="inout" delay="0">Visible</animation>
 				<visible>!Container.OnNext + !Container.OnPrevious</visible>
 				<posx>91</posx>
 				<posy>426</posy>
