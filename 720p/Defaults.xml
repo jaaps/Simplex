@@ -28,11 +28,6 @@
 		<scroll>true</scroll>
 	</default>
 	<default type="image">
-		<posx>0</posx>
-		<posy>0</posy>
-		<width>-</width>
-		<height>-</height>
-		<texture>-</texture>
 	</default>
 	<default type="button">
 		<posx>0</posx>

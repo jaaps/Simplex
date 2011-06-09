@@ -3,37 +3,43 @@
 	<defaultcontrol>1</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<posx>490</posx>
-		<posy>5</posy>
+		<posx>0</posx>
+		<posy>0</posy>
 	</coordinates>
 	<controls>
 		<control type="image">
-			<width>300</width>
-			<height>120</height>
-			<include>dialogWindow</include>
-		</control>
-		<control type="label">
-			<posx>34</posx>
-			<posy>28</posy>
-			<width>232</width>
-			<label>$LOCALIZE[13376]</label>
-			<font>normalLow</font>
-			<align>center</align>
-			<textcolor>Color4</textcolor>
+			<posx>535</posx>
+			<posy>258</posy>
+			<width>210</width>
+			<height>204</height>
+			<texture>dialogs/volumedialog.png</texture>
 		</control>
 		<control type="progress" id="1">
 			<description>progress control</description>
-			<posx>34</posx>
-			<posy>65</posy>
-			<width>230</width>
-			<height>18</height>
+			<posx>554</posx>
+			<posy>421</posy>
+			<width>172</width>
+			<height>17</height>
+			<reveal>true</reveal>
+			<texturebg border="0,0,0,0">dialogs/volumebarbg.png</texturebg>
+			<midtexture border="0,0,0,0">dialogs/volumebar.png</midtexture>
 			<info>Player.Volume</info>
 		</control>
-		<control type="label" id="1">
-			<posx>20r</posx>
-			<align>right</align>
-			<label>$INFO[Player.Volume]</label>
-			<include>notificationSide</include>
+		<control type="image" id="2">
+			<posx>593</posx>
+			<posy>305</posy>
+			<width>93</width>
+			<height>86</height>
+			<texture>dialogs/volumeicon.png</texture>
+			<visible>!Player.Muted</visible>
+		</control>
+		<control type="image" id="2">
+			<posx>593</posx>
+			<posy>305</posy>
+			<width>93</width>
+			<height>86</height>
+			<texture>dialogs/volumeiconmuted.png</texture>
+			<visible>Player.Muted</visible>
 		</control>
 	</controls>
 </window>
