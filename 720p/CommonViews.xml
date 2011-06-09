@@ -948,7 +948,7 @@
 			<posy>0</posy>
 			<texture>dialogs/diffuse.png</texture>
 			<aspectratio>scale</aspectratio>
-			<visible>Window.IsActive(DialogContextMenu.xml)</visible>
+			<visible>Window.IsActive(DialogContextMenu.xml) | Window.IsActive(DialogRating.xml) </visible>
 			<animation effect="fade" time="200">VisibleChange</animation>
 		</control>
 	</include>
