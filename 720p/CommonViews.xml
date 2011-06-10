@@ -72,8 +72,8 @@
 					<posy>124</posy>
 					<posx>249</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<width>187</width>
-					<height>280</height>
+					<width>189</width>
+					<height>282</height>
 				</control>
 				<!-- /Current Thumb -->
 				<!-- Old thumb fade out -->
@@ -84,8 +84,8 @@
 					<posy>124</posy>
 					<posx>249</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<width>187</width>
-					<height>280</height>
+					<width>189</width>
+					<height>282</height>
 				</control>
 				<control type="image">
 					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
@@ -94,8 +94,8 @@
 					<posy>124</posy>
 					<posx>249</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<width>187</width>
-					<height>280</height>
+					<width>189</width>
+					<height>282</height>
 				</control>
 				<!-- /Old thumb fade out -->
 				<!-- Current Thumb reflection-->
@@ -106,8 +106,8 @@
 					<posy>404</posy>
 					<posx>249</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<width>187</width>
-					<height>280</height>
+					<width>189</width>
+					<height>282</height>
 				</control>
 				<!-- /Current Thumb reflection-->
 				<!-- Old Thumb reflection fade out -->
@@ -118,8 +118,8 @@
 					<posy>404</posy>
 					<posx>249</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<width>187</width>
-					<height>280</height>
+					<width>189</width>
+					<height>282</height>
 				</control>
 				<control type="image">
 					<texture diffuse="poster_fade.png" flipy="true">$INFO[ListItem(-1).Thumb]</texture>
@@ -128,18 +128,18 @@
 					<posy>404</posy>
 					<posx>249</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<width>187</width>
-					<height>280</height>
+					<width>189</width>
+					<height>282</height>
 				</control>
 				<!-- /Old Thumb reflection fade out -->
 				<!-- Overlay (glass, border, shadow) -->
 				<control type="image">
 					<texture>poster_overlay.png</texture>
-					<posy>110</posy>
-					<posx>224</posx>
+					<posy>124</posy>
+					<posx>249</posx>
 					<aspectratio scalediffuse="false">keep</aspectratio>
-					<width>237</width>
-					<height>308</height>
+					<width>189</width>
+					<height>282</height>
 				</control>
 				<!-- /Overlay -->
 			</control>
