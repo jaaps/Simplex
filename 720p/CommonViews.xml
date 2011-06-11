@@ -64,40 +64,6 @@
 					<posx>50</posx>
 					<posy>44</posy>
 				</control>
-				<!-- Current Thumb -->
-				<control type="image">
-					<animation effect="fade" start="0" end="100" time="500" tween="cubic" easing="inout" delay="0">Visible</animation>
-					<visible>!Container.OnNext + !Container.OnPrevious</visible>
-					<texture diffuse="poster_mask.png">$INFO[ListItem.Thumb]</texture>
-					<posy>124</posy>
-					<posx>249</posx>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<width>189</width>
-					<height>282</height>
-				</control>
-				<!-- /Current Thumb -->
-				<!-- Old thumb fade out -->
-				<control type="image">
-					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
-					<visible>Container.OnPrevious</visible>
-					<texture diffuse="poster_mask.png">$INFO[ListItem(1).Thumb]</texture>
-					<posy>124</posy>
-					<posx>249</posx>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<width>189</width>
-					<height>282</height>
-				</control>
-				<control type="image">
-					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
-					<visible>Container.OnNext</visible>
-					<texture diffuse="poster_mask.png">$INFO[ListItem(-1).Thumb]</texture>
-					<posy>124</posy>
-					<posx>249</posx>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<width>189</width>
-					<height>282</height>
-				</control>
-				<!-- /Old thumb fade out -->
 				<!-- Current Thumb reflection-->
 				<control type="image">
 					<animation effect="fade" start="0" end="100" time="500" tween="cubic" easing="inout" delay="0">Visible</animation>
@@ -132,6 +98,48 @@
 					<height>282</height>
 				</control>
 				<!-- /Old Thumb reflection fade out -->
+				<control type="image">
+					<texture>poster_shadow.png</texture>
+					<posy>111</posy>
+					<posx>225</posx>
+					<aspectratio scalediffuse="false">keep</aspectratio>
+					<width>237</width>
+					<height>308</height>
+				</control>
+				<!-- Current Thumb -->
+				<control type="image">
+					<animation effect="fade" start="0" end="100" time="500" tween="cubic" easing="inout" delay="0">Visible</animation>
+					<visible>!Container.OnNext + !Container.OnPrevious</visible>
+					<texture diffuse="poster_mask.png">$INFO[ListItem.Thumb]</texture>
+					<posy>124</posy>
+					<posx>249</posx>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<width>189</width>
+					<height>282</height>
+				</control>
+				<!-- /Current Thumb -->
+				<!-- Old thumb fade out -->
+				<control type="image">
+					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
+					<visible>Container.OnPrevious</visible>
+					<texture diffuse="poster_mask.png">$INFO[ListItem(1).Thumb]</texture>
+					<posy>124</posy>
+					<posx>249</posx>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<width>189</width>
+					<height>282</height>
+				</control>
+				<control type="image">
+					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
+					<visible>Container.OnNext</visible>
+					<texture diffuse="poster_mask.png">$INFO[ListItem(-1).Thumb]</texture>
+					<posy>124</posy>
+					<posx>249</posx>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<width>189</width>
+					<height>282</height>
+				</control>
+				<!-- /Old thumb fade out -->
 				<!-- Overlay (glass, border, shadow) -->
 				<control type="image">
 					<texture>poster_overlay.png</texture>
@@ -153,28 +161,80 @@
 					<posy>44</posy>
 				</control>
 				<control type="image">
-					<texture diffuse="thumb_mask.png">$INFO[ListItem.Thumb]</texture>
-					<posy>177</posy>
-					<posx>145</posx>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<width>400</width>
-					<height>225</height>
-				</control>
-				<control type="image">
+					<animation effect="fade" start="0" end="100" time="500" tween="cubic" easing="inout" delay="0">Visible</animation>
+					<visible>!Container.OnNext + !Container.OnPrevious</visible>
 					<texture diffuse="thumb_fade.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<posy>403</posy>
 					<posx>145</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<width>400</width>
-					<height>225</height>
+					<width>402</width>
+					<height>227</height>
 				</control>
 				<control type="image">
-					<texture>thumb_overlay.png</texture>
-					<posy>163</posy>
-					<posx>123</posx>
+					<texture diffuse="thumb_fade.png" flipy="true">$INFO[ListItem(1).Thumb]</texture>
+					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
+					<visible>Container.OnPrevious</visible>
+					<posy>403</posy>
+					<posx>145</posx>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<width>402</width>
+					<height>227</height>
+				</control>
+				<control type="image">
+					<texture diffuse="thumb_fade.png" flipy="true">$INFO[ListItem(-1).Thumb]</texture>
+					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
+					<visible>Container.OnNext</visible>
+					<posy>403</posy>
+					<posx>145</posx>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<width>402</width>
+					<height>227</height>
+				</control>
+				<control type="image">
+					<texture>thumb_shadow.png</texture>
+					<posy>164</posy>
+					<posx>124</posx>
 					<aspectratio>keep</aspectratio>
 					<width>444</width>
 					<height>253</height>
+				</control>
+				<control type="image">
+					<animation effect="fade" start="0" end="100" time="500" tween="cubic" easing="inout" delay="0">Visible</animation>
+					<visible>!Container.OnNext + !Container.OnPrevious</visible>
+					<texture diffuse="thumb_mask.png">$INFO[ListItem.Thumb]</texture>
+					<posy>177</posy>
+					<posx>145</posx>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<width>402</width>
+					<height>227</height>
+				</control>
+				<control type="image">
+					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
+					<visible>Container.OnPrevious</visible>
+					<texture diffuse="thumb_mask.png">$INFO[ListItem(1).Thumb]</texture>
+					<posy>177</posy>
+					<posx>145</posx>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<width>402</width>
+					<height>227</height>
+				</control>
+				<control type="image">
+					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
+					<visible>Container.OnNext</visible>
+					<texture diffuse="thumb_mask.png">$INFO[ListItem(-1).Thumb]</texture>
+					<posy>177</posy>
+					<posx>145</posx>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<width>402</width>
+					<height>227</height>
+				</control>
+				<control type="image">
+					<texture>thumb_overlay.png</texture>
+					<posy>177</posy>
+					<posx>145</posx>
+					<aspectratio>keep</aspectratio>
+					<width>402</width>
+					<height>227</height>
 				</control>
 			</control>
 			<!-- ### INFO/METADATA ### -->
