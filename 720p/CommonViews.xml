@@ -3,57 +3,68 @@
 	<include name="List">
 		<control type="group">
 			<description>List View</description>
-			<control type="image">
-				<texture>poster_background.png</texture>
-				<width>598</width>
-				<height>415</height>
-				<posx>50</posx>
-				<posy>234</posy>
-				<visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes)] + IsEmpty(ListItem.Plot)</visible>
-			</control>
-			<control type="image">
-				<texture>plexicon.png</texture>
-				<width>302</width>
-				<height>403</height>
-				<posx>200</posx>
-				<posy>300</posy>
-				<visible>Container.Content(Secondary)</visible>
-			</control>
-			<control type="image">
-				<texture>$INFO[ListItem.Thumb]</texture>
-				<width>450</width>
-				<height>330</height>
-				<posx>100</posx>
-				<posy>300</posy>
-				<aspectratio aligny="bottom" align="center" scalediffuse="false">keep</aspectratio>
-				<visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes)] + IsEmpty(ListItem.Plot)</visible>
-			</control>
-			<control type="image">
-				<texture>$INFO[ListItem.Thumb]</texture>
-				<width>450</width>
-				<height>280</height>
-				<posx>100</posx>
-				<posy>124</posy>
-				<aspectratio aligny="bottom" align="center" scalediffuse="false">keep</aspectratio>
-				<visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes)] + !IsEmpty(ListItem.Plot)</visible>
-			</control>
-			<control type="image">
-				<texture diffuse="fade.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-				<width>450</width>
-				<height>330</height>
-				<posx>100</posx>
-				<posy>630</posy>
-				<aspectratio aligny="top" align="center" scalediffuse="false">keep</aspectratio>
-				<visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes)] + IsEmpty(ListItem.Plot)</visible>
-			</control>
-			<control type="image">
-				<texture diffuse="fade.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-				<width>450</width>
-				<height>280</height>
-				<posx>100</posx>
-				<posy>404</posy>
-				<aspectratio aligny="top" align="center" scalediffuse="false">keep</aspectratio>
-				<visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes)] + !IsEmpty(ListItem.Plot)</visible>
+			<control type="group">
+				<visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes)]</visible>
+				<control type="image">
+					<texture>poster_background.png</texture>
+					<width>598</width>
+					<height>415</height>
+					<posx>50</posx>
+					<posy>234</posy>
+					<visible>IsEmpty(ListItem.Plot)</visible>
+				</control>
+				<control type="image">
+					<texture>poster_background.png</texture>
+					<width>598</width>
+					<height>415</height>
+					<posx>50</posx>
+					<posy>44</posy>
+					<visible>!IsEmpty(ListItem.Plot)</visible>
+				</control>
+				<control type="image">
+					<texture>plexicon.png</texture>
+					<width>302</width>
+					<height>403</height>
+					<posx>200</posx>
+					<posy>300</posy>
+					<visible>Container.Content(Secondary)</visible>
+				</control>
+				<control type="image">
+					<texture>$INFO[ListItem.Thumb]</texture>
+					<width>450</width>
+					<height>330</height>
+					<posx>100</posx>
+					<posy>300</posy>
+					<aspectratio aligny="bottom" align="center" scalediffuse="false">keep</aspectratio>
+					<visible>IsEmpty(ListItem.Plot)</visible>
+				</control>
+				<control type="image">
+					<texture>$INFO[ListItem.Thumb]</texture>
+					<width>450</width>
+					<height>280</height>
+					<posx>100</posx>
+					<posy>124</posy>
+					<aspectratio aligny="bottom" align="center" scalediffuse="false">keep</aspectratio>
+					<visible>!IsEmpty(ListItem.Plot)</visible>
+				</control>
+				<control type="image">
+					<texture diffuse="fade.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+					<width>450</width>
+					<height>330</height>
+					<posx>100</posx>
+					<posy>630</posy>
+					<aspectratio aligny="top" align="center" scalediffuse="false">keep</aspectratio>
+					<visible>IsEmpty(ListItem.Plot)</visible>
+				</control>
+				<control type="image">
+					<texture diffuse="fade.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+					<width>450</width>
+					<height>280</height>
+					<posx>100</posx>
+					<posy>404</posy>
+					<aspectratio aligny="top" align="center" scalediffuse="false">keep</aspectratio>
+					<visible>!IsEmpty(ListItem.Plot)</visible>
+				</control>
 			</control>
 			<control type="group">
 				<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons)</visible>
@@ -76,7 +87,7 @@
 					<height>282</height>
 				</control>
 				<!-- /Current Thumb reflection-->
-				<!-- Old Thumb reflection fade out -->
+				<!-- Old Thumb reflection -->
 				<control type="image">
 					<texture diffuse="poster_fade.png" flipy="true">$INFO[ListItem(1).Thumb]</texture>
 					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
@@ -97,7 +108,8 @@
 					<width>189</width>
 					<height>282</height>
 				</control>
-				<!-- /Old Thumb reflection fade out -->
+				<!-- /Old Thumb reflection -->
+				<!-- Shadow -->
 				<control type="image">
 					<texture>poster_shadow.png</texture>
 					<posy>111</posy>
@@ -106,6 +118,7 @@
 					<width>237</width>
 					<height>308</height>
 				</control>
+				<!-- /Shadow -->
 				<!-- Current Thumb -->
 				<control type="image">
 					<animation effect="fade" start="0" end="100" time="500" tween="cubic" easing="inout" delay="0">Visible</animation>
@@ -140,7 +153,7 @@
 					<height>282</height>
 				</control>
 				<!-- /Old thumb fade out -->
-				<!-- Overlay (glass, border, shadow) -->
+				<!-- Overlay (gloss, border) -->
 				<control type="image">
 					<texture>poster_overlay.png</texture>
 					<posy>124</posy>
@@ -160,6 +173,7 @@
 					<posx>50</posx>
 					<posy>44</posy>
 				</control>
+				<!-- Current Thumb reflection-->
 				<control type="image">
 					<animation effect="fade" start="0" end="100" time="500" tween="cubic" easing="inout" delay="0">Visible</animation>
 					<visible>!Container.OnNext + !Container.OnPrevious</visible>
@@ -170,6 +184,8 @@
 					<width>402</width>
 					<height>227</height>
 				</control>
+				<!-- /Current Thumb reflection-->
+				<!-- Old Thumb reflection -->
 				<control type="image">
 					<texture diffuse="thumb_fade.png" flipy="true">$INFO[ListItem(1).Thumb]</texture>
 					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
@@ -190,6 +206,8 @@
 					<width>402</width>
 					<height>227</height>
 				</control>
+				<!-- /Old Thumb reflection -->
+				<!-- Shadow -->
 				<control type="image">
 					<texture>thumb_shadow.png</texture>
 					<posy>164</posy>
@@ -198,6 +216,8 @@
 					<width>444</width>
 					<height>253</height>
 				</control>
+				<!-- /Shadow -->
+				<!-- Current Thumb -->
 				<control type="image">
 					<animation effect="fade" start="0" end="100" time="500" tween="cubic" easing="inout" delay="0">Visible</animation>
 					<visible>!Container.OnNext + !Container.OnPrevious</visible>
@@ -208,6 +228,8 @@
 					<width>402</width>
 					<height>227</height>
 				</control>
+				<!-- /Current Thumb -->
+				<!-- Old thumb fade out -->
 				<control type="image">
 					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
 					<visible>Container.OnPrevious</visible>
@@ -228,6 +250,8 @@
 					<width>402</width>
 					<height>227</height>
 				</control>
+				<!-- /Old thumb fade out -->
+				<!-- Overlay (gloss, border) -->
 				<control type="image">
 					<texture>thumb_overlay.png</texture>
 					<posy>177</posy>
@@ -236,6 +260,7 @@
 					<width>402</width>
 					<height>227</height>
 				</control>
+				<!-- /Overlay -->
 			</control>
 			<!-- ### INFO/METADATA ### -->
 			<control type="grouplist">
