@@ -81,7 +81,7 @@
 					<visible>!Container.OnNext + !Container.OnPrevious</visible>
 					<texture diffuse="poster_fade.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<posy>404</posy>
-					<posx>249</posx>
+					<posx>248</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>189</width>
 					<height>282</height>
@@ -93,7 +93,7 @@
 					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
 					<visible>Container.OnPrevious</visible>
 					<posy>404</posy>
-					<posx>249</posx>
+					<posx>248</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>189</width>
 					<height>282</height>
@@ -103,7 +103,7 @@
 					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
 					<visible>Container.OnNext</visible>
 					<posy>404</posy>
-					<posx>249</posx>
+					<posx>248</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>189</width>
 					<height>282</height>
@@ -113,7 +113,7 @@
 				<control type="image">
 					<texture>poster_shadow.png</texture>
 					<posy>111</posy>
-					<posx>225</posx>
+					<posx>224</posx>
 					<aspectratio scalediffuse="false">keep</aspectratio>
 					<width>237</width>
 					<height>308</height>
@@ -124,8 +124,8 @@
 					<animation effect="fade" start="0" end="100" time="500" tween="cubic" easing="inout" delay="0">Visible</animation>
 					<visible>!Container.OnNext + !Container.OnPrevious</visible>
 					<texture diffuse="poster_mask.png">$INFO[ListItem.Thumb]</texture>
-					<posy>124</posy>
-					<posx>249</posx>
+					<posy>123</posy>
+					<posx>248</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>189</width>
 					<height>282</height>
@@ -136,8 +136,8 @@
 					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
 					<visible>Container.OnPrevious</visible>
 					<texture diffuse="poster_mask.png">$INFO[ListItem(1).Thumb]</texture>
-					<posy>124</posy>
-					<posx>249</posx>
+					<posy>123</posy>
+					<posx>248</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>189</width>
 					<height>282</height>
@@ -146,8 +146,8 @@
 					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
 					<visible>Container.OnNext</visible>
 					<texture diffuse="poster_mask.png">$INFO[ListItem(-1).Thumb]</texture>
-					<posy>124</posy>
-					<posx>249</posx>
+					<posy>123</posy>
+					<posx>248</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>189</width>
 					<height>282</height>
@@ -156,8 +156,8 @@
 				<!-- Overlay (gloss, border) -->
 				<control type="image">
 					<texture>poster_overlay.png</texture>
-					<posy>124</posy>
-					<posx>249</posx>
+					<posy>123</posy>
+					<posx>248</posx>
 					<aspectratio scalediffuse="false">keep</aspectratio>
 					<width>189</width>
 					<height>282</height>
@@ -327,7 +327,7 @@
 						<height>17</height>
 						<info>ListItem.StarRating</info>
 						<align>right</align>
-						<posx>357</posx>
+						<posx>359</posx>
 						<posy>27</posy>
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
 					</control>
@@ -450,7 +450,7 @@
 						<height>17</height>
 						<info>ListItem.StarRating</info>
 						<align>right</align>
-						<posx>357</posx>
+						<posx>359</posx>
 						<posy>6</posy>
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
 					</control>
@@ -570,7 +570,7 @@
 						<height>17</height>
 						<info>ListItem.StarRating</info>
 						<align>right</align>
-						<posx>357</posx>
+						<posx>359</posx>
 						<posy>6</posy>
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
 					</control>
@@ -668,7 +668,7 @@
 						<height>17</height>
 						<info>ListItem.StarRating</info>
 						<align>right</align>
-						<posx>357</posx>
+						<posx>359</posx>
 						<posy>6</posy>
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
 					</control>
@@ -827,7 +827,7 @@
 						<height>17</height>
 						<info>ListItem.StarRating</info>
 						<align>right</align>
-						<posx>357</posx>
+						<posx>359</posx>
 						<posy>27</posy>
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
 					</control>
