@@ -345,36 +345,21 @@
 		<textcolor>White</textcolor>
 	</include>
 	<include name="Header">
-		<!--
 		<control type="label">
 			<description>First title</description>
 			<info>Container.FirstTitle</info>
-			<posx>700</posx>
-			<posy>44</posy>
+			<posx>91</posx>
+			<posy>0</posy>
 			<width>500</width>
-			<height>56</height>
-			<align>center</align>
+			<height>50</height>
+			<align>left</align>
 			<aligny>center</aligny>
-			<font>homeheader</font>
-			<textcolor>White</textcolor>
-			<visible>IsEmpty(Container.SecondTitle)</visible>
+			<font>list1</font>
+			<textcolor>DarkGray</textcolor>
 		</control>
-		<control type="label">
-			<description>First title</description>
-			<info>Container.SecondTitle</info>
-			<posx>700</posx>
-			<posy>44</posy>
-			<width>500</width>
-			<height>56</height>
-			<align>center</align>
-			<aligny>center</aligny>
-			<font>homeheader</font>
-			<textcolor>White</textcolor>
-		</control>
-		-->
 	</include>
 	<include name="HeaderVideo">
-		<!--	<control type="label">
+			<control type="label">
 			<description>First title</description>
 			<label>Videos</label>
 			<posx>700</posx>
@@ -385,9 +370,9 @@
 			<aligny>center</aligny>
 			<font>homeheader</font>
 			<textcolor>White</textcolor>
-			<visible>IsEmpty(Container.SecondTitle) + IsEmpty(Container.FirstTitle) </visible>
+			<visible>IsEmpty(Container.FirstTitle) </visible>
 		</control>
-		-->
+		
 	</include>
 	<include name="HeaderSettings">
 		<control type="label">

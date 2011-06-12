@@ -24,7 +24,7 @@
 			<posy>100</posy>
 			<width>800</width>
 			<height>480</height>
-			<itemgap>-20</itemgap>
+			<itemgap>1</itemgap>
 			<onleft>3</onleft>
 			<onright>3</onright>
 			<onup>5</onup>
@@ -42,8 +42,6 @@
 			<description>Default Category Button</description>
 			<textcolor>White</textcolor>
 			<focusedcolor>White</focusedcolor>
-			<texturenofocus border="-30">-</texturenofocus>
-			<texturefocus border="0">button_home.png</texturefocus>
 			<height>86</height>
 			<align>left</align>
 			<textoffsety>63</textoffsety>
