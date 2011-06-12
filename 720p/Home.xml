@@ -106,7 +106,14 @@
 			<width>598</width>
 			<height>415</height>
 			<posx>50</posx>
-			<posy>127</posy>
+			<posy>234</posy>
+		</control>
+			<control type="image">
+			<texture>plexicon.png</texture>
+			<width>302</width>
+			<height>403</height>
+			<posx>200</posx>
+			<posy>300</posy>
 		</control>
 	</controls>
 </window>
