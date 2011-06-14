@@ -909,7 +909,7 @@
 							</control>
 							<control type="image">
 								<posy>0</posy>
-								<posx>8</posx>
+								<posx>9</posx>
 								<width>13</width>
 								<height>54</height>
 								<texture>$INFO[ListItem.Overlay]</texture>
@@ -993,7 +993,7 @@
 							</control>
 							<control type="image">
 								<posy>0</posy>
-								<posx>8</posx>
+								<posx>9</posx>
 								<width>13</width>
 								<height>54</height>
 								<texture>$INFO[ListItem.Overlay]</texture>
