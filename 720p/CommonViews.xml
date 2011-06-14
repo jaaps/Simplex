@@ -114,7 +114,7 @@
 					<texture>poster_shadow.png</texture>
 					<posy>110</posy>
 					<posx>224</posx>
-					<aspectratio scalediffuse="false">keep</aspectratio>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<width>237</width>
 					<height>308</height>
 				</control>
@@ -158,7 +158,7 @@
 					<texture>poster_overlay.png</texture>
 					<posy>123</posy>
 					<posx>248</posx>
-					<aspectratio scalediffuse="false">keep</aspectratio>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<width>189</width>
 					<height>282</height>
 				</control>
@@ -951,7 +951,7 @@
 						<animation effect="slide" start="0,53" end="0,0" time="200" reversible="false" easing="out" condition="Container(50).OnPrevious">Focus</animation>
 					</control>
 					<control type="group">
-						<animation effect="fade" start="0" end="100" delay="180" time="1">Visible</animation>
+						<animation effect="fade" start="0" end="100" delay="290" time="1">Visible</animation>
 						<visible>!Container.OnNext + !Container.OnPrevious</visible>
 						<posy>0</posy>
 						<posx>0</posx>
