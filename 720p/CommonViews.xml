@@ -882,6 +882,7 @@
 								<textcolor>White</textcolor>
 								<scroll>false</scroll>
 								<font>list1</font>
+								<wrapmultiline>false</wrapmultiline>
 							</control>
 							<control type="label">
 								<visible>Container.Content(episodes) + IsEmpty(Container.Property(mixedParents))</visible>
@@ -894,6 +895,7 @@
 								<textcolor>White</textcolor>
 								<scroll>false</scroll>
 								<font>list1</font>
+								<wrapmultiline>false</wrapmultiline>
 							</control>
 							<control type="label">
 								<visible>Container.Content(episodes) + !IsEmpty(Container.Property(mixedParents))</visible>
@@ -906,6 +908,7 @@
 								<textcolor>White</textcolor>
 								<scroll>false</scroll>
 								<font>list1</font>
+								<wrapmultiline>false</wrapmultiline>
 							</control>
 							<control type="image">
 								<posy>0</posy>
@@ -936,6 +939,7 @@
 								<textcolor>White</textcolor>
 								<scroll>false</scroll>
 								<font>list1</font>
+								<wrapmultiline>false</wrapmultiline>
 							</control>
 						</control>
 					</control>
