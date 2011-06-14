@@ -112,7 +112,7 @@
 				<!-- Shadow -->
 				<control type="image">
 					<texture>poster_shadow.png</texture>
-					<posy>111</posy>
+					<posy>110</posy>
 					<posx>224</posx>
 					<aspectratio scalediffuse="false">keep</aspectratio>
 					<width>237</width>
@@ -178,8 +178,8 @@
 					<animation effect="fade" start="0" end="100" time="500" tween="cubic" easing="inout" delay="0">Visible</animation>
 					<visible>!Container.OnNext + !Container.OnPrevious</visible>
 					<texture diffuse="thumb_fade.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-					<posy>403</posy>
-					<posx>145</posx>
+					<posy>404</posy>
+					<posx>142</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>402</width>
 					<height>227</height>
@@ -190,8 +190,8 @@
 					<texture diffuse="thumb_fade.png" flipy="true">$INFO[ListItem(1).Thumb]</texture>
 					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
 					<visible>Container.OnPrevious</visible>
-					<posy>403</posy>
-					<posx>145</posx>
+					<posy>404</posy>
+					<posx>142</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>402</width>
 					<height>227</height>
@@ -200,8 +200,8 @@
 					<texture diffuse="thumb_fade.png" flipy="true">$INFO[ListItem(-1).Thumb]</texture>
 					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
 					<visible>Container.OnNext</visible>
-					<posy>403</posy>
-					<posx>145</posx>
+					<posy>404</posy>
+					<posx>142</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>402</width>
 					<height>227</height>
@@ -210,8 +210,8 @@
 				<!-- Shadow -->
 				<control type="image">
 					<texture>thumb_shadow.png</texture>
-					<posy>164</posy>
-					<posx>124</posx>
+					<posy>165</posy>
+					<posx>121</posx>
 					<aspectratio>keep</aspectratio>
 					<width>444</width>
 					<height>253</height>
@@ -222,8 +222,8 @@
 					<animation effect="fade" start="0" end="100" time="500" tween="cubic" easing="inout" delay="0">Visible</animation>
 					<visible>!Container.OnNext + !Container.OnPrevious</visible>
 					<texture diffuse="thumb_mask.png">$INFO[ListItem.Thumb]</texture>
-					<posy>177</posy>
-					<posx>145</posx>
+					<posy>178</posy>
+					<posx>142</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>402</width>
 					<height>227</height>
@@ -234,8 +234,8 @@
 					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
 					<visible>Container.OnPrevious</visible>
 					<texture diffuse="thumb_mask.png">$INFO[ListItem(1).Thumb]</texture>
-					<posy>177</posy>
-					<posx>145</posx>
+					<posy>178</posy>
+					<posx>142</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>402</width>
 					<height>227</height>
@@ -244,8 +244,8 @@
 					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
 					<visible>Container.OnNext</visible>
 					<texture diffuse="thumb_mask.png">$INFO[ListItem(-1).Thumb]</texture>
-					<posy>177</posy>
-					<posx>145</posx>
+					<posy>178</posy>
+					<posx>142</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>402</width>
 					<height>227</height>
@@ -254,8 +254,8 @@
 				<!-- Overlay (gloss, border) -->
 				<control type="image">
 					<texture>thumb_overlay.png</texture>
-					<posy>177</posy>
-					<posx>145</posx>
+					<posy>178</posy>
+					<posx>142</posx>
 					<aspectratio>keep</aspectratio>
 					<width>402</width>
 					<height>227</height>
@@ -428,15 +428,15 @@
 				<animation effect="fade" start="100" end="0" delay="0" time="100">Hidden</animation>
 				<visible>Container.Content(tvshows)</visible>
 				<posx>91</posx>
-				<posy>426</posy>
+				<posy>424</posy>
 				<itemgap>6</itemgap>
 				<orientation>vertical</orientation>
 				<usecontrolcoords>false</usecontrolcoords>
 				<control type="group">
-					<height>29</height>
+					<height>32</height>
 					<control type="label">
 						<posx>0</posx>
-						<posy>0</posy>
+						<posy>2</posy>
 						<width>360</width>
 						<height>22</height>
 						<font>title1</font>
@@ -450,13 +450,13 @@
 						<height>17</height>
 						<info>ListItem.StarRating</info>
 						<align>right</align>
-						<posx>359</posx>
+						<posx>356</posx>
 						<posy>6</posy>
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
 					</control>
 					<control type="image">
 						<align>right</align>
-						<posx>478</posx>
+						<posx>476</posx>
 						<posy>0</posy>
 						<height>28</height>
 						<width>80</width>
@@ -479,7 +479,7 @@
 					<height>100</height>
 					<control type="label">
 						<posx>89</posx>
-						<posy>4</posy>
+						<posy>3</posy>
 						<width>90</width>
 						<height>25</height>
 						<font>info2</font>
@@ -490,7 +490,7 @@
 					</control>
 					<control type="label">
 						<posx>89</posx>
-						<posy>28</posy>
+						<posy>27</posy>
 						<width>90</width>
 						<height>25</height>
 						<font>info2</font>
@@ -501,7 +501,7 @@
 					</control>
 					<control type="label">
 						<posx>89</posx>
-						<posy>52</posy>
+						<posy>51</posy>
 						<width>90</width>
 						<height>25</height>
 						<font>info2</font>
@@ -512,7 +512,7 @@
 					</control>
 					<control type="label">
 						<posx>96</posx>
-						<posy>4</posy>
+						<posy>3</posy>
 						<width>400</width>
 						<height>25</height>
 						<font>info1</font>
@@ -523,7 +523,7 @@
 					</control>
 					<control type="label">
 						<posx>96</posx>
-						<posy>28</posy>
+						<posy>27</posy>
 						<width>400</width>
 						<height>25</height>
 						<font>info1</font>
@@ -534,7 +534,7 @@
 					</control>
 					<control type="label">
 						<posx>96</posx>
-						<posy>52</posy>
+						<posy>51</posy>
 						<width>400</width>
 						<height>25</height>
 						<font>info1</font>
@@ -548,15 +548,15 @@
 			<control type="grouplist">
 				<visible>Container.Content(seasons)</visible>
 				<posx>91</posx>
-				<posy>426</posy>
+				<posy>424</posy>
 				<itemgap>6</itemgap>
 				<orientation>vertical</orientation>
 				<usecontrolcoords>false</usecontrolcoords>
 				<control type="group">
-					<height>29</height>
+					<height>32</height>
 					<control type="label">
 						<posx>0</posx>
-						<posy>0</posy>
+						<posy>2</posy>
 						<width>360</width>
 						<height>22</height>
 						<font>title1</font>
@@ -570,13 +570,13 @@
 						<height>17</height>
 						<info>ListItem.StarRating</info>
 						<align>right</align>
-						<posx>359</posx>
+						<posx>356</posx>
 						<posy>6</posy>
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
 					</control>
 					<control type="image">
 						<align>right</align>
-						<posx>478</posx>
+						<posx>476</posx>
 						<posy>0</posy>
 						<height>28</height>
 						<width>80</width>
@@ -599,7 +599,7 @@
 					<height>100</height>
 					<control type="label">
 						<posx>89</posx>
-						<posy>4</posy>
+						<posy>3</posy>
 						<width>90</width>
 						<height>25</height>
 						<font>info2</font>
@@ -610,7 +610,7 @@
 					</control>
 					<control type="label">
 						<posx>89</posx>
-						<posy>28</posy>
+						<posy>27</posy>
 						<width>90</width>
 						<height>25</height>
 						<font>info2</font>
@@ -621,7 +621,7 @@
 					</control>
 					<control type="label">
 						<posx>96</posx>
-						<posy>4</posy>
+						<posy>3</posy>
 						<width>400</width>
 						<height>25</height>
 						<font>info1</font>
@@ -632,7 +632,7 @@
 					</control>
 					<control type="label">
 						<posx>96</posx>
-						<posy>28</posy>
+						<posy>27</posy>
 						<width>400</width>
 						<height>25</height>
 						<font>info1</font>
@@ -646,15 +646,15 @@
 			<control type="grouplist">
 				<visible>Container.Content(episodes)</visible>
 				<posx>91</posx>
-				<posy>426</posy>
+				<posy>424</posy>
 				<itemgap>6</itemgap>
 				<orientation>vertical</orientation>
 				<usecontrolcoords>false</usecontrolcoords>
 				<control type="group">
-					<height>29</height>
+					<height>32</height>
 					<control type="label">
 						<posx>0</posx>
-						<posy>0</posy>
+						<posy>2</posy>
 						<width>360</width>
 						<height>22</height>
 						<font>title1</font>
@@ -668,13 +668,13 @@
 						<height>17</height>
 						<info>ListItem.StarRating</info>
 						<align>right</align>
-						<posx>359</posx>
+						<posx>356</posx>
 						<posy>6</posy>
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
 					</control>
 					<control type="image">
 						<align>right</align>
-						<posx>478</posx>
+						<posx>476</posx>
 						<posy>0</posy>
 						<height>28</height>
 						<width>80</width>
@@ -708,7 +708,7 @@
 					</control>
 					<control type="label">
 						<posx>89</posx>
-						<posy>28</posy>
+						<posy>27</posy>
 						<width>90</width>
 						<height>25</height>
 						<font>info2</font>
@@ -719,7 +719,7 @@
 					</control>
 					<control type="label">
 						<posx>89</posx>
-						<posy>52</posy>
+						<posy>51</posy>
 						<width>90</width>
 						<height>25</height>
 						<font>info2</font>
@@ -741,7 +741,7 @@
 					</control>
 					<control type="label">
 						<posx>96</posx>
-						<posy>28</posy>
+						<posy>27</posy>
 						<width>400</width>
 						<height>25</height>
 						<font>info1</font>
@@ -752,7 +752,7 @@
 					</control>
 					<control type="label">
 						<posx>96</posx>
-						<posy>52</posy>
+						<posy>51</posy>
 						<width>400</width>
 						<height>25</height>
 						<font>info1</font>
@@ -855,7 +855,7 @@
 			</control>
 			<!-- ### LIST VIEW ITSELF ### -->
 			<control type="list" id="50">
-				<posx>659</posx>
+				<posx>664</posx>
 				<posy>253</posy>
 				<width>551</width>
 				<height>435</height>
@@ -874,7 +874,7 @@
 							<control type="label">
 								<visible>!Container.Content(episodes)</visible>
 								<posy>0</posy>
-								<posx>35</posx>
+								<posx>30</posx>
 								<width>390</width>
 								<height>50</height>
 								<aligny>center</aligny>
@@ -886,7 +886,7 @@
 							<control type="label">
 								<visible>Container.Content(episodes) + IsEmpty(Container.Property(mixedParents))</visible>
 								<posy>0</posy>
-								<posx>35</posx>
+								<posx>30</posx>
 								<width>390</width>
 								<aligny>center</aligny>
 								<height>50</height>
@@ -898,7 +898,7 @@
 							<control type="label">
 								<visible>Container.Content(episodes) + !IsEmpty(Container.Property(mixedParents))</visible>
 								<posy>0</posy>
-								<posx>35</posx>
+								<posx>30</posx>
 								<width>390</width>
 								<aligny>center</aligny>
 								<height>50</height>
@@ -909,15 +909,15 @@
 							</control>
 							<control type="image">
 								<posy>0</posy>
-								<posx>12</posx>
-								<width>15</width>
+								<posx>8</posx>
+								<width>13</width>
 								<height>54</height>
 								<texture>$INFO[ListItem.Overlay]</texture>
 								<aspectratio align="left" alingy="center">keep</aspectratio>
 							</control>
 							<control type="image">
 								<posy>0</posy>
-								<posx>455</posx>
+								<posx>450</posx>
 								<width>36</width>
 								<height>54</height>
 								<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution/unfocus/,.png]</texture>
@@ -928,7 +928,7 @@
 							<visible>!Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons)  + !Container.Content(movies)</visible>
 							<control type="label">
 								<posy>0</posy>
-								<posx>35</posx>
+								<posx>30</posx>
 								<width>390</width>
 								<height>50</height>
 								<aligny>center</aligny>
@@ -943,7 +943,7 @@
 				<focusedlayout height="53">
 					<control type="image">
 						<posy>0</posy>
-						<width>513</width>
+						<width>512</width>
 						<height>55</height>
 						<texture>button_media.png</texture>
 						<aspectratio>keep</aspectratio>
@@ -958,7 +958,7 @@
 							<control type="label">
 								<visible>!Container.Content(episodes)</visible>
 								<posy>0</posy>
-								<posx>35</posx>
+								<posx>30</posx>
 								<width>390</width>
 								<height>50</height>
 								<aligny>center</aligny>
@@ -970,7 +970,7 @@
 							<control type="label">
 								<visible>Container.Content(episodes) + IsEmpty(Container.Property(mixedParents))</visible>
 								<posy>0</posy>
-								<posx>35</posx>
+								<posx>30</posx>
 								<width>390</width>
 								<aligny>center</aligny>
 								<height>50</height>
@@ -982,7 +982,7 @@
 							<control type="label">
 								<visible>Container.Content(episodes) + !IsEmpty(Container.Property(mixedParents))</visible>
 								<posy>0</posy>
-								<posx>35</posx>
+								<posx>30</posx>
 								<width>390</width>
 								<aligny>center</aligny>
 								<height>50</height>
@@ -993,15 +993,15 @@
 							</control>
 							<control type="image">
 								<posy>0</posy>
-								<posx>12</posx>
-								<width>15</width>
+								<posx>8</posx>
+								<width>13</width>
 								<height>54</height>
 								<texture>$INFO[ListItem.Overlay]</texture>
 								<aspectratio align="left" alingy="center">keep</aspectratio>
 							</control>
 							<control type="image">
 								<posy>0</posy>
-								<posx>455</posx>
+								<posx>450</posx>
 								<width>36</width>
 								<height>54</height>
 								<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution/focus/,.png]</texture>
@@ -1012,7 +1012,7 @@
 							<visible>!Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons)  + !Container.Content(movies)</visible>
 							<control type="label">
 								<posy>0</posy>
-								<posx>35</posx>
+								<posx>30</posx>
 								<width>390</width>
 								<height>50</height>
 								<aligny>center</aligny>

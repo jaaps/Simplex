@@ -56,12 +56,6 @@
 			<variant>Bold</variant>
 		</font>
 		<font>
-			<name>info1</name>
-			<size>19</size>
-			<filename>HelveticaNeue</filename>
-			<variant>Medium</variant>
-		</font>
-		<font>
 			<name>osd1</name>
 			<size>21</size>
 			<filename>HelveticaNeue</filename>
@@ -100,6 +94,12 @@
 			<filename>HelveticaNeue</filename>
 			<variant>Medium</variant>
 			<size>19</size>
+		</font>
+		<font>
+			<name>info1</name>
+			<size>19</size>
+			<filename>HelveticaNeue</filename>
+			<variant>Medium</variant>
 		</font>
 		<font>
 			<name>info2</name>

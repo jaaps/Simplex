@@ -29,7 +29,7 @@
 				<aligny>center</aligny>
 				<font>list1</font>
 				<textcolor>White</textcolor>
-				<label>Settings</label>
+				<label>Video Settings</label>
 			</control>
 			<control type="grouplist" id="5">
 				<description>control area</description>

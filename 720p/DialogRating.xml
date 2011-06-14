@@ -15,33 +15,33 @@
 				<height>337</height>
 			</control>
 			<control type="label" id="2">
-				<posx>90</posx>
-				<posy>110</posy>
-				<width>482</width>
+				<posx>0</posx>
+				<posy>103</posy>
+				<width>662</width>
 				<align>center</align>
 				<font>list1</font>
 				<label>Set Rating</label>
 			</control>
 			<control type="label" id="1">
-				<posx>90</posx>
-				<posy>140</posy>
-				<width>482</width>
+				<posx>0</posx>
+				<posy>128</posy>
+				<width>662</width>
 				<align>center</align>
 				<label>Set Rating</label>
 				<font>info1</font>
 				<textcolor>Gray</textcolor>
 			</control>
 			<control type="image" id="8">
-				<posx>190</posx>
-				<posy>175</posy>
+				<posx>187</posx>
+				<posy>168</posy>
 				<width>288</width>
 				<height>66</height>
 				<texture>rating0-big.png</texture>
 				<colordiffuse>22FFFFFF</colordiffuse>
 			</control>
 			<control type="image" id="10">
-				<posx>190</posx>
-				<posy>175</posy>
+				<posx>187</posx>
+				<posy>168</posy>
 				<width>288</width>
 				<height>66</height>
 				<texture>rating0-big.png</texture>

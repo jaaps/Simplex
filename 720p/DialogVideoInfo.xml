@@ -10,36 +10,36 @@
 					<texture>poster_background.png</texture>
 					<width>598</width>
 					<height>415</height>
-					<posx>-70</posx>
-					<posy>270</posy>
+					<posx>-87</posx>
+					<posy>278</posy>
 				</control>
 				<control type="image">
 					<texture diffuse="posterbig_fade.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-					<posy>650</posy>
-					<posx>83</posx>
+					<posy>648</posy>
+					<posx>81</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>261</width>
 					<height>391</height>
 				</control>
 				<control type="image">
 					<texture>posterbig_shadow.png</texture>
-					<posy>640</posy>
-					<posx>49</posx>
+					<posy>638</posy>
+					<posx>47</posx>
 					<width>329</width>
 					<height>19</height>
 				</control>
 				<control type="image">
 					<texture diffuse="posterbig_mask.png">$INFO[ListItem.Thumb]</texture>
-					<posy>259</posy>
-					<posx>83</posx>
+					<posy>258</posy>
+					<posx>81</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>261</width>
 					<height>391</height>
 				</control>
 				<control type="image">
 					<texture>posterbig_overlay.png</texture>
-					<posy>259</posy>
-					<posx>83</posx>
+					<posy>258</posy>
+					<posx>81</posx>
 					<aspectratio scalediffuse="false">keep</aspectratio>
 					<width>261</width>
 					<height>391</height>
@@ -81,25 +81,25 @@
 			</control>
 			<animation effect="slide" start="0" end="250" time="600" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus">Conditional</animation>
 			<control type="image">
-				<posx>1042</posx>
-				<posy>260</posy>
+				<posx>1094</posx>
+				<posy>255</posy>
 				<width>128</width>
-				<height>60</height>
+				<height>50</height>
 				<aspectratio align="right">keep</aspectratio>
 				<texture>$INFO[Listitem.Property(mediaTag-Studio),flags/Studios/,.png]</texture>
 				<colordiffuse>White</colordiffuse>
 			</control>
 			<control type="grouplist">
-				<posx>380</posx>
+				<posx>381</posx>
 				<orientation>vertical</orientation>
 				<itemgap>0</itemgap>
-				<posy>260</posy>
+				<posy>246</posy>
 				<control type="group">
 					<height>63</height>
 					<control type="label">
 						<description>First title</description>
 						<label>$INFO[ListItem.TVShowTitle]: $INFO[ListItem.Title]</label>
-						<width>800</width>
+						<width>830</width>
 						<height>40</height>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -110,7 +110,7 @@
 					<control type="label">
 						<description>First title</description>
 						<label>$INFO[ListItem.Title]</label>
-						<width>800</width>
+						<width>830</width>
 						<height>40</height>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -119,8 +119,8 @@
 						<visible>!Container.Content(episodes)</visible>
 					</control>
 					<control type="label">
-						<width>800</width>
-						<posy>40</posy>
+						<width>830</width>
+						<posy>36</posy>
 						<font>info3</font>
 						<align>left</align>
 						<aligny>bottom</aligny>
@@ -130,8 +130,8 @@
 					</control>
 				</control>
 				<control type="label">
-					<width>800</width>
-					<height>6</height>
+					<width>830</width>
+					<height>4</height>
 					<label/>
 				</control>
 				<control type="group" id="9001">
@@ -140,28 +140,30 @@
 					<onright>9000</onright>
 					<control type="textbox" id="4">
 						<description>Plot</description>
-						<width>800</width>
+						<width>830</width>
 						<height>77</height>
 						<font>info1</font>
 						<scroll>true</scroll>
 						<autoscroll delay="6000" time="2000" repeat="10000"/>
+						<align>justify</align>
 						<visible>!Container.Content(episodes)</visible>
 						<textcolor>Gray</textcolor>
 					</control>
 					<control type="textbox" id="4">
 						<description>Plot</description>
-						<width>800</width>
+						<width>830</width>
 						<height>77</height>
 						<font>info1</font>
 						<scroll>true</scroll>
 						<textcolor>Gray</textcolor>
 						<autoscroll delay="6000" time="2000" repeat="10000"/>
+						<align>justify</align>
 						<visible>Container.Content(episodes)</visible>
 					</control>
 				</control>
 				<control type="label">
-					<width>800</width>
-					<height>9</height>
+					<width>830</width>
+					<height>6</height>
 					<label/>
 				</control>
 				<control type="group">
@@ -184,7 +186,7 @@
 						<label>Starring</label>
 					</control>
 					<control type="label">
-						<posy>75</posy>
+						<posy>72</posy>
 						<posx>206</posx>
 						<height>20</height>
 						<font>info2</font>
@@ -194,7 +196,7 @@
 						<label>Director</label>
 					</control>
 					<control type="label">
-						<posy>75</posy>
+						<posy>72</posy>
 						<posx>506</posx>
 						<height>20</height>
 						<font>info2</font>
@@ -205,10 +207,10 @@
 					</control>
 					<control type="grouplist">
 						<orientation>vertical</orientation>
-						<posy>25</posy>
+						<posy>24</posy>
 						<control type="label">
 							<width>190</width>
-							<height>20</height>
+							<height>19</height>
 							<font>info1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
@@ -220,7 +222,7 @@
 						</control>
 						<control type="label">
 							<width>190</width>
-							<height>20</height>
+							<height>19</height>
 							<font>info1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
@@ -231,7 +233,7 @@
 						</control>
 						<control type="label">
 							<width>190</width>
-							<height>20</height>
+							<height>19</height>
 							<font>info1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
@@ -240,27 +242,22 @@
 							<wrapmultiline>false</wrapmultiline>
 							<visible>!IsEmpty(ListItem.Duration)</visible>
 						</control>
-						<control type="label">
-							<width>800</width>
-							<height>3</height>
-							<label/>
-						</control>
 						<control type="image">
 							<width>98</width>
-							<height>17</height>
+							<height>21</height>
 							<info>ListItem.StarRating</info>
 							<posx>357</posx>
 							<posy>27</posy>
-							<aspectratio aligny="center" align="left">keep</aspectratio>
+							<aspectratio aligny="bottom" align="left">keep</aspectratio>
 						</control>
 					</control>
 					<control type="grouplist">
 						<orientation>vertical</orientation>
-						<posy>25</posy>
+						<posy>24</posy>
 						<posx>206</posx>
 						<control type="label">
 							<width>650</width>
-							<height>20</height>
+							<height>19</height>
 							<font>info1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
@@ -271,11 +268,11 @@
 					</control>
 					<control type="grouplist">
 						<orientation>vertical</orientation>
-						<posy>95</posy>
+						<posy>96</posy>
 						<posx>206</posx>
 						<control type="label">
 							<width>280</width>
-							<height>20</height>
+							<height>19</height>
 							<font>info1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
@@ -286,11 +283,11 @@
 					</control>
 					<control type="grouplist">
 						<orientation>vertical</orientation>
-						<posy>95</posy>
+						<posy>96</posy>
 						<posx>506</posx>
 						<control type="label">
 							<width>280</width>
-							<height>20</height>
+							<height>19</height>
 							<font>info1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
@@ -309,36 +306,36 @@
 					<texture>poster_background.png</texture>
 					<width>598</width>
 					<height>415</height>
-					<posx>-70</posx>
-					<posy>270</posy>
+					<posx>-87</posx>
+					<posy>278</posy>
 				</control>
 				<control type="image">
 					<texture diffuse="posterbig_fade.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-					<posy>650</posy>
-					<posx>83</posx>
+					<posy>648</posy>
+					<posx>81</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>261</width>
 					<height>391</height>
 				</control>
 				<control type="image">
 					<texture>posterbig_shadow.png</texture>
-					<posy>640</posy>
-					<posx>49</posx>
+					<posy>638</posy>
+					<posx>47</posx>
 					<width>329</width>
 					<height>19</height>
 				</control>
 				<control type="image">
 					<texture diffuse="posterbig_mask.png">$INFO[ListItem.Thumb]</texture>
-					<posy>259</posy>
-					<posx>83</posx>
+					<posy>258</posy>
+					<posx>81</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>261</width>
 					<height>391</height>
 				</control>
 				<control type="image">
 					<texture>posterbig_overlay.png</texture>
-					<posy>259</posy>
-					<posx>83</posx>
+					<posy>258</posy>
+					<posx>81</posx>
 					<aspectratio scalediffuse="false">keep</aspectratio>
 					<width>261</width>
 					<height>391</height>
@@ -380,25 +377,25 @@
 			</control>
 			<animation effect="slide" start="0" end="250" time="600" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus">Conditional</animation>
 			<control type="image">
-				<posx>1042</posx>
-				<posy>260</posy>
+				<posx>1094</posx>
+				<posy>244</posy>
 				<width>128</width>
-				<height>60</height>
+				<height>50</height>
 				<aspectratio align="right">keep</aspectratio>
 				<texture>$INFO[Listitem.Property(mediaTag-Studio),flags/Studios/,.png]</texture>
 				<colordiffuse>White</colordiffuse>
 			</control>
 			<control type="grouplist">
-				<posx>380</posx>
+				<posx>381</posx>
 				<orientation>vertical</orientation>
 				<itemgap>0</itemgap>
-				<posy>260</posy>
+				<posy>246</posy>
 				<control type="group">
-					<height>63</height>
+					<height>41</height>
 					<control type="label">
 						<description>First title</description>
 						<label>$INFO[ListItem.TVShowTitle]: $INFO[ListItem.Title]</label>
-						<width>800</width>
+						<width>830</width>
 						<height>40</height>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -409,7 +406,7 @@
 					<control type="label">
 						<description>First title</description>
 						<label>$INFO[ListItem.Title]</label>
-						<width>800</width>
+						<width>830</width>
 						<height>40</height>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -417,50 +414,42 @@
 						<textcolor>Orange</textcolor>
 						<visible>!Container.Content(episodes)</visible>
 					</control>
-					<control type="label">
-						<width>800</width>
-						<posy>40</posy>
-						<font>info3</font>
-						<align>left</align>
-						<aligny>bottom</aligny>
-						<textcolor>White</textcolor>
-						<label>$INFO[ListItem.Tagline]</label>
-						<visible>!IsEmpty(ListItem.Tagline)</visible>
-					</control>
 				</control>
 				<control type="label">
-					<width>800</width>
-					<height>6</height>
+					<width>830</width>
+					<height>4</height>
 					<label/>
 				</control>
 				<control type="group" id="9001">
-					<height>77</height>
+					<height>99</height>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<control type="textbox" id="4">
 						<description>Plot</description>
-						<width>800</width>
-						<height>77</height>
+						<width>830</width>
+						<height>99</height>
 						<font>info1</font>
 						<scroll>true</scroll>
 						<autoscroll delay="6000" time="2000" repeat="10000"/>
+						<align>justify</align>
 						<visible>!Container.Content(episodes)</visible>
 						<textcolor>Gray</textcolor>
 					</control>
 					<control type="textbox" id="4">
 						<description>Plot</description>
-						<width>800</width>
-						<height>77</height>
+						<width>830</width>
+						<height>99</height>
 						<font>info1</font>
 						<scroll>true</scroll>
 						<textcolor>Gray</textcolor>
 						<autoscroll delay="6000" time="2000" repeat="10000"/>
+						<align>justify</align>
 						<visible>Container.Content(episodes)</visible>
 					</control>
 				</control>
 				<control type="label">
-					<width>800</width>
-					<height>9</height>
+					<width>830</width>
+					<height>6</height>
 					<label/>
 				</control>
 				<control type="group">
@@ -483,7 +472,7 @@
 						<label>Starring</label>
 					</control>
 					<control type="label">
-						<posy>75</posy>
+						<posy>72</posy>
 						<posx>206</posx>
 						<height>20</height>
 						<font>info2</font>
@@ -493,7 +482,7 @@
 						<label>Director</label>
 					</control>
 					<control type="label">
-						<posy>75</posy>
+						<posy>72</posy>
 						<posx>506</posx>
 						<height>20</height>
 						<font>info2</font>
@@ -504,10 +493,10 @@
 					</control>
 					<control type="grouplist">
 						<orientation>vertical</orientation>
-						<posy>25</posy>
+						<posy>24</posy>
 						<control type="label">
 							<width>190</width>
-							<height>20</height>
+							<height>19</height>
 							<font>info1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
@@ -519,7 +508,7 @@
 						</control>
 						<control type="label">
 							<width>190</width>
-							<height>20</height>
+							<height>19</height>
 							<font>info1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
@@ -530,7 +519,7 @@
 						</control>
 						<control type="label">
 							<width>190</width>
-							<height>20</height>
+							<height>19</height>
 							<font>info1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
@@ -539,27 +528,22 @@
 							<wrapmultiline>false</wrapmultiline>
 							<visible>!IsEmpty(ListItem.Duration)</visible>
 						</control>
-						<control type="label">
-							<width>800</width>
-							<height>3</height>
-							<label/>
-						</control>
 						<control type="image">
 							<width>98</width>
-							<height>17</height>
+							<height>21</height>
 							<info>ListItem.StarRating</info>
 							<posx>357</posx>
 							<posy>27</posy>
-							<aspectratio aligny="center" align="left">keep</aspectratio>
+							<aspectratio aligny="bottom" align="left">keep</aspectratio>
 						</control>
 					</control>
 					<control type="grouplist">
 						<orientation>vertical</orientation>
-						<posy>25</posy>
+						<posy>24</posy>
 						<posx>206</posx>
 						<control type="label">
 							<width>650</width>
-							<height>20</height>
+							<height>19</height>
 							<font>info1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
@@ -570,11 +554,11 @@
 					</control>
 					<control type="grouplist">
 						<orientation>vertical</orientation>
-						<posy>95</posy>
+						<posy>96</posy>
 						<posx>206</posx>
 						<control type="label">
 							<width>280</width>
-							<height>20</height>
+							<height>19</height>
 							<font>info1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
@@ -585,11 +569,11 @@
 					</control>
 					<control type="grouplist">
 						<orientation>vertical</orientation>
-						<posy>95</posy>
+						<posy>96</posy>
 						<posx>506</posx>
 						<control type="label">
 							<width>280</width>
-							<height>20</height>
+							<height>19</height>
 							<font>info1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
