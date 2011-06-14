@@ -207,12 +207,12 @@
 					<scroll>false</scroll>
 				</control>
 				<control type="label">
-					<posx>113</posx>
+					<posx>37</posx>
 					<posy>62</posy>
 					<width>160</width>
 					<height>16</height>
 					<font>info1</font>
-					<align>right</align>
+					<align>left</align>
 					<colordiffuse>d0FFFFFF</colordiffuse>
 					<label>$INFO[VideoPlayer.Time]</label>
 				</control>
