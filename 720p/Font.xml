@@ -62,16 +62,16 @@
 			<variant>Bold</variant>
 		</font>
 		<font>
-			<name>list2</name>
-			<size>25</size>
-			<filename>Helvetica</filename>
-			<variant>Bold</variant>
-		</font>
-		<font>
 			<name>list1</name>
 			<filename>HelveticaNeue</filename>
 			<variant>Medium</variant>
 			<size>27</size>
+		</font>
+		<font>
+			<name>list2</name>
+			<filename>Helvetica</filename>
+			<variant>Bold</variant>
+			<size>25</size>
 		</font>
 		<font>
 			<name>settings</name>

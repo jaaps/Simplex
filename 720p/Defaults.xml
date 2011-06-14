@@ -137,7 +137,7 @@
 	</default>
 	<default type="sliderex">
 		<sliderwidth>102</sliderwidth>
-		<sliderheight>16</sliderheight>
+		<sliderheight>15</sliderheight>
 		<texturesliderbar>dialogs/sliderbackground.png</texturesliderbar>
 		<textureslidernib>dialogs/slidernib.png</textureslidernib>
 		<textureslidernibfocus>dialogs/slidernibfocus.png</textureslidernibfocus>
