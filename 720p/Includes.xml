@@ -355,7 +355,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<font>list1</font>
-			<textcolor>DarkGray</textcolor>
+			<textcolor>Gray</textcolor>
 		</control>
 	</include>
 	<include name="HeaderVideo">
