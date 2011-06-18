@@ -6,7 +6,7 @@
 		<include>Background_Home</include>
 		<control type="group">
 			<control type="list" id="300">
-				<posx>659</posx>
+				<posx>664</posx>
 				<posy>253</posy>
 				<width>551</width>
 				<height>435</height>

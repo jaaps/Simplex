@@ -737,7 +737,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>Gray</textcolor>
-						<label>$INFO[ListItem.Episode] ($INFO[ListItem.TVShowTitle], Season $INFO[ListItem.Season])</label>
+						<label>$INFO[ListItem.Episode] (Season $INFO[ListItem.Season])</label>
 					</control>
 					<control type="label">
 						<posx>96</posx>

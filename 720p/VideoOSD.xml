@@ -214,6 +214,7 @@
 					<font>info1</font>
 					<align>left</align>
 					<colordiffuse>d0FFFFFF</colordiffuse>
+					<shadowcolor>ff000000</shadowcolor>
 					<label>$INFO[VideoPlayer.Time]</label>
 				</control>
 				<control type="label">
@@ -224,6 +225,7 @@
 					<font>info1</font>
 					<align>right</align>
 					<colordiffuse>d0FFFFFF</colordiffuse>
+					<shadowcolor>ff000000</shadowcolor>
 					<label>$INFO[VideoPlayer.TimeRemaining]</label>
 				</control>
 			</control>
