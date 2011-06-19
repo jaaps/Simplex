@@ -6,6 +6,7 @@
 		<include>Background</include>
 		<control type="group">
 			<include>Header</include>
+			<include>HeaderAudio</include>
 			<include>List</include>
 		</control>
 	</controls>
