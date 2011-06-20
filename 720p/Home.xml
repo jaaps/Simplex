@@ -6,7 +6,7 @@
 		<include>Background_Home</include>
 		<control type="group">
 			<control type="list" id="300">
-				<posx>659</posx>
+				<posx>664</posx>
 				<posy>253</posy>
 				<width>551</width>
 				<height>426</height>
@@ -25,7 +25,7 @@
 						<posx>0</posx>
 						<control type="label">
 							<posy>0</posy>
-							<posx>35</posx>
+							<posx>30</posx>
 							<width>430</width>
 							<height>50</height>
 							<aligny>center</aligny>
@@ -51,7 +51,7 @@
 						<posx>0</posx>
 						<control type="label">
 							<posy>0</posy>
-							<posx>35</posx>
+							<posx>30</posx>
 							<width>430</width>
 							<height>50</height>
 							<aligny>center</aligny>
