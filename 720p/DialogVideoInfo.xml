@@ -463,35 +463,6 @@
 						<textcolor>DarkGray</textcolor>
 						<label>Details</label>
 					</control>
-					<control type="label">
-						<posx>206</posx>
-						<height>23</height>
-						<font>info2</font>
-						<align>left</align>
-						<aligny>bottom</aligny>
-						<textcolor>DarkGray</textcolor>
-						<label>Starring</label>
-					</control>
-					<control type="label">
-						<posy>72</posy>
-						<posx>206</posx>
-						<height>20</height>
-						<font>info2</font>
-						<align>left</align>
-						<aligny>bottom</aligny>
-						<textcolor>DarkGray</textcolor>
-						<label>Director</label>
-					</control>
-					<control type="label">
-						<posy>72</posy>
-						<posx>506</posx>
-						<height>20</height>
-						<font>info2</font>
-						<align>left</align>
-						<aligny>bottom</aligny>
-						<textcolor>DarkGray</textcolor>
-						<label>Writer</label>
-					</control>
 					<control type="grouplist">
 						<orientation>vertical</orientation>
 						<posy>24</posy>
@@ -538,60 +509,13 @@
 							<aspectratio aligny="bottom" align="left">keep</aspectratio>
 						</control>
 					</control>
-					<control type="grouplist">
-						<orientation>vertical</orientation>
-						<posy>24</posy>
-						<posx>206</posx>
-						<control type="label">
-							<width>650</width>
-							<height>19</height>
-							<font>info1</font>
-							<align>left</align>
-							<aligny>bottom</aligny>
-							<textcolor>Gray</textcolor>
-							<label>$INFO[ListItem.Cast]</label>
-							<wrapmultiline>true</wrapmultiline>
-						</control>
-					</control>
-					<control type="grouplist">
-						<orientation>vertical</orientation>
-						<posy>96</posy>
-						<posx>206</posx>
-						<control type="label">
-							<width>280</width>
-							<height>19</height>
-							<font>info1</font>
-							<align>left</align>
-							<aligny>bottom</aligny>
-							<textcolor>Gray</textcolor>
-							<label>$INFO[ListItem.Director]</label>
-							<wrapmultiline>true</wrapmultiline>
-						</control>
-					</control>
-					<control type="grouplist">
-						<orientation>vertical</orientation>
-						<posy>96</posy>
-						<posx>506</posx>
-						<control type="label">
-							<width>280</width>
-							<height>19</height>
-							<font>info1</font>
-							<align>left</align>
-							<aligny>bottom</aligny>
-							<textcolor>Gray</textcolor>
-							<label>$INFO[ListItem.Writer]</label>
-							<wrapmultiline>true</wrapmultiline>
-						</control>
-					</control>
 				</control>
 			</control>
 		</control>
 		<control type="list" id="50">
 			<itemlayout height="50">
-
 		</itemlayout>
 			<focusedlayout height="50">
-
 		</focusedlayout>
 		</control>
 	</controls>

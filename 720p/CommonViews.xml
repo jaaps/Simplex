@@ -588,7 +588,7 @@
 				<control type="textbox">
 					<description>Plot/Details</description>
 					<width>504</width>
-					<height>144</height>
+					<height>168</height>
 					<label>$INFO[Container.Property(description)]</label>
 					<textcolor>Gray</textcolor>
 					<font>plot1</font>
@@ -609,17 +609,6 @@
 						<label>Episodes:</label>
 					</control>
 					<control type="label">
-						<posx>89</posx>
-						<posy>27</posy>
-						<width>90</width>
-						<height>25</height>
-						<font>info2</font>
-						<align>right</align>
-						<aligny>center</aligny>
-						<textcolor>DarkGray</textcolor>
-						<label>Genre:</label>
-					</control>
-					<control type="label">
 						<posx>96</posx>
 						<posy>3</posy>
 						<width>400</width>
@@ -629,17 +618,6 @@
 						<aligny>center</aligny>
 						<textcolor>Gray</textcolor>
 						<label>$INFO[ListItem.Episode] $INFO[ListItem.Property(UnWatchedEpisodes),(, unwatched)]</label>
-					</control>
-					<control type="label">
-						<posx>96</posx>
-						<posy>27</posy>
-						<width>400</width>
-						<height>25</height>
-						<font>info1</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>Gray</textcolor>
-						<info>ListItem.Genre</info>
 					</control>
 				</control>
 			</control>
@@ -831,6 +809,16 @@
 						<posy>27</posy>
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
 					</control>
+					<control type="image">
+						<align>right</align>
+						<posx>478</posx>
+						<posy>21</posy>
+						<height>28</height>
+						<width>80</width>
+						<texture>$INFO[ListItem.Property(mediaTag::contentRating)]</texture>
+						<aspectratio aligny="bottom" align="left">keep</aspectratio>
+						<include>ratingsFlag</include>
+					</control>
 				</control>
 				<control type="textbox">
 					<description>Plot/Details</description>
@@ -848,7 +836,7 @@
 				<posx>664</posx>
 				<posy>253</posy>
 				<width>551</width>
-				<height>435</height>
+				<height>426</height>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<onup>50</onup>
@@ -859,8 +847,6 @@
 					<control type="group">
 						<posy>0</posy>
 						<posx>0</posx>
-						<animation effect="fade" start="100" end="100" delay="200" time="120">Hidden</animation>
-						<visible>!Container.OnNext + !Container.OnPrevious</visible>
 						<control type="group">
 							<visible>Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies)</visible>
 							<control type="label">
@@ -947,8 +933,6 @@
 						<animation effect="slide" start="0,53" end="0,0" time="200" reversible="false" easing="out" condition="Container(50).OnPrevious">Focus</animation>
 					</control>
 					<control type="group">
-						<animation effect="fade" start="0" end="100" delay="0" time="220">Visible</animation>
-						<visible>!Container.OnNext + !Container.OnPrevious</visible>
 						<posy>0</posy>
 						<posx>0</posx>
 						<control type="group">
