@@ -276,13 +276,13 @@
 					<height>53</height>
 					<control type="grouplist">
 						<visible>!Skin.HasSetting(Flags)</visible>
-						<width>330</width>
+						<width>350</width>
 						<orientation>vertical</orientation>
 						<height>52</height>
 						<itemgap>3</itemgap>
 						<aligny>bottom</aligny>
 						<control type="label">
-							<width>360</width>
+							<width>350</width>
 							<height>22</height>
 							<font>title1</font>
 							<align>left</align>
@@ -292,7 +292,7 @@
 							<visible>!IsEmpty(ListItem.Tagline)</visible>
 						</control>
 						<control type="label">
-							<width>360</width>
+							<width>350</width>
 							<height>23</height>
 							<font>info1</font>
 							<align>left</align>
@@ -302,7 +302,7 @@
 							<visible>!IsEmpty(ListItem.Tagline)</visible>
 						</control>
 						<control type="label">
-							<width>360</width>
+							<width>350</width>
 							<height>23</height>
 							<font>info1</font>
 							<align>left</align>
@@ -312,7 +312,7 @@
 							<visible>IsEmpty(ListItem.Tagline)</visible>
 						</control>
 						<control type="label">
-							<width>360</width>
+							<width>350</width>
 							<height>22</height>
 							<font>title1</font>
 							<align>left</align>
@@ -437,7 +437,7 @@
 					<control type="label">
 						<posx>0</posx>
 						<posy>2</posy>
-						<width>360</width>
+						<width>340</width>
 						<height>22</height>
 						<font>title1</font>
 						<align>left</align>
@@ -557,7 +557,7 @@
 					<control type="label">
 						<posx>0</posx>
 						<posy>2</posy>
-						<width>360</width>
+						<width>340</width>
 						<height>22</height>
 						<font>title1</font>
 						<align>left</align>
@@ -655,7 +655,7 @@
 					<control type="label">
 						<posx>0</posx>
 						<posy>2</posy>
-						<width>360</width>
+						<width>340</width>
 						<height>22</height>
 						<font>title1</font>
 						<align>left</align>
@@ -776,13 +776,13 @@
 					<height>53</height>
 					<control type="grouplist">
 						<visible>!Skin.HasSetting(Flags)</visible>
-						<width>330</width>
+						<width>460</width>
 						<orientation>vertical</orientation>
 						<height>52</height>
 						<itemgap>3</itemgap>
 						<aligny>bottom</aligny>
 						<control type="label">
-							<width>360</width>
+							<width>390</width>
 							<height>22</height>
 							<font>title1</font>
 							<align>left</align>
@@ -792,7 +792,7 @@
 							<visible>!IsEmpty(ListItem.Label2)</visible>
 						</control>
 						<control type="label">
-							<width>360</width>
+							<width>390</width>
 							<height>23</height>
 							<font>info1</font>
 							<align>left</align>
@@ -802,7 +802,7 @@
 							<visible>!IsEmpty(ListItem.Label2)</visible>
 						</control>
 						<control type="label">
-							<width>360</width>
+							<width>390</width>
 							<height>23</height>
 							<font>info1</font>
 							<align>left</align>
@@ -812,7 +812,7 @@
 							<visible>IsEmpty(ListItem.Label2)</visible>
 						</control>
 						<control type="label">
-							<width>360</width>
+							<width>390</width>
 							<height>22</height>
 							<font>title1</font>
 							<align>left</align>
@@ -827,19 +827,9 @@
 						<height>17</height>
 						<info>ListItem.StarRating</info>
 						<align>right</align>
-						<posx>359</posx>
+						<posx>405</posx>
 						<posy>27</posy>
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
-					</control>
-					<control type="image">
-						<align>right</align>
-						<posx>478</posx>
-						<posy>21</posy>
-						<height>28</height>
-						<width>80</width>
-						<texture>$INFO[ListItem.Property(mediaTag::contentRating)]</texture>
-						<aspectratio aligny="bottom" align="left">keep</aspectratio>
-						<include>ratingsFlag</include>
 					</control>
 				</control>
 				<control type="textbox">
