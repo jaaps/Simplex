@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <window id="200">
+	<animation effect="fade" time="300">WindowOpen</animation>
+	<animation effect="fade" time="300">WindowClose</animation>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
