@@ -836,7 +836,7 @@
 				<posx>664</posx>
 				<posy>253</posy>
 				<width>551</width>
-				<height>426</height>
+				<height>435</height>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<onup>50</onup>
@@ -860,7 +860,6 @@
 								<textcolor>White</textcolor>
 								<scroll>false</scroll>
 								<font>list1</font>
-								<wrapmultiline>false</wrapmultiline>
 							</control>
 							<control type="label">
 								<visible>Container.Content(episodes) + IsEmpty(Container.Property(mixedParents))</visible>
@@ -873,7 +872,6 @@
 								<textcolor>White</textcolor>
 								<scroll>false</scroll>
 								<font>list1</font>
-								<wrapmultiline>false</wrapmultiline>
 							</control>
 							<control type="label">
 								<visible>Container.Content(episodes) + !IsEmpty(Container.Property(mixedParents))</visible>
@@ -886,7 +884,6 @@
 								<textcolor>White</textcolor>
 								<scroll>false</scroll>
 								<font>list1</font>
-								<wrapmultiline>false</wrapmultiline>
 							</control>
 							<control type="image">
 								<posy>1</posy>
@@ -906,7 +903,7 @@
 							</control>
 						</control>
 						<control type="group">
-							<visible>!Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons)  + !Container.Content(movies)</visible>
+							<visible>!Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(movies)</visible>
 							<control type="label">
 								<posy>0</posy>
 								<posx>30</posx>
@@ -917,7 +914,6 @@
 								<textcolor>White</textcolor>
 								<scroll>false</scroll>
 								<font>list1</font>
-								<wrapmultiline>false</wrapmultiline>
 							</control>
 						</control>
 					</control>
@@ -932,7 +928,10 @@
 						<animation effect="slide" start="0,-53" end="0,0" time="200" reversible="false" easing="out" condition="Container(50).OnNext">Focus</animation>
 						<animation effect="slide" start="0,53" end="0,0" time="200" reversible="false" easing="out" condition="Container(50).OnPrevious">Focus</animation>
 					</control>
+					<!-- UNFOCUS -> FADEOUT -->
 					<control type="group">
+						<animation effect="fade" start="100" end="0" delay="210" time="250" reversible="false">Hidden</animation>
+						<visible>Container.OnNext | Container.OnPrevious</visible>
 						<posy>0</posy>
 						<posx>0</posx>
 						<control type="group">
@@ -945,8 +944,8 @@
 								<height>50</height>
 								<aligny>center</aligny>
 								<info>ListItem.Label</info>
-								<textcolor>Orange</textcolor>
-								<scroll>true</scroll>
+								<textcolor>White</textcolor>
+								<scroll>false</scroll>
 								<font>list1</font>
 							</control>
 							<control type="label">
@@ -957,8 +956,8 @@
 								<aligny>center</aligny>
 								<height>50</height>
 								<label>$INFO[ListItem.Episode]. $INFO[ListItem.Label]</label>
-								<textcolor>Orange</textcolor>
-								<scroll>true</scroll>
+								<textcolor>White</textcolor>
+								<scroll>false</scroll>
 								<font>list1</font>
 							</control>
 							<control type="label">
@@ -969,8 +968,8 @@
 								<aligny>center</aligny>
 								<height>50</height>
 								<label>$INFO[ListItem.Label]</label>
-								<textcolor>Orange</textcolor>
-								<scroll>true</scroll>
+								<textcolor>White</textcolor>
+								<scroll>false</scroll>
 								<font>list1</font>
 							</control>
 							<control type="image">
@@ -986,12 +985,12 @@
 								<posx>450</posx>
 								<width>36</width>
 								<height>54</height>
-								<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution/focus/,.png]</texture>
+								<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution/unfocus/,.png]</texture>
 								<aspectratio align="left" aligny="center">keep</aspectratio>
 							</control>
 						</control>
 						<control type="group">
-							<visible>!Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons)  + !Container.Content(movies)</visible>
+							<visible>!Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(movies)</visible>
 							<control type="label">
 								<posy>0</posy>
 								<posx>30</posx>
@@ -999,11 +998,84 @@
 								<height>50</height>
 								<aligny>center</aligny>
 								<info>ListItem.Label</info>
-								<textcolor>Orange</textcolor>
-								<scroll>true</scroll>
+								<textcolor>White</textcolor>
+								<scroll>false</scroll>
 								<font>list1</font>
 							</control>
 						</control>
+					</control>
+					<!-- FOCUS -> FADEIN -->
+					<control type="label">
+						<visible>!Container.Content(episodes) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies)] + [!Container.OnNext + !Container.OnPrevious]</visible>
+						<posy>0</posy>
+						<posx>30</posx>
+						<width>390</width>
+						<height>50</height>
+						<aligny>center</aligny>
+						<info>ListItem.Label</info>
+						<textcolor>Orange</textcolor>
+						<scroll>false</scroll>
+						<font>list1</font>
+						<animation effect="fade" start="0" end="100" delay="180" time="250">Visible</animation>
+					</control>
+					<control type="label">
+						<visible>Container.Content(episodes) + IsEmpty(Container.Property(mixedParents)) + [!Container.OnNext + !Container.OnPrevious]</visible>
+						<posy>0</posy>
+						<posx>30</posx>
+						<width>390</width>
+						<aligny>center</aligny>
+						<height>50</height>
+						<label>$INFO[ListItem.Episode]. $INFO[ListItem.Label]</label>
+						<textcolor>Orange</textcolor>
+						<scroll>false</scroll>
+						<font>list1</font>
+						<animation effect="fade" start="0" end="100" delay="180" time="250">Visible</animation>
+					</control>
+					<control type="label">
+						<visible>Container.Content(episodes) + !IsEmpty(Container.Property(mixedParents)) + [!Container.OnNext + !Container.OnPrevious]</visible>
+						<posy>0</posy>
+						<posx>30</posx>
+						<width>390</width>
+						<aligny>center</aligny>
+						<height>50</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>Orange</textcolor>
+						<scroll>false</scroll>
+						<font>list1</font>
+						<animation effect="fade" start="0" end="100" delay="180" time="250">Visible</animation>
+					</control>
+					<control type="image">
+						<visible>Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies) + [!Container.OnNext + !Container.OnPrevious]</visible>
+						<posy>1</posy>
+						<posx>10</posx>
+						<width>12</width>
+						<height>52</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<aspectratio align="left" alingy="center">keep</aspectratio>
+						<animation effect="fade" start="0" end="100" delay="180" time="250">Visible</animation>
+					</control>
+					<control type="image">
+						<visible>Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies) + [!Container.OnNext + !Container.OnPrevious]</visible>
+						<posy>0</posy>
+						<posx>450</posx>
+						<width>36</width>
+						<height>54</height>
+						<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution/focus/,.png]</texture>
+						<aspectratio align="left" aligny="center">keep</aspectratio>
+						<animation effect="fade" start="0" end="100" delay="180" time="250">Visible</animation>
+					</control>
+					<control type="label">
+						<visible>!Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(movies) + [!Container.OnNext + !Container.OnPrevious]</visible>
+						<posy>0</posy>
+						<posx>30</posx>
+						<width>390</width>
+						<height>50</height>
+						<aligny>center</aligny>
+						<info>ListItem.Label</info>
+						<textcolor>Orange</textcolor>
+						<scroll>false</scroll>
+						<font>list1</font>
+						<animation effect="fade" start="0" end="100" delay="180" time="250">Visible</animation>
 					</control>
 				</focusedlayout>
 			</control>
