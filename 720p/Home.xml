@@ -7,7 +7,7 @@
 		<control type="group">
 			<control type="list" id="300">
 				<posx>664</posx>
-				<posy>259</posy>
+				<posy>253</posy>
 				<width>551</width>
 				<height>426</height>
 				<onleft>9000</onleft>
