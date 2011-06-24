@@ -836,7 +836,7 @@
 				<posx>664</posx>
 				<posy>253</posy>
 				<width>551</width>
-				<height>435</height>
+				<height>426</height>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<onup>50</onup>
@@ -900,6 +900,28 @@
 								<height>54</height>
 								<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution/unfocus/,.png]</texture>
 								<aspectratio align="left" aligny="center">keep</aspectratio>
+							</control>
+							<control type="image">
+								<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
+								<posy>11</posy>
+								<posx>450</posx>
+								<width>42</width>
+								<height>31</height>
+								<texture>unwatchedlabel.png</texture>
+								<animation effect="fade" start="0" end="100" delay="180" time="250">Visible</animation>
+							</control>
+							<control type="label">
+								<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
+								<posy>9</posy>
+								<posx>471</posx>
+								<width>42</width>
+								<height>31</height>
+								<align>center</align>
+								<aligny>center</aligny>
+								<font>plot1</font>
+								<color>Gray</color>
+								<info>ListItem.Property(UnWatchedEpisodes)</info>
+								<animation effect="fade" start="0" end="100" delay="180" time="250">Visible</animation>
 							</control>
 						</control>
 						<control type="group">
@@ -988,6 +1010,28 @@
 								<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution/unfocus/,.png]</texture>
 								<aspectratio align="left" aligny="center">keep</aspectratio>
 							</control>
+							<control type="image">
+								<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
+								<posy>11</posy>
+								<posx>450</posx>
+								<width>42</width>
+								<height>31</height>
+								<texture>unwatchedlabel.png</texture>
+								<animation effect="fade" start="0" end="100" delay="180" time="250">Visible</animation>
+							</control>
+							<control type="label">
+								<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
+								<posy>9</posy>
+								<posx>471</posx>
+								<width>42</width>
+								<height>31</height>
+								<align>center</align>
+								<aligny>center</aligny>
+								<font>plot1</font>
+								<color>Gray</color>
+								<info>ListItem.Property(UnWatchedEpisodes)</info>
+								<animation effect="fade" start="0" end="100" delay="180" time="250">Visible</animation>
+							</control>
 						</control>
 						<control type="group">
 							<visible>!Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(movies)</visible>
@@ -1055,13 +1099,35 @@
 						<animation effect="fade" start="0" end="100" delay="180" time="250">Visible</animation>
 					</control>
 					<control type="image">
-						<visible>Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies) + [!Container.OnNext + !Container.OnPrevious]</visible>
+						<visible>Container.Content(episodes) | Container.Content(movies) + [!Container.OnNext + !Container.OnPrevious]</visible>
 						<posy>0</posy>
 						<posx>450</posx>
 						<width>36</width>
 						<height>54</height>
 						<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution/focus/,.png]</texture>
 						<aspectratio align="left" aligny="center">keep</aspectratio>
+						<animation effect="fade" start="0" end="100" delay="180" time="250">Visible</animation>
+					</control>
+					<control type="image">
+						<visible>Container.Content(tvshows) | Container.Content(seasons) + [!Container.OnNext + !Container.OnPrevious]</visible>
+						<posy>11</posy>
+						<posx>450</posx>
+						<width>42</width>
+						<height>31</height>
+						<texture>unwatchedlabelfocus.png</texture>
+						<animation effect="fade" start="0" end="100" delay="180" time="250">Visible</animation>
+					</control>
+					<control type="label">
+						<visible>Container.Content(tvshows) | Container.Content(seasons) + [!Container.OnNext + !Container.OnPrevious]</visible>
+						<posy>9</posy>
+						<posx>471</posx>
+						<width>42</width>
+						<height>31</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>plot1</font>
+						<color>White</color>
+						<info>ListItem.Property(UnWatchedEpisodes)</info>
 						<animation effect="fade" start="0" end="100" delay="180" time="250">Visible</animation>
 					</control>
 					<control type="label">
