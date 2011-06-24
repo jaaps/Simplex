@@ -1154,7 +1154,7 @@
 								<posy>5</posy>
 								<posx>30</posx>
 								<width>390</width>
-								<label>$INFO[ListItem.Label]</label>
+								<label>$INFO[ListItem.Episode,,. ]$INFO[ListItem.Label]</label>
 								<textcolor>White</textcolor>
 								<scroll>false</scroll>
 								<font>list1</font>
@@ -1210,7 +1210,7 @@
 								<posy>5</posy>
 								<posx>30</posx>
 								<width>390</width>
-								<label>$INFO[ListItem.Label]</label>
+								<label>$INFO[ListItem.Episode,,. ]$INFO[ListItem.Label]</label>
 								<textcolor>White</textcolor>
 								<scroll>false</scroll>
 								<font>list1</font>
@@ -1249,7 +1249,7 @@
 						<posy>5</posy>
 						<posx>30</posx>
 						<width>390</width>
-						<label>$INFO[ListItem.Label]</label>
+						<label>$INFO[ListItem.Episode,,. ]$INFO[ListItem.Label]</label>
 						<textcolor>Orange</textcolor>
 						<scroll>false</scroll>
 						<font>list1</font>
