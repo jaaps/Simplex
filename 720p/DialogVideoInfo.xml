@@ -244,11 +244,11 @@
 							<visible>!IsEmpty(ListItem.Duration)</visible>
 						</control>
 						<control type="image">
-							<width>98</width>
-							<height>21</height>
+							<width>106</width>
+							<height>18</height>
 							<info>ListItem.StarRating</info>
 							<posx>357</posx>
-							<posy>27</posy>
+							<posy>26</posy>
 							<aspectratio aligny="bottom" align="left">keep</aspectratio>
 						</control>
 					</control>
@@ -501,11 +501,11 @@
 							<visible>!IsEmpty(ListItem.Duration)</visible>
 						</control>
 						<control type="image">
-							<width>98</width>
-							<height>21</height>
+							<width>106</width>
+							<height>18</height>
 							<info>ListItem.StarRating</info>
 							<posx>357</posx>
-							<posy>27</posy>
+							<posy>26</posy>
 							<aspectratio aligny="bottom" align="left">keep</aspectratio>
 						</control>
 					</control>
