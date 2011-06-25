@@ -274,7 +274,7 @@
 						<height>17</height>
 						<info>ListItem.StarRating</info>
 						<align>left</align>
-						<posx>405</posx>
+						<posx>406</posx>
 						<posy>5</posy>
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
 					</control>
@@ -315,7 +315,7 @@
 						<height>17</height>
 						<info>ListItem.StarRating</info>
 						<align>left</align>
-						<posx>405</posx>
+						<posx>406</posx>
 						<posy>5</posy>
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
 					</control>
@@ -353,7 +353,7 @@
 						<height>17</height>
 						<info>ListItem.StarRating</info>
 						<align>left</align>
-						<posx>405</posx>
+						<posx>406</posx>
 						<posy>5</posy>
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
 					</control>
@@ -391,7 +391,7 @@
 						<height>17</height>
 						<info>ListItem.StarRating</info>
 						<align>left</align>
-						<posx>405</posx>
+						<posx>406</posx>
 						<posy>5</posy>
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
 					</control>
@@ -468,7 +468,7 @@
 						<height>17</height>
 						<info>ListItem.StarRating</info>
 						<align>right</align>
-						<posx>405</posx>
+						<posx>406</posx>
 						<posy>27</posy>
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
 					</control>
