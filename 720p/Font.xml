@@ -69,9 +69,15 @@
 		</font>
 		<font>
 			<name>list2</name>
-			<filename>Helvetica</filename>
+			<filename>HelveticaNeue</filename>
+			<variant>Medium</variant>
+			<size>24</size>
+		</font>
+		<font>
+			<name>list3</name>
+			<filename>HelveticaNeue</filename>
 			<variant>Bold</variant>
-			<size>25</size>
+			<size>16</size>
 		</font>
 		<font>
 			<name>settings</name>
@@ -114,7 +120,7 @@
 			<size>17</size>
 		</font>
 		<font>
-			<name>info3</name>
+			<name>info4</name>
 			<filename>Helvetica</filename>
 			<variant>Regular</variant>
 			<size>14</size>

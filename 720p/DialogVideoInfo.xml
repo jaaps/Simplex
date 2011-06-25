@@ -30,18 +30,10 @@
 					<height>19</height>
 				</control>
 				<control type="image">
-					<texture diffuse="posterbig_mask.png">$INFO[ListItem.Thumb]</texture>
+					<texture>$INFO[ListItem.Thumb]</texture>
 					<posy>258</posy>
 					<posx>81</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<width>261</width>
-					<height>391</height>
-				</control>
-				<control type="image">
-					<texture>posterbig_overlay.png</texture>
-					<posy>258</posy>
-					<posx>81</posx>
-					<aspectratio scalediffuse="false">keep</aspectratio>
 					<width>261</width>
 					<height>391</height>
 				</control>
@@ -326,18 +318,10 @@
 					<height>19</height>
 				</control>
 				<control type="image">
-					<texture diffuse="posterbig_mask.png">$INFO[ListItem.Thumb]</texture>
+					<texture>$INFO[ListItem.Thumb]</texture>
 					<posy>258</posy>
 					<posx>81</posx>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<width>261</width>
-					<height>391</height>
-				</control>
-				<control type="image">
-					<texture>posterbig_overlay.png</texture>
-					<posy>258</posy>
-					<posx>81</posx>
-					<aspectratio scalediffuse="false">keep</aspectratio>
 					<width>261</width>
 					<height>391</height>
 				</control>

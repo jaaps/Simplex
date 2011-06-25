@@ -61,7 +61,7 @@
 				<control type="grouplist" id="213">
 					<width>790</width>
 					<posx>333</posx>
-					<posy>18</posy>
+					<posy>19</posy>
 					<height>96</height>
 					<itemgap>0</itemgap>
 					<onup>-</onup>
@@ -192,7 +192,7 @@
 					<posx>132</posx>
 					<posy>64</posy>
 					<width>808</width>
-					<height>16</height>
+					<height>15</height>
 					<info>Player.Progress</info>
 					<visible>true</visible>
 				</control>
@@ -204,7 +204,6 @@
 					<font>osd1</font>
 					<align>left</align>
 					<textcolor>Orange</textcolor>
-					<shadowcolor>89000000</shadowcolor>
 					<label>$INFO[VideoPlayer.Title]</label>
 					<autoscroll>false</autoscroll>
 					<scroll>false</scroll>
@@ -216,8 +215,7 @@
 					<height>16</height>
 					<font>info1</font>
 					<align>center</align>
-					<textcolor>Gray</textcolor>
-					<shadowcolor>89000000</shadowcolor>
+					<textcolor>White</textcolor>
 					<label>$INFO[VideoPlayer.Time]</label>
 				</control>
 				<control type="label">
@@ -227,8 +225,7 @@
 					<height>16</height>
 					<font>info1</font>
 					<align>center</align>
-					<textcolor>Gray</textcolor>
-					<shadowcolor>89000000</shadowcolor>
+					<textcolor>White</textcolor>
 					<label>$INFO[VideoPlayer.TimeRemaining]</label>
 				</control>
 			</control>
