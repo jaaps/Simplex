@@ -257,11 +257,10 @@
 						<visible>!Skin.HasSetting(Flags)</visible>
 						<width>350</width>
 						<orientation>vertical</orientation>
-						<height>22</height>
 						<aligny>bottom</aligny>
 						<control type="label">
 							<width>350</width>
-							<height>22</height>
+							<height>28</height>
 							<font>title1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
@@ -304,7 +303,7 @@
 					<height>31</height>
 					<control type="label">
 						<width>350</width>
-						<height>22</height>
+						<height>28</height>
 						<font>title1</font>
 						<align>left</align>
 						<aligny>bottom</aligny>
@@ -342,7 +341,7 @@
 					<height>31</height>
 					<control type="label">
 						<width>350</width>
-						<height>22</height>
+						<height>28</height>
 						<font>title1</font>
 						<align>left</align>
 						<aligny>bottom</aligny>
@@ -380,7 +379,7 @@
 					<height>31</height>
 					<control type="label">
 						<width>350</width>
-						<height>22</height>
+						<height>28</height>
 						<font>title1</font>
 						<align>left</align>
 						<aligny>bottom</aligny>
@@ -422,11 +421,10 @@
 						<visible>!Skin.HasSetting(Flags)</visible>
 						<width>350</width>
 						<orientation>vertical</orientation>
-						<height>22</height>
 						<aligny>bottom</aligny>
 						<control type="label">
 							<width>350</width>
-							<height>22</height>
+							<height>28</height>
 							<font>title1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
@@ -436,7 +434,7 @@
 						</control>
 						<control type="label">
 							<width>350</width>
-							<height>22</height>
+							<height>28</height>
 							<font>info1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
@@ -446,7 +444,7 @@
 						</control>
 						<control type="label">
 							<width>350</width>
-							<height>22</height>
+							<height>28</height>
 							<font>info1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
@@ -456,7 +454,7 @@
 						</control>
 						<control type="label">
 							<width>350</width>
-							<height>22</height>
+							<height>28</height>
 							<font>title1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
