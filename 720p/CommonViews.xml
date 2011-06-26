@@ -547,7 +547,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<font>list3</font>
-								<color>DarkGray</color>
+								<textcolor>DarkGray</textcolor>
 								<info>ListItem.Property(UnWatchedEpisodes)</info>
 								<animation effect="fade" start="0" end="100" delay="180" time="250">Visible</animation>
 							</control>
