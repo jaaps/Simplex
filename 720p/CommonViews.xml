@@ -247,7 +247,7 @@
 				<usecontrolcoords>false</usecontrolcoords>
 				<control type="group">
 					<height>31</height>
-					<visible>!IsEmpty(ListItem.StarRating)</visible>
+					<visible>!IsEmpty(ListItem.Rating)</visible>
 					<control type="grouplist">
 						<visible>!Skin.HasSetting(Flags)</visible>
 						<orientation>vertical</orientation>
@@ -274,13 +274,13 @@
 				</control>
 				<control type="group">
 					<height>31</height>
-					<visible>IsEmpty(ListItem.StarRating)</visible>
+					<visible>IsEmpty(ListItem.Rating)</visible>
 					<control type="grouplist">
 						<visible>!Skin.HasSetting(Flags)</visible>
 						<orientation>vertical</orientation>
 						<aligny>bottom</aligny>
 						<control type="label">
-							<width>450</width>
+							<width>505</width>
 							<height>28</height>
 							<font>title1</font>
 							<align>left</align>
@@ -312,6 +312,7 @@
 				<usecontrolcoords>false</usecontrolcoords>
 				<control type="group">
 					<height>31</height>
+					<visible>!IsEmpty(ListItem.Rating)</visible>
 					<control type="label">
 						<width>385</width>
 						<height>28</height>
@@ -329,6 +330,24 @@
 						<posx>406</posx>
 						<posy>5</posy>
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
+					</control>
+				</control>
+				<control type="group">
+					<height>31</height>
+					<visible>IsEmpty(ListItem.Rating)</visible>
+					<control type="grouplist">
+						<visible>!Skin.HasSetting(Flags)</visible>
+						<orientation>vertical</orientation>
+						<aligny>bottom</aligny>
+						<control type="label">
+							<width>505</width>
+							<height>28</height>
+							<font>title1</font>
+							<align>left</align>
+							<aligny>bottom</aligny>
+							<textcolor>Orange</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
 					</control>
 				</control>
 				<control type="textbox">
@@ -350,6 +369,7 @@
 				<usecontrolcoords>false</usecontrolcoords>
 				<control type="group">
 					<height>31</height>
+					<visible>!IsEmpty(ListItem.Rating)</visible>
 					<control type="label">
 						<width>385</width>
 						<height>28</height>
@@ -367,6 +387,24 @@
 						<posx>406</posx>
 						<posy>5</posy>
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
+					</control>
+				</control>
+				<control type="group">
+					<height>31</height>
+					<visible>IsEmpty(ListItem.Rating)</visible>
+					<control type="grouplist">
+						<visible>!Skin.HasSetting(Flags)</visible>
+						<orientation>vertical</orientation>
+						<aligny>bottom</aligny>
+						<control type="label">
+							<width>505</width>
+							<height>28</height>
+							<font>title1</font>
+							<align>left</align>
+							<aligny>bottom</aligny>
+							<textcolor>Orange</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
 					</control>
 				</control>
 				<control type="textbox">
@@ -428,6 +466,7 @@
 				<usecontrolcoords>false</usecontrolcoords>
 				<control type="group">
 					<height>31</height>
+					<visible>!IsEmpty(ListItem.Rating)</visible>
 					<control type="grouplist">
 						<visible>!Skin.HasSetting(Flags)</visible>
 						<orientation>vertical</orientation>
@@ -441,15 +480,6 @@
 							<textcolor>Orange</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
-						<control type="label">
-							<width>385</width>
-							<height>28</height>
-							<font>info1</font>
-							<align>left</align>
-							<aligny>bottom</aligny>
-							<textcolor>White</textcolor>
-							<label>$INFO[ListItem.Label2]</label>
-						</control>
 					</control>
 					<control type="image">
 						<width>98</width>
@@ -461,6 +491,24 @@
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
 					</control>
 				</control>
+					<control type="group">
+						<height>31</height>
+						<visible>IsEmpty(ListItem.Rating)</visible>
+						<control type="grouplist">
+							<visible>!Skin.HasSetting(Flags)</visible>
+							<orientation>vertical</orientation>
+							<aligny>bottom</aligny>
+							<control type="label">
+								<width>505</width>
+								<height>28</height>
+								<font>title1</font>
+								<align>left</align>
+								<aligny>bottom</aligny>
+								<textcolor>Orange</textcolor>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+						</control>
+					</control>
 				<control type="textbox">
 					<description>Plot/Details</description>
 					<width>504</width>
