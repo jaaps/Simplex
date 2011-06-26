@@ -465,7 +465,7 @@
 				<ondown>50</ondown>
 				<viewtype label="List">list</viewtype>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="52" condition="IsEmpty(Container.Property(mixedParents)) + !Container.Content(episodes)">
+				<itemlayout height="52" condition="![!IsEmpty(Container.Property(mixedParents)) + Container.Content(episodes)]">
 					<control type="group">
 						<posy>0</posy>
 						<posx>0</posx>
@@ -524,7 +524,7 @@
 								<aspectratio align="left" aligny="center">keep</aspectratio>
 							</control>
 							<control type="image">
-								<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
+								<visible>Container.Content(tvshows) | Container.Content(seasons) + IsEmpty(ListItem.Property(ZeroEpisodeCount))</visible>
 								<posy>15</posy>
 								<posx>450</posx>
 								<width>36</width>
@@ -533,7 +533,7 @@
 								<animation effect="fade" start="0" end="100" delay="180" time="250">Visible</animation>
 							</control>
 							<control type="label">
-								<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
+								<visible>Container.Content(tvshows) | Container.Content(seasons) + IsEmpty(ListItem.Property(ZeroEpisodeCount))</visible>
 								<posy>11</posy>
 								<posx>468</posx>
 								<width>42</width>
@@ -562,7 +562,7 @@
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout height="52" condition="IsEmpty(Container.Property(mixedParents)) + !Container.Content(episodes)">
+				<focusedlayout height="52" condition="![!IsEmpty(Container.Property(mixedParents)) + Container.Content(episodes)]">
 					<control type="image">
 						<posy>0</posy>
 						<width>512</width>
@@ -633,7 +633,7 @@
 								<aspectratio align="left" aligny="center">keep</aspectratio>
 							</control>
 							<control type="image">
-								<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
+								<visible>Container.Content(tvshows) | Container.Content(seasons) + IsEmpty(ListItem.Property(ZeroEpisodeCount))</visible>
 								<posy>15</posy>
 								<posx>450</posx>
 								<width>36</width>
@@ -642,7 +642,7 @@
 								<animation effect="fade" start="0" end="100" delay="180" time="250">Visible</animation>
 							</control>
 							<control type="label">
-								<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
+								<visible>Container.Content(tvshows) | Container.Content(seasons) + IsEmpty(ListItem.Property(ZeroEpisodeCount))</visible>
 								<posy>11</posy>
 								<posx>468</posx>
 								<width>42</width>
