@@ -13,14 +13,8 @@
 					<posy>258</posy>
 					<visible>IsEmpty(ListItem.Plot)</visible>
 				</control>
-				<control type="image">
-					<texture>poster_background.png</texture>
-					<width>598</width>
-					<height>415</height>
-					<posx>44</posx>
-					<posy>159</posy>
-					<visible>!IsEmpty(ListItem.Plot)</visible>
-				</control>
+				<control type="image"><texture>poster_background.png</texture><width>598</width><height>415</height><posx>44</posx>RatingRating
+<posy>159</posy><visible>!IsEmpty(ListItem.Plot)</visible></control>
 				<control type="image">
 					<texture>plexicon.png</texture>
 					<width>302</width>
@@ -46,28 +40,6 @@
 					<posy>239</posy>
 					<aspectratio aligny="bottom" align="center" scalediffuse="false">keep</aspectratio>
 					<visible>!IsEmpty(ListItem.Plot)</visible>
-				</control>
-				<control type="image">
-					<texture>$INFO[ListItem.Thumb]</texture>
-					<width>450</width>
-					<height>300</height>
-					<posx>116</posx>
-					<posy>318</posy>
-					<aspectratio aligny="bottom" align="center" scalediffuse="false">keep</aspectratio>
-					<visible>IsEmpty(ListItem.Plot)</visible>
-					<bordertexture border="1,1,1,1">thumbborder.png</bordertexture>
-					<bordersize>1</bordersize>
-				</control>
-				<control type="image">
-					<texture>$INFO[ListItem.Thumb]</texture>
-					<width>450</width>
-					<height>280</height>
-					<posx>116</posx>
-					<posy>239</posy>
-					<aspectratio aligny="bottom" align="center" scalediffuse="false">keep</aspectratio>
-					<visible>!IsEmpty(ListItem.Plot)</visible>
-					<bordertexture border="1,1,1,1">thumbborder.png</bordertexture>
-					<bordersize>1</bordersize>
 				</control>
 				<control type="image">
 					<texture diffuse="fade.png" flipy="true">$INFO[ListItem.Thumb]</texture>
@@ -104,9 +76,9 @@
 					<texture diffuse="poster_fade.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<posy>519</posy>
 					<posx>249</posx>
-					<aspectratio>stretch</aspectratio>
-					<width>189</width>
-					<height>279</height>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<width>187</width>
+					<height>280</height>
 				</control>
 				<!-- /Current Thumb reflection-->
 				<!-- Old Thumb reflection -->
@@ -116,9 +88,9 @@
 					<visible>Container.OnPrevious</visible>
 					<posy>519</posy>
 					<posx>249</posx>
-					<aspectratio>stretch</aspectratio>
-					<width>189</width>
-					<height>279</height>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<width>187</width>
+					<height>280</height>
 				</control>
 				<control type="image">
 					<texture diffuse="poster_fade.png" flipy="true">$INFO[ListItem(-1).Thumb]</texture>
@@ -126,9 +98,9 @@
 					<visible>Container.OnNext</visible>
 					<posy>519</posy>
 					<posx>249</posx>
-					<aspectratio>stretch</aspectratio>
-					<width>189</width>
-					<height>279</height>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<width>187</width>
+					<height>280</height>
 				</control>
 				<!-- /Old Thumb reflection -->
 				<!-- Shadow -->
@@ -146,21 +118,11 @@
 					<animation effect="fade" start="0" end="100" time="500" tween="cubic" easing="inout" delay="0">Visible</animation>
 					<visible>!Container.OnNext + !Container.OnPrevious</visible>
 					<texture>$INFO[ListItem.Thumb]</texture>
-					<posy>240</posy>
+					<posy>239</posy>
 					<posx>249</posx>
-					<aspectratio>stretch</aspectratio>
-					<width>189</width>
-					<height>279</height>
-				</control>
-				<control type="image">
-					<texture>$INFO[ListItem.Thumb]</texture>
-					<posy>240</posy>
-					<posx>249</posx>
-					<aspectratio>stretch</aspectratio>
-					<width>189</width>
-					<height>279</height>
-					<bordertexture border="1">thumbborder.png</bordertexture>
-					<bordersize>1</bordersize>
+					<aspectratio>scale</aspectratio>
+					<width>187</width>
+					<height>280</height>
 				</control>
 				<!-- /Current Thumb -->
 				<!-- Old thumb fade out -->
@@ -168,45 +130,21 @@
 					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
 					<visible>Container.OnPrevious</visible>
 					<texture>$INFO[ListItem(1).Thumb]</texture>
-					<posy>240</posy>
+					<posy>239</posy>
 					<posx>249</posx>
-					<aspectratio>stretch</aspectratio>
-					<width>189</width>
-					<height>279</height>
+					<aspectratio>scale</aspectratio>
+					<width>187</width>
+					<height>280</height>
 				</control>
 				<control type="image">
 					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
 					<visible>Container.OnNext</visible>
 					<texture>$INFO[ListItem(-1).Thumb]</texture>
-					<posy>240</posy>
+					<posy>239</posy>
 					<posx>249</posx>
-					<aspectratio>stretch</aspectratio>
-					<width>189</width>
-					<height>279</height>
-				</control>
-				<control type="image">
-					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
-					<visible>Container.OnPrevious</visible>
-					<texture>$INFO[ListItem(1).Thumb]</texture>
-					<posy>240</posy>
-					<posx>249</posx>
-					<aspectratio>stretch</aspectratio>
-					<width>189</width>
-					<height>279</height>
-					<bordertexture border="1">thumbborder.png</bordertexture>
-					<bordersize>1</bordersize>
-				</control>
-				<control type="image">
-					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
-					<visible>Container.OnNext</visible>
-					<texture>$INFO[ListItem(-1).Thumb]</texture>
-					<posy>240</posy>
-					<posx>249</posx>
-					<aspectratio>stretch</aspectratio>
-					<width>189</width>
-					<height>279</height>
-					<bordertexture border="1">thumbborder.png</bordertexture>
-					<bordersize>1</bordersize>
+					<aspectratio>scale</aspectratio>
+					<width>187</width>
+					<height>280</height>
 				</control>
 				<!-- /Old thumb fade out -->
 			</control>
@@ -270,21 +208,9 @@
 					<texture>$INFO[ListItem.Thumb]</texture>
 					<posy>250</posy>
 					<posx>142</posx>
-					<aspectratio scalediffuse="false" align="center" aligny="center">stretch</aspectratio>
+					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>400</width>
 					<height>225</height>
-				</control>
-				<control type="image">
-					<animation effect="fade" start="0" end="100" time="500" tween="cubic" easing="inout" delay="0">Visible</animation>
-					<visible>!Container.OnNext + !Container.OnPrevious</visible>
-					<texture>$INFO[ListItem.Thumb]</texture>
-					<posy>250</posy>
-					<posx>142</posx>
-					<aspectratio scalediffuse="false" align="center" aligny="center">stretch</aspectratio>
-					<width>400</width>
-					<height>225</height>
-					<bordertexture border="1">thumbborder.png</bordertexture>
-					<bordersize>1</bordersize>
 				</control>
 				<!-- /Current Thumb -->
 				<!-- Old thumb fade out -->
@@ -294,7 +220,7 @@
 					<texture>$INFO[ListItem(1).Thumb]</texture>
 					<posy>250</posy>
 					<posx>142</posx>
-					<aspectratio scalediffuse="false" align="center" aligny="bottom">stretch</aspectratio>
+					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>400</width>
 					<height>225</height>
 				</control>
@@ -304,33 +230,9 @@
 					<texture>$INFO[ListItem(-1).Thumb]</texture>
 					<posy>250</posy>
 					<posx>142</posx>
-					<aspectratio scalediffuse="false" align="center" aligny="bottom">stretch</aspectratio>
+					<aspectratio scalediffuse="false">scale</aspectratio>
 					<width>400</width>
 					<height>225</height>
-				</control>
-				<control type="image">
-					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
-					<visible>Container.OnPrevious</visible>
-					<texture>$INFO[ListItem(1).Thumb]</texture>
-					<posy>250</posy>
-					<posx>142</posx>
-					<aspectratio scalediffuse="false" align="center" aligny="bottom">stretch</aspectratio>
-					<width>400</width>
-					<height>225</height>
-					<bordertexture border="1">thumbborder.png</bordertexture>
-					<bordersize>1</bordersize>
-				</control>
-				<control type="image">
-					<animation effect="fade" start="100" end="0" time="500" tween="cubic" easing="inout" delay="0">Hidden</animation>
-					<visible>Container.OnNext</visible>
-					<texture>$INFO[ListItem(-1).Thumb]</texture>
-					<posy>250</posy>
-					<posx>142</posx>
-					<aspectratio scalediffuse="false" align="center" aligny="bottom">stretch</aspectratio>
-					<width>400</width>
-					<height>225</height>
-					<bordertexture border="1">thumbborder.png</bordertexture>
-					<bordersize>1</bordersize>
 				</control>
 				<!-- /Old thumb fade out -->
 			</control>
@@ -965,7 +867,7 @@
 					</control>
 					<!-- FOCUS -> FADEIN -->
 					<control type="label">
-						<visible>Container.Content(episodes)  + [!Container.OnNext + !Container.OnPrevious]</visible>
+						<visible>Container.Content(episodes) + [!Container.OnNext + !Container.OnPrevious]</visible>
 						<posy>3</posy>
 						<posx>30</posx>
 						<width>395</width>
@@ -976,7 +878,7 @@
 						<animation effect="fade" start="0" end="100" delay="180" time="250">Visible</animation>
 					</control>
 					<control type="label">
-						<visible>Container.Content(episodes)  + [!Container.OnNext + !Container.OnPrevious]</visible>
+						<visible>Container.Content(episodes) + [!Container.OnNext + !Container.OnPrevious]</visible>
 						<posy>29</posy>
 						<posx>30</posx>
 						<width>395</width>
