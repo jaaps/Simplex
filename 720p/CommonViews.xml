@@ -255,11 +255,10 @@
 					<height>31</height>
 					<control type="grouplist">
 						<visible>!Skin.HasSetting(Flags)</visible>
-						<width>350</width>
 						<orientation>vertical</orientation>
 						<aligny>bottom</aligny>
 						<control type="label">
-							<width>350</width>
+							<width>385</width>
 							<height>28</height>
 							<font>title1</font>
 							<align>left</align>
@@ -302,7 +301,7 @@
 				<control type="group">
 					<height>31</height>
 					<control type="label">
-						<width>350</width>
+						<width>385</width>
 						<height>28</height>
 						<font>title1</font>
 						<align>left</align>
@@ -340,7 +339,7 @@
 				<control type="group">
 					<height>31</height>
 					<control type="label">
-						<width>350</width>
+						<width>385</width>
 						<height>28</height>
 						<font>title1</font>
 						<align>left</align>
@@ -378,7 +377,7 @@
 				<control type="group">
 					<height>31</height>
 					<control type="label">
-						<width>350</width>
+						<width>385</width>
 						<height>28</height>
 						<font>title1</font>
 						<align>left</align>
@@ -419,11 +418,10 @@
 					<height>31</height>
 					<control type="grouplist">
 						<visible>!Skin.HasSetting(Flags)</visible>
-						<width>350</width>
 						<orientation>vertical</orientation>
 						<aligny>bottom</aligny>
 						<control type="label">
-							<width>350</width>
+							<width>385</width>
 							<height>28</height>
 							<font>title1</font>
 							<align>left</align>
@@ -433,7 +431,7 @@
 							<visible>!IsEmpty(ListItem.Label2)</visible>
 						</control>
 						<control type="label">
-							<width>350</width>
+							<width>385</width>
 							<height>28</height>
 							<font>info1</font>
 							<align>left</align>
@@ -443,7 +441,7 @@
 							<visible>!IsEmpty(ListItem.Label2)</visible>
 						</control>
 						<control type="label">
-							<width>350</width>
+							<width>385</width>
 							<height>28</height>
 							<font>info1</font>
 							<align>left</align>
@@ -453,7 +451,7 @@
 							<visible>IsEmpty(ListItem.Label2)</visible>
 						</control>
 						<control type="label">
-							<width>350</width>
+							<width>385</width>
 							<height>28</height>
 							<font>title1</font>
 							<align>left</align>
