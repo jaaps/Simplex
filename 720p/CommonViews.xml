@@ -247,6 +247,7 @@
 				<usecontrolcoords>false</usecontrolcoords>
 				<control type="group">
 					<height>31</height>
+					<visible>!IsEmpty(ListItem.StarRating)</visible>
 					<control type="grouplist">
 						<visible>!Skin.HasSetting(Flags)</visible>
 						<orientation>vertical</orientation>
@@ -269,6 +270,24 @@
 						<posx>406</posx>
 						<posy>5</posy>
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
+					</control>
+				</control>
+				<control type="group">
+					<height>31</height>
+					<visible>IsEmpty(ListItem.StarRating)</visible>
+					<control type="grouplist">
+						<visible>!Skin.HasSetting(Flags)</visible>
+						<orientation>vertical</orientation>
+						<aligny>bottom</aligny>
+						<control type="label">
+							<width>450</width>
+							<height>28</height>
+							<font>title1</font>
+							<align>left</align>
+							<aligny>bottom</aligny>
+							<textcolor>Orange</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
 					</control>
 				</control>
 				<control type="textbox">
@@ -731,7 +750,7 @@
 						<animation effect="fade" start="0" end="100" delay="180" time="250">Visible</animation>
 					</control>
 					<control type="image">
-						<visible>Container.Content(tvshows) | Container.Content(seasons) + [!Container.OnNext + !Container.OnPrevious]</visible>
+						<visible>Container.Content(tvshows) | Container.Content(seasons) + IsEmpty(ListItem.Property(ZeroEpisodeCount)) + [!Container.OnNext + !Container.OnPrevious]</visible>
 						<posy>15</posy>
 						<posx>450</posx>
 						<width>36</width>
@@ -740,7 +759,7 @@
 						<animation effect="fade" start="0" end="100" delay="180" time="250">Visible</animation>
 					</control>
 					<control type="label">
-						<visible>Container.Content(tvshows) | Container.Content(seasons) + [!Container.OnNext + !Container.OnPrevious]</visible>
+						<visible>Container.Content(tvshows) | Container.Content(seasons) + IsEmpty(ListItem.Property(ZeroEpisodeCount)) + [!Container.OnNext + !Container.OnPrevious]</visible>
 						<posy>11</posy>
 						<posx>468</posx>
 						<width>42</width>
