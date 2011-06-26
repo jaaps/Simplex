@@ -317,11 +317,17 @@
 				<visible>true</visible>
 			</control>
 			<control type="image">
-				<texture>background_overlay_home.png</texture>
+				<texture>background_overlay_main.png</texture>
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="image">
+				<texture>plexicon_home.png</texture>
+				<posx>605</posx>
+				<posy>7</posy>
 				<visible>true</visible>
 			</control>
 		</control>
