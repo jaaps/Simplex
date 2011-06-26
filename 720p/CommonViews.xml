@@ -10,31 +10,31 @@
 					<width>598</width>
 					<height>415</height>
 					<posx>44</posx>
-					<posy>234</posy>
+					<posy>258</posy>
 					<visible>IsEmpty(ListItem.Plot)</visible>
 				</control>
 				<control type="image">
 					<texture>poster_background.png</texture>
 					<width>598</width>
 					<height>415</height>
-					<posx>44</posx>
-					<posy>44</posy>
+					<posx>44</posx>RatingRating
+					<posy>159</posy>
 					<visible>!IsEmpty(ListItem.Plot)</visible>
 				</control>
 				<control type="image">
 					<texture>plexicon.png</texture>
 					<width>302</width>
 					<height>403</height>
-					<posx>200</posx>
-					<posy>300</posy>
+					<posx>208</posx>
+					<posy>317</posy>
 					<visible>Container.Content(Secondary)</visible>
 				</control>
 				<control type="image">
 					<texture>$INFO[ListItem.Thumb]</texture>
 					<width>450</width>
-					<height>330</height>
-					<posx>100</posx>
-					<posy>300</posy>
+					<height>300</height>
+					<posx>116</posx>
+					<posy>318</posy>
 					<aspectratio aligny="bottom" align="center" scalediffuse="false">keep</aspectratio>
 					<visible>IsEmpty(ListItem.Plot)</visible>
 				</control>
@@ -42,17 +42,17 @@
 					<texture>$INFO[ListItem.Thumb]</texture>
 					<width>450</width>
 					<height>280</height>
-					<posx>100</posx>
-					<posy>124</posy>
+					<posx>116</posx>
+					<posy>239</posy>
 					<aspectratio aligny="bottom" align="center" scalediffuse="false">keep</aspectratio>
 					<visible>!IsEmpty(ListItem.Plot)</visible>
 				</control>
 				<control type="image">
 					<texture diffuse="fade.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<width>450</width>
-					<height>330</height>
-					<posx>100</posx>
-					<posy>630</posy>
+					<height>300</height>
+					<posx>116</posx>
+					<posy>618</posy>
 					<aspectratio aligny="top" align="center" scalediffuse="false">keep</aspectratio>
 					<visible>IsEmpty(ListItem.Plot)</visible>
 				</control>
@@ -60,8 +60,8 @@
 					<texture diffuse="fade.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<width>450</width>
 					<height>280</height>
-					<posx>100</posx>
-					<posy>404</posy>
+					<posx>116</posx>
+					<posy>519</posy>
 					<aspectratio aligny="top" align="center" scalediffuse="false">keep</aspectratio>
 					<visible>!IsEmpty(ListItem.Plot)</visible>
 				</control>
@@ -265,7 +265,6 @@
 							<aligny>bottom</aligny>
 							<textcolor>Orange</textcolor>
 							<label>$INFO[ListItem.Label]</label>
-							<visible>!IsEmpty(ListItem.StarRating)</visible>
 						</control>
 					</control>
 					<control type="image">
@@ -428,7 +427,6 @@
 							<aligny>bottom</aligny>
 							<textcolor>Orange</textcolor>
 							<label>$INFO[ListItem.Label]</label>
-							<visible>!IsEmpty(ListItem.Label2)</visible>
 						</control>
 						<control type="label">
 							<width>385</width>
@@ -438,27 +436,6 @@
 							<aligny>bottom</aligny>
 							<textcolor>White</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
-							<visible>!IsEmpty(ListItem.Label2)</visible>
-						</control>
-						<control type="label">
-							<width>385</width>
-							<height>28</height>
-							<font>info1</font>
-							<align>left</align>
-							<aligny>bottom</aligny>
-							<textcolor>White</textcolor>
-							<label/>
-							<visible>IsEmpty(ListItem.Label2)</visible>
-						</control>
-						<control type="label">
-							<width>385</width>
-							<height>28</height>
-							<font>title1</font>
-							<align>left</align>
-							<aligny>bottom</aligny>
-							<textcolor>Orange</textcolor>
-							<label>$INFO[ListItem.Label]</label>
-							<visible>IsEmpty(ListItem.Label2)</visible>
 						</control>
 					</control>
 					<control type="image">
@@ -467,7 +444,7 @@
 						<info>ListItem.StarRating</info>
 						<align>right</align>
 						<posx>406</posx>
-						<posy>27</posy>
+						<posy>5</posy>
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
 					</control>
 				</control>

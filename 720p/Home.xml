@@ -105,15 +105,15 @@
 			<texture>poster_background.png</texture>
 			<width>598</width>
 			<height>415</height>
-			<posx>50</posx>
-			<posy>234</posy>
+			<posx>44</posx>
+			<posy>258</posy>
 		</control>
 			<control type="image">
 			<texture>plexicon.png</texture>
 			<width>302</width>
 			<height>403</height>
-			<posx>200</posx>
-			<posy>300</posy>
+			<posx>208</posx>
+			<posy>317</posy>
 		</control>
 	</controls>
 </window>
