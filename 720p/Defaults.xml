@@ -71,15 +71,15 @@
 		<textoffsetx>16</textoffsetx>
 		<texturefocus>button_settings.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
-		<textureradiofocus>LEDOn.png</textureradiofocus>
-		<textureradionofocus>LEDOff.png</textureradionofocus>
-		<radiowidth>27</radiowidth>
-		<radioheight>27</radioheight>
+		<textureradiofocus>RadioOn.png</textureradiofocus>
+		<textureradionofocus>RadioOff.png</textureradionofocus>
+		<radiowidth>20</radiowidth>
+		<radioheight>16</radioheight>
 		<focusedcolor>Orange</focusedcolor>
 		<selectedcolor>White</selectedcolor>
 		<disabledcolor>Gray</disabledcolor>
 		<aligny>center</aligny>
-		<radioposx>470</radioposx>
+		<radioposx>476</radioposx>
 	</default>
 	<default type="spincontrol">
 		<description>Default Spin Control</description>
@@ -115,8 +115,8 @@
 		<textureupfocus>ArrowUpFO.png</textureupfocus>
 		<texturedown>ArrowDownNF.png</texturedown>
 		<texturedownfocus>ArrowDownFO.png</texturedownfocus>
-		<spinwidth>11</spinwidth>
-		<spinheight>11</spinheight>
+		<spinwidth>14</spinwidth>
+		<spinheight>12</spinheight>
 		<reverse>yes</reverse>
 		<focusedcolor>Orange</focusedcolor>
 		<selectedcolor>White</selectedcolor>
@@ -129,13 +129,13 @@
 		<visible>true</visible>
 		<width>474</width>
 		<height>24</height>
-		<texturebg border="11,0,14,0">OSDProgressBack.png</texturebg>
-		<midtexture border="11,0,14,0">OSDProgressMid.png</midtexture>
+		<texturebg border="22,0,22,0">OSDProgressBack.png</texturebg>
+		<midtexture border="15,0,20,0">OSDProgressMid.png</midtexture>
 		<overlaytexture>-</overlaytexture>
 	</default>
 	<default type="sliderex">
-		<sliderwidth>102</sliderwidth>
-		<sliderheight>15</sliderheight>
+		<sliderwidth>100</sliderwidth>
+		<sliderheight>16</sliderheight>
 		<texturesliderbar>dialogs/sliderbackground.png</texturesliderbar>
 		<textureslidernib>dialogs/slidernib.png</textureslidernib>
 		<textureslidernibfocus>dialogs/slidernibfocus.png</textureslidernibfocus>
