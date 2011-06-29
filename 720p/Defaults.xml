@@ -11,7 +11,7 @@
 		<textcolor>White</textcolor>
 		<focusedcolor>White</focusedcolor>
 		<selectedcolor>White</selectedcolor>
-		<disabledcolor>Gray</disabledcolor>
+		<disabledcolor>DarkGray</disabledcolor>
 	</default>
 	<default type="textbox">
 		<posx>0</posx>
@@ -23,7 +23,7 @@
 		<textcolor>White</textcolor>
 		<focusedcolor>White</focusedcolor>
 		<selectedcolor>White</selectedcolor>
-		<disabledcolor>Gray</disabledcolor>
+		<disabledcolor>DarkGray</disabledcolor>
 	</default>
 	<default type="image">
 	</default>
@@ -39,7 +39,7 @@
 		<label>-</label>
 		<textcolor>White</textcolor>
 		<focusedcolor>Orange</focusedcolor>
-		<disabledcolor>Gray</disabledcolor>
+		<disabledcolor>DarkGray</disabledcolor>
 		<texturefocus>button_settings.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<pulseonselect>false</pulseonselect>
@@ -58,7 +58,7 @@
 		<alttexturenofocus>ArrowDownNF.png</alttexturenofocus>
 		<focusedcolor>White</focusedcolor>
 		<selectedcolor>White</selectedcolor>
-		<disabledcolor>Gray</disabledcolor>
+		<disabledcolor>DarkGray</disabledcolor>
 		<aligny>center</aligny>
 	</default>
 	<default type="radiobutton">
@@ -74,10 +74,10 @@
 		<textureradiofocus>RadioOn.png</textureradiofocus>
 		<textureradionofocus>RadioOff.png</textureradionofocus>
 		<radiowidth>20</radiowidth>
-		<radioheight>16</radioheight>
+		<radioheight>20</radioheight>
 		<focusedcolor>Orange</focusedcolor>
 		<selectedcolor>White</selectedcolor>
-		<disabledcolor>Gray</disabledcolor>
+		<disabledcolor>DarkGray</disabledcolor>
 		<aligny>center</aligny>
 		<radioposx>476</radioposx>
 	</default>
@@ -99,7 +99,7 @@
 		<reverse>yes</reverse>
 		<focusedcolor>White</focusedcolor>
 		<selectedcolor>White</selectedcolor>
-		<disabledcolor>Gray</disabledcolor>
+		<disabledcolor>DarkGray</disabledcolor>
 		<aligny>center</aligny>
 	</default>
 	<default type="spincontrolex">
@@ -120,7 +120,7 @@
 		<reverse>yes</reverse>
 		<focusedcolor>Orange</focusedcolor>
 		<selectedcolor>White</selectedcolor>
-		<disabledcolor>Gray</disabledcolor>
+		<disabledcolor>DarkGray</disabledcolor>
 		<aligny>center</aligny>
 		<textoffsetx>16</textoffsetx>
 	</default>
