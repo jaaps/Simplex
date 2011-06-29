@@ -13,7 +13,7 @@
 			<posy>258</posy>
 			<width>210</width>
 			<height>204</height>
-			<texture>dialogs/volumedialog.png</texture>
+			<texture>dialogs/overlay.png</texture>
 		</control>
 		<control type="progress" id="1">
 			<description>progress control</description>
