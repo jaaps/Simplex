@@ -60,7 +60,7 @@
 				</control>
 				<control type="grouplist" id="213">
 					<width>790</width>
-					<posx>333</posx>
+					<posx>317</posx>
 					<posy>16</posy>
 					<height>96</height>
 					<itemgap>0</itemgap>
@@ -120,7 +120,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<posx>521</posx>
+					<posx>505</posx>
 					<posy>16</posy>
 					<control type="image">
 						<texture>osd/osd_button_pause.png</texture>
@@ -190,7 +190,7 @@
 				<control type="progress" id="23">
 					<description>Progressbar</description>
 					<posx>132</posx>
-					<posy>63</posy>
+					<posy>64</posy>
 					<width>808</width>
 					<height>16</height>
 					<info>Player.Progress</info>

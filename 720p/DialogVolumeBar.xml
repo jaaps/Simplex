@@ -9,7 +9,7 @@
 	<controls>
 		<control type="image">
 			<posx>535</posx>
-			<posy>262</posy>
+			<posy>258</posy>
 			<width>210</width>
 			<height>204</height>
 			<texture>dialogs/volumedialog.png</texture>
@@ -17,17 +17,19 @@
 		<control type="progress" id="1">
 			<description>progress control</description>
 			<posx>554</posx>
-			<posy>423</posy>
+			<posy>419</posy>
 			<width>172</width>
 			<height>17</height>
 			<reveal>true</reveal>
-			<texturebg border="0,0,0,0">dialogs/volumebarbg.png</texturebg>
-			<midtexture border="0,0,0,0">dialogs/volumebar.png</midtexture>
+			<texturebg>dialogs/volumebarbg.png</texturebg>
+			<lefttexture>-</lefttexture>
+			<midtexture>dialogs/volumebar.png</midtexture>
+			<righttexture>-</righttexture>
 			<info>Player.Volume</info>
 		</control>
 		<control type="image" id="2">
 			<posx>595</posx>
-			<posy>311</posy>
+			<posy>307</posy>
 			<width>93</width>
 			<height>86</height>
 			<texture>dialogs/volumeicon.png</texture>
@@ -35,7 +37,7 @@
 		</control>
 		<control type="image" id="2">
 			<posx>595</posx>
-			<posy>311</posy>
+			<posy>307</posy>
 			<width>93</width>
 			<height>86</height>
 			<texture>dialogs/volumeiconmuted.png</texture>
