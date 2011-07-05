@@ -22,7 +22,7 @@
 				<width>391</width>
 				<height>391</height>
 				<texture diffuse="thumb_np_fade.png" flipy="true">$INFO[MusicPlayer.Cover]</texture>
-			<aspectratio aligny="bottom" align="center" scalediffuse="false">keep</aspectratio>
+			<aspectratio aligny="bottom" align="center" scalediffuse="false">scale</aspectratio>
 			</control>
 			<control type="image">
 				<posy>381</posy>
