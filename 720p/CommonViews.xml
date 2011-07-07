@@ -14,7 +14,8 @@
 					<visible>IsEmpty(ListItem.Plot)</visible>
 				</control>
 				<control type="image"><texture>poster_background.png</texture><width>598</width><height>415</height><posx>44</posx>RatingRating
-<posy>159</posy><visible>!IsEmpty(ListItem.Plot)</visible></control>
+					<posy>159</posy>
+					<visible>!IsEmpty(ListItem.Plot)</visible></control>
 				<control type="image">
 					<texture>plexicon.png</texture>
 					<width>302</width>
@@ -47,7 +48,7 @@
 					<height>300</height>
 					<posx>116</posx>
 					<posy>618</posy>
-					<aspectratio aligny="top" align="center" scalediffuse="false">keep</aspectratio>
+					<aspectratio aligny="top" align="center" scalediffuse="true">keep</aspectratio>
 					<visible>IsEmpty(ListItem.Plot)</visible>
 				</control>
 				<control type="image">
@@ -56,7 +57,7 @@
 					<height>280</height>
 					<posx>116</posx>
 					<posy>519</posy>
-					<aspectratio aligny="top" align="center" scalediffuse="false">keep</aspectratio>
+					<aspectratio aligny="top" align="center" scalediffuse="true">keep</aspectratio>
 					<visible>!IsEmpty(ListItem.Plot)</visible>
 				</control>
 			</control>
