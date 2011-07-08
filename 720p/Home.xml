@@ -63,11 +63,11 @@
 					</control>
 				</focusedlayout>
 				<content>
-					<item id="1">
-						<description>Favorites Menu</description>
-						<label>Favorites</label>
+					<!--<item id="1">
+						<description>Favourites Menu</description>
+						<label>Favourites</label>
 						<onclick>Plex.ActivateWindow(Favourites)</onclick>
-					</item>
+					</item>-->
 					<item id="2">
 						<description>Video Channels</description>
 						<label>Video Channels</label>
@@ -78,11 +78,16 @@
 						<label>Audio Channels</label>
 						<onclick>xbmc.activatewindow(5)</onclick>
 					</item>
-					<item id="3">
+					<item id="2">
+						<description>Picture Channels</description>
+						<label>Picture Channels</label>
+						<onclick>xbmc.activatewindow(2)</onclick>
+					</item>
+					<!--<item id="3">
 						<description>Search</description>
 						<label>Search</label>
 						<onclick>-</onclick>
-					</item>
+					</item>-->
 					<item id="4">
 						<description>Channel Store</description>
 						<label>Channel Store</label>
