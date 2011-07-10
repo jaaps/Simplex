@@ -237,7 +237,7 @@
 						</control>
 						<control type="image">
 							<width>106</width>
-							<height>18</height>
+							<height>20</height>
 							<info>ListItem.StarRating</info>
 							<posx>357</posx>
 							<posy>26</posy>
