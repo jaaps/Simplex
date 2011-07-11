@@ -197,14 +197,14 @@
 		<texture>dialogs/separator.png</texture>
 	</include>
 	<include name="keyboardButton">
-		<font>info1</font>
-		<texturenofocus border="8,3,8,3">-</texturenofocus>
-		<texturefocus border="8,3,8,3">dialogs/buttonKB-focus.png</texturefocus>
-		<textcolor>WhiteTrans</textcolor>
-		<focusedcolor>White</focusedcolor>
+		<font>keyboardbutton</font>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus border="6,6,6,6">dialogs/buttonKB-focus.png</texturefocus>
+		<textcolor>White</textcolor>
+		<focusedcolor>Orange</focusedcolor>
 		<width>48</width>
-		<height>48</height>
+		<height>55</height>
 		<align>center</align>
-		<textoffsety>10</textoffsety>
+		<aligny>center</aligny>
 	</include>
 </includes>
