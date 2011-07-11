@@ -393,7 +393,7 @@
 					<description>SYMBOLS button</description>
 					<posx>405</posx>
 					<width>92</width>
-					<label>?!#</label>
+					<label>.?#@</label>
 					<onleft>77</onleft>
 					<onright>302</onright>
 					<onup>76</onup>
