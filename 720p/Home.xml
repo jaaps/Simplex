@@ -69,30 +69,15 @@
 						<onclick>Plex.ActivateWindow(Favourites)</onclick>
 					</item>-->
 					<item id="2">
-						<description>Video Channels</description>
-						<label>Video Channels</label>
-						<onclick>xbmc.activatewindow(6)</onclick>
-					</item>
-					<item id="2">
-						<description>Audio Channels</description>
-						<label>Audio Channels</label>
-						<onclick>xbmc.activatewindow(5)</onclick>
-					</item>
-					<item id="2">
-						<description>Picture Channels</description>
-						<label>Picture Channels</label>
-						<onclick>xbmc.activatewindow(2)</onclick>
+						<description>Channels</description>
+						<label>Channels</label>
+						<onclick>xbmc.activatewindow(4567)</onclick>
 					</item>
 					<!--<item id="3">
 						<description>Search</description>
 						<label>Search</label>
 						<onclick>-</onclick>
 					</item>-->
-					<item id="4">
-						<description>Channel Store</description>
-						<label>Channel Store</label>
-						<onclick>Plex.ActivateWindow(1,plex://localhost/system/plexonline,return)</onclick>
-					</item>
 					<item id="5">
 						<description>Settings</description>
 						<label>Settings</label>
