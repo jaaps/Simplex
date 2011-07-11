@@ -422,7 +422,7 @@
 					<height>63</height>
 					<control type="label">
 						<description>First title</description>
-						<label>$INFO[ListItem.Episode]. $INFO[ListItem.Title]$INFO[ListItem.Title]</label>
+						<label>$INFO[ListItem.Episode]. $INFO[ListItem.Title]</label>
 						<width>690</width>
 						<height>40</height>
 						<align>left</align>
@@ -545,7 +545,7 @@
 						<posy>24</posy>
 						<posx>476</posx>
 						<control type="label">
-							<width>280</width>
+							<width>212</width>
 							<height>19</height>
 							<font>info1</font>
 							<align>left</align>

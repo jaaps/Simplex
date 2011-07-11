@@ -63,11 +63,11 @@
 					</control>
 				</focusedlayout>
 				<content>
-					<!--<item id="1">
+					<item id="1">
 						<description>Favourites Menu</description>
 						<label>Favourites</label>
 						<onclick>Plex.ActivateWindow(Favourites)</onclick>
-					</item>-->
+					</item>
 					<item id="2">
 						<description>Channels</description>
 						<label>Channels</label>
