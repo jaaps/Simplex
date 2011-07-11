@@ -50,10 +50,6 @@
 		<textcolor>WhiteTrans</textcolor>
 		<align>center</align>
 		<aligny>center</aligny>
-		<texturefocus>ArrowUpFO.png</texturefocus>
-		<texturenofocus>ArrowUpNF.png</texturenofocus>
-		<alttexturefocus>ArrowDownFO.png</alttexturefocus>
-		<alttexturenofocus>ArrowDownNF.png</alttexturenofocus>
 		<focusedcolor>White</focusedcolor>
 		<selectedcolor>White</selectedcolor>
 		<disabledcolor>DarkGray</disabledcolor>

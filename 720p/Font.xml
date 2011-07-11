@@ -92,6 +92,12 @@
 			<size>32</size>
 		</font>
 		<font>
+			<name>keyboardentry</name>
+			<filename>HelveticaNeue</filename>
+			<variant>Medium</variant>
+			<size>21</size>
+		</font>
+		<font>
 			<name>keyboardbuttonsmall</name>
 			<filename>HelveticaNeue</filename>
 			<variant>Medium</variant>
