@@ -63,7 +63,7 @@
 					<width>450</width>
 					<height>280</height>
 					<visible>!IsEmpty(ListItem.Plot)</visible>
-					<aspectratio aligny="top" align="center" scalediffuse="true">keep</aspectratio>
+					<aspectratio aligny="top" align="center">keep</aspectratio>
 				</control>
 			</control>
 			<control type="group">
