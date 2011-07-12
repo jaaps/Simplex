@@ -54,6 +54,7 @@
 		<selectedcolor>White</selectedcolor>
 		<disabledcolor>DarkGray</disabledcolor>
 		<aligny>center</aligny>
+		<pulseonselect>false</pulseonselect>
 	</default>
 	<default type="radiobutton">
 		<description>Default Radiobutton</description>
