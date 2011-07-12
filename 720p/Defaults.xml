@@ -32,7 +32,9 @@
 		<posy>0</posy>
 		<height>54</height>
 		<width>512</width>
-		<align>center</align>
+		<align>left</align>
+		<aligny>center</aligny>
+		<textoffsetx>16</textoffsetx>
 		<font>list1</font>
 		<label>-</label>
 		<textcolor>White</textcolor>
