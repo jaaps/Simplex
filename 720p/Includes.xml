@@ -4,52 +4,6 @@
 	<include file="CommonViews.xml"/>
 	<include file="NowPlayingIncludes.xml"/>
 	<include file="IncludesDialogs.xml"/>
-	<include name="DialogBack">
-		<control type="image">
-			<width>520</width>
-			<height>424</height>
-			<texture>White.png</texture>
-			<aspectratio>stretch</aspectratio>
-		</control>
-	</include>
-	<include name="DialogID">
-		<posx>10</posx>
-		<posy>10</posy>
-		<font>Small</font>
-		<textcolor>Gray</textcolor>
-		<align>left</align>
-	</include>
-	<include name="SideMenuViews">
-		<control type="button" id="9001">
-			<description>List view button</description>
-			<label>List</label>
-			<onclick>Container.SetViewMode(50)</onclick>
-		</control>
-		<control type="button" id="9002">
-			<description>Info List view button</description>
-			<visible>!Container.Content(secondary)</visible>
-			<label>Info List</label>
-			<onclick>Container.SetViewMode(51)</onclick>
-		</control>
-		<control type="button" id="9003">
-			<description>Episode view button</description>
-			<visible>Container.Content(episodes)</visible>
-			<label>Episodes</label>
-			<onclick>Container.SetViewMode(59)</onclick>
-		</control>
-		<control type="button" id="9004">
-			<description>Horizon view button</description>
-			<visible>!Container.Content(secondary) + !Container.Content(episodes) + !Container.Content(albums) + !Container.Content(artists) + !Container.Content(songs) + !Window.IsVisible(28) + !Window.IsVisible(500)</visible>
-			<label>Horizon</label>
-			<onclick>Container.SetViewMode(56)</onclick>
-		</control>
-		<control type="button" id="9005">
-			<description>Poster view button</description>
-			<visible>!Container.Content(episodes) + !Container.Content(Pictures) + !Container.Content(albums) + !Container.Content(songs) + !Container.Content(artists) + !Container.Content(secondary) + !Window.IsVisible(28) + !Window.IsVisible(500)</visible>
-			<label>Panel</label>
-			<onclick>Container.SetViewMode(55)</onclick>
-		</control>
-	</include>
 	<include name="Background_Home">
 		<control type="group">
 		<control type="multiimage" id="1">
@@ -59,7 +13,7 @@
 			<fadetime>1000</fadetime>
 			<randomize>true</randomize>
 			<loop>yes</loop>
-			<animation type="WindowOpen" condition="Window.Previous(2999)">
+			<animation type="WindowOpen">
 				<effect type="fade" start="0" end="100" time="2000" delay="100"/>
 			</animation>
 		</control>
@@ -109,6 +63,46 @@
 			<aligny>center</aligny>
 			<font>list1</font>
 			<textcolor>Gray</textcolor>
+			<visible>!Container.Content(seasons) + !Container.Content(episodes)</visible>
+		</control>
+		<control type="label">
+			<description>First title</description>
+			<info>Container.SecondTitle</info>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>50</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>list1</font>
+			<textcolor>Gray</textcolor>
+			<visible>Container.Content(seasons)</visible>
+		</control>
+		<control type="label">
+			<description>First title</description>
+			<label>$INFO[Container.FirstTitle], $INFO[Container.SecondTitle]</label>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>50</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>list1</font>
+			<textcolor>Gray</textcolor>
+			<visible>Container.Content(episodes) + IsEmpty(Container.Property(mixedParents))</visible>
+		</control>
+		<control type="label">
+			<description>First title</description>
+			<label>$INFO[Container.SecondTitle]</label>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>50</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>list1</font>
+			<textcolor>Gray</textcolor>
+			<visible>Container.Content(episodes) + !IsEmpty(Container.Property(mixedParents))</visible>
 		</control>
 	</include>
 	<include name="HeaderVideo">
@@ -289,6 +283,9 @@
 			<width>1280</width>
 			<height>720</height>
 			<visible>true</visible>
+			<animation type="WindowOpen">
+				<effect type="fade" start="0" end="100" time="1200" delay="100"/>
+			</animation>
 		</control>
 		<control type="largeimage">
 			<animation effect="fade" start="100" end="0" time="600" tween="cubic" easing="inout" delay="0">Hidden</animation>

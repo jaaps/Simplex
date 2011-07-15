@@ -5,6 +5,9 @@
 	<controls>
 		<include>Background</include>
 		<control type="group">
+			<animation type="WindowOpen">
+				<effect type="fade" start="0" end="100" time="900" delay="100"/>
+			</animation>
 			<include>Header</include>
 			<include>HeaderVideo</include>
 			<include>List</include>
