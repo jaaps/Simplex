@@ -36,8 +36,16 @@
 			<effect type="fade" start="100" end="0" time="100"/>
 		</animation>
 	</include>
+	<include name="dialogDiffuse">
+		<width>1280</width>
+		<height>720</height>
+		<posx>0</posx>
+		<posy>0</posy>
+		<texture>dialogs/diffuse.png</texture>
+		<aspectratio>scale</aspectratio>
+	</include>
 	<include name="dialogWindow">
-		<texture border="29">dialogs/dialogWindow.png</texture>
+		<texture border="80">dialogs/dialogWindow.png</texture>
 	</include>
 	<include name="contextMenuButton">
 		<font>list1</font>
