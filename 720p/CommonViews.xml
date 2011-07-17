@@ -425,7 +425,7 @@
 			<control type="grouplist">
 				<posx>91</posx>
 				<posy>534</posy>
-				<visible>!Container.Content(movies) + !Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(albums) + !Container.Content(songs) + !Container.Content(artists) + !IsEmpty(ListItem.Plot)</visible>
+				<visible>!Container.Content(movies) + !Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(albums) + !Container.Content(songs) + Container.Content(artists) + !IsEmpty(ListItem.Plot)</visible>
 				<visible>!Container.OnNext + !Container.OnPrevious</visible>
 				<animation effect="fade" start="0" end="100" time="500" easing="inout">Visible</animation>
 				<control type="group">
