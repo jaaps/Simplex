@@ -14,7 +14,7 @@
 		</control>
 		<control type="label">
 			<description>First title</description>
-			<label>Favorites</label>
+			<label>Favourites</label>
 			<posx>0</posx>
 			<posy>130</posy>
 			<width>1280</width>
@@ -31,8 +31,8 @@
 			<animation type="WindowClose">
 				<effect type="fade" start="100" end="0" time="400" delay="200"/>
 			</animation>
-			<posx>46</posx>
-			<posy>75</posy>
+			<posx>430</posx>
+			<posy>200</posy>
 			<width>422</width>
 			<height>420</height>
 			<onup>450</onup>
