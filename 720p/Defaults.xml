@@ -68,8 +68,8 @@
 		<textoffsetx>16</textoffsetx>
 		<texturefocus>button_settings.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
-		<textureradiofocus>RadioOn.png</textureradiofocus>
-		<textureradionofocus>RadioOff.png</textureradionofocus>
+		<textureradiofocus>dialogs/RadioOn.png</textureradiofocus>
+		<textureradionofocus>dialogs/RadioOff.png</textureradionofocus>
 		<radiowidth>20</radiowidth>
 		<radioheight>20</radioheight>
 		<focusedcolor>Orange</focusedcolor>
