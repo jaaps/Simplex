@@ -8,15 +8,15 @@
 		</control>
 		<control type="image">
 			<posx>309</posx>
-			<posy>50</posy>
-			<height>600</height>
+			<posy>41</posy>
+			<height>637</height>
 			<include>dialogWindow</include>
 		</control>
 		<control type="label">
 			<description>First title</description>
 			<label>Favourites</label>
 			<posx>0</posx>
-			<posy>130</posy>
+			<posy>133</posy>
 			<width>1280</width>
 			<height>56</height>
 			<align>center</align>
@@ -32,9 +32,9 @@
 				<effect type="fade" start="100" end="0" time="400" delay="200"/>
 			</animation>
 			<posx>430</posx>
-			<posy>200</posy>
+			<posy>194</posy>
 			<width>422</width>
-			<height>420</height>
+			<height>379</height>
 			<onup>450</onup>
 			<onleft>450</onleft>
 			<onright>450</onright>
