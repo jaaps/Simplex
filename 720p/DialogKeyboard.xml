@@ -8,11 +8,18 @@
 	<include>dialogOpen</include>
 	<controls>
 		<control type="image" id="1">
+			<posx>0</posx>
+			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
 			<texture>dialogs/keyboard.png</texture>
-			<posx>0</posx>
-			<posy>0</posy>
+		</control>
+		<control type="image" id="1">
+			<posx>386</posx>
+			<posy>230</posy>
+			<width>490</width>
+			<height>42</height>
+			<texture>dialogs/keyboard-textentry.png</texture>
 		</control>
 		<control type="group">
 			<posx>340</posx>
@@ -26,10 +33,10 @@
 				<font>list1</font>
 			</control>
 			<control type="label" id="310">
-				<description>Edit Text</description>
-				<posx>34</posx>
+				<description>Text Entry</description>
+				<posx>62</posx>
 				<posy>68</posy>
-				<width>542</width>
+				<width>460</width>
 				<height>38</height>
 				<font>keyboardentry</font>
 				<ondown>52</ondown>
@@ -51,7 +58,7 @@
 				</control>
 				<control type="button" id="49">
 					<description>'1' button</description>
-					<posx>45</posx>
+					<posx>44</posx>
 					<onleft>48</onleft>
 					<onright>50</onright>
 					<onup>306</onup>
@@ -60,7 +67,7 @@
 				</control>
 				<control type="button" id="50">
 					<description>'2' button</description>
-					<posx>90</posx>
+					<posx>88</posx>
 					<onleft>49</onleft>
 					<onright>51</onright>
 					<onup>306</onup>
@@ -69,7 +76,7 @@
 				</control>
 				<control type="button" id="51">
 					<description>'3' button</description>
-					<posx>135</posx>
+					<posx>132</posx>
 					<onleft>50</onleft>
 					<onright>52</onright>
 					<onup>32</onup>
@@ -78,7 +85,7 @@
 				</control>
 				<control type="button" id="52">
 					<description>'4' button</description>
-					<posx>180</posx>
+					<posx>176</posx>
 					<onleft>51</onleft>
 					<onright>53</onright>
 					<onup>32</onup>
@@ -87,7 +94,7 @@
 				</control>
 				<control type="button" id="53">
 					<description>'5' button</description>
-					<posx>225</posx>
+					<posx>220</posx>
 					<onleft>52</onleft>
 					<onright>54</onright>
 					<onup>32</onup>
@@ -96,7 +103,7 @@
 				</control>
 				<control type="button" id="54">
 					<description>'6' button</description>
-					<posx>270</posx>
+					<posx>264</posx>
 					<onleft>53</onleft>
 					<onright>55</onright>
 					<onup>32</onup>
@@ -105,7 +112,7 @@
 				</control>
 				<control type="button" id="55">
 					<description>'7' button</description>
-					<posx>315</posx>
+					<posx>308</posx>
 					<onleft>54</onleft>
 					<onright>56</onright>
 					<onup>304</onup>
@@ -114,7 +121,7 @@
 				</control>
 				<control type="button" id="56">
 					<description>'8' button</description>
-					<posx>360</posx>
+					<posx>352</posx>
 					<onleft>55</onleft>
 					<onright>57</onright>
 					<onup>304</onup>
@@ -123,7 +130,7 @@
 				</control>
 				<control type="button" id="57">
 					<description>'9' button</description>
-					<posx>405</posx>
+					<posx>396</posx>
 					<onleft>56</onleft>
 					<onright>48</onright>
 					<onup>307</onup>
@@ -145,7 +152,7 @@
 				</control>
 				<control type="button" id="87">
 					<description>'W' button</description>
-					<posx>45</posx>
+					<posx>44</posx>
 					<onleft>81</onleft>
 					<onright>69</onright>
 					<onup>49</onup>
@@ -154,7 +161,7 @@
 				</control>
 				<control type="button" id="69">
 					<description>'E' button</description>
-					<posx>90</posx>
+					<posx>88</posx>
 					<onleft>87</onleft>
 					<onright>82</onright>
 					<onup>50</onup>
@@ -163,7 +170,7 @@
 				</control>
 				<control type="button" id="82">
 					<description>'R' button</description>
-					<posx>135</posx>
+					<posx>132</posx>
 					<onleft>69</onleft>
 					<onright>84</onright>
 					<onup>51</onup>
@@ -172,7 +179,7 @@
 				</control>
 				<control type="button" id="84">
 					<description>'T' button</description>
-					<posx>180</posx>
+					<posx>176</posx>
 					<onleft>82</onleft>
 					<onright>89</onright>
 					<onup>52</onup>
@@ -181,7 +188,7 @@
 				</control>
 				<control type="button" id="89">
 					<description>'Y' button</description>
-					<posx>225</posx>
+					<posx>220</posx>
 					<onleft>84</onleft>
 					<onright>85</onright>
 					<onup>53</onup>
@@ -190,7 +197,7 @@
 				</control>
 				<control type="button" id="85">
 					<description>'U' button</description>
-					<posx>270</posx>
+					<posx>264</posx>
 					<onleft>89</onleft>
 					<onright>73</onright>
 					<onup>54</onup>
@@ -199,7 +206,7 @@
 				</control>
 				<control type="button" id="73">
 					<description>'I' button</description>
-					<posx>315</posx>
+					<posx>308</posx>
 					<onleft>85</onleft>
 					<onright>79</onright>
 					<onup>55</onup>
@@ -208,7 +215,7 @@
 				</control>
 				<control type="button" id="79">
 					<description>'O' button</description>
-					<posx>360</posx>
+					<posx>352</posx>
 					<onleft>73</onleft>
 					<onright>80</onright>
 					<onup>56</onup>
@@ -217,7 +224,7 @@
 				</control>
 				<control type="button" id="80">
 					<description>'P' button</description>
-					<posx>405</posx>
+					<posx>396</posx>
 					<onleft>79</onleft>
 					<onright>81</onright>
 					<onup>57</onup>
@@ -239,7 +246,7 @@
 				</control>
 				<control type="button" id="83">
 					<description>'S' button</description>
-					<posx>45</posx>
+					<posx>44</posx>
 					<onleft>65</onleft>
 					<onright>68</onright>
 					<onup>87</onup>
@@ -248,7 +255,7 @@
 				</control>
 				<control type="button" id="68">
 					<description>'D' button</description>
-					<posx>90</posx>
+					<posx>88</posx>
 					<onleft>83</onleft>
 					<onright>70</onright>
 					<onup>69</onup>
@@ -257,7 +264,7 @@
 				</control>
 				<control type="button" id="70">
 					<description>'F' button</description>
-					<posx>135</posx>
+					<posx>132</posx>
 					<onleft>68</onleft>
 					<onright>71</onright>
 					<onup>82</onup>
@@ -266,7 +273,7 @@
 				</control>
 				<control type="button" id="71">
 					<description>'G' button</description>
-					<posx>180</posx>
+					<posx>176</posx>
 					<onleft>70</onleft>
 					<onright>72</onright>
 					<onup>84</onup>
@@ -275,7 +282,7 @@
 				</control>
 				<control type="button" id="72">
 					<description>'H' button</description>
-					<posx>225</posx>
+					<posx>220</posx>
 					<onleft>71</onleft>
 					<onright>74</onright>
 					<onup>89</onup>
@@ -284,7 +291,7 @@
 				</control>
 				<control type="button" id="74">
 					<description>'J' button</description>
-					<posx>270</posx>
+					<posx>264</posx>
 					<onleft>72</onleft>
 					<onright>75</onright>
 					<onup>85</onup>
@@ -293,7 +300,7 @@
 				</control>
 				<control type="button" id="75">
 					<description>'K' button</description>
-					<posx>315</posx>
+					<posx>308</posx>
 					<onleft>74</onleft>
 					<onright>76</onright>
 					<onup>73</onup>
@@ -302,7 +309,7 @@
 				</control>
 				<control type="button" id="76">
 					<description>'L' button</description>
-					<posx>360</posx>
+					<posx>352</posx>
 					<onleft>75</onleft>
 					<onright>65</onright>
 					<onup>79</onup>
@@ -323,7 +330,7 @@
 					<onright>90</onright>
 					<onup>65</onup>
 					<ondown>8</ondown>
-					<include>keyboardButton</include>
+					<include>keyboardWideButton</include>
 				</control>
 				<control type="button" id="90">
 					<posx>90</posx>
@@ -336,7 +343,7 @@
 				</control>
 				<control type="button" id="88">
 					<description>'X' button</description>
-					<posx>135</posx>
+					<posx>134</posx>
 					<onleft>90</onleft>
 					<onright>67</onright>
 					<onup>68</onup>
@@ -345,7 +352,7 @@
 				</control>
 				<control type="button" id="67">
 					<description>'C' button</description>
-					<posx>180</posx>
+					<posx>178</posx>
 					<onleft>88</onleft>
 					<onright>86</onright>
 					<onup>70</onup>
@@ -354,7 +361,7 @@
 				</control>
 				<control type="button" id="86">
 					<description>'V' button</description>
-					<posx>225</posx>
+					<posx>222</posx>
 					<onleft>67</onleft>
 					<onright>66</onright>
 					<onup>71</onup>
@@ -363,7 +370,7 @@
 				</control>
 				<control type="button" id="66">
 					<description>'B' button</description>
-					<posx>270</posx>
+					<posx>266</posx>
 					<onleft>86</onleft>
 					<onright>78</onright>
 					<onup>72</onup>
@@ -372,7 +379,7 @@
 				</control>
 				<control type="button" id="78">
 					<description>'N' button</description>
-					<posx>315</posx>
+					<posx>310</posx>
 					<onleft>66</onleft>
 					<onright>77</onright>
 					<onup>74</onup>
@@ -381,7 +388,7 @@
 				</control>
 				<control type="button" id="77">
 					<description>'M' button</description>
-					<posx>360</posx>
+					<posx>354</posx>
 					<onleft>78</onleft>
 					<onright>304</onright>
 					<onup>75</onup>
@@ -391,14 +398,14 @@
 				<control type="togglebutton" id="304">
 					<font>keyboardbuttonsmall</font>
 					<description>SYMBOLS button</description>
-					<posx>405</posx>
+					<posx>398</posx>
 					<width>92</width>
 					<label>.?#@</label>
 					<onleft>77</onleft>
 					<onright>302</onright>
 					<onup>76</onup>
 					<ondown>300</ondown>
-					<include>keyboardButton</include>
+					<include>keyboardWideButton</include>
 				</control>
 			</control>
 			<control type="group">
@@ -415,7 +422,7 @@
 					<onup>302</onup>
 					<ondown>48</ondown>
 					<font>keyboardbuttonsmall</font>
-					<include>keyboardButton</include>
+					<include>keyboardWideButton</include>
 				</control>
 				<control type="button" id="305">
 					<posx>90</posx>
@@ -429,19 +436,18 @@
 				</control>
 				<control type="button" id="32">
 					<description>SPACE button</description>
-					<posx>135</posx>
-					<width>227</width>
+					<posx>134</posx>
 					<label>20182</label>
 					<onleft>305</onleft>
 					<onright>306</onright>
 					<onup>86</onup>
 					<ondown>52</ondown>
 					<font>keyboardbuttonsmall</font>
-					<include>keyboardButton</include>
+					<include>keyboardSpaceButton</include>
 				</control>
 				<control type="button" id="306">
 					<description>next button</description>
-					<posx>360</posx>
+					<posx>354</posx>
 					<label>&gt;</label>
 					<onleft>32</onleft>
 					<onright>300</onright>
@@ -451,15 +457,14 @@
 				</control>
 				<control type="button" id="300">
 					<description>DONE button</description>
-					<posx>405</posx>
-					<width>92</width>
+					<posx>398</posx>
 					<label>20177</label>
 					<onleft>306</onleft>
 					<onright>8</onright>
 					<onup>304</onup>
 					<ondown>57</ondown>
 					<font>keyboardbuttonsmall</font>
-					<include>keyboardButton</include>
+					<include>keyboardWideButton</include>
 				</control>
 			</control>
 		</control>

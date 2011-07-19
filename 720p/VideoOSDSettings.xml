@@ -39,7 +39,7 @@
 				<posy>60</posy>
 				<width>512</width>
 				<height>516</height>
-				<itemgap>2</itemgap>
+				<itemgap>0</itemgap>
 				<onleft>-</onleft>
 				<onright>-</onright>
 				<onup>300</onup>

@@ -20,7 +20,7 @@
 			<width>422</width>
 			<label>13406</label>
 			<posx>430</posx>
-			<posy>250</posy>
+			<posy>258</posy>
 			<align>center</align>
 			<font>list1</font>
 		</control>
@@ -35,7 +35,7 @@
 		</control>
 		<control type="label" id="3">
 			<description>dialog line 2</description>
-			<posy>320</posy>
+			<posy>318</posy>
 			<posx>430</posx>
 			<align>center</align>
 			<textcolor>Gray</textcolor>
@@ -45,7 +45,7 @@
 		</control>
 		<control type="label" id="4">
 			<description>dialog line 3</description>
-			<posy>320</posy>
+			<posy>318</posy>
 			<posx>430</posx>
 			<align>center</align>
 			<textcolor>Gray</textcolor>
@@ -54,23 +54,21 @@
 		</control>
 		<control type="group">
 			<posx>430</posx>
-			<posy>365</posy>
+			<posy>364</posy>
 			<control type="button" id="11">
 				<description>Yes button</description>
 				<label>107</label>
 				<onup>10</onup>
 				<ondown>10</ondown>
-				<width>422</width>
-				<align>center</align>
+				<include>contextMenuButton</include>
 			</control>
 			<control type="button" id="10">
 				<description>No button</description>
-				<posy>60</posy>
+				<posy>54</posy>
 				<label>106</label>
 				<ondown>11</ondown>
 				<onup>11</onup>
-				<width>422</width>
-				<align>center</align>
+				<include>contextMenuButton</include>
 			</control>
 		</control>
 	</controls>

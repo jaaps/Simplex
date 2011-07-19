@@ -500,7 +500,7 @@
 							<visible>Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies)</visible>
 							<control type="label">
 								<visible>!Container.Content(episodes)</visible>
-								<posy>0</posy>
+								<posy>1</posy>
 								<posx>30</posx>
 								<width>395</width>
 								<height>50</height>
@@ -512,7 +512,7 @@
 							</control>
 							<control type="label">
 								<visible>Container.Content(episodes) + IsEmpty(Container.Property(mixedParents))</visible>
-								<posy>0</posy>
+								<posy>1</posy>
 								<posx>30</posx>
 								<width>395</width>
 								<aligny>center</aligny>
@@ -524,7 +524,7 @@
 							</control>
 							<control type="label">
 								<visible>Container.Content(episodes) + !IsEmpty(Container.Property(mixedParents))</visible>
-								<posy>0</posy>
+								<posy>1</posy>
 								<posx>30</posx>
 								<width>395</width>
 								<aligny>center</aligny>
@@ -543,7 +543,7 @@
 								<aspectratio align="left" alingy="center">keep</aspectratio>
 							</control>
 							<control type="image">
-								<posy>0</posy>
+								<posy>2</posy>
 								<posx>450</posx>
 								<width>36</width>
 								<height>54</height>
@@ -552,7 +552,7 @@
 							</control>
 							<control type="image">
 								<visible>[Container.Content(tvshows) | Container.Content(seasons)] + IsEmpty(ListItem.Property(ZeroEpisodeCount))</visible>
-								<posy>15</posy>
+								<posy>17</posy>
 								<posx>450</posx>
 								<width>36</width>
 								<height>24</height>
@@ -561,7 +561,7 @@
 							</control>
 							<control type="label">
 								<visible>[Container.Content(tvshows) | Container.Content(seasons)] + IsEmpty(ListItem.Property(ZeroEpisodeCount))</visible>
-								<posy>11</posy>
+								<posy>13</posy>
 								<posx>468</posx>
 								<width>42</width>
 								<height>31</height>
@@ -576,7 +576,7 @@
 						<control type="group">
 							<visible>!Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(movies)</visible>
 							<control type="label">
-								<posy>0</posy>
+								<posy>1</posy>
 								<posx>30</posx>
 								<width>395</width>
 								<height>50</height>
@@ -591,7 +591,7 @@
 				</itemlayout>
 				<focusedlayout height="52" condition="![!IsEmpty(Container.Property(mixedParents)) + Container.Content(episodes)]">
 					<control type="image">
-						<posy>0</posy>
+						<posy>1</posy>
 						<width>512</width>
 						<height>54</height>
 						<texture>button_media.png</texture>
@@ -609,7 +609,7 @@
 							<visible>Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies)</visible>
 							<control type="label">
 								<visible>!Container.Content(episodes)</visible>
-								<posy>0</posy>
+								<posy>1</posy>
 								<posx>30</posx>
 								<width>395</width>
 								<height>50</height>
@@ -621,7 +621,7 @@
 							</control>
 							<control type="label">
 								<visible>Container.Content(episodes) + IsEmpty(Container.Property(mixedParents))</visible>
-								<posy>0</posy>
+								<posy>1</posy>
 								<posx>30</posx>
 								<width>395</width>
 								<aligny>center</aligny>
@@ -633,7 +633,7 @@
 							</control>
 							<control type="label">
 								<visible>Container.Content(episodes) + !IsEmpty(Container.Property(mixedParents))</visible>
-								<posy>0</posy>
+								<posy>1</posy>
 								<posx>30</posx>
 								<width>395</width>
 								<aligny>center</aligny>
@@ -652,7 +652,7 @@
 								<aspectratio align="left" alingy="center">keep</aspectratio>
 							</control>
 							<control type="image">
-								<posy>0</posy>
+								<posy>2</posy>
 								<posx>450</posx>
 								<width>36</width>
 								<height>54</height>
@@ -661,7 +661,7 @@
 							</control>
 							<control type="image">
 								<visible>[Container.Content(tvshows) | Container.Content(seasons)] + IsEmpty(ListItem.Property(ZeroEpisodeCount))</visible>
-								<posy>15</posy>
+								<posy>17</posy>
 								<posx>450</posx>
 								<width>36</width>
 								<height>24</height>
@@ -670,7 +670,7 @@
 							</control>
 							<control type="label">
 								<visible>[Container.Content(tvshows) | Container.Content(seasons)] + IsEmpty(ListItem.Property(ZeroEpisodeCount))</visible>
-								<posy>11</posy>
+								<posy>13</posy>
 								<posx>468</posx>
 								<width>42</width>
 								<height>31</height>
@@ -685,7 +685,7 @@
 						<control type="group">
 							<visible>!Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(movies)</visible>
 							<control type="label">
-								<posy>0</posy>
+								<posy>1</posy>
 								<posx>30</posx>
 								<width>395</width>
 								<height>50</height>
@@ -700,7 +700,7 @@
 					<!-- FOCUS -> FADEIN -->
 					<control type="label">
 						<visible>!Container.Content(episodes) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies)] + [!Container.OnNext + !Container.OnPrevious]</visible>
-						<posy>0</posy>
+						<posy>1</posy>
 						<posx>30</posx>
 						<width>395</width>
 						<height>50</height>
@@ -713,7 +713,7 @@
 					</control>
 					<control type="label">
 						<visible>Container.Content(episodes) + IsEmpty(Container.Property(mixedParents)) + [!Container.OnNext + !Container.OnPrevious]</visible>
-						<posy>0</posy>
+						<posy>1</posy>
 						<posx>30</posx>
 						<width>395</width>
 						<aligny>center</aligny>
@@ -726,7 +726,7 @@
 					</control>
 					<control type="label">
 						<visible>Container.Content(episodes) + !IsEmpty(Container.Property(mixedParents)) + [!Container.OnNext + !Container.OnPrevious]</visible>
-						<posy>0</posy>
+						<posy>1</posy>
 						<posx>30</posx>
 						<width>395</width>
 						<aligny>center</aligny>
@@ -749,7 +749,7 @@
 					</control>
 					<control type="image">
 						<visible>[Container.Content(episodes) | Container.Content(movies)]+ [!Container.OnNext + !Container.OnPrevious]</visible>
-						<posy>0</posy>
+						<posy>2</posy>
 						<posx>450</posx>
 						<width>36</width>
 						<height>54</height>
@@ -759,7 +759,7 @@
 					</control>
 					<control type="image">
 						<visible>[Container.Content(tvshows) | Container.Content(seasons)] + IsEmpty(ListItem.Property(ZeroEpisodeCount)) + [!Container.OnNext + !Container.OnPrevious]</visible>
-						<posy>15</posy>
+						<posy>17</posy>
 						<posx>450</posx>
 						<width>36</width>
 						<height>24</height>
@@ -768,7 +768,7 @@
 					</control>
 					<control type="label">
 						<visible>[Container.Content(tvshows) | Container.Content(seasons)] + IsEmpty(ListItem.Property(ZeroEpisodeCount)) + [!Container.OnNext + !Container.OnPrevious]</visible>
-						<posy>11</posy>
+						<posy>13</posy>
 						<posx>468</posx>
 						<width>42</width>
 						<height>31</height>
@@ -781,7 +781,7 @@
 					</control>
 					<control type="label">
 						<visible>!Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(movies) + [!Container.OnNext + !Container.OnPrevious]</visible>
-						<posy>0</posy>
+						<posy>1</posy>
 						<posx>30</posx>
 						<width>395</width>
 						<height>50</height>
@@ -800,7 +800,7 @@
 						<control type="group">
 							<control type="label">
 								<visible>Container.Content(episodes)</visible>
-								<posy>3</posy>
+								<posy>4</posy>
 								<posx>30</posx>
 								<width>395</width>
 								<label>$INFO[ListItem.Episode,,. ]$INFO[ListItem.Label]</label>
@@ -810,7 +810,7 @@
 							</control>
 							<control type="label">
 								<visible>Container.Content(episodes)</visible>
-								<posy>29</posy>
+								<posy>30</posy>
 								<posx>30</posx>
 								<width>395</width>
 								<label>$INFO[ListItem.TVShowTitle], Season $INFO[ListItem.Season]</label>
@@ -827,7 +827,7 @@
 								<aspectratio align="left" alingy="center">keep</aspectratio>
 							</control>
 							<control type="image">
-								<posy>-2</posy>
+								<posy>0</posy>
 								<posx>450</posx>
 								<width>36</width>
 								<height>74</height>
@@ -839,9 +839,9 @@
 				</itemlayout>
 				<focusedlayout height="70" condition="!IsEmpty(Container.Property(mixedParents)) + Container.Content(episodes)">
 					<control type="image">
-						<posy>0</posy>
+						<posy>1</posy>
 						<width>512</width>
-						<height>71</height>
+						<height>70</height>
 						<texture>button_media_info.png</texture>
 						<aspectratio>keep</aspectratio>
 						<animation effect="slide" start="0,-53" end="0,0" time="200" reversible="false" easing="out" condition="Container(50).OnNext">Focus</animation>
@@ -856,7 +856,7 @@
 						<control type="group">
 							<control type="label">
 								<visible>Container.Content(episodes)</visible>
-								<posy>3</posy>
+								<posy>4</posy>
 								<posx>30</posx>
 								<width>395</width>
 								<label>$INFO[ListItem.Episode,,. ]$INFO[ListItem.Label]</label>
@@ -866,7 +866,7 @@
 							</control>
 							<control type="label">
 								<visible>Container.Content(episodes)</visible>
-								<posy>29</posy>
+								<posy>30</posy>
 								<posx>30</posx>
 								<width>395</width>
 								<label>$INFO[ListItem.TVShowTitle], Season $INFO[ListItem.Season]</label>
@@ -883,7 +883,7 @@
 								<aspectratio align="left" alingy="center">keep</aspectratio>
 							</control>
 							<control type="image">
-								<posy>-2</posy>
+								<posy>0</posy>
 								<posx>450</posx>
 								<width>36</width>
 								<height>74</height>
@@ -895,7 +895,7 @@
 					<!-- FOCUS -> FADEIN -->
 					<control type="label">
 						<visible>Container.Content(episodes) + [!Container.OnNext + !Container.OnPrevious]</visible>
-						<posy>3</posy>
+						<posy>4</posy>
 						<posx>30</posx>
 						<width>395</width>
 						<label>$INFO[ListItem.Episode,,. ]$INFO[ListItem.Label]</label>
@@ -906,7 +906,7 @@
 					</control>
 					<control type="label">
 						<visible>Container.Content(episodes) + [!Container.OnNext + !Container.OnPrevious]</visible>
-						<posy>29</posy>
+						<posy>30</posy>
 						<posx>30</posx>
 						<width>395</width>
 						<label>$INFO[ListItem.TVShowTitle], Season $INFO[ListItem.Season]</label>
@@ -927,7 +927,7 @@
 					</control>
 					<control type="image">
 						<visible>!Container.OnNext + !Container.OnPrevious</visible>
-						<posy>-2</posy>
+						<posy>0</posy>
 						<posx>450</posx>
 						<width>36</width>
 						<height>74</height>

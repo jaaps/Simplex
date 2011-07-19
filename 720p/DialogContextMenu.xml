@@ -32,7 +32,7 @@
 			<texture>dialogs/contextmenu-bottom.png</texture>
 		</control>
 		<control type="button" id="1000">
-			<posx>120</posx>
+			<posx>121</posx>
 			<description>button template</description>
 			<include>contextMenuButton</include>
 		</control>

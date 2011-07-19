@@ -21,7 +21,7 @@
 		<animation effect="slide" start="0" end="-45" time="100" tween="Cubic" condition="Window.IsActive(107)">Conditional</animation>
 	</include>
 	<include name="notificationSide">
-		<posx>115r</posx>
+		<posx>115</posx>
 		<posy>10</posy>
 		<align>left</align>
 		<aligny>top</aligny>
@@ -51,13 +51,13 @@
 		<font>list1</font>
 		<textcolor>White</textcolor>
 		<focusedcolor>Orange</focusedcolor>
-		<texturenofocus border="0">-</texturenofocus>
-		<texturefocus border="0">dialogs/button.png</texturefocus>
-		<height>55</height>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>dialogs/button.png</texturefocus>
+		<height>54</height>
 		<align>center</align>
 		<aligny>center</aligny>
 		<textoffsety>0</textoffsety>
-		<textoffsetx>20</textoffsetx>
+		<textoffsetx>0</textoffsetx>
 		<pulseonselect>false</pulseonselect>
 		<width>422</width>
 	</include>
@@ -207,11 +207,34 @@
 	<include name="keyboardButton">
 		<font>keyboardbutton</font>
 		<texturenofocus>-</texturenofocus>
-		<texturefocus border="6,6,6,6">dialogs/buttonKB-focus.png</texturefocus>
+		<texturefocus>dialogs/buttonkb.png</texturefocus>
 		<textcolor>White</textcolor>
 		<focusedcolor>Orange</focusedcolor>
-		<width>47</width>
-		<height>55</height>
+		<width>46</width>
+		<height>54</height>
+		<align>center</align>
+		<aligny>center</aligny>
+	</include>
+	<include name="keyboardWideButton">
+		<font>keyboardbutton</font>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>dialogs/buttonkb-wide.png</texturefocus>
+		<alttexturefocus>dialogs/buttonkb-wide.png</alttexturefocus>
+		<textcolor>White</textcolor>
+		<focusedcolor>Orange</focusedcolor>
+		<width>92</width>
+		<height>54</height>
+		<align>center</align>
+		<aligny>center</aligny>
+	</include>
+	<include name="keyboardSpaceButton">
+		<font>keyboardbutton</font>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>dialogs/buttonkb-space.png</texturefocus>
+		<textcolor>White</textcolor>
+		<focusedcolor>Orange</focusedcolor>
+		<width>222</width>
+		<height>54</height>
 		<align>center</align>
 		<aligny>center</aligny>
 	</include>
