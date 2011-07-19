@@ -7,14 +7,17 @@
 	</coordinates>
 	<include>dialogOpen</include>
 	<controls>
-		<control type="image" id="1">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
+		<control type="image">
+			<include>dialogDiffuse</include>
+		</control>
+		<control type="image">
+			<posx>274</posx>
+			<posy>78</posy>
+			<width>732</width>
+			<height>564</height>
 			<texture>dialogs/keyboard.png</texture>
 		</control>
-		<control type="image" id="1">
+		<control type="image">
 			<posx>394</posx>
 			<posy>234</posy>
 			<width>490</width>
@@ -34,7 +37,7 @@
 			</control>
 			<control type="label" id="310">
 				<description>Text Entry</description>
-				<posx>62</posx>
+				<posx>71</posx>
 				<posy>68</posy>
 				<width>460</width>
 				<height>38</height>
