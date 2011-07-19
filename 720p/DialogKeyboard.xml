@@ -15,8 +15,8 @@
 			<texture>dialogs/keyboard.png</texture>
 		</control>
 		<control type="image" id="1">
-			<posx>395</posx>
-			<posy>235</posy>
+			<posx>394</posx>
+			<posy>234</posy>
 			<width>490</width>
 			<height>42</height>
 			<texture>dialogs/keyboard-textentry.png</texture>
@@ -46,7 +46,7 @@
 			</control>
 			<control type="group">
 				<posx>78</posx>
-				<posy>116</posy>
+				<posy>118</posy>
 				<control type="button" id="48">
 					<description>'0' button</description>
 					<onleft>57</onleft>
@@ -409,7 +409,7 @@
 			</control>
 			<control type="group">
 				<posx>54</posx>
-				<posy>324</posy>
+				<posy>326</posy>
 				<visible>!Skin.HasSetting(keyboardButtons)</visible>
 				<control type="button" id="8">
 					<description>Delete button</description>
