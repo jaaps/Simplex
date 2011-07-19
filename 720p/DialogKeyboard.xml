@@ -15,17 +15,17 @@
 			<texture>dialogs/keyboard.png</texture>
 		</control>
 		<control type="image" id="1">
-			<posx>386</posx>
-			<posy>230</posy>
+			<posx>395</posx>
+			<posy>235</posy>
 			<width>490</width>
 			<height>42</height>
 			<texture>dialogs/keyboard-textentry.png</texture>
 		</control>
 		<control type="group">
 			<posx>340</posx>
-			<posy>166</posy>
+			<posy>168</posy>
 			<control type="label" id="311">
-				<posy>12</posy>
+				<posy>13</posy>
 				<posx>34</posx>
 				<width>542</width>
 				<textcolor>White</textcolor>
@@ -45,9 +45,8 @@
 				<aligny>center</aligny>
 			</control>
 			<control type="group">
-				<posx>74</posx>
-				<posy>118</posy>
-				<visible>!Skin.HasSetting(keyboardButtons)</visible>
+				<posx>78</posx>
+				<posy>116</posy>
 				<control type="button" id="48">
 					<description>'0' button</description>
 					<onleft>57</onleft>
@@ -139,7 +138,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>74</posx>
+				<posx>78</posx>
 				<posy>170</posy>
 				<visible>!Skin.HasSetting(keyboardButtons)</visible>
 				<control type="button" id="81">
@@ -233,7 +232,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>96</posx>
+				<posx>100</posx>
 				<posy>222</posy>
 				<visible>!Skin.HasSetting(keyboardButtons)</visible>
 				<control type="button" id="65">
@@ -318,7 +317,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>50</posx>
+				<posx>54</posx>
 				<posy>274</posy>
 				<visible>!Skin.HasSetting(keyboardButtons)</visible>
 				<control type="togglebutton" id="302">
@@ -409,7 +408,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>50</posx>
+				<posx>54</posx>
 				<posy>324</posy>
 				<visible>!Skin.HasSetting(keyboardButtons)</visible>
 				<control type="button" id="8">
