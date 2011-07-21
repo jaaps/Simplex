@@ -41,7 +41,7 @@
 			<ondown>450</ondown>
 			<pagecontrol>-</pagecontrol>
 			<scrolltime>200</scrolltime>
-			<itemlayout height="53">
+			<itemlayout height="54">
 				<control type="group">
 					<posy>0</posy>
 					<posx>0</posx>
@@ -59,15 +59,15 @@
 					</control>
 				</control>
 			</itemlayout>
-			<focusedlayout height="53">
+			<focusedlayout height="54">
 				<control type="image">
 					<posy>0</posy>
 					<width>422</width>
 					<height>54</height>
 					<texture>dialogs/button.png</texture>
 					<aspectratio>keep</aspectratio>
-					<animation effect="slide" start="0,-53" end="0,0" time="200" reversible="false" easing="out" condition="Container(450).OnNext">Focus</animation>
-					<animation effect="slide" start="0,53" end="0,0" time="200" reversible="false" easing="out" condition="Container(450).OnPrevious">Focus</animation>
+					<animation effect="slide" start="0,-52" end="0,0" time="200" reversible="false" easing="out" condition="Container(450).OnNext">Focus</animation>
+					<animation effect="slide" start="0,52" end="0,0" time="200" reversible="false" easing="out" condition="Container(450).OnPrevious">Focus</animation>
 				</control>
 				<control type="group">
 					<posy>0</posy>
@@ -80,9 +80,24 @@
 						<height>50</height>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
+						<textcolor>White</textcolor>
+						<scroll>true</scroll>
+						<font>list1</font>
+   						<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+					</control>
+					<control type="label">
+						<posy>0</posy>
+						<posx>211</posx>
+						<width>402</width>
+						<align>center</align>
+						<height>50</height>
+						<aligny>center</aligny>
+						<info>ListItem.Label</info>
 						<textcolor>Orange</textcolor>
 						<scroll>true</scroll>
 						<font>list1</font>
+  						<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(450).OnNext">Focus</animation>
+   						<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(450).OnPrevious">Focus</animation>
 					</control>
 				</control>
 			</focusedlayout>
