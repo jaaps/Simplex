@@ -9,18 +9,18 @@
 	</coordinates>
 	<controls>
 		<control type="image">
-			<posx>535</posx>
+			<posx>534</posx>
 			<posy>258</posy>
-			<width>210</width>
+			<width>212</width>
 			<height>204</height>
 			<texture>dialogs/overlay.png</texture>
 		</control>
 		<control type="progress" id="1">
 			<description>progress control</description>
 			<posx>554</posx>
-			<posy>419</posy>
+			<posy>418</posy>
 			<width>172</width>
-			<height>17</height>
+			<height>18</height>
 			<reveal>true</reveal>
 			<texturebg>dialogs/volumebarbg.png</texturebg>
 			<lefttexture>-</lefttexture>
