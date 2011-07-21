@@ -117,10 +117,10 @@
 			<animation effect="fade" end="0" time="300">Hidden</animation>
 			<control type="image">
 				<texture>dialogs/pauseicon.png</texture>
-				<width>141</width>
-				<height>137</height>
+				<width>140</width>
+				<height>134</height>
 				<posx>252</posx>
-				<posy>315</posy>
+				<posy>316</posy>
 			</control>
 		</control>
 	</controls>
