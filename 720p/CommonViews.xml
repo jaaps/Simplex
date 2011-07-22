@@ -36,7 +36,7 @@
 						<width>464</width>
 						<height>340</height>
 						<visible>IsEmpty(ListItem.Plot)</visible>
-						<texture>$INFO[ListItem.Thumb]</texture>
+						<texture diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
 						<aspectratio aligny="bottom" align="center">keep</aspectratio>
 						<bordertexture border="14">darkborder.png</bordertexture>
 						<bordersize>8</bordersize>
@@ -47,21 +47,21 @@
 						<width>450</width>
 						<height>326</height>
 						<visible>IsEmpty(ListItem.Plot)</visible>
-						<texture>$INFO[ListItem.Thumb]</texture>
+						<texture diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
 						<aspectratio aligny="bottom" align="center">keep</aspectratio>
 						<aspectratio>stretch</aspectratio>
-						<bordertexture border="3">lightborder2.png</bordertexture>
+						<bordertexture border="7">lightborder2.png</bordertexture>
 						<bordersize>1</bordersize>
 					</control>
 				</control>
-				<control type="group">
+				<control type="group">					
 					<control type="image">
 						<posx>109</posx>
 						<posy>232</posy>
 						<width>464</width>
 						<height>294</height>
 						<visible>!IsEmpty(ListItem.Plot)</visible>
-						<texture>$INFO[ListItem.Thumb]</texture>
+						<texture diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
 						<aspectratio aligny="bottom" align="center">keep</aspectratio>
 						<bordertexture border="14">darkborder.png</bordertexture>
 						<bordersize>8</bordersize>
@@ -72,10 +72,10 @@
 						<width>450</width>
 						<height>280</height>
 						<visible>!IsEmpty(ListItem.Plot)</visible>
-						<texture>$INFO[ListItem.Thumb]</texture>
+						<texture diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
 						<aspectratio aligny="bottom" align="center">keep</aspectratio>
 						<aspectratio>stretch</aspectratio>
-						<bordertexture border="3">lightborder2.png</bordertexture>
+						<bordertexture border="2">lightborder2.png</bordertexture>
 						<bordersize>1</bordersize>
 					</control>
 				</control>
