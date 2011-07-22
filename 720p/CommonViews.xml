@@ -20,7 +20,7 @@
 					<height>415</height>
 					<visible>!IsEmpty(ListItem.Plot)</visible>
 					<texture>poster_background.png</texture>
-					</control>
+				</control>
 				<control type="image">
 					<posx>208</posx>
 					<posy>317</posy>
@@ -29,23 +29,55 @@
 					<visible>Container.Content(Secondary)</visible>
 					<texture>plexicon.png</texture>
 				</control>
-				<control type="image">
-					<posx>116</posx>
-					<posy>292</posy>
-					<width>450</width>
-					<height>326</height>
-					<visible>IsEmpty(ListItem.Plot)</visible>
-					<texture>$INFO[ListItem.Thumb]</texture>
-					<aspectratio aligny="bottom" align="center">keep</aspectratio>
+				<control type="group">
+					<control type="image">
+						<posx>109</posx>
+						<posy>285</posy>
+						<width>464</width>
+						<height>340</height>
+						<visible>IsEmpty(ListItem.Plot)</visible>
+						<texture>$INFO[ListItem.Thumb]</texture>
+						<aspectratio aligny="bottom" align="center">keep</aspectratio>
+						<bordertexture border="14">darkborder.png</bordertexture>
+						<bordersize>7</bordersize>
+					</control>
+					<control type="image">
+						<posx>116</posx>
+						<posy>292</posy>
+						<width>450</width>
+						<height>326</height>
+						<visible>IsEmpty(ListItem.Plot)</visible>
+						<texture>$INFO[ListItem.Thumb]</texture>
+						<aspectratio aligny="bottom" align="center">keep</aspectratio>
+						<aspectratio>stretch</aspectratio>
+						<bordertexture border="3">lightborder2.png</bordertexture>
+						<bordersize>1</bordersize>
+					</control>
 				</control>
-				<control type="image">
-					<posx>116</posx>
-					<posy>239</posy>
-					<width>450</width>
-					<height>280</height>
-					<visible>!IsEmpty(ListItem.Plot)</visible>
-					<texture>$INFO[ListItem.Thumb]</texture>
-					<aspectratio aligny="bottom" align="center">keep</aspectratio>
+				<control type="group">
+					<control type="image">
+						<posx>109</posx>
+						<posy>232</posy>
+						<width>464</width>
+						<height>294</height>
+						<visible>!IsEmpty(ListItem.Plot)</visible>
+						<texture>$INFO[ListItem.Thumb]</texture>
+						<aspectratio aligny="bottom" align="center">keep</aspectratio>
+						<bordertexture border="14">darkborder.png</bordertexture>
+						<bordersize>7</bordersize>
+					</control>
+					<control type="image">
+						<posx>116</posx>
+						<posy>239</posy>
+						<width>450</width>
+						<height>280</height>
+						<visible>!IsEmpty(ListItem.Plot)</visible>
+						<texture>$INFO[ListItem.Thumb]</texture>
+						<aspectratio aligny="bottom" align="center">keep</aspectratio>
+						<aspectratio>stretch</aspectratio>
+						<bordertexture border="3">lightborder2.png</bordertexture>
+						<bordersize>1</bordersize>
+					</control>
 				</control>
 				<control type="image">
 					<texture diffuse="fade.png" flipy="true">$INFO[ListItem.Thumb]</texture>
@@ -119,38 +151,34 @@
 				</control>
 				<!-- /Shadow -->
 				<!-- Current Thumb -->
-				<control type="image">
-					<posx>249</posx>
-					<posy>239</posy>
-					<width>187</width>
-					<height>280</height>
-					<visible>!Container.OnNext + !Container.OnPrevious</visible>
-					<texture>$INFO[ListItem.Thumb]</texture>
-					<aspectratio>scale</aspectratio>
-					<animation effect="fade" start="0" end="100" time="200" reversible="false">VisibleChange</animation>
+				<control type="group">
+					<control type="image">
+						<texture diffuse="diffuse_poster.png">$INFO[ListItem.Thumb]</texture>
+						<posy>233</posy>
+						<posx>242</posx>
+						<aspectratio>stretch</aspectratio>
+						<bordertexture border="15">darkborder.png</bordertexture>
+						<bordersize>9</bordersize>
+						<width>203</width>
+						<height>293</height>
+						<visible>!Container.OnNext + !Container.OnPrevious</visible>
+						<animation effect="fade" start="0" end="100" time="200" reversible="false">Visible</animation>
+					</control>
+					<control type="image">
+						<texture diffuse="diffuse_poster.png">$INFO[ListItem.Thumb]</texture>
+						<posy>240</posy>
+						<posx>249</posx>
+						<aspectratio>stretch</aspectratio>
+						<width>189</width>
+						<height>279</height>
+						<bordertexture border="5">lightborder.png</bordertexture>
+						<bordersize>0</bordersize>
+						<visible>!Container.OnNext + !Container.OnPrevious</visible>
+						<animation effect="fade" start="0" end="100" time="200" reversible="false">Visible</animation>
+					</control>
 				</control>
 				<!-- /Current Thumb -->
 				<!-- Old thumb fade out -->
-				<control type="image">
-					<posx>249</posx>
-					<posy>239</posy>
-					<width>187</width>
-					<height>280</height>
-					<visible>Container.OnPrevious</visible>
-					<texture>$INFO[ListItem(1).Thumb]</texture>
-					<aspectratio>scale</aspectratio>
-					<animation effect="fade" start="0" end="100" time="200" reversible="false">VisibleChange</animation>
-				</control>
-				<control type="image">
-					<posx>249</posx>
-					<posy>239</posy>
-					<width>187</width>
-					<height>280</height>
-					<visible>Container.OnNext</visible>
-					<texture>$INFO[ListItem(-1).Thumb]</texture>
-					<aspectratio>scale</aspectratio>
-					<animation effect="fade" start="0" end="100" time="200" reversible="false">VisibleChange</animation>
-				</control>
 				<!-- /Old thumb fade out -->
 			</control>
 			<control type="group">
@@ -227,7 +255,7 @@
 					<texture>$INFO[ListItem(1).Thumb]</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="fade" start="0" end="100" time="200" reversible="false">VisibleChange</animation>
-					</control>
+				</control>
 				<control type="image">
 					<posx>142</posx>
 					<posy>250</posy>
@@ -237,7 +265,7 @@
 					<texture>$INFO[ListItem(-1).Thumb]</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="fade" start="0" end="100" time="200" reversible="false">VisibleChange</animation>
-					</control>
+				</control>
 				<!-- /Old thumb fade out -->
 			</control>
 			<!-- ### INFO/METADATA ### -->
@@ -453,23 +481,23 @@
 						<aspectratio aligny="bottom" align="left">keep</aspectratio>
 					</control>
 				</control>
-					<control type="group">
-						<height>31</height>
-						<visible>IsEmpty(ListItem.Rating)</visible>
-						<control type="grouplist">
-							<visible>!Skin.HasSetting(Flags)</visible>
+				<control type="group">
+					<height>31</height>
+					<visible>IsEmpty(ListItem.Rating)</visible>
+					<control type="grouplist">
+						<visible>!Skin.HasSetting(Flags)</visible>
+						<aligny>bottom</aligny>
+						<control type="label">
+							<width>505</width>
+							<height>28</height>
+							<align>left</align>
 							<aligny>bottom</aligny>
-							<control type="label">
-								<width>505</width>
-								<height>28</height>
-								<align>left</align>
-								<aligny>bottom</aligny>
-								<label>$INFO[ListItem.Label]</label>
-								<font>title1</font>
-								<textcolor>Orange</textcolor>
-							</control>
+							<label>$INFO[ListItem.Label]</label>
+							<font>title1</font>
+							<textcolor>Orange</textcolor>
 						</control>
 					</control>
+				</control>
 				<control type="textbox">
 					<description>Plot/Details</description>
 					<width>504</width>
@@ -615,7 +643,7 @@
 								<textcolor>White</textcolor>
 								<scroll>true</scroll>
 								<font>list1</font>
-   								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 							</control>
 							<control type="label">
 								<visible>!Container.Content(episodes)</visible>
@@ -628,8 +656,8 @@
 								<textcolor>Orange</textcolor>
 								<scroll>true</scroll>
 								<font>list1</font>
-  								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
-   								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
 							</control>
 							<control type="label">
 								<visible>Container.Content(episodes) + IsEmpty(Container.Property(mixedParents))</visible>
@@ -642,7 +670,7 @@
 								<textcolor>White</textcolor>
 								<scroll>false</scroll>
 								<font>list1</font>
-   								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 							</control>
 							<control type="label">
 								<visible>Container.Content(episodes) + IsEmpty(Container.Property(mixedParents))</visible>
@@ -655,8 +683,8 @@
 								<textcolor>Orange</textcolor>
 								<scroll>false</scroll>
 								<font>list1</font>
-  								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
-   								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
 							</control>
 							<control type="label">
 								<visible>Container.Content(episodes) + !IsEmpty(Container.Property(mixedParents))</visible>
@@ -669,7 +697,7 @@
 								<textcolor>White</textcolor>
 								<scroll>false</scroll>
 								<font>list1</font>
-   								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 							</control>
 							<control type="label">
 								<visible>Container.Content(episodes) + !IsEmpty(Container.Property(mixedParents))</visible>
@@ -682,8 +710,8 @@
 								<textcolor>White</textcolor>
 								<scroll>false</scroll>
 								<font>list1</font>
-  								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
-   								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
 							</control>
 							<control type="image">
 								<posy>1</posy>
@@ -700,7 +728,7 @@
 								<height>54</height>
 								<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution/unfocus/,.png]</texture>
 								<aspectratio align="left" aligny="center">keep</aspectratio>
-   								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 							</control>
 							<control type="image">
 								<posy>2</posy>
@@ -709,8 +737,8 @@
 								<height>54</height>
 								<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution/focus/,.png]</texture>
 								<aspectratio align="left" aligny="center">keep</aspectratio>
-  								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
-   								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
 							</control>
 							<control type="image">
 								<visible>[Container.Content(tvshows) | Container.Content(seasons)] + IsEmpty(ListItem.Property(ZeroEpisodeCount))</visible>
@@ -719,7 +747,7 @@
 								<width>36</width>
 								<height>24</height>
 								<texture>unwatchedlabel.png</texture>
-   								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 							</control>
 							<control type="image">
 								<visible>[Container.Content(tvshows) | Container.Content(seasons)] + IsEmpty(ListItem.Property(ZeroEpisodeCount))</visible>
@@ -728,9 +756,9 @@
 								<width>36</width>
 								<height>24</height>
 								<texture>unwatchedlabelfocus.png</texture>
-  								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
-   								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
-							</control>							
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
+							</control>
 							<control type="label">
 								<visible>[Container.Content(tvshows) | Container.Content(seasons)] + IsEmpty(ListItem.Property(ZeroEpisodeCount))</visible>
 								<posy>13</posy>
@@ -742,7 +770,7 @@
 								<font>list3</font>
 								<textcolor>DarkGray</textcolor>
 								<info>ListItem.Property(UnWatchedEpisodes)</info>
-   								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 							</control>
 							<control type="label">
 								<visible>[Container.Content(tvshows) | Container.Content(seasons)] + IsEmpty(ListItem.Property(ZeroEpisodeCount))</visible>
@@ -755,8 +783,8 @@
 								<font>list3</font>
 								<textcolor>Gray</textcolor>
 								<info>ListItem.Property(UnWatchedEpisodes)</info>
-  								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
-   								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
 							</control>
 						</control>
 						<control type="group">
@@ -771,7 +799,7 @@
 								<textcolor>White</textcolor>
 								<scroll>false</scroll>
 								<font>list1</font>
-   								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 							</control>
 							<control type="label">
 								<posy>1</posy>
@@ -783,9 +811,9 @@
 								<textcolor>Orange</textcolor>
 								<scroll>false</scroll>
 								<font>list1</font>
-  								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
-   								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
-							</control>						
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
+							</control>
 						</control>
 					</control>
 				</focusedlayout>
@@ -856,7 +884,7 @@
 								<textcolor>White</textcolor>
 								<scroll>true</scroll>
 								<font>list2</font>
-   								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 							</control>
 							<control type="label">
 								<visible>Container.Content(episodes)</visible>
@@ -867,8 +895,8 @@
 								<textcolor>Orange</textcolor>
 								<scroll>true</scroll>
 								<font>list2</font>
-  								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
-   								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
 							</control>
 							<control type="label">
 								<visible>Container.Content(episodes)</visible>
@@ -879,7 +907,7 @@
 								<textcolor>DarkGray</textcolor>
 								<scroll>false</scroll>
 								<font>plot1</font>
-   								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 							</control>
 							<control type="label">
 								<visible>Container.Content(episodes)</visible>
@@ -890,8 +918,8 @@
 								<textcolor>Gray</textcolor>
 								<scroll>false</scroll>
 								<font>plot1</font>
-  								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
-   								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
 							</control>
 							<control type="image">
 								<posy>-1</posy>
@@ -908,7 +936,7 @@
 								<height>74</height>
 								<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution/unfocus/,.png]</texture>
 								<aspectratio align="left" aligny="center">keep</aspectratio>
-   								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 							</control>
 							<control type="image">
 								<posy>0</posy>
@@ -917,9 +945,9 @@
 								<height>74</height>
 								<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution/focus/,.png]</texture>
 								<aspectratio align="left" aligny="center">keep</aspectratio>
-  								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
-   								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
-							</control>						
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
+							</control>
 						</control>
 					</control>
 				</focusedlayout>
