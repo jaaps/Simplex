@@ -39,7 +39,7 @@
 						<texture>$INFO[ListItem.Thumb]</texture>
 						<aspectratio aligny="bottom" align="center">keep</aspectratio>
 						<bordertexture border="14">darkborder.png</bordertexture>
-						<bordersize>7</bordersize>
+						<bordersize>8</bordersize>
 					</control>
 					<control type="image">
 						<posx>116</posx>
@@ -64,7 +64,7 @@
 						<texture>$INFO[ListItem.Thumb]</texture>
 						<aspectratio aligny="bottom" align="center">keep</aspectratio>
 						<bordertexture border="14">darkborder.png</bordertexture>
-						<bordersize>7</bordersize>
+						<bordersize>8</bordersize>
 					</control>
 					<control type="image">
 						<posx>116</posx>
@@ -80,7 +80,7 @@
 					</control>
 				</control>
 				<control type="image">
-					<texture diffuse="fade.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+					<texture diffuse="fade.png" flipy="true" border="2">$INFO[ListItem.Thumb]</texture>
 					<posx>116</posx>
 					<posy>618</posy>
 					<width>450</width>
@@ -89,7 +89,7 @@
 					<aspectratio aligny="top" align="center">keep</aspectratio>
 				</control>
 				<control type="image">
-					<texture diffuse="fade.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+					<texture diffuse="fade.png" flipy="true" border="2">$INFO[ListItem.Thumb]</texture>
 					<posx>116</posx>
 					<posy>519</posy>
 					<width>450</width>
