@@ -4,45 +4,65 @@
 	<include>dialogOpen</include>
 	<coordinates>
 		<system>1</system>
-		<posx>365</posx>
-		<posy>235</posy>
+		<posx>0</posx>
+		<posy>0</posy>
 	</coordinates>
 	<controls>
 		<control type="group">
-			<control type="image">
-				<width>550</width>
-				<height>250</height>
-				<include>dialogWindow</include>
+			<control type="image" id="1">
+				<width>1280</width>
+				<height>720</height>
+				<texture>dialogs/dialogok.png</texture>
+				<posx>0</posx>
+				<posy>0</posy>
 			</control>
 			<control type="label" id="1">
 				<description>heading label</description>
-				<width>482</width>
+				<width>422</width>
 				<label>13406</label>
-				<include>dialogHeading</include>
+				<posx>430</posx>
+				<posy>258</posy>
+				<align>center</align>
+				<font>list1</font>
 			</control>
 			<control type="label" id="2">
 				<description>dialog line 1</description>
-				<posy>65</posy>
-				<width>482</width>
-				<include>dialogLine</include>
+				<posy>282</posy>
+				<posx>430</posx>
+				<align>center</align>
+				<textcolor>Gray</textcolor>
+				<font>plot1</font>
+				<width>422</width>
 			</control>
 			<control type="label" id="3">
 				<description>dialog line 2</description>
-				<posy>90</posy>
-				<width>482</width>
-				<include>dialogLine</include>
+				<posy>318</posy>
+				<posx>430</posx>
+				<align>center</align>
+				<textcolor>Gray</textcolor>
+				<font>plot1</font>
+				<width>422</width>
 			</control>
 			<control type="label" id="4">
 				<description>dialog line 3</description>
-				<posy>115</posy>
-				<width>482</width>
-				<include>dialogLine</include>
+				<posy>344</posy>
+				<posx>430</posx>
+				<align>center</align>
+				<textcolor>Gray</textcolor>
+				<font>plot1</font>
+				<width>422</width>
 			</control>
-			<control type="button" id="10">
-				<posx>223</posx>
-				<posy>175</posy>
-				<label>186</label>
-				<include>dialogConfirmButton</include>
+			<control type="group">
+				<posx>430</posx>
+				<posy>364</posy>
+				<control type="button" id="10">
+					<description>OK button</description>
+					<posy>54</posy>
+					<label>186</label>
+					<ondown>11</ondown>
+					<onup>11</onup>
+					<include>contextMenuButton</include>
+				</control>
 			</control>
 		</control>
 	</controls>
