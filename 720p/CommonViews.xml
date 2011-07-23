@@ -43,13 +43,13 @@
 					<posx>116</posx>
 					<posy>519</posy>
 					<width>450</width>
-					<height>280</height>
+					<height>279</height>
 					<visible>!IsEmpty(ListItem.Plot)</visible>
 					<aspectratio aligny="top" align="center">keep</aspectratio>
 				</control>
 				<control type="group">
 					<control type="image">
-						<posx>108</posx>
+						<posx>109</posx>
 						<posy>291</posy>
 						<width>464</width>
 						<height>338</height>
@@ -60,7 +60,7 @@
 						<bordersize>5,3,5,9</bordersize>
 					</control>
 					<control type="image">
-						<posx>115</posx>
+						<posx>116</posx>
 						<posy>293</posy>
 						<width>450</width>
 						<height>326</height>
@@ -73,9 +73,9 @@
 				</control>
 				<control type="group">					
 					<control type="image">
-						<posx>108</posx>
+						<posx>110</posx>
 						<posy>237</posy>
-						<width>464</width>
+						<width>461</width>
 						<height>291</height>
 						<visible>!IsEmpty(ListItem.Plot)</visible>
 						<texture diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
@@ -84,7 +84,7 @@
 						<bordersize>6,3,6,9</bordersize>
 					</control>
 					<control type="image">
-						<posx>115</posx>
+						<posx>116</posx>
 						<posy>240</posy>
 						<width>450</width>
 						<height>279</height>
