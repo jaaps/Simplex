@@ -5,8 +5,29 @@
 	<controls>
 		<include>Background</include>
 		<control type="group">
-			<animation type="WindowOpen">
-				<effect type="fade" start="0" end="100" time="900" delay="100"/>
+			<animation type="conditional" condition="Container.Content(Movies)" reversible="false">
+				<effect type="fade" start="0" end="100" time="1200" delay="0"/>
+			</animation>
+			<animation type="conditional" condition="Container.Content(TVShows)" reversible="false">
+				<effect type="fade" start="0" end="100" time="1200" delay="0"/>
+			</animation>
+			<animation type="conditional" condition="Container.Content(Seasons)" reversible="false">
+				<effect type="fade" start="0" end="100" time="1200" delay="0"/>
+			</animation>
+			<animation type="conditional" condition="Container.Content(Episodes)" reversible="false">
+				<effect type="fade" start="0" end="100" time="1200" delay="0"/>
+			</animation>
+			<animation type="conditional" condition="Container.Content(Artists)" reversible="false">
+				<effect type="fade" start="0" end="100" time="1200" delay="0"/>
+			</animation>
+			<animation type="conditional" condition="Container.Content(Albums)" reversible="false">
+				<effect type="fade" start="0" end="100" time="1200" delay="0"/>
+			</animation>
+			<animation type="conditional" condition="Container.Content(Songs)" reversible="false">
+				<effect type="fade" start="0" end="100" time="1200" delay="0"/>
+			</animation>
+			<animation type="conditional" condition="Container.Content(secondary)" reversible="false">
+				<effect type="fade" start="0" end="100" time="1200" delay="0"/>
 			</animation>
 			<include>Header</include>
 			<include>HeaderVideo</include>
