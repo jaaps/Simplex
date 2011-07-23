@@ -57,7 +57,7 @@
 						<texture diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
 						<aspectratio aligny="bottom" align="center">keep</aspectratio>
 						<bordertexture border="1">shadow_square.png</bordertexture>
-						<bordersize>6,3,6,9</bordersize>
+						<bordersize>5,3,5,9</bordersize>
 					</control>
 					<control type="image">
 						<posx>116</posx>
