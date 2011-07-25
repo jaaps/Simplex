@@ -4,35 +4,6 @@
 	<include file="CommonViews.xml"/>
 	<include file="NowPlayingIncludes.xml"/>
 	<include file="IncludesDialogs.xml"/>
-	<include name="Background_Home">
-		<control type="group">
-		<control type="multiimage" id="1">
-			<aspectratio>scale</aspectratio>
-			<imagepath>../../../userdata/Thumbnails/PlexMediaServer/Fanart/</imagepath>
-			<timeperimage>8000</timeperimage>
-			<fadetime>1000</fadetime>
-			<randomize>true</randomize>
-			<loop>yes</loop>
-			<animation type="WindowOpen">
-				<effect type="fade" start="0" end="100" time="2000" delay="100"/>
-			</animation>
-		</control>
-			<control type="image">
-				<texture>background_overlay.png</texture>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<visible>true</visible>
-			</control>
-			<control type="image">
-				<texture>plexicon_home.png</texture>
-				<posx>605</posx>
-				<posy>7</posy>
-				<visible>true</visible>
-			</control>
-		</control>
-	</include>
 	<include name="ButtonPaused">
 		<texturenofocus>osd/osd_button_play.png</texturenofocus>
 		<texturefocus>osd/osd_button_play_fo.png</texturefocus>
@@ -292,38 +263,16 @@
 	</include>
 	<include name="Background">
 		<control type="largeimage">
-			<info>ListItem.Property(fanart_image)</info>
+			<info background="true">ListItem.Property(fanart_image)</info>			
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
 			<visible>true</visible>
-			<animation type="WindowOpen">
-				<effect type="fade" start="0" end="100" time="1200" delay="100"/>
-			</animation>
+			<fadetime>300</fadetime>
 		</control>
 		<control type="largeimage">
-			<animation effect="fade" start="100" end="0" time="600" tween="cubic" easing="inout" delay="0">Hidden</animation>
-			<info>ListItem(-1).Property(fanart_image)</info>
-			<visible>Container.OnNext</visible>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<visible>true</visible>
-		</control>
-		<control type="largeimage">
-			<animation effect="fade" start="100" end="0" time="600" tween="cubic" easing="inout" delay="0">Hidden</animation>
-			<info>ListItem(1).Property(fanart_image)</info>
-			<visible>Container.OnPrevious</visible>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<visible>true</visible>
-		</control>
-		<control type="image">
-			<texture>background_overlay.png</texture>
+			<texture background="true">background_overlay.png</texture>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
