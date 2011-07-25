@@ -22,7 +22,7 @@
 			</animation>
 		</control>
 			<control type="image">
-				<texture>background_overlay.png</texture>
+				<texture background="true">background_overlay.png</texture>
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
@@ -133,6 +133,12 @@
 						<description>Quit</description>
 						<label>Quit</label>
 						<onclick>Plex.Shutdown()</onclick>
+					</item>
+					<item id="5">
+						<description>DVD Button</description>
+						<label>DVD</label>
+						<visible>System.HasMediadvd + !Skin.HasSetting(HideDVD)</visible>
+						<onclick>XBMC.PlayDVD</onclick>
 					</item>
 				</content>
 			</control>
