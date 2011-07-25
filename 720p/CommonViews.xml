@@ -37,6 +37,7 @@
 					<height>326</height>
 					<visible>IsEmpty(ListItem.Plot)</visible>
 					<aspectratio aligny="top" align="center">keep</aspectratio>
+					<fadetime>200</fadetime>
 				</control>
 				<control type="image">
 					<texture background="true" diffuse="reflection_square.png" flipy="true" border="2">$INFO[ListItem.Thumb]</texture>
@@ -46,6 +47,7 @@
 					<height>279</height>
 					<visible>!IsEmpty(ListItem.Plot)</visible>
 					<aspectratio aligny="top" align="center">keep</aspectratio>
+					<fadetime>200</fadetime>
 				</control>
 				<control type="image">
 					<posx>109</posx>
@@ -57,6 +59,7 @@
 					<aspectratio aligny="bottom" align="center">keep</aspectratio>
 					<bordertexture>shadow_square.png</bordertexture>
 					<bordersize>6,4,6,8</bordersize>
+					<fadetime>200</fadetime>
 				</control>
 				<control type="image">
 					<posx>110</posx>
@@ -68,6 +71,7 @@
 					<aspectratio aligny="bottom" align="center">keep</aspectratio>
 					<bordertexture border="3">shadow_square.png</bordertexture>
 					<bordersize>6,5,6,8</bordersize>
+					<fadetime>200</fadetime>
 				</control>
 			</control>
 			<control type="group">
