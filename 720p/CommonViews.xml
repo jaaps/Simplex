@@ -89,7 +89,6 @@
 					<posy>519</posy>
 					<width>188</width>
 					<height>279</height>
-					<visible>!Container.OnNext + !Container.OnPrevious</visible>
 					<texture background="true" diffuse="reflection_poster.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>200</fadetime>
@@ -101,7 +100,6 @@
 					<posy>236</posy>
 					<width>200</width>
 					<height>291</height>
-					<visible>!Container.OnNext + !Container.OnPrevious</visible>
 					<texture background="true" diffuse="diffuse_poster.png">$INFO[ListItem.Thumb]</texture>
 					<aspectratio>stretch</aspectratio>
 					<bordertexture>shadow_poster.png</bordertexture>
@@ -125,7 +123,6 @@
 					<posy>474</posy>
 					<width>400</width>
 					<height>224</height>
-					<visible>!Container.OnNext + !Container.OnPrevious</visible>
 					<texture background="true" diffuse="reflection_episode.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>200</fadetime>
@@ -137,7 +134,6 @@
 					<posy>246</posy>
 					<width>412</width>
 					<height>236</height>
-					<visible>!Container.OnNext + !Container.OnPrevious</visible>
 					<texture background="true" diffuse="diffuse_episode.png">$INFO[ListItem.Thumb]</texture>
 					<aspectratio>stretch</aspectratio>
 					<bordertexture>shadow_episode.png</bordertexture>
@@ -398,7 +394,6 @@
 				<onup>50</onup>
 				<ondown>50</ondown>
 				<viewtype label="List">list</viewtype>
-				<preloaditems>2</preloaditems>	
 				<scrolltime>200</scrolltime>
 				<itemlayout height="52" condition="![!IsEmpty(Container.Property(mixedParents)) + Container.Content(episodes)]">
 					<control type="group">
