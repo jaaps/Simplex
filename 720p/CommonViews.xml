@@ -128,6 +128,7 @@
 				</control>
 				<!-- /Current Thumb reflection-->
 				<!-- Current Thumb -->
+				<control type="group">
 				<control type="image">
 					<posx>136</posx>
 					<posy>246</posy>
@@ -140,6 +141,7 @@
 					<bordersize>6,4,6,8</bordersize>
 					<animation effect="fade" start="0" end="100" time="200" easing="inout" reversible="false">VisibleChange</animation>
 				</control>
+			</control>
 				<!-- /Current Thumb -->
 			</control>
 			<!-- ### INFO/METADATA ### -->
