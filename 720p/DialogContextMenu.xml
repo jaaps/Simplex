@@ -9,27 +9,27 @@
 	</coordinates>
 	<controls>
 		<control type="image" id="997">
-			<description>background top image</description>
+			<description>dialog top image</description>
 			<posx>0</posx>
-			<posy>-92</posy>
+			<posy>-94</posy>
 			<width>662</width>
-			<height>92</height>
-			<texture>dialogs/contextmenu-top.png</texture>
+			<height>94</height>
+			<texture>dialogs/dialog_top.png</texture>
 		</control>
 		<control type="image" id="999">
-			<description>background image</description>
+			<description>dialog center image</description>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>662</width>
-			<texture>dialogs/contextmenu-center.png</texture>
+			<texture>dialogs/dialog_center.png</texture>
 		</control>
 		<control type="image" id="998">
-			<description>background bottom image</description>
+			<description>dialog bottom image</description>
 			<posx>0</posx>
-			<posy>91</posy>
+			<posy>0</posy>
 			<width>662</width>
-			<height>91</height>
-			<texture>dialogs/contextmenu-bottom.png</texture>
+			<height>94</height>
+			<texture>dialogs/dialog_bottom.png</texture>
 		</control>
 		<control type="button" id="1000">
 			<posx>121</posx>

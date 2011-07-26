@@ -8,14 +8,22 @@
 		<posy>0</posy>
 	</coordinates>
 	<controls>
+		<control type="image">
+			<posy>191</posy>
+			<include>dialogWindowTop</include>
+		</control>
+		<control type="image">
+			<posy>285</posy>
+			<height>151</height>
+			<include>dialogWindowCenter</include>
+		</control>		
+		<control type="image">
+			<posy>436</posy>
+			<include>dialogWindowBottom</include>
+		</control>
 		<control type="group">
 			<posx>309</posx>
 			<posy>191</posy>
-			<control type="image">
-				<texture>dialogs/ratingdialog.png</texture>
-				<width>662</width>
-				<height>337</height>
-			</control>
 			<control type="label" id="2">
 				<posx>0</posx>
 				<posy>103</posy>
@@ -34,18 +42,18 @@
 				<textcolor>Gray</textcolor>
 			</control>
 			<control type="image" id="8">
-				<posx>187</posx>
-				<posy>168</posy>
-				<width>288</width>
-				<height>66</height>
+				<posx>190</posx>
+				<posy>179</posy>
+				<width>282</width>
+				<height>50</height>
 				<texture>rating0-big.png</texture>
 				<colordiffuse>22FFFFFF</colordiffuse>
 			</control>
 			<control type="image" id="10">
-				<posx>187</posx>
-				<posy>168</posy>
-				<width>288</width>
-				<height>66</height>
+				<posx>190</posx>
+				<posy>179</posy>
+				<width>282</width>
+				<height>50</height>
 				<texture>rating0-big.png</texture>
 			</control>
 		</control>

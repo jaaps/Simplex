@@ -43,9 +43,24 @@
 		<posy>0</posy>
 		<texture>dialogs/diffuse.png</texture>
 		<aspectratio>scale</aspectratio>
+		<animation effect="fade" time="200">VisibleChange</animation>
 	</include>
-	<include name="dialogWindow">
-		<texture border="80">dialogs/dialogWindow.png</texture>
+	<include name="dialogWindowTop">
+		<posx>309</posx>
+		<width>662</width>
+		<height>94</height>
+		<texture>dialogs/dialog_top.png</texture>
+	</include>
+	<include name="dialogWindowCenter">
+		<posx>309</posx>
+		<width>662</width>
+		<texture>dialogs/dialog_center.png</texture>
+	</include>
+	<include name="dialogWindowBottom">
+		<posx>309</posx>
+		<width>662</width>
+		<height>94</height>
+		<texture>dialogs/dialog_bottom.png</texture>
 	</include>
 	<include name="contextMenuButton">
 		<font>list1</font>

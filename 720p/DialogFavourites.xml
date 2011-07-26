@@ -7,10 +7,17 @@
 			<include>dialogDiffuse</include>
 		</control>
 		<control type="image">
-			<posx>309</posx>
 			<posy>41</posy>
-			<height>637</height>
-			<include>dialogWindow</include>
+			<include>dialogWindowTop</include>
+		</control>
+		<control type="image">
+			<posy>135</posy>
+			<height>437</height>
+			<include>dialogWindowCenter</include>
+		</control>		
+		<control type="image">
+			<posy>572</posy>
+			<include>dialogWindowBottom</include>
 		</control>
 		<control type="label">
 			<description>First title</description>
