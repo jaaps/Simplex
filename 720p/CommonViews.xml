@@ -148,8 +148,6 @@
 				<posx>91</posx>
 				<posy>534</posy>
 				<visible>Container.Content(Movies)</visible>
-				<visible>!Container.OnNext + !Container.OnPrevious</visible>
-				<animation effect="fade" start="0" end="100" time="500" easing="inout">Visible</animation>
 				<control type="group">
 					<height>31</height>
 					<visible>!IsEmpty(ListItem.Rating)</visible>
@@ -207,8 +205,6 @@
 				<posx>91</posx>
 				<posy>534</posy>
 				<visible>Container.Content(tvshows)</visible>
-				<visible>!Container.OnNext + !Container.OnPrevious</visible>
-				<animation effect="fade" start="0" end="100" time="500" easing="inout">Visible</animation>
 				<control type="group">
 					<height>31</height>
 					<visible>!IsEmpty(ListItem.Rating)</visible>
@@ -265,8 +261,6 @@
 					<height>31</height>
 					<control type="grouplist">
 						<aligny>bottom</aligny>
-						<visible>!Container.OnNext + !Container.OnPrevious</visible>
-						<animation effect="fade" start="0" end="100" time="500" easing="inout">Visible</animation>
 						<control type="label">
 							<width>505</width>
 							<height>28</height>
@@ -292,8 +286,6 @@
 				<posx>91</posx>
 				<posy>489</posy>
 				<visible>Container.Content(episodes)</visible>
-				<visible>!Container.OnNext + !Container.OnPrevious</visible>
-				<animation effect="fade" start="0" end="100" time="500" easing="inout">Visible</animation>
 				<control type="group">
 					<height>31</height>
 					<control type="label">
@@ -329,8 +321,6 @@
 				<posx>91</posx>
 				<posy>534</posy>
 				<visible>!Container.Content(movies) + !Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(albums) + !Container.Content(songs) + !Container.Content(artists) + !IsEmpty(ListItem.Plot)</visible>
-				<visible>!Container.OnNext + !Container.OnPrevious</visible>
-				<animation effect="fade" start="0" end="100" time="500" easing="inout">Visible</animation>
 				<control type="group">
 					<height>31</height>
 					<visible>!IsEmpty(ListItem.Rating)</visible>
