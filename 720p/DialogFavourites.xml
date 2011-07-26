@@ -42,11 +42,8 @@
 			<posy>194</posy>
 			<width>422</width>
 			<height>379</height>
-			<onup>450</onup>
 			<onleft>450</onleft>
 			<onright>450</onright>
-			<ondown>450</ondown>
-			<pagecontrol>-</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<itemlayout height="54">
 				<control type="group">

@@ -373,8 +373,6 @@
 				<height>426</height>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
-				<onup>50</onup>
-				<ondown>50</ondown>
 				<viewtype label="List">list</viewtype>
 				<scrolltime>200</scrolltime>
 				<itemlayout height="52" condition="![!IsEmpty(Container.Property(mixedParents)) + Container.Content(episodes)]">
