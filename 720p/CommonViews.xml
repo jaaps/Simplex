@@ -30,24 +30,22 @@
 					<texture>plexicon.png</texture>
 				</control>
 				<control type="image">
-					<texture background="true" diffuse="reflection_square.png" flipy="true" border="2">$INFO[ListItem.Thumb]</texture>
 					<posx>116</posx>
 					<posy>620</posy>
 					<width>450</width>
 					<height>326</height>
+					<texture diffuse="reflection_square.png" flipy="true" border="2">$INFO[ListItem.Thumb]</texture>
 					<visible>IsEmpty(ListItem.Plot)</visible>
 					<aspectratio aligny="top" align="center">keep</aspectratio>
-					<fadetime>200</fadetime>
 				</control>
 				<control type="image">
-					<texture background="true" diffuse="reflection_square.png" flipy="true" border="2">$INFO[ListItem.Thumb]</texture>
 					<posx>116</posx>
 					<posy>519</posy>
 					<width>450</width>
 					<height>279</height>
+					<texture diffuse="reflection_square.png" flipy="true" border="2">$INFO[ListItem.Thumb]</texture>
 					<visible>!IsEmpty(ListItem.Plot)</visible>
 					<aspectratio aligny="top" align="center">keep</aspectratio>
-					<fadetime>200</fadetime>
 				</control>
 				<control type="image">
 					<posx>109</posx>
@@ -55,11 +53,10 @@
 					<width>464</width>
 					<height>338</height>
 					<visible>IsEmpty(ListItem.Plot)</visible>
-					<texture background="true" diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
+					<texture diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
 					<aspectratio aligny="bottom" align="center">keep</aspectratio>
 					<bordertexture>shadow_square.png</bordertexture>
 					<bordersize>6,4,6,8</bordersize>
-					<fadetime>200</fadetime>
 				</control>
 				<control type="image">
 					<posx>110</posx>
@@ -67,11 +64,10 @@
 					<width>461</width>
 					<height>291</height>
 					<visible>!IsEmpty(ListItem.Plot)</visible>
-					<texture background="true" diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
+					<texture diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
 					<aspectratio aligny="bottom" align="center">keep</aspectratio>
 					<bordertexture border="3">shadow_square.png</bordertexture>
 					<bordersize>6,5,6,8</bordersize>
-					<fadetime>200</fadetime>
 				</control>
 			</control>
 			<control type="group">
@@ -89,9 +85,8 @@
 					<posy>519</posy>
 					<width>188</width>
 					<height>279</height>
-					<texture background="true" diffuse="reflection_poster.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+					<texture diffuse="reflection_poster.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<aspectratio>stretch</aspectratio>
-					<fadetime>200</fadetime>
 				</control>
 				<!-- /Current Thumb reflection-->
 				<!-- Current Thumb -->
@@ -100,11 +95,10 @@
 					<posy>236</posy>
 					<width>200</width>
 					<height>291</height>
-					<texture background="true" diffuse="diffuse_poster.png">$INFO[ListItem.Thumb]</texture>
+					<texture diffuse="diffuse_poster.png">$INFO[ListItem.Thumb]</texture>
 					<aspectratio>stretch</aspectratio>
 					<bordertexture>shadow_poster.png</bordertexture>
 					<bordersize>6,4,6,8</bordersize>
-					<fadetime>200</fadetime>
 				</control>
 				<!-- /Current Thumb -->
 			</control>
@@ -123,9 +117,8 @@
 					<posy>474</posy>
 					<width>400</width>
 					<height>224</height>
-					<texture background="true" diffuse="reflection_episode.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+					<texture diffuse="reflection_episode.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<aspectratio>stretch</aspectratio>
-					<fadetime>200</fadetime>
 				</control>
 				<!-- /Current Thumb reflection-->
 				<!-- Current Thumb -->
@@ -134,11 +127,10 @@
 					<posy>246</posy>
 					<width>412</width>
 					<height>236</height>
-					<texture background="true" diffuse="diffuse_episode.png">$INFO[ListItem.Thumb]</texture>
+					<texture diffuse="diffuse_episode.png">$INFO[ListItem.Thumb]</texture>
 					<aspectratio>stretch</aspectratio>
 					<bordertexture>shadow_episode.png</bordertexture>
 					<bordersize>6,4,6,8</bordersize>
-					<fadetime>200</fadetime>
 				</control>
 			</control>
 				<!-- /Current Thumb -->
