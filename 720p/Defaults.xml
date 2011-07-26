@@ -75,13 +75,14 @@
 		<selectedcolor>White</selectedcolor>
 		<disabledcolor>DarkGray</disabledcolor>
 		<aligny>center</aligny>
-		<radioposx>476</radioposx>
+		<radioposx>594</radioposx>
+		<pulseonselect>false</pulseonselect>
 	</default>
 	<default type="spincontrol">
 		<description>Default Spin Control</description>
 		<align>left</align>
 		<width>16</width>
-		<height>80</height>
+		<height>54</height>
 		<align>center</align>
 		<font>list2</font>
 		<textcolor>White</textcolor>
@@ -97,6 +98,7 @@
 		<selectedcolor>White</selectedcolor>
 		<disabledcolor>DarkGray</disabledcolor>
 		<aligny>center</aligny>
+		<pulseonselect>false</pulseonselect>
 	</default>
 	<default type="spincontrolex">
 		<height>54</height>
@@ -119,6 +121,7 @@
 		<disabledcolor>DarkGray</disabledcolor>
 		<aligny>center</aligny>
 		<textoffsetx>16</textoffsetx>
+		<pulseonselect>false</pulseonselect>
 	</default>
 	<default type="progress">
 		<description>Default Progress Bar</description>
@@ -158,7 +161,7 @@
 		<texturesliderbarfocus border="10,12,8,14">ScrollBarV.png</texturesliderbarfocus>
 		<textureslidernib>ScrollBarNibVNF.png</textureslidernib>
 		<textureslidernibfocus>ScrollBarNibVFO.png</textureslidernibfocus>
-		<pulseonselect>true</pulseonselect>
+		<pulseonselect>false</pulseonselect>
 		<showonepage>false</showonepage>
 		<visible allowhiddenfocus="true">true</visible>
 	</default>
