@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <window id="103">
-	<defaultcontrol always="true">310</defaultcontrol>
+	<defaultcontrol always="true">300</defaultcontrol>
 	<coordinates>
 		<posx>0</posx>
 		<posy>0</posy>
@@ -15,7 +15,7 @@
 			<posy>78</posy>
 			<width>732</width>
 			<height>564</height>
-			<texture>dialogs/keyboard.png</texture>
+			<texture>dialogs/dialog_keyboard.png</texture>
 		</control>
 		<control type="image">
 			<posx>394</posx>
@@ -326,7 +326,6 @@
 				<control type="togglebutton" id="302">
 					<font>keyboardbuttonsmall</font>
 					<description>SHIFT button</description>
-					<width>92</width>
 					<label>20178</label>
 					<onleft>304</onleft>
 					<onright>90</onright>
@@ -401,7 +400,6 @@
 					<font>keyboardbuttonsmall</font>
 					<description>SYMBOLS button</description>
 					<posx>398</posx>
-					<width>92</width>
 					<label>.?#@</label>
 					<onleft>77</onleft>
 					<onright>302</onright>
@@ -417,7 +415,6 @@
 				<control type="button" id="8">
 					<description>Delete button</description>
 					<posx>0</posx>
-					<width>92</width>
 					<label>Delete</label>
 					<onleft>300</onleft>
 					<onright>305</onright>

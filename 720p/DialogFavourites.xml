@@ -32,12 +32,6 @@
 			<textcolor>White</textcolor>
 		</control>
 		<control type="list" id="450">
-			<animation type="WindowOpen">
-				<effect type="fade" start="0" end="100" time="400" delay="200"/>
-			</animation>
-			<animation type="WindowClose">
-				<effect type="fade" start="100" end="0" time="400" delay="200"/>
-			</animation>
 			<posx>430</posx>
 			<posy>194</posy>
 			<width>422</width>
