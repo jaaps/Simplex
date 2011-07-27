@@ -44,6 +44,7 @@
 				<onup>1</onup>
 				<include>contextMenuButton</include>
 				<onclick>XBMC.EjectTray()</onclick>
+				<onclick>XBMC.EjectTray()</onclick>
 				<onclick>dialog.close(all,true)</onclick>
 			</control>
 		</control>
