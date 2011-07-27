@@ -107,16 +107,22 @@
 				</focusedlayout>
 				<content>
 					<item id="1">
+						<description>DVD Button</description>
+						<label>DVD</label>
+						<visible>System.HasMediadvd</visible>
+						<onclick>xbmc.activatewindow(5678)</onclick>
+					</item>
+					<item id="2">
 						<description>Favourites Menu</description>
 						<label>Favourites</label>
 						<onclick>Plex.ActivateWindow(Favourites)</onclick>
 					</item>
-					<item id="2">
+					<item id="3">
 						<description>Channels</description>
 						<label>Channels</label>
 						<onclick>xbmc.activatewindow(4567)</onclick>
 					</item>
-					<!--<item id="3">
+					<!--<item id="4">
 						<description>Search</description>
 						<label>Search</label>
 						<onclick>-</onclick>
@@ -126,16 +132,10 @@
 						<label>Settings</label>
 						<onclick>Plex.ActivateWindow(Settings)</onclick>
 					</item>
-					<item id="5">
+					<item id="6">
 						<description>Quit</description>
 						<label>Quit</label>
 						<onclick>Plex.Shutdown()</onclick>
-					</item>
-					<item id="5">
-						<description>DVD Button</description>
-						<label>DVD</label>
-						<visible>System.HasMediadvd + !Skin.HasSetting(HideDVD)</visible>
-						<onclick>XBMC.PlayDVD</onclick>
 					</item>
 				</content>
 			</control>
