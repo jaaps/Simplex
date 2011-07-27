@@ -8,53 +8,46 @@
 		<posy>0</posy>
 	</coordinates>
 	<controls>
+		<control type="image">
+			<include>dialogDiffuse</include>
+		</control>
+		<control type="image">
+			<posy>199</posy>
+			<include>dialogWindowTop</include>
+		</control>
+		<control type="image">
+			<posy>293</posy>
+			<height>133</height>
+			<include>dialogWindowCenter</include>
+		</control>		
+		<control type="image">
+			<posy>426</posy>
+			<include>dialogWindowBottom</include>
+		</control>
 		<control type="group">
-			<control type="image" id="1">
-				<width>1280</width>
-				<height>720</height>
-				<texture>dialogs/dialogok.png</texture>
-				<posx>0</posx>
-				<posy>0</posy>
-			</control>
+			<posx>309</posx>
+			<posy>198</posy>
 			<control type="label" id="1">
 				<description>heading label</description>
-				<width>422</width>
-				<label>13406</label>
-				<posx>430</posx>
-				<posy>258</posy>
+				<posx>0</posx>
+				<posy>103</posy>
+				<width>662</width>
 				<align>center</align>
 				<font>list1</font>
+				<label>13406</label>
 			</control>
 			<control type="label" id="2">
 				<description>dialog line 1</description>
-				<posy>282</posy>
-				<posx>430</posx>
+				<posx>0</posx>
+				<posy>129</posy>
+				<width>662</width>
 				<align>center</align>
 				<textcolor>Gray</textcolor>
 				<font>plot1</font>
-				<width>422</width>
-			</control>
-			<control type="label" id="3">
-				<description>dialog line 2</description>
-				<posy>318</posy>
-				<posx>430</posx>
-				<align>center</align>
-				<textcolor>Gray</textcolor>
-				<font>plot1</font>
-				<width>422</width>
-			</control>
-			<control type="label" id="4">
-				<description>dialog line 3</description>
-				<posy>344</posy>
-				<posx>430</posx>
-				<align>center</align>
-				<textcolor>Gray</textcolor>
-				<font>plot1</font>
-				<width>422</width>
 			</control>
 			<control type="group">
-				<posx>430</posx>
-				<posy>364</posy>
+				<posx>120</posx>
+				<posy>120</posy>
 				<control type="button" id="10">
 					<description>OK button</description>
 					<posy>54</posy>
