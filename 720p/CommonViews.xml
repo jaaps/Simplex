@@ -7,7 +7,7 @@
 				<visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes)]</visible>
 				<control type="image">
 					<posx>44</posx>
-					<posy>258</posy>
+					<posy>268</posy>
 					<width>598</width>
 					<height>415</height>
 					<visible>IsEmpty(ListItem.Plot)</visible>
@@ -22,16 +22,16 @@
 					<texture>poster_background.png</texture>
 				</control>
 				<control type="image">
-					<posx>208</posx>
-					<posy>317</posy>
+					<posx>192</posx>
+					<posy>328</posy>
 					<width>302</width>
 					<height>403</height>
 					<visible>Container.Content(Secondary)</visible>
 					<texture>plexicon.png</texture>
 				</control>
 				<control type="image">
-					<posx>116</posx>
-					<posy>621</posy>
+					<posx>118</posx>
+					<posy>631</posy>
 					<width>450</width>
 					<height>326</height>
 					<texture diffuse="reflection_square.png" flipy="true" border="2">$INFO[ListItem.Thumb]</texture>
@@ -48,8 +48,8 @@
 					<aspectratio aligny="top" align="center">keep</aspectratio>
 				</control>
 				<control type="image">
-					<posx>109</posx>
-					<posy>291</posy>
+					<posx>111</posx>
+					<posy>301</posy>
 					<width>464</width>
 					<height>338</height>
 					<visible>IsEmpty(ListItem.Plot)</visible>

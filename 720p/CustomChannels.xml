@@ -137,14 +137,14 @@
 			<width>598</width>
 			<height>415</height>
 			<posx>44</posx>
-			<posy>258</posy>
+			<posy>268</posy>
 		</control>
 			<control type="image">
 			<texture>plexicon.png</texture>
 			<width>302</width>
 			<height>403</height>
-			<posx>208</posx>
-			<posy>317</posy>
+			<posx>192</posx>
+			<posy>328</posy>
 		</control>
 	</controls>
 </window>

@@ -12,21 +12,21 @@
 					<width>598</width>
 					<height>415</height>
 					<posx>-87</posx>
-					<posy>278</posy>
+					<posy>270</posy>
 				</control>
 				<control type="image">
 					<posx>83</posx>
-					<posy>648</posy>
+					<posy>638</posy>
 					<width>258</width>
-					<height>390</height>
+					<height>404</height>
 					<texture diffuse="reflection_poster_big.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="image">
 					<posx>74</posx>
-					<posy>252</posy>
+					<posy>244</posy>
 					<width>276</width>
-					<height>406</height>
+					<height>404</height>
 					<texture diffuse="diffuse_poster_big.png">$INFO[ListItem.Thumb]</texture>
 					<aspectratio>stretch</aspectratio>
 					<bordertexture>shadow_poster_big.png</bordertexture>
@@ -35,7 +35,7 @@
 			</control>
 			<control type="image">
 				<posx>1094</posx>
-				<posy>255</posy>
+				<posy>248</posy>
 				<width>128</width>
 				<height>50</height>
 				<aspectratio align="right">keep</aspectratio>
@@ -46,7 +46,7 @@
 				<posx>381</posx>
 				<orientation>vertical</orientation>
 				<itemgap>0</itemgap>
-				<posy>246</posy>
+				<posy>239</posy>
 				<control type="group">
 					<height>63</height>
 					<control type="label">
@@ -232,21 +232,21 @@
 					<width>598</width>
 					<height>415</height>
 					<posx>-87</posx>
-					<posy>278</posy>
+					<posy>270</posy>
 				</control>
 				<control type="image">
 					<posx>83</posx>
-					<posy>648</posy>
+					<posy>638</posy>
 					<width>258</width>
-					<height>390</height>
+					<height>404</height>
 					<texture diffuse="reflection_poster_big.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="image">
 					<posx>74</posx>
-					<posy>252</posy>
+					<posy>244</posy>
 					<width>276</width>
-					<height>406</height>
+					<height>404</height>
 					<texture diffuse="diffuse_poster_big.png">$INFO[ListItem.Thumb]</texture>
 					<aspectratio>stretch</aspectratio>
 					<bordertexture>shadow_poster_big.png</bordertexture>
@@ -255,7 +255,7 @@
 			</control>
 			<control type="image">
 				<posx>1094</posx>
-				<posy>244</posy>
+				<posy>237</posy>
 				<width>128</width>
 				<height>50</height>
 				<aspectratio align="right">keep</aspectratio>
@@ -266,7 +266,7 @@
 				<posx>381</posx>
 				<orientation>vertical</orientation>
 				<itemgap>0</itemgap>
-				<posy>246</posy>
+				<posy>239</posy>
 				<control type="group">
 					<height>41</height>
 					<control type="label">
@@ -365,14 +365,14 @@
 			<control type="group">
 				<control type="image">
 					<posx>-16</posx>
-					<posy>124</posy>
+					<posy>114</posy>
 					<width>598</width>
 					<height>415</height>
 					<texture>poster_background.png</texture>
 				</control>
 				<control type="image">
 					<posx>82</posx>
-					<posy>482</posy>
+					<posy>474</posy>
 					<width>400</width>
 					<height>224</height>
 					<texture diffuse="reflection_episode.png" flipy="true">$INFO[ListItem.Thumb]</texture>
@@ -380,7 +380,7 @@
 				</control>
 				<control type="image">
 					<posx>76</posx>
-					<posy>254</posy>
+					<posy>246</posy>
 					<width>412</width>
 					<height>236</height>
 					<texture diffuse="diffuse_episode.png">$INFO[ListItem.Thumb]</texture>
@@ -391,7 +391,7 @@
 			</control>
 			<control type="image">
 				<posx>1094</posx>
-				<posy>244</posy>
+				<posy>237</posy>
 				<width>128</width>
 				<height>50</height>
 				<aspectratio align="right">keep</aspectratio>
@@ -402,7 +402,7 @@
 				<posx>521</posx>
 				<orientation>vertical</orientation>
 				<itemgap>0</itemgap>
-				<posy>246</posy>
+				<posy>239</posy>
 				<control type="group">
 					<height>63</height>
 					<control type="label">

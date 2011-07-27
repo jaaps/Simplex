@@ -15,22 +15,25 @@
 			</control>
 		</control>
 		<control type="group">
-			<posx>127</posx>
+			<posx>119</posx>
 			<posy>188</posy>
 			<control type="image">
-				<posy>391</posy>
-				<width>391</width>
-				<height>391</height>
-				<texture diffuse="thumb_np_fade.png" flipy="true">$INFO[MusicPlayer.Cover]</texture>
-			<aspectratio aligny="bottom" align="center" scalediffuse="false">keep</aspectratio>
+				<posx>9</posx>
+				<posy>395</posy>
+				<width>387</width>
+				<height>387</height>
+				<texture diffuse="reflection_square_big.png" flipy="true">$INFO[MusicPlayer.Cover]</texture>
+				<aspectratio aligny="bottom" align="center">keep</aspectratio>
 			</control>
 			<description>Current cover</description>
 			<visible>Player.HasMusicPlaylist</visible>
 			<control type="image">
-				<width>391</width>
-				<height>391</height>
-				<texture>$INFO[MusicPlayer.Cover]</texture>
+				<width>405</width>
+				<height>405</height>
+				<texture diffuse="diffuse_square_big.png">$INFO[MusicPlayer.Cover]</texture>
 				<aspectratio aligny="bottom" align="center">keep</aspectratio>
+				<bordertexture border="1,0,1,0">shadow_square_big.png</bordertexture>
+				<bordersize>8,6,8,10</bordersize>
 			</control>
 		</control>
 		<control type="group">
