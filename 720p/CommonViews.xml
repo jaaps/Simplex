@@ -31,7 +31,7 @@
 				</control>
 				<control type="image">
 					<posx>116</posx>
-					<posy>620</posy>
+					<posy>621</posy>
 					<width>450</width>
 					<height>326</height>
 					<texture diffuse="reflection_square.png" flipy="true" border="2">$INFO[ListItem.Thumb]</texture>
@@ -49,7 +49,7 @@
 				</control>
 				<control type="image">
 					<posx>109</posx>
-					<posy>290</posy>
+					<posy>291</posy>
 					<width>464</width>
 					<height>338</height>
 					<visible>IsEmpty(ListItem.Plot)</visible>

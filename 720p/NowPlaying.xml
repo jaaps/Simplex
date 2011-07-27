@@ -22,14 +22,6 @@
 				<width>391</width>
 				<height>391</height>
 				<texture diffuse="thumb_np_fade.png" flipy="true">$INFO[MusicPlayer.Cover]</texture>
-			<aspectratio aligny="bottom" align="center" scalediffuse="false">scale</aspectratio>
-			</control>
-			<control type="image">
-				<posy>381</posy>
-				<posx>-35</posx>
-				<width>461</width>
-				<height>19</height>
-				<texture>thumb_np_shadow.png</texture>
 			<aspectratio aligny="bottom" align="center" scalediffuse="false">keep</aspectratio>
 			</control>
 			<description>Current cover</description>
@@ -38,7 +30,7 @@
 				<width>391</width>
 				<height>391</height>
 				<texture>$INFO[MusicPlayer.Cover]</texture>
-			<aspectratio aligny="bottom" align="center" scalediffuse="false">keep</aspectratio>
+				<aspectratio aligny="bottom" align="center">keep</aspectratio>
 			</control>
 		</control>
 		<control type="group">
