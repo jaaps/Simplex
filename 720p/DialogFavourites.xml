@@ -32,7 +32,7 @@
 			<textcolor>White</textcolor>
 		</control>
 		<control type="list" id="450">
-			<posx>430</posx>
+			<posx>429</posx>
 			<posy>194</posy>
 			<width>422</width>
 			<height>379</height>

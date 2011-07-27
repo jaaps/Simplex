@@ -32,7 +32,7 @@
 			<texture>dialogs/dialog_bottom.png</texture>
 		</control>
 		<control type="button" id="1000">
-			<posx>121</posx>
+			<posx>120</posx>
 			<description>button template</description>
 			<include>contextMenuButton</include>
 		</control>
