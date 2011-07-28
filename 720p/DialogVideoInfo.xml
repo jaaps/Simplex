@@ -329,23 +329,23 @@
 							<wrapmultiline>false</wrapmultiline>
 						</control>
 						<control type="label">
-							<width>190</width>
+							<width>290</width>
 							<height>19</height>
 							<font>info1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
 							<textcolor>Gray</textcolor>
-							<label>Released $INFO[ListItem.Year]</label>
+							<label>First Aired $INFO[ListItem.Date]</label>
 							<wrapmultiline>false</wrapmultiline>
 						</control>
 						<control type="label">
-							<width>190</width>
+							<width>290</width>
 							<height>19</height>
 							<font>info1</font>
 							<align>left</align>
 							<aligny>bottom</aligny>
 							<textcolor>Gray</textcolor>
-							<label>Length $INFO[ListItem.Duration]</label>
+							<label>$INFO[ListItem.Episode] Episodes ($INFO[ListItem.Property(UnWatchedEpisodes)] Unwatched)</label>
 							<wrapmultiline>false</wrapmultiline>
 						</control>
 						<control type="image">

@@ -6,99 +6,96 @@
 		<control type="image">
 			<include>dialogDiffuse</include>
 		</control>
-		<control type="image">
-			<posy>41</posy>
-			<include>dialogWindowTop</include>
-		</control>
-		<control type="image">
-			<posy>135</posy>
-			<height>437</height>
-			<include>dialogWindowCenter</include>
-		</control>		
-		<control type="image">
-			<posy>572</posy>
-			<include>dialogWindowBottom</include>
-		</control>
-		<control type="label">
-			<description>First title</description>
-			<label>Favourites</label>
-			<posx>0</posx>
-			<posy>133</posy>
-			<width>1280</width>
-			<height>56</height>
-			<align>center</align>
-			<aligny>center</aligny>
-			<font>list1</font>
-			<textcolor>White</textcolor>
-		</control>
-		<control type="list" id="450">
-			<posx>429</posx>
-			<posy>194</posy>
-			<width>422</width>
-			<height>379</height>
-			<onleft>450</onleft>
-			<onright>450</onright>
-			<scrolltime>200</scrolltime>
-			<itemlayout height="54">
-				<control type="group">
-					<posy>0</posy>
-					<posx>0</posx>
+		<control type="group">
+			<posx>309</posx>
+			<control type="image">
+				<posy>41</posy>
+				<include>dialogWindowTop</include>
+			</control>
+			<control type="image">
+				<posy>135</posy>
+				<height>437</height>
+				<include>dialogWindowCenter</include>
+			</control>		
+			<control type="image">
+				<posy>572</posy>
+				<include>dialogWindowBottom</include>
+			</control>
+			<control type="group">
+				<posx>120</posx>
 					<control type="label">
-						<posy>0</posy>
-						<posx>211</posx>
-						<width>402</width>
-						<height>50</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<info>ListItem.Label</info>
-						<textcolor>White</textcolor>
-						<scroll>false</scroll>
-						<font>list1</font>
-					</control>
-				</control>
-			</itemlayout>
-			<focusedlayout height="54">
-				<control type="image">
-					<posy>0</posy>
+					<description>First title</description>
+					<label>Favourites</label>
+					<posy>133</posy>
 					<width>422</width>
-					<height>54</height>
-					<texture>dialogs/button.png</texture>
-					<aspectratio>keep</aspectratio>
-					<animation effect="slide" start="0,-52" end="0,0" time="200" reversible="false" easing="out" condition="Container(450).OnNext">Focus</animation>
-					<animation effect="slide" start="0,52" end="0,0" time="200" reversible="false" easing="out" condition="Container(450).OnPrevious">Focus</animation>
+					<height>56</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>list1</font>
+					<textcolor>White</textcolor>
 				</control>
-				<control type="group">
-					<posy>0</posy>
-					<posx>0</posx>
-					<control type="label">
-						<posy>0</posy>
-						<posx>211</posx>
-						<width>402</width>
-						<align>center</align>
-						<height>50</height>
-						<aligny>center</aligny>
-						<info>ListItem.Label</info>
-						<textcolor>White</textcolor>
-						<scroll>true</scroll>
-						<font>list1</font>
-   						<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
-					</control>
-					<control type="label">
-						<posy>0</posy>
-						<posx>211</posx>
-						<width>402</width>
-						<align>center</align>
-						<height>50</height>
-						<aligny>center</aligny>
-						<info>ListItem.Label</info>
-						<textcolor>Orange</textcolor>
-						<scroll>true</scroll>
-						<font>list1</font>
-  						<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(450).OnNext">Focus</animation>
-   						<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(450).OnPrevious">Focus</animation>
-					</control>
+					<control type="list" id="450">
+					<posy>194</posy>
+					<width>422</width>
+					<height>379</height>
+					<onleft>450</onleft>
+					<onright>450</onright>
+					<scrolltime>200</scrolltime>
+					<itemlayout height="54">
+						<control type="group">
+							<control type="label">
+								<posx>211</posx>
+								<width>402</width>
+								<height>50</height>
+								<align>center</align>
+								<aligny>center</aligny>
+								<info>ListItem.Label</info>
+								<font>list1</font>
+								<textcolor>White</textcolor>
+								<scroll>false</scroll>
+							</control>
+						</control>
+					</itemlayout>
+					<focusedlayout height="54">
+						<control type="image">
+							<width>422</width>
+							<height>54</height>
+							<texture>dialogs/button.png</texture>
+							<aspectratio>keep</aspectratio>
+							<animation effect="slide" start="0,-52" end="0,0" time="200" reversible="false" easing="out" condition="Container(450).OnNext">Focus</animation>
+							<animation effect="slide" start="0,52" end="0,0" time="200" reversible="false" easing="out" condition="Container(450).OnPrevious">Focus</animation>
+						</control>
+						<control type="group">
+							<control type="label">
+								<posx>211</posx>
+								<posy>0</posy>
+								<width>402</width>
+								<height>50</height>
+								<align>center</align>
+								<aligny>center</aligny>
+								<info>ListItem.Label</info>
+								<font>list1</font>
+								<textcolor>White</textcolor>
+								<scroll>true</scroll>
+								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+							</control>
+							<control type="label">
+								<posx>211</posx>
+								<width>402</width>
+								<height>50</height>
+								<align>center</align>
+								<aligny>center</aligny>
+								<info>ListItem.Label</info>
+								<font>list1</font>
+								<textcolor>Orange</textcolor>
+								<scroll>true</scroll>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(450).OnNext">Focus</animation>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(450).OnPrevious">Focus</animation>
+							</control>
+						</control>
+					</focusedlayout>
 				</control>
-			</focusedlayout>
+			</control>
 		</control>
 	</controls>
 </window>

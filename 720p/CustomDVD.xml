@@ -11,41 +11,44 @@
 		<control type="image">
 			<include>dialogDiffuse</include>
 		</control>
-		<control type="image">
-			<posy>212</posy>
-			<include>dialogWindowTop</include>
-		</control>
-		<control type="image">
-			<posy>306</posy>
-			<height>108</height>
-			<include>dialogWindowCenter</include>
-		</control>		
-		<control type="image">
-			<posy>414</posy>
-			<include>dialogWindowBottom</include>
-		</control>
 		<control type="group">
-			<posx>429</posx>
-			<posy>306</posy>
-			<control type="button" id="1">
-				<description>Play button</description>
-				<label>Play</label>
-				<onup>2</onup>
-				<ondown>2</ondown>
-				<include>contextMenuButton</include>
-				<onclick>XBMC.PlayDVD</onclick>
-				<onclick>dialog.close(all,true)</onclick>
+			<posx>309</posx>
+			<posy>212</posy>
+			<control type="image">
+				<include>dialogWindowTop</include>
 			</control>
-			<control type="button" id="2">
-				<description>Eject button</description>
-				<posy>54</posy>
-				<label>Eject Disc</label>
-				<ondown>1</ondown>
-				<onup>1</onup>
-				<include>contextMenuButton</include>
-				<onclick>XBMC.EjectTray()</onclick>
-				<onclick>XBMC.EjectTray()</onclick>
-				<onclick>dialog.close(all,true)</onclick>
+			<control type="image">
+				<posy>94</posy>
+				<height>108</height>
+				<include>dialogWindowCenter</include>
+			</control>		
+			<control type="image">
+				<posy>202</posy>
+				<include>dialogWindowBottom</include>
+			</control>
+			<control type="group">
+				<posx>120</posx>
+				<posy>94</posy>
+				<control type="button" id="1">
+					<description>Play button</description>
+					<label>Play</label>
+					<onup>2</onup>
+					<ondown>2</ondown>
+					<include>contextMenuButton</include>
+					<onclick>XBMC.PlayDVD</onclick>
+					<onclick>dialog.close(all,true)</onclick>
+				</control>
+				<control type="button" id="2">
+					<description>Eject button</description>
+					<posy>54</posy>
+					<label>Eject Disc</label>
+					<ondown>1</ondown>
+					<onup>1</onup>
+					<include>contextMenuButton</include>
+					<onclick>XBMC.EjectTray()</onclick>
+					<onclick>XBMC.EjectTray()</onclick>
+					<onclick>dialog.close(all,true)</onclick>
+				</control>
 			</control>
 		</control>
 	</controls>

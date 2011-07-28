@@ -8,67 +8,69 @@
 	</coordinates>
 	<include>dialogOpen</include>
 	<controls>
-		<control type="image" id="1">
-			<width>1280</width>
-			<height>720</height>
-			<texture>dialogs/dialogyesno.png</texture>
-			<posx>0</posx>
-			<posy>0</posy>
-		</control>
-		<control type="label" id="1">
-			<description>heading label</description>
-			<width>422</width>
-			<label>13406</label>
-			<posx>430</posx>
-			<posy>258</posy>
-			<align>center</align>
-			<font>list1</font>
-		</control>
-		<control type="label" id="2">
-			<description>dialog line 1</description>
-			<posy>282</posy>
-			<posx>430</posx>
-			<align>center</align>
-			<textcolor>Gray</textcolor>
-			<font>plot1</font>
-			<width>422</width>
-		</control>
-		<control type="label" id="3">
-			<description>dialog line 2</description>
-			<posy>318</posy>
-			<posx>430</posx>
-			<align>center</align>
-			<textcolor>Gray</textcolor>
-			<font>plot1</font>
-			<width>422</width>
-			<visible>false</visible>
-		</control>
-		<control type="label" id="4">
-			<description>dialog line 3</description>
-			<posy>318</posy>
-			<posx>430</posx>
-			<align>center</align>
-			<textcolor>Gray</textcolor>
-			<font>plot1</font>
-			<width>422</width>
+		<control type="image">
+			<include>dialogDiffuse</include>
 		</control>
 		<control type="group">
-			<posx>430</posx>
-			<posy>364</posy>
-			<control type="button" id="11">
-				<description>Yes button</description>
-				<label>107</label>
-				<onup>10</onup>
-				<ondown>10</ondown>
-				<include>contextMenuButton</include>
+			<posx>309</posx>
+			<posy>152</posy>
+			<control type="image">
+				<include>dialogWindowTop</include>
 			</control>
-			<control type="button" id="10">
-				<description>No button</description>
-				<posy>54</posy>
-				<label>106</label>
-				<ondown>11</ondown>
-				<onup>11</onup>
-				<include>contextMenuButton</include>
+			<control type="image">
+				<posy>94</posy>
+				<height>228</height>
+				<include>dialogWindowCenter</include>
+			</control>		
+			<control type="image">
+				<posy>322</posy>
+				<include>dialogWindowBottom</include>
+			</control>
+			<control type="group">
+				<posx>120</posx>
+				<control type="label" id="1">
+					<description>heading label</description>
+					<posy>102</posy>
+					<width>422</width>
+					<label>13406</label>
+					<align>center</align>
+					<font>list1</font>
+				</control>
+				<control type="label" id="2">
+					<description>dialog line 1</description>
+					<posy>130</posy>
+					<width>422</width>
+					<label>13406</label>
+					<align>center</align>
+					<font>plot1</font>
+					<textcolor>Gray</textcolor>
+				</control>
+				<control type="label" id="4">
+					<description>dialog line 2</description>
+					<posy>168</posy>
+					<width>422</width>
+					<align>center</align>
+					<font>plot1</font>
+					<textcolor>Gray</textcolor>
+				</control>
+				<control type="group">
+					<posy>214</posy>
+					<control type="button" id="11">
+						<description>Yes button</description>
+						<label>107</label>
+						<onup>10</onup>
+						<ondown>10</ondown>
+						<include>contextMenuButton</include>
+					</control>
+					<control type="button" id="10">
+						<description>No button</description>
+						<posy>54</posy>
+						<label>106</label>
+						<ondown>11</ondown>
+						<onup>11</onup>
+						<include>contextMenuButton</include>
+					</control>
+				</control>
 			</control>
 		</control>
 	</controls>
