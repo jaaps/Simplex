@@ -13,25 +13,25 @@
 		</control>
 		<control type="group">
 			<posx>309</posx>
-			<posy>152</posy>
+			<posy>148</posy>
 			<control type="image">
 				<include>dialogWindowTop</include>
 			</control>
 			<control type="image">
 				<posy>94</posy>
-				<height>228</height>
+				<height>236</height>
 				<include>dialogWindowCenter</include>
 			</control>		
 			<control type="image">
-				<posy>322</posy>
+				<posy>330</posy>
 				<include>dialogWindowBottom</include>
 			</control>
 			<control type="group">
-				<posx>120</posx>
+				<posx>91</posx>
 				<control type="label" id="1">
 					<description>heading label</description>
 					<posy>102</posy>
-					<width>422</width>
+					<width>480</width>
 					<label>13406</label>
 					<align>center</align>
 					<font>list1</font>
@@ -39,22 +39,31 @@
 				<control type="label" id="2">
 					<description>dialog line 1</description>
 					<posy>130</posy>
-					<width>422</width>
+					<width>480</width>
 					<label>13406</label>
 					<align>center</align>
 					<font>plot1</font>
 					<textcolor>Gray</textcolor>
 				</control>
-				<control type="label" id="4">
+				<control type="label" id="3">
 					<description>dialog line 2</description>
-					<posy>168</posy>
-					<width>422</width>
+					<posy>153</posy>
+					<width>480</width>
+					<align>center</align>
+					<font>plot1</font>
+					<textcolor>Gray</textcolor>
+				</control>
+				<control type="label" id="4">
+					<description>dialog line 3</description>
+					<posy>176</posy>
+					<width>480</width>
 					<align>center</align>
 					<font>plot1</font>
 					<textcolor>Gray</textcolor>
 				</control>
 				<control type="group">
-					<posy>214</posy>
+					<posx>29</posx>
+					<posy>222</posy>
 					<control type="button" id="11">
 						<description>Yes button</description>
 						<label>107</label>
