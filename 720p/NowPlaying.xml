@@ -23,7 +23,7 @@
 				<width>387</width>
 				<height>387</height>
 				<texture diffuse="reflection_square_big.png" flipy="true">$INFO[MusicPlayer.Cover]</texture>
-				<aspectratio aligny="bottom" align="center">keep</aspectratio>
+				<aspectratio aligny="bottom" align="center">stretch</aspectratio>
 			</control>
 			<description>Current cover</description>
 			<visible>Player.HasMusicPlaylist</visible>
