@@ -44,7 +44,6 @@
 			<control type="sliderex" id="10">
 			</control>
 			<control type="button" id="7">
-				<textoffsetx>16</textoffsetx>
 			</control>
 			<control type="radiobutton" id="8">
 			</control>
