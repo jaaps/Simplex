@@ -12,25 +12,24 @@
 					<width>598</width>
 					<height>415</height>
 					<posx>-87</posx>
-					<posy>270</posy>
+					<posy>274</posy>
 				</control>
 				<control type="image">
-					<posx>83</posx>
+					<posx>82</posx>
 					<posy>638</posy>
-					<width>258</width>
-					<height>404</height>
-					<texture diffuse="reflection_poster_big.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+					<width>260</width>
+					<height>388</height>
+					<texture diffuse="reflection_big_poster.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="image">
-					<posx>74</posx>
-					<posy>244</posy>
-					<width>276</width>
-					<height>404</height>
-					<texture diffuse="diffuse_poster_big.png">$INFO[ListItem.Thumb]</texture>
+					<posx>82</posx>
+					<posy>250</posy>
+					<width>260</width>
+					<height>388</height>
+					<texture diffuse="diffuse_big_poster.png">$INFO[ListItem.Thumb]</texture>
 					<aspectratio>stretch</aspectratio>
-					<bordertexture>shadow_poster_big.png</bordertexture>
-					<bordersize>8,6,8,10</bordersize>
+					<bordertexture>border_big_poster.png</bordertexture>
 				</control>
 			</control>
 			<control type="image">
@@ -232,25 +231,24 @@
 					<width>598</width>
 					<height>415</height>
 					<posx>-87</posx>
-					<posy>270</posy>
+					<posy>274</posy>
 				</control>
 				<control type="image">
-					<posx>83</posx>
+					<posx>82</posx>
 					<posy>638</posy>
-					<width>258</width>
-					<height>404</height>
-					<texture diffuse="reflection_poster_big.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+					<width>260</width>
+					<height>388</height>
+					<texture diffuse="reflection_big_poster.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="image">
-					<posx>74</posx>
-					<posy>244</posy>
-					<width>276</width>
-					<height>404</height>
-					<texture diffuse="diffuse_poster_big.png">$INFO[ListItem.Thumb]</texture>
+					<posx>82</posx>
+					<posy>250</posy>
+					<width>260</width>
+					<height>388</height>
+					<texture diffuse="diffuse_big_poster.png">$INFO[ListItem.Thumb]</texture>
 					<aspectratio>stretch</aspectratio>
-					<bordertexture>shadow_poster_big.png</bordertexture>
-					<bordersize>8,6,8,10</bordersize>
+					<bordertexture>border_big_poster.png</bordertexture>
 				</control>
 			</control>
 			<control type="image">
@@ -379,14 +377,13 @@
 					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="image">
-					<posx>76</posx>
-					<posy>246</posy>
-					<width>412</width>
-					<height>236</height>
+					<posx>82</posx>
+					<posy>250</posy>
+					<width>400</width>
+					<height>224</height>
 					<texture diffuse="diffuse_episode.png">$INFO[ListItem.Thumb]</texture>
 					<aspectratio>stretch</aspectratio>
-					<bordertexture>shadow_episode.png</bordertexture>
-					<bordersize>6,4,6,8</bordersize>
+					<bordertexture>border_episode.png</bordertexture>
 				</control>
 			</control>
 			<control type="image">

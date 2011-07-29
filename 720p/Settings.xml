@@ -150,18 +150,18 @@
 			</control>
 		</control>
 		<control type="image">
-			<texture>poster_background.png</texture>
+			<posx>44</posx>
+			<posy>266</posy>
 			<width>598</width>
 			<height>415</height>
-			<posx>44</posx>
-			<posy>268</posy>
+			<texture>poster_background.png</texture>
 		</control>
 			<control type="image">
-			<texture>plexicon.png</texture>
-			<width>302</width>
-			<height>403</height>
 			<posx>192</posx>
 			<posy>328</posy>
+			<width>302</width>
+			<height>403</height>
+			<texture>plexicon.png</texture>
 		</control>
 	</controls>
 </window>

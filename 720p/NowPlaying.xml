@@ -10,30 +10,28 @@
 				<width>1280</width>
 				<height>720</height>
 				<aspectratio>stretch</aspectratio>
-				<texture>background_music.png</texture>
+				<texture>background_now_playing.png</texture>
 				<fadetime>200</fadetime>
 			</control>
 		</control>
 		<control type="group">
-			<posx>119</posx>
+			<posx>127</posx>
 			<posy>188</posy>
 			<control type="image">
-				<posx>9</posx>
-				<posy>395</posy>
-				<width>387</width>
-				<height>387</height>
-				<texture diffuse="reflection_square_big.png" flipy="true">$INFO[MusicPlayer.Cover]</texture>
+				<posy>392</posy>
+				<width>392</width>
+				<height>392</height>
+				<texture diffuse="reflection_now_playing.png" flipy="true">$INFO[MusicPlayer.Cover]</texture>
 				<aspectratio aligny="bottom" align="center">stretch</aspectratio>
 			</control>
 			<description>Current cover</description>
 			<visible>Player.HasMusicPlaylist</visible>
 			<control type="image">
-				<width>405</width>
-				<height>405</height>
-				<texture diffuse="diffuse_square_big.png">$INFO[MusicPlayer.Cover]</texture>
+				<width>392</width>
+				<height>392</height>
+				<texture diffuse="diffuse_now_playing.png">$INFO[MusicPlayer.Cover]</texture>
 				<aspectratio aligny="bottom" align="center">keep</aspectratio>
-				<bordertexture border="1,0,1,0">shadow_square_big.png</bordertexture>
-				<bordersize>8,6,8,10</bordersize>
+				<bordertexture>border_now_playing.png</bordertexture>
 			</control>
 		</control>
 		<control type="group">
@@ -111,11 +109,11 @@
 			<visible>Player.Paused</visible>
 			<animation effect="fade" end="0" time="300">Hidden</animation>
 			<control type="image">
-				<texture>dialogs/pauseicon.png</texture>
+				<posx>253</posx>
+				<posy>317</posy>
 				<width>140</width>
 				<height>134</height>
-				<posx>252</posx>
-				<posy>321</posy>
+				<texture>dialogs/pauseicon.png</texture>
 			</control>
 		</control>
 	</controls>
