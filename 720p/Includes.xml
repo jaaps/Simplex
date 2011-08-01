@@ -51,7 +51,7 @@
 			<textcolor>Gray</textcolor>
 		</control>
 	</include>
-	<include name="HeaderTVShows">
+	<include name="HeaderLibrary">
 		<control type="label">
 			<description>Library title</description>
 			<label>TV Shows</label>
@@ -115,7 +115,7 @@
 			<aligny>center</aligny>
 			<font>title1</font>
 			<textcolor>Gray</textcolor>
-			<visible>Container.Content(TVShows) + !IsEmpty(Container.SecondTitle)</visible>
+			<visible>Container.Content(Movies) | Container.Content(TVShows) + !IsEmpty(Container.SecondTitle)</visible>
 		</control>
 		<control type="label">
 			<description>Second title</description>
