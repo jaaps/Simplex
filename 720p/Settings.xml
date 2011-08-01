@@ -149,19 +149,7 @@
 				</content>
 			</control>
 		</control>
-		<control type="image">
-			<posx>44</posx>
-			<posy>266</posy>
-			<width>598</width>
-			<height>415</height>
-			<texture>poster_background.png</texture>
-		</control>
-			<control type="image">
-			<posx>192</posx>
-			<posy>328</posy>
-			<width>302</width>
-			<height>403</height>
-			<texture>plexicon.png</texture>
-		</control>
+		<include>Header</include>
+		<include>Time</include>
 	</controls>
 </window>

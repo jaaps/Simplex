@@ -6,6 +6,8 @@
 		<include>Background</include>
 		<include>Header</include>
 		<include>HeaderVideo</include>
+		<include>HeaderTVShows</include>
+		<include>Time</include>
 		<include>List</include>
 	</controls>
 </window>

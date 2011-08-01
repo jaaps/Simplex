@@ -154,5 +154,7 @@
 			<height>403</height>
 			<texture>plexicon.png</texture>
 		</control>
+		<include>Header</include>
+		<include>Time</include>
 	</controls>
 </window>

@@ -10,7 +10,7 @@
 					<posy>266</posy>
 					<width>598</width>
 					<height>415</height>
-					<visible>IsEmpty(ListItem.Plot)</visible>
+					<visible>IsEmpty(ListItem.Plot) + !IsEmpty(ListItem.Thumb)</visible>
 					<texture>poster_background.png</texture>
 				</control>
 				<control type="image">
@@ -20,14 +20,6 @@
 					<height>415</height>
 					<visible>!IsEmpty(ListItem.Plot)</visible>
 					<texture>poster_background.png</texture>
-				</control>
-				<control type="image">
-					<posx>192</posx>
-					<posy>328</posy>
-					<width>302</width>
-					<height>403</height>
-					<visible>Container.Content(Secondary)</visible>
-					<texture>plexicon.png</texture>
 				</control>
 				<control type="image">
 					<posx>111</posx>

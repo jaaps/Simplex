@@ -29,25 +29,106 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
-			<height>50</height>
+			<height>46</height>
 			<align>center</align>
 			<aligny>center</aligny>
 			<font>list1</font>
 			<textcolor>Gray</textcolor>
-			<visible>IsEmpty(Container.SecondTitle)</visible>
+			<visible>![Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes)]</visible>
 		</control>
+	</include>
+	<include name="Time">
 		<control type="label">
-			<description>First title</description>
-			<info>Container.SecondTitle</info>
+			<description>Time</description>
+			<info>System.Time</info>
+			<posx>1189</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>46</height>
+			<align>right</align>
+			<aligny>center</aligny>
+			<font>title1</font>
+			<textcolor>Gray</textcolor>
+		</control>
+	</include>
+	<include name="HeaderTVShows">
+		<control type="label">
+			<description>Library title</description>
+			<label>TV Shows</label>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
-			<height>50</height>
+			<height>46</height>
 			<align>center</align>
 			<aligny>center</aligny>
 			<font>list1</font>
 			<textcolor>Gray</textcolor>
-			<visible>!IsEmpty(Container.FirstTitle)</visible>
+			<visible>[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes)]</visible>
+		</control>
+		<control type="label">
+			<description>Second title</description>
+			<label>$INFO[Container.SecondTitle]</label>
+			<posx>91</posx>
+			<posy>0</posy>
+			<width>500</width>
+			<height>46</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>title1</font>
+			<textcolor>Gray</textcolor>
+			<visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes)]</visible>
+		</control>
+		<control type="label">
+			<description>Second title</description>
+			<label>$INFO[Container.SecondTitle]</label>
+			<posx>91</posx>
+			<posy>0</posy>
+			<width>500</width>
+			<height>46</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>title1</font>
+			<textcolor>Gray</textcolor>
+			<visible>Container.Content(Seasons) + !IsEmpty(Container.SecondTitle)</visible>
+		</control>
+		<control type="label">
+			<description>Second title</description>
+			<label>$INFO[Container.FirstTitle], $INFO[Container.SecondTitle]</label>
+			<posx>91</posx>
+			<posy>0</posy>
+			<width>500</width>
+			<height>46</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>title1</font>
+			<textcolor>Gray</textcolor>
+			<visible>Container.Content(episodes) + !IsEmpty(Container.SecondTitle) + IsEmpty(Container.Property(mixedParents))</visible>
+		</control>
+		<control type="label">
+			<description>Second title</description>
+			<label>$INFO[Container.SecondTitle]</label>
+			<posx>91</posx>
+			<posy>0</posy>
+			<width>500</width>
+			<height>46</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>title1</font>
+			<textcolor>Gray</textcolor>
+			<visible>Container.Content(TVShows) + !IsEmpty(Container.SecondTitle)</visible>
+		</control>
+		<control type="label">
+			<description>Second title</description>
+			<label>$INFO[Container.SecondTitle]</label>
+			<posx>91</posx>
+			<posy>0</posy>
+			<width>500</width>
+			<height>46</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>title1</font>
+			<textcolor>Gray</textcolor>
+			<visible>Container.Content(episodes) + !IsEmpty(Container.SecondTitle) + !IsEmpty(Container.Property(mixedParents))</visible>
 		</control>
 	</include>
 	<include name="HeaderVideo">
