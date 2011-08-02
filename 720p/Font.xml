@@ -32,12 +32,6 @@
 			<size>29</size>
 		</font>
 		<font>
-			<name>HomeMenuItem</name>
-			<filename>Helvetica</filename>
-			<variant>Bold</variant>
-			<size>21</size>
-		</font>
-		<font>
 			<name>homeheader</name>
 			<filename>Helvetica</filename>
 			<variant>Bold</variant>
@@ -50,10 +44,10 @@
 			<variant>Bold</variant>
 		</font>
 		<font>
-			<name>HomeMenuItemNoFocus</name>
-			<size>40</size>
-			<filename>Helvetica</filename>
-			<variant>Bold</variant>
+			<name>HomeMenuItem</name>
+			<size>27</size>
+			<filename>HelveticaNeue</filename>
+			<variant>Medium</variant>
 		</font>
 		<font>
 			<name>osd1</name>
