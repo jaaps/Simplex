@@ -10,58 +10,58 @@
 					<posy>266</posy>
 					<width>598</width>
 					<height>415</height>
-					<visible>IsEmpty(ListItem.Plot) + !IsEmpty(ListItem.Thumb)</visible>
 					<texture>poster_background.png</texture>
+					<visible>IsEmpty(ListItem.Plot) + !IsEmpty(ListItem.Thumb)</visible>
 				</control>
 				<control type="image">
 					<posx>44</posx>
 					<posy>159</posy>
 					<width>598</width>
 					<height>415</height>
-					<visible>!IsEmpty(ListItem.Plot)</visible>
 					<texture>poster_background.png</texture>
+					<visible>!IsEmpty(ListItem.Plot)</visible>
 				</control>
 				<control type="image">
 					<posx>111</posx>
 					<posy>630</posy>
 					<width>464</width>
 					<height>330</height>
-					<texture background="true" diffuse="reflection_square.png" flipy="true" border="2">$INFO[ListItem.Thumb]</texture>
-					<visible>IsEmpty(ListItem.Plot)</visible>
+					<texture background="true" diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<aspectratio aligny="top" align="center">keep</aspectratio>
 					<fadetime>1</fadetime>
+					<visible>IsEmpty(ListItem.Plot)</visible>
 				</control>
 				<control type="image">
 					<posx>111</posx>
 					<posy>519</posy>
 					<width>464</width>
 					<height>280</height>
-					<texture background="true" diffuse="reflection_square.png" flipy="true" border="2">$INFO[ListItem.Thumb]</texture>
-					<visible>!IsEmpty(ListItem.Plot)</visible>
+					<texture background="true" diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<aspectratio aligny="top" align="center">keep</aspectratio>
 					<fadetime>1</fadetime>
+					<visible>!IsEmpty(ListItem.Plot)</visible>
 				</control>
 				<control type="image">
 					<posx>111</posx>
 					<posy>300</posy>
 					<width>464</width>
 					<height>330</height>
-					<visible>IsEmpty(ListItem.Plot)</visible>
 					<texture background="true" diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
 					<aspectratio aligny="bottom" align="center">keep</aspectratio>
 					<bordertexture>border_square.png</bordertexture>
 					<fadetime>1</fadetime>
+					<visible>IsEmpty(ListItem.Plot)</visible>
 				</control>
 				<control type="image">
 					<posx>111</posx>
 					<posy>239</posy>
 					<width>464</width>
 					<height>280</height>
-					<visible>!IsEmpty(ListItem.Plot)</visible>
 					<texture background="true" diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
 					<aspectratio aligny="bottom" align="center">keep</aspectratio>
 					<bordertexture>border_square.png</bordertexture>
 					<fadetime>1</fadetime>
+					<visible>!IsEmpty(ListItem.Plot)</visible>
 				</control>
 			</control>
 			<control type="group">
