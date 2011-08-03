@@ -226,19 +226,25 @@
 								<label>$INFO[Container(11001).ListItem(0).label]</label>
 								<thumb>$INFO[Container(11001).ListItem(0).Thumb]</thumb>
 								<icon>$INFO[Container(11001).ListItem(0).Icon]</icon>
-								<onclick>$INFO[Container(11001).ListItem(0).Path]</onclick>
+								<onclick>Control.SetFocus(11001,0)</onclick>
+								<onclick>Control.SetFocus(300)</onclick>
+								<onclick>SendClick(0,11001)</onclick>
 							</item>
 							<item id="2">
 								<label>$INFO[Container(11001).ListItem(1).label]</label>
 								<thumb>$INFO[Container(11001).ListItem(1).Thumb]</thumb>
 								<icon>$INFO[Container(11001).ListItem(1).Icon]</icon>
-								<onclick>$INFO[Container(11001).ListItem(1).Path]</onclick>
+								<onclick>Control.SetFocus(11001,1)</onclick>
+								<onclick>Control.SetFocus(300)</onclick>
+								<onclick>SendClick(0,11001)</onclick>
 							</item>
 							<item id="3">
 								<label>$INFO[Container(11001).ListItem(2).label]</label>
 								<thumb>$INFO[Container(11001).ListItem(2).Thumb]</thumb>
 								<icon>$INFO[Container(11001).ListItem(2).Icon]</icon>
-								<onclick>$INFO[Container(11001).ListItem(2).Path]</onclick>
+								<onclick>Control.SetFocus(11001,2)</onclick>
+								<onclick>Control.SetFocus(300)</onclick>
+								<onclick>SendClick(0,11001)</onclick>
 							</item>
 						</content>
 					</control>
