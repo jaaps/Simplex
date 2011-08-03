@@ -27,7 +27,7 @@
 				<visible>true</visible>
 			</control>
 			<control type="image">
-				<texture background="true">homemenu_focus.png</texture>
+				<texture>homemenu_focus.png</texture>
 				<posx>0</posx>
 				<posy>298</posy>
 				<width>1280</width>
@@ -35,7 +35,7 @@
 				<visible>Control.HasFocus(300)</visible>
 			</control>
 			<control type="image">
-				<texture background="true">homemenu_unfocus.png</texture>
+				<texture>homemenu_unfocus.png</texture>
 				<posx>0</posx>
 				<posy>298</posy>
 				<width>1280</width>
