@@ -8,4 +8,5 @@
 	<color name="DarkGray">FF5b5b5b</color>
 	<color name="Red">FFFF0000</color>
 	<color name="Orange">FFff9900</color>
+	<color name="Shadow">50000000</color>
 </colors>

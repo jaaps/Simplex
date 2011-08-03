@@ -56,6 +56,18 @@
 				<itemlayout width="210" height="76">
 					<control type="label">
 						<posx>105</posx>
+						<posy>2</posy>
+						<width>190</width>
+						<height>76</height>
+						<label>$INFO[ListItem.Label]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>HomeMenuItem</font>
+						<textcolor>Shadow</textcolor>
+						<visible>Control.HasFocus(300)</visible>
+					</control>
+					<control type="label">
+						<posx>105</posx>
 						<posy>0</posy>
 						<width>190</width>
 						<height>76</height>
@@ -65,6 +77,18 @@
 						<font>HomeMenuItem</font>
 						<textcolor>White</textcolor>
 						<visible>Control.HasFocus(300)</visible>
+					</control>
+					<control type="label">
+						<posx>105</posx>
+						<posy>2</posy>
+						<width>190</width>
+						<height>76</height>
+						<label>$INFO[ListItem.Label]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>HomeMenuItem</font>
+						<textcolor>Shadow</textcolor>
+						<visible>!Control.HasFocus(300)</visible>
 					</control>
 					<control type="label">
 						<posx>105</posx>
@@ -80,6 +104,17 @@
 					</control>
 				</itemlayout>
 				<focusedlayout width="210" height="76">
+					<control type="label">
+						<posx>105</posx>
+						<posy>2</posy>
+						<width>190</width>
+						<height>76</height>
+						<label>$INFO[ListItem.Label]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>HomeMenuItem</font>
+						<textcolor>Shadow</textcolor>
+					</control>
 					<control type="label">
 						<posx>105</posx>
 						<posy>0</posy>
@@ -155,6 +190,16 @@
 					<visible>Control.IsVisible(11001) + Container(11001).ListItem(0).Type(movie)</visible>
 					<animation effect="fade" start="0" end="100" time="300" delay="900">Visible</animation>
 					<width>504</width>
+					<control type="label" id="8002">
+						<font>info1</font>
+						<textcolor>Shadow</textcolor>
+						<width>350</width>
+						<height>30</height>
+						<align>left</align>
+						<label>On Deck</label>
+						<posx>19</posx>
+						<posy>2</posy>
+					</control>
 					<control type="label" id="8002">
 						<font>info1</font>
 						<textcolor>Gray</textcolor>
@@ -250,12 +295,34 @@
 					</control>
 					<control type="label">
 						<posx>0</posx>
+						<posy>244</posy>
+						<width>162</width>
+						<height>30</height>
+						<label>$INFO[Container(299).ListItem(0).Label]</label>
+						<visible>Control.HasFocus(299) + Container(299).Position(0)</visible>
+						<textcolor>Shadow</textcolor>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>0</posx>
 						<posy>246</posy>
 						<width>162</width>
 						<height>30</height>
 						<label>$INFO[Container(299).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(299) + Container(299).Position(0) </visible>
+						<visible>Control.HasFocus(299) + Container(299).Position(0)</visible>
 						<textcolor>Orange</textcolor>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>162</posx>
+						<posy>244</posy>
+						<width>162</width>
+						<height>30</height>
+						<label>$INFO[Container(299).ListItem(0).Label]</label>
+						<visible>Control.HasFocus(299) + Container(299).Position(1)</visible>
+						<textcolor>Shadow</textcolor>
 						<font>homelabel</font>
 						<align>center</align>
 					</control>
@@ -267,6 +334,17 @@
 						<label>$INFO[Container(299).ListItem(0).Label]</label>
 						<visible>Control.HasFocus(299) + Container(299).Position(1)</visible>
 						<textcolor>Orange</textcolor>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>324</posx>
+						<posy>244</posy>
+						<width>162</width>
+						<height>30</height>
+						<label>$INFO[Container(299).ListItem(0).Label]</label>
+						<visible>Control.HasFocus(299) + Container(299).Position(2)</visible>
+						<textcolor>Shadow</textcolor>
 						<font>homelabel</font>
 						<align>center</align>
 					</control>
@@ -288,11 +366,21 @@
 					<width>672</width>
 					<control type="label" id="8002">
 						<font>info1</font>
+						<textcolor>Shadow</textcolor>
+						<width>350</width>
+						<height>30</height>
+						<align>left</align>
+						<label>Recently Added</label>
+						<posx>19</posx>
+						<posy>2</posy>
+					</control>
+					<control type="label" id="8002">
+						<font>info1</font>
 						<textcolor>Gray</textcolor>
 						<width>350</width>
 						<height>30</height>
 						<align>left</align>
-						<label>Recently added</label>
+						<label>Recently Added</label>
 						<posx>19</posx>
 					</control>
 					<control type="list" id="298">
@@ -384,12 +472,34 @@
 					</control>
 					<control type="label">
 						<posx>0</posx>
+						<posy>244</posy>
+						<width>162</width>
+						<height>30</height>
+						<label>$INFO[Container(298).ListItem(0).Label]</label>
+						<visible>Control.HasFocus(298) + Container(298).Position(0)</visible>
+						<textcolor>Shadow</textcolor>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>0</posx>
 						<posy>246</posy>
 						<width>162</width>
 						<height>30</height>
 						<label>$INFO[Container(298).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(0) </visible>
+						<visible>Control.HasFocus(298) + Container(298).Position(0)</visible>
 						<textcolor>Orange</textcolor>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>162</posx>
+						<posy>244</posy>
+						<width>162</width>
+						<height>30</height>
+						<label>$INFO[Container(298).ListItem(0).Label]</label>
+						<visible>Control.HasFocus(298) + Container(298).Position(1)</visible>
+						<textcolor>Shadow</textcolor>
 						<font>homelabel</font>
 						<align>center</align>
 					</control>
@@ -406,12 +516,34 @@
 					</control>
 					<control type="label">
 						<posx>324</posx>
+						<posy>244</posy>
+						<width>162</width>
+						<height>30</height>
+						<label>$INFO[Container(298).ListItem(0).Label]</label>
+						<visible>Control.HasFocus(298) + Container(298).Position(2)</visible>
+						<textcolor>Shadow</textcolor>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>324</posx>
 						<posy>246</posy>
 						<width>162</width>
 						<height>30</height>
 						<label>$INFO[Container(298).ListItem(0).Label]</label>
 						<visible>Control.HasFocus(298) + Container(298).Position(2)</visible>
 						<textcolor>Orange</textcolor>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>486</posx>
+						<posy>244</posy>
+						<width>162</width>
+						<height>30</height>
+						<label>$INFO[Container(298).ListItem(0).Label]</label>
+						<visible>Control.HasFocus(298) + Container(298).Position(3)</visible>
+						<textcolor>Shadow</textcolor>
 						<font>homelabel</font>
 						<align>center</align>
 					</control>
