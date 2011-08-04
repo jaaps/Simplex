@@ -4,6 +4,9 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<control type="group">
+			<control type="button" id="340">
+				<label>-</label>
+			</control>
 			<control type="multiimage">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -187,8 +190,9 @@
 				<orientation>horizontal</orientation>
 				<itemgap>-19</itemgap>
 				<control type="group">
-					<visible>Control.IsVisible(11001) + Container(11001).ListItem(0).Type(movie)</visible>
+					<visible>Container(11001).ListItem(0).Type(movie) + !Control.HasFocus(11001) + !Container(11001).OnNext + !Container(11001).OnPrevious + !Container(300).OnNext + !Container(300).OnPrevious + !Window.IsVisible(106) + !Control.HasFocus(340)</visible>
 					<animation effect="fade" start="0" end="100" time="300" delay="900">Visible</animation>
+					<animation effect="fade" start="100" end="0" time="1" delay="0">Hidden</animation>
 					<width>504</width>
 					<control type="label" id="8002">
 						<font>info1</font>
@@ -271,25 +275,91 @@
 								<label>$INFO[Container(11001).ListItem(0).label]</label>
 								<thumb>$INFO[Container(11001).ListItem(0).Thumb]</thumb>
 								<icon>$INFO[Container(11001).ListItem(0).Icon]</icon>
-								<onclick>Control.SetFocus(11001,0)</onclick>
-								<onclick>Control.SetFocus(300)</onclick>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(299,0)</onclick>
+								<onclick>Control.Move(11001,0)</onclick>
 								<onclick>SendClick(0,11001)</onclick>
+								<visible>Container(11001).Column(0)</visible>
 							</item>
-							<item id="2">
+							<item id="1">
 								<label>$INFO[Container(11001).ListItem(1).label]</label>
 								<thumb>$INFO[Container(11001).ListItem(1).Thumb]</thumb>
 								<icon>$INFO[Container(11001).ListItem(1).Icon]</icon>
-								<onclick>Control.SetFocus(11001,1)</onclick>
-								<onclick>Control.SetFocus(300)</onclick>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(299,0)</onclick>
+								<onclick>Control.Move(11001,1)</onclick>
 								<onclick>SendClick(0,11001)</onclick>
+								<visible>Container(11001).Column(0)</visible>
 							</item>
 							<item id="3">
 								<label>$INFO[Container(11001).ListItem(2).label]</label>
 								<thumb>$INFO[Container(11001).ListItem(2).Thumb]</thumb>
 								<icon>$INFO[Container(11001).ListItem(2).Icon]</icon>
-								<onclick>Control.SetFocus(11001,2)</onclick>
-								<onclick>Control.SetFocus(300)</onclick>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(299,0)</onclick>
+								<onclick>Control.Move(11001,2)</onclick>
 								<onclick>SendClick(0,11001)</onclick>
+								<visible>Container(11001).Column(0)</visible>
+							</item>
+							<item id="1">
+								<label>$INFO[Container(11001).ListItem(-1).label]</label>
+								<thumb>$INFO[Container(11001).ListItem(-1).Thumb]</thumb>
+								<icon>$INFO[Container(11001).ListItem(-1).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(299,0)</onclick>
+								<onclick>Control.Move(11001,-1)</onclick>
+								<onclick>SendClick(0,11001)</onclick>
+								<visible>Container(11001).Position(1)</visible>
+							</item>
+							<item id="1">
+								<label>$INFO[Container(11001).ListItem(0).label]</label>
+								<thumb>$INFO[Container(11001).ListItem(0).Thumb]</thumb>
+								<icon>$INFO[Container(11001).ListItem(0).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(299,0)</onclick>
+								<onclick>Control.Move(11001,0)</onclick>
+								<onclick>SendClick(0,11001)</onclick>
+								<visible>Container(11001).Position(1)</visible>
+							</item>
+							<item id="3">
+								<label>$INFO[Container(11001).ListItem(1).label]</label>
+								<thumb>$INFO[Container(11001).ListItem(1).Thumb]</thumb>
+								<icon>$INFO[Container(11001).ListItem(1).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(299,0)</onclick>
+								<onclick>Control.Move(11001,1)</onclick>
+								<onclick>SendClick(0,11001)</onclick>
+								<visible>Container(11001).Position(1)</visible>
+							</item>
+							<item id="1">
+								<label>$INFO[Container(11001).ListItem(-2).label]</label>
+								<thumb>$INFO[Container(11001).ListItem(-2).Thumb]</thumb>
+								<icon>$INFO[Container(11001).ListItem(-2).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(299,0)</onclick>
+								<onclick>Control.Move(11001,-2)</onclick>
+								<onclick>SendClick(0,11001)</onclick>
+								<visible>Container(11001).Position(2)</visible>
+							</item>
+							<item id="1">
+								<label>$INFO[Container(11001).ListItem(-1).label]</label>
+								<thumb>$INFO[Container(11001).ListItem(-1).Thumb]</thumb>
+								<icon>$INFO[Container(11001).ListItem(-1).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(299,0)</onclick>
+								<onclick>Control.Move(11001,-1)</onclick>
+								<onclick>SendClick(0,11001)</onclick>
+								<visible>Container(11001).Position(2)</visible>
+							</item>
+							<item id="3">
+								<label>$INFO[Container(11001).ListItem(0).label]</label>
+								<thumb>$INFO[Container(11001).ListItem(0).Thumb]</thumb>
+								<icon>$INFO[Container(11001).ListItem(0).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(299,0)</onclick>
+								<onclick>Control.Move(11001,0)</onclick>
+								<onclick>SendClick(0,11001)</onclick>
+								<visible>Container(11001).Position(2)</visible>
 							</item>
 						</content>
 					</control>
@@ -361,8 +431,9 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>Control.IsVisible(11000) + Container(11000).ListItem(0).Type(movie)</visible>
+					<visible>Container(11000).ListItem(0).Type(movie) + !Control.HasFocus(11000) + !Container(11000).OnNext + !Container(11000).OnPrevious + !Container(300).OnNext + !Container(300).OnPrevious + !Window.IsVisible(106) + !Control.HasFocus(340)</visible>
 					<animation effect="fade" start="0" end="100" time="300" delay="900">Visible</animation>
+					<animation effect="fade" start="100" end="0" time="0" delay="0">Hidden</animation>
 					<width>672</width>
 					<control type="label" id="8002">
 						<font>info1</font>
@@ -384,7 +455,9 @@
 						<posx>19</posx>
 					</control>
 					<control type="list" id="298">
-						<visible allowhiddenfocus="false">true</visible>
+						<visible allowhiddenfocus="true">!Control.HasFocus(340)</visible>
+						<animation effect="fade" start="0" end="100" time="300" delay="900">Visible</animation>
+						<animation effect="fade" start="100" end="0" time="0" delay="0">Hidden</animation>
 						<orientation>horizontal</orientation>
 						<onright>-</onright>
 						<onleft>299</onleft>
@@ -448,25 +521,161 @@
 								<label>$INFO[Container(11000).ListItem(0).label]</label>
 								<thumb>$INFO[Container(11000).ListItem(0).Thumb]</thumb>
 								<icon>$INFO[Container(11000).ListItem(0).Icon]</icon>
-								<onclick>$INFO[Container(11000).ListItem(0).Path]</onclick>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(298,0)</onclick>
+								<onclick>Control.Move(11000,0)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(0)</visible>
 							</item>
-							<item id="2">
+							<item id="1">
 								<label>$INFO[Container(11000).ListItem(1).label]</label>
 								<thumb>$INFO[Container(11000).ListItem(1).Thumb]</thumb>
 								<icon>$INFO[Container(11000).ListItem(1).Icon]</icon>
-								<onclick>$INFO[Container(11000).ListItem(1).Path]</onclick>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(298,0)</onclick>
+								<onclick>Control.Move(11000,1)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(0)</visible>
 							</item>
 							<item id="3">
 								<label>$INFO[Container(11000).ListItem(2).label]</label>
 								<thumb>$INFO[Container(11000).ListItem(2).Thumb]</thumb>
 								<icon>$INFO[Container(11000).ListItem(2).Icon]</icon>
-								<onclick>$INFO[Container(11000).ListItem(2).Path]</onclick>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(298,0)</onclick>
+								<onclick>Control.Move(11000,2)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(0)</visible>
 							</item>
-							<item id="4">
+							<item id="3">
 								<label>$INFO[Container(11000).ListItem(3).label]</label>
 								<thumb>$INFO[Container(11000).ListItem(3).Thumb]</thumb>
 								<icon>$INFO[Container(11000).ListItem(3).Icon]</icon>
-								<onclick>$INFO[Container(11000).ListItem(3).Path]</onclick>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(298,0)</onclick>
+								<onclick>Control.Move(11000,3)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(0)</visible>
+							</item>
+							<item id="1">
+								<label>$INFO[Container(11000).ListItem(-1).label]</label>
+								<thumb>$INFO[Container(11000).ListItem(-1).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(-1).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(298,0)</onclick>
+								<onclick>Control.Move(11000,-1)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Position(1)</visible>
+							</item>
+							<item id="1">
+								<label>$INFO[Container(11000).ListItem(0).label]</label>
+								<thumb>$INFO[Container(11000).ListItem(0).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(0).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(298,0)</onclick>
+								<onclick>Control.Move(11000,0)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Position(1)</visible>
+							</item>
+							<item id="3">
+								<label>$INFO[Container(11000).ListItem(1).label]</label>
+								<thumb>$INFO[Container(11000).ListItem(1).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(1).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(298,0)</onclick>
+								<onclick>Control.Move(11000,1)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Position(1)</visible>
+							</item>
+							<item id="3">
+								<label>$INFO[Container(11000).ListItem(2).label]</label>
+								<thumb>$INFO[Container(11000).ListItem(2).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(2).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(298,0)</onclick>
+								<onclick>Control.Move(11000,2)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Position(1)</visible>
+							</item>
+							<item id="1">
+								<label>$INFO[Container(11000).ListItem(-2).label]</label>
+								<thumb>$INFO[Container(11000).ListItem(-2).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(-2).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(298,0)</onclick>
+								<onclick>Control.Move(11000,-2)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Position(2)</visible>
+							</item>
+							<item id="1">
+								<label>$INFO[Container(11000).ListItem(-1).label]</label>
+								<thumb>$INFO[Container(11000).ListItem(-1).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(-1).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(298,0)</onclick>
+								<onclick>Control.Move(11000,-1)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Position(2)</visible>
+							</item>
+							<item id="3">
+								<label>$INFO[Container(11000).ListItem(0).label]</label>
+								<thumb>$INFO[Container(11000).ListItem(0).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(0).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(298,0)</onclick>
+								<onclick>Control.Move(11000,0)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Position(2)</visible>
+							</item>
+							<item id="3">
+								<label>$INFO[Container(11000).ListItem(1).label]</label>
+								<thumb>$INFO[Container(11000).ListItem(1).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(1).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(298,0)</onclick>
+								<onclick>Control.Move(11000,1)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Position(2)</visible>
+							</item>
+							<item id="1">
+								<label>$INFO[Container(11000).ListItem(-3).label]</label>
+								<thumb>$INFO[Container(11000).ListItem(-3).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(-3).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(298,0)</onclick>
+								<onclick>Control.Move(11000,-3)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Position(3)</visible>
+							</item>
+							<item id="1">
+								<label>$INFO[Container(11000).ListItem(-2).label]</label>
+								<thumb>$INFO[Container(11000).ListItem(-2).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(-2).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(298,0)</onclick>
+								<onclick>Control.Move(11000,-2)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Position(3)</visible>
+							</item>
+							<item id="3">
+								<label>$INFO[Container(11000).ListItem(-1).label]</label>
+								<thumb>$INFO[Container(11000).ListItem(-1).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(-1).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(298,0)</onclick>
+								<onclick>Control.Move(11000,-1)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Position(3)</visible>
+							</item>
+							<item id="3">
+								<label>$INFO[Container(11000).ListItem(0).label]</label>
+								<thumb>$INFO[Container(11000).ListItem(0).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(0).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(298,0)</onclick>
+								<onclick>Control.Move(11000,0)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Position(3)</visible>
 							</item>
 						</content>
 					</control>
@@ -560,8 +769,10 @@
 					</control>
 				</control>
 			</control>
-			<control type="fixedlist" id="11001">
+			<control type="list" id="11001">
 				<visible allowhiddenfocus="false">false</visible>
+				<visible>false</visible>
+				<visible>!Control.IsVisible(300)</visible>
 				<orientation>horizontal</orientation>
 				<onright>7001</onright>
 				<onleft>-</onleft>
@@ -570,14 +781,16 @@
 				<height>280</height>
 				<posy>21</posy>
 				<posx>-19</posx>
-				<movement>1</movement>
-				<itemlayout width="185" height="280">
-				</itemlayout>
-				<focusedlayout width="185" height="280">
-				</focusedlayout>
+				<onfocus>Control.SetFocus(300,0)</onfocus>
+				<onleft>Control.SetFocus(300,0)</onleft>
+				<onright>Control.SetFocus(300,0)</onright>
+				<onup>Control.SetFocus(300,0)</onup>
+				<ondown>Control.SetFocus(300,0)</ondown>
 			</control>
-			<control type="fixedlist" id="11000">
+			<control type="list" id="11000">
 				<visible allowhiddenfocus="false">false</visible>
+				<visible>false</visible>
+				<visible>!Control.IsVisible(300)</visible>
 				<orientation>horizontal</orientation>
 				<ondown>-</ondown>
 				<onleft>7002</onleft>
@@ -587,14 +800,14 @@
 				<posx>-19</posx>
 				<width>750</width>
 				<height>400</height>
-				<movement>3</movement>
-				<itemlayout width="185" height="280">
-				</itemlayout>
-				<focusedlayout width="185" height="280">
-				</focusedlayout>
+				<onfocus>Control.SetFocus(300,0)</onfocus>
+				<onleft>Control.SetFocus(300,0)</onleft>
+				<onright>Control.SetFocus(300,0)</onright>
+				<onup>Control.SetFocus(300,0)</onup>
+				<ondown>Control.SetFocus(300,0)</ondown>
 				<height>200</height>
 			</control>
-			<control type="fixedlist" id="11002">
+			<control type="list" id="11002">
 				<visible allowhiddenfocus="false">false</visible>
 				<orientation>horizontal</orientation>
 				<ondown>-</ondown>
