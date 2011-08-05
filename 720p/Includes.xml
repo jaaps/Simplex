@@ -12,6 +12,22 @@
 		<texturenofocus>osd/osd_button_pause.png</texturenofocus>
 		<texturefocus>osd/osd_button_pause_fo.png</texturefocus>
 	</include>
+		<include name="Control298Focus">
+	<onfocus>SetFocus(298,0)</onfocus>
+		</include>
+			<include name="Control299Focus">
+		<onfocus>SetFocus(299,0)</onfocus>
+			</include>
+	<include name="videoPageLabel">
+		<posx>30</posx>
+		<posy>15</posy>
+		<width>1000</width>
+		<height>56</height>
+		<align>left</align>
+		<aligny>center</aligny>
+		<font>title1</font>
+		<textcolor>White</textcolor>
+	</include>
 	<include name="videoPageLabel">
 		<posx>30</posx>
 		<posy>15</posy>
