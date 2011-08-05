@@ -51,7 +51,7 @@
 				<posy>292</posy>
 				<width>1480</width>
 				<height>300</height>
-				<ondown>5100</ondown>
+				<ondown>SetFocus(299,0)</ondown>
 				<onright>300</onright>
 				<focusposition>3</focusposition>
 				<scrolltime>200</scrolltime>
@@ -195,7 +195,7 @@
 				<itemgap>-19</itemgap>
 				<control type="group">
 					<visible>[Container(11001).ListItem(0).Type(movie) | Container(11000).ListItem(0).Type(movie)] + !Window.IsVisible(106) + !Control.HasFocus(340) + Control.IsVisible(11000)</visible>
-					<animation effect="fade" start="0" end="100" time="300" delay="900">Visible</animation>
+					<animation effect="fade" start="0" end="100" time="300" delay="300">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="1" delay="0">Hidden</animation>
 					<width>1200</width>
 					<control type="group">
@@ -443,7 +443,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,4)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(0) + !IntegerGreaterThan(Container(11001).NumItems,2) + IntegerGreaterThan(Container(11000).NumItems,4) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(0) + [!IntegerGreaterThan(Container(11001).NumItems,2) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,4) + Control.IsVisible(11000)</visible>
 							</item>
 							<item id="6">
 								<label>$INFO[Container(11000).ListItem(5).label]</label>
@@ -453,7 +453,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,5)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(0) + !IntegerGreaterThan(Container(11001).NumItems,1) + IntegerGreaterThan(Container(11000).NumItems,5) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(0) + [!IntegerGreaterThan(Container(11001).NumItems,1) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,5) + Control.IsVisible(11000)</visible>
 							</item>
 							<item id="7">
 								<label>$INFO[Container(11000).ListItem(6).label]</label>
@@ -463,7 +463,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,6)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(0) + !IntegerGreaterThan(Container(11001).NumItems,0) + IntegerGreaterThan(Container(11000).NumItems,6) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(0) + [!IntegerGreaterThan(Container(11001).NumItems,0) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,6) + Control.IsVisible(11000)</visible>
 							</item>
 							<item id="1">
 								<label>$INFO[Container(11000).ListItem(-1).label]</label>
@@ -513,7 +513,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,3)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(1) + !IntegerGreaterThan(Container(11001).NumItems,2) + IntegerGreaterThan(Container(11000).NumItems,4) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(1) + [!IntegerGreaterThan(Container(11001).NumItems,2) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,4) + Control.IsVisible(11000)</visible>
 							</item>
 							<item id="6">
 								<label>$INFO[Container(11000).ListItem(4).label]</label>
@@ -523,7 +523,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,4)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(1) + !IntegerGreaterThan(Container(11001).NumItems,1) + IntegerGreaterThan(Container(11000).NumItems,5) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(1) + [!IntegerGreaterThan(Container(11001).NumItems,1) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,5) + Control.IsVisible(11000)</visible>
 							</item>
 							<item id="7">
 								<label>$INFO[Container(11000).ListItem(5).label]</label>
@@ -533,7 +533,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,5)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(1) + !IntegerGreaterThan(Container(11001).NumItems,0) + IntegerGreaterThan(Container(11000).NumItems,6) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(1) + [!IntegerGreaterThan(Container(11001).NumItems,0) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,6) + Control.IsVisible(11000)</visible>
 							</item>
 							<item id="1">
 								<label>$INFO[Container(11000).ListItem(-2).label]</label>
@@ -583,7 +583,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,2)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(2) + !IntegerGreaterThan(Container(11001).NumItems,2) + IntegerGreaterThan(Container(11000).NumItems,4) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(2) + [!IntegerGreaterThan(Container(11001).NumItems,2) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,4) + Control.IsVisible(11000)</visible>
 							</item>
 							<item id="6">
 								<label>$INFO[Container(11000).ListItem(3).label]</label>
@@ -593,7 +593,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,3)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(2) + !IntegerGreaterThan(Container(11001).NumItems,1) + IntegerGreaterThan(Container(11000).NumItems,5) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(2) + [!IntegerGreaterThan(Container(11001).NumItems,1) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,5) + Control.IsVisible(11000)</visible>
 							</item>
 							<item id="7">
 								<label>$INFO[Container(11000).ListItem(4).label]</label>
@@ -603,7 +603,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,4)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(2) + !IntegerGreaterThan(Container(11001).NumItems,0) + IntegerGreaterThan(Container(11000).NumItems,6) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(2) + [!IntegerGreaterThan(Container(11001).NumItems,0) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,6) + Control.IsVisible(11000)</visible>
 							</item>
 							<item id="1">
 								<label>$INFO[Container(11000).ListItem(-3).label]</label>
@@ -653,7 +653,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,1)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(3) + !IntegerGreaterThan(Container(11001).NumItems,2) + IntegerGreaterThan(Container(11000).NumItems,4) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(3) + [!IntegerGreaterThan(Container(11001).NumItems,2) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,4) + Control.IsVisible(11000)</visible>
 							</item>
 							<item id="6">
 								<label>$INFO[Container(11000).ListItem(2).label]</label>
@@ -663,7 +663,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,2)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(3) + !IntegerGreaterThan(Container(11001).NumItems,1) + IntegerGreaterThan(Container(11000).NumItems,5) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(3) + [!IntegerGreaterThan(Container(11001).NumItems,1) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,5) + Control.IsVisible(11000)</visible>
 							</item>
 							<item id="7">
 								<label>$INFO[Container(11000).ListItem(3).label]</label>
@@ -673,7 +673,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,3)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(3) + !IntegerGreaterThan(Container(11001).NumItems,0) + IntegerGreaterThan(Container(11000).NumItems,6) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(3) + [!IntegerGreaterThan(Container(11001).NumItems,0) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,6) + Control.IsVisible(11000)</visible>
 							</item>
 							<item id="1">
 								<label>$INFO[Container(11000).ListItem(-4).label]</label>
@@ -723,7 +723,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,-1)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(4) + !IntegerGreaterThan(Container(11001).NumItems,2) + IntegerGreaterThan(Container(11000).NumItems,4) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(4) + [!IntegerGreaterThan(Container(11001).NumItems,2) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,4) + Control.IsVisible(11000)</visible>
 							</item>
 							<item id="6">
 								<label>$INFO[Container(11000).ListItem(1).label]</label>
@@ -733,7 +733,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,1)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(4) + !IntegerGreaterThan(Container(11001).NumItems,1) + IntegerGreaterThan(Container(11000).NumItems,5) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(4) + [!IntegerGreaterThan(Container(11001).NumItems,1) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,5) + Control.IsVisible(11000)</visible>
 							</item>
 							<item id="7">
 								<label>$INFO[Container(11000).ListItem(2).label]</label>
@@ -743,7 +743,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,2)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(4) + !IntegerGreaterThan(Container(11001).NumItems,0) + IntegerGreaterThan(Container(11000).NumItems,6) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(4) + [!IntegerGreaterThan(Container(11001).NumItems,0) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,6) + Control.IsVisible(11000)</visible>
 							</item>
 							<item id="1">
 								<label>$INFO[Container(11000).ListItem(-5).label]</label>
@@ -793,7 +793,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,-1)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(5) + !IntegerGreaterThan(Container(11001).NumItems,2) + IntegerGreaterThan(Container(11000).NumItems,4) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(5) + [!IntegerGreaterThan(Container(11001).NumItems,2) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,4) + Control.IsVisible(11000)</visible>
 							</item>
 							<item id="6">
 								<label>$INFO[Container(11000).ListItem(0).label]</label>
@@ -803,7 +803,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,0)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(5) + !IntegerGreaterThan(Container(11001).NumItems,1) + IntegerGreaterThan(Container(11000).NumItems,5) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(5) + [!IntegerGreaterThan(Container(11001).NumItems,1) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,5) + Control.IsVisible(11000)</visible>
 							</item>
 							<item id="7">
 								<label>$INFO[Container(11000).ListItem(1).label]</label>
@@ -813,7 +813,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,1)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(5) + !IntegerGreaterThan(Container(11001).NumItems,0) + IntegerGreaterThan(Container(11000).NumItems,6) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(5) + [!IntegerGreaterThan(Container(11001).NumItems,0) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,6) + Control.IsVisible(11000)</visible>
 							</item>
 							<item id="1">
 								<label>$INFO[Container(11000).ListItem(-6).label]</label>
@@ -863,7 +863,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,-2)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(6) + !IntegerGreaterThan(Container(11001).NumItems,2) + IntegerGreaterThan(Container(11000).NumItems,4) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(6) + [!IntegerGreaterThan(Container(11001).NumItems,2) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,4) + Control.IsVisible(11000)</visible>
 							</item>
 							<item id="6">
 								<label>$INFO[Container(11000).ListItem(-1).label]</label>
@@ -873,7 +873,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,-1)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(6) + !IntegerGreaterThan(Container(11001).NumItems,1) + IntegerGreaterThan(Container(11000).NumItems,5) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(6) + [!IntegerGreaterThan(Container(11001).NumItems,1) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,5) + Control.IsVisible(11000)</visible>
 							</item>
 							<item id="7">
 								<label>$INFO[Container(11000).ListItem(0).label]</label>
@@ -883,7 +883,7 @@
 								<onclick>Control.SetFocus(299,0)</onclick>
 								<onclick>Control.Move(11000,0)</onclick>
 								<onclick>SendClick(0,11000)</onclick>
-								<visible>Container(11000).Column(6) + !IntegerGreaterThan(Container(11001).NumItems,0) + IntegerGreaterThan(Container(11000).NumItems,6) + Control.IsVisible(11000)</visible>
+								<visible>Container(11000).Column(6) + [!IntegerGreaterThan(Container(11001).NumItems,0) | !Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,6) + Control.IsVisible(11000)</visible>
 							</item>
 						</content>
 					</control>
@@ -1081,11 +1081,11 @@
 				<height>280</height>
 				<posy>21</posy>
 				<posx>-19</posx>
-				<onfocus>Control.SetFocus(300,0)</onfocus>
-				<onleft>Control.SetFocus(300,0)</onleft>
-				<onright>Control.SetFocus(300,0)</onright>
-				<onup>Control.SetFocus(300,0)</onup>
-				<ondown>Control.SetFocus(300,0)</ondown>
+				<onfocus>Control.SetFocus(300)</onfocus>
+				<onleft>Control.SetFocus(300)</onleft>
+				<onright>Control.SetFocus(300)</onright>
+				<onup>Control.SetFocus(300)</onup>
+				<ondown>Control.SetFocus(300)</ondown>
 			</control>
 			<control type="list" id="11000">
 				<visible allowhiddenfocus="false">!Control.HasFocus(11000)</visible>
@@ -1098,11 +1098,11 @@
 				<posx>-19</posx>
 				<width>750</width>
 				<height>400</height>
-				<onfocus>Control.SetFocus(300,0)</onfocus>
-				<onleft>Control.SetFocus(300,0)</onleft>
-				<onright>Control.SetFocus(300,0)</onright>
-				<onup>Control.SetFocus(300,0)</onup>
-				<ondown>Control.SetFocus(300,0)</ondown>
+				<onfocus>Control.SetFocus(300)</onfocus>
+				<onleft>Control.SetFocus(300)</onleft>
+				<onright>Control.SetFocus(300)</onright>
+				<onup>Control.SetFocus(300)</onup>
+				<ondown>Control.SetFocus(300)</ondown>
 				<height>200</height>
 			</control>
 			<control type="list" id="11002">
