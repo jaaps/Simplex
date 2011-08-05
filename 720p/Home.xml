@@ -30,20 +30,20 @@
 				<visible>true</visible>
 			</control>
 			<control type="image">
+				<texture>homemenu_unfocus.png</texture>
+				<posx>0</posx>
+				<posy>298</posy>
+				<width>1280</width>
+				<height>76</height>
+			</control>
+			<control type="image">
 				<texture>homemenu_focus.png</texture>
 				<posx>0</posx>
 				<posy>298</posy>
 				<width>1280</width>
 				<height>76</height>
 				<visible>Control.HasFocus(300)</visible>
-			</control>
-			<control type="image">
-				<texture>homemenu_unfocus.png</texture>
-				<posx>0</posx>
-				<posy>298</posy>
-				<width>1280</width>
-				<height>76</height>
-				<visible>!Control.HasFocus(300)</visible>
+				<animation effect="fade" time="200">VisibleChange</animation>
 			</control>
 			<control type="wraplist" id="300">
 				<description>Home Main Menu</description>
@@ -68,6 +68,7 @@
 						<font>HomeMenuItem</font>
 						<textcolor>Shadow</textcolor>
 						<visible>Control.HasFocus(300)</visible>
+						<animation effect="fade" time="200">VisibleChange</animation>
 					</control>
 					<control type="label">
 						<posx>105</posx>
@@ -80,6 +81,7 @@
 						<font>HomeMenuItem</font>
 						<textcolor>White</textcolor>
 						<visible>Control.HasFocus(300)</visible>
+						<animation effect="fade" time="200">VisibleChange</animation>
 					</control>
 					<control type="label">
 						<posx>105</posx>
@@ -92,6 +94,7 @@
 						<font>HomeMenuItem</font>
 						<textcolor>Shadow</textcolor>
 						<visible>!Control.HasFocus(300)</visible>
+						<animation effect="fade" time="200">VisibleChange</animation>
 					</control>
 					<control type="label">
 						<posx>105</posx>
@@ -104,6 +107,7 @@
 						<font>HomeMenuItem</font>
 						<textcolor>DarkGray</textcolor>
 						<visible>!Control.HasFocus(300)</visible>
+						<animation effect="fade" time="200">VisibleChange</animation>
 					</control>
 				</itemlayout>
 				<focusedlayout width="210" height="76">
@@ -184,8 +188,8 @@
 				<height>76</height>
 			</control>
 			<control type="grouplist" id="5100">
-				<posx>49</posx>
-				<posy>390</posy>
+				<posx>47</posx>
+				<posy>392</posy>
 				<onup>300</onup>
 				<orientation>horizontal</orientation>
 				<itemgap>-19</itemgap>
@@ -193,7 +197,7 @@
 					<visible>[Container(11001).ListItem(0).Type(movie) | Container(11000).ListItem(0).Type(movie)] + !Window.IsVisible(106) + !Control.HasFocus(340) + Control.IsVisible(11000)</visible>
 					<animation effect="fade" start="0" end="100" time="300" delay="900">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="1" delay="0">Hidden</animation>
-					<width>1140</width>
+					<width>1200</width>
 					<control type="group">
 						<visible>IntegerGreaterThan(Container(11001).NumItems,0) + Control.IsVisible(11001)</visible>
 						<control type="label" id="8002">
@@ -203,7 +207,7 @@
 							<height>30</height>
 							<align>left</align>
 							<label>On Deck</label>
-							<posx>19</posx>
+							<posx>18</posx>
 							<posy>2</posy>
 						</control>
 						<control type="label" id="8002">
@@ -213,14 +217,14 @@
 							<height>30</height>
 							<align>left</align>
 							<label>On Deck</label>
-							<posx>19</posx>
+							<posx>18</posx>
 						</control>
 					</control>
 					<control type="group">
 						<animation effect="slide" start="0" end="0" time="1" condition="!Control.IsVisible(11001)">Conditional</animation>
-						<animation effect="slide" start="0" end="162" time="1" condition="IntegerGreaterThan(Container(11001).NumItems,0) + Control.IsVisible(11001)">Conditional</animation>
-						<animation effect="slide" start="0" end="162" time="1" condition="IntegerGreaterThan(Container(11001).NumItems,1) + Control.IsVisible(11001)">Conditional</animation>
-						<animation effect="slide" start="0" end="162" time="1" condition="IntegerGreaterThan(Container(11001).NumItems,2) + Control.IsVisible(11001)">Conditional</animation>
+						<animation effect="slide" start="0" end="169" time="1" condition="IntegerGreaterThan(Container(11001).NumItems,0) + Control.IsVisible(11001)">Conditional</animation>
+						<animation effect="slide" start="0" end="169" time="1" condition="IntegerGreaterThan(Container(11001).NumItems,1) + Control.IsVisible(11001)">Conditional</animation>
+						<animation effect="slide" start="0" end="169" time="1" condition="IntegerGreaterThan(Container(11001).NumItems,2) + Control.IsVisible(11001)">Conditional</animation>
 						<control type="label" id="8002">
 							<font>info1</font>
 							<textcolor>Shadow</textcolor>
@@ -228,7 +232,7 @@
 							<height>30</height>
 							<align>left</align>
 							<label>Recently Added</label>
-							<posx>19</posx>
+							<posx>18</posx>
 							<posy>2</posy>
 						</control>
 						<control type="label" id="8002">
@@ -238,7 +242,7 @@
 							<height>30</height>
 							<align>left</align>
 							<label>Recently Added</label>
-							<posx>19</posx>
+							<posx>18</posx>
 						</control>
 					</control>
 					<control type="list" id="299">
@@ -246,17 +250,17 @@
 						<onright>298</onright>
 						<onleft>-</onleft>
 						<onup>300</onup>
-						<width>1140</width>
+						<width>1200</width>
 						<height>340</height>
 						<posy>21</posy>
 						<posx>0</posx>
-						<itemlayout width="162" height="280">
+						<itemlayout width="169" height="280">
 							<control type="group">
 								<control type="image">
 									<posx>19</posx>
 									<posy>219</posy>
-									<width>136</width>
-									<height>208</height>
+									<width>134</width>
+									<height>200</height>
 									<texture diffuse="reflection_poster.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 								</control>
@@ -271,7 +275,7 @@
 								</control>
 							</control>
 						</itemlayout>
-						<focusedlayout width="162" height="280">
+						<focusedlayout width="169" height="280">
 							<control type="image">
 								<posx>19</posx>
 								<posy>219</posy>
@@ -884,156 +888,184 @@
 						</content>
 					</control>
 					<control type="label">
-						<posx>0</posx>
+						<posx>5</posx>
 						<posy>244</posy>
 						<width>162</width>
 						<height>30</height>
 						<label>$INFO[Container(299).ListItem(0).Label]</label>
 						<visible>Control.HasFocus(299) + Container(299).Position(0)</visible>
 						<textcolor>Shadow</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
 						<font>homelabel</font>
 						<align>center</align>
 					</control>
 					<control type="label">
-						<posx>0</posx>
+						<posx>5</posx>
 						<posy>246</posy>
 						<width>162</width>
 						<height>30</height>
 						<label>$INFO[Container(299).ListItem(0).Label]</label>
 						<visible>Control.HasFocus(299) + Container(299).Position(0)</visible>
 						<textcolor>Orange</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
 						<font>homelabel</font>
 						<align>center</align>
 					</control>
 					<control type="label">
-						<posx>162</posx>
+						<posx>174</posx>
 						<posy>244</posy>
 						<width>162</width>
 						<height>30</height>
 						<label>$INFO[Container(299).ListItem(0).Label]</label>
 						<visible>Control.HasFocus(299) + Container(299).Position(1)</visible>
 						<textcolor>Shadow</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
 						<font>homelabel</font>
 						<align>center</align>
 					</control>
 					<control type="label">
-						<posx>162</posx>
+						<posx>174</posx>
 						<posy>246</posy>
 						<width>162</width>
 						<height>30</height>
 						<label>$INFO[Container(299).ListItem(0).Label]</label>
 						<visible>Control.HasFocus(299) + Container(299).Position(1)</visible>
 						<textcolor>Orange</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
 						<font>homelabel</font>
 						<align>center</align>
 					</control>
 					<control type="label">
-						<posx>324</posx>
+						<posx>343</posx>
 						<posy>244</posy>
 						<width>162</width>
 						<height>30</height>
 						<label>$INFO[Container(299).ListItem(0).Label]</label>
 						<visible>Control.HasFocus(299) + Container(299).Position(2)</visible>
 						<textcolor>Shadow</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
 						<font>homelabel</font>
 						<align>center</align>
 					</control>
 					<control type="label">
-						<posx>324</posx>
+						<posx>343</posx>
 						<posy>246</posy>
 						<width>162</width>
 						<height>30</height>
 						<label>$INFO[Container(299).ListItem(0).Label]</label>
 						<visible>Control.HasFocus(299) + Container(299).Position(2)</visible>
 						<textcolor>Orange</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
 						<font>homelabel</font>
 						<align>center</align>
 					</control>
 					<control type="label">
-						<posx>486</posx>
+						<posx>512</posx>
 						<posy>244</posy>
 						<width>162</width>
 						<height>30</height>
 						<label>$INFO[Container(299).ListItem(0).Label]</label>
 						<visible>Control.HasFocus(299) + Container(299).Position(3)</visible>
 						<textcolor>Shadow</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
 						<font>homelabel</font>
 						<align>center</align>
 					</control>
 					<control type="label">
-						<posx>486</posx>
+						<posx>512</posx>
 						<posy>246</posy>
 						<width>162</width>
 						<height>30</height>
 						<label>$INFO[Container(299).ListItem(0).Label]</label>
 						<visible>Control.HasFocus(299) + Container(299).Position(3)</visible>
 						<textcolor>Orange</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
 						<font>homelabel</font>
 						<align>center</align>
 					</control>
 					<control type="label">
-						<posx>648</posx>
+						<posx>681</posx>
 						<posy>244</posy>
 						<width>162</width>
 						<height>30</height>
 						<label>$INFO[Container(299).ListItem(0).Label]</label>
 						<visible>Control.HasFocus(299) + Container(299).Position(4)</visible>
 						<textcolor>Shadow</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
 						<font>homelabel</font>
 						<align>center</align>
 					</control>
 					<control type="label">
-						<posx>648</posx>
+						<posx>681</posx>
 						<posy>246</posy>
 						<width>162</width>
 						<height>30</height>
 						<label>$INFO[Container(299).ListItem(0).Label]</label>
 						<visible>Control.HasFocus(299) + Container(299).Position(4)</visible>
 						<textcolor>Orange</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
 						<font>homelabel</font>
 						<align>center</align>
 					</control>
 					<control type="label">
-						<posx>810</posx>
+						<posx>850</posx>
 						<posy>244</posy>
 						<width>162</width>
 						<height>30</height>
 						<label>$INFO[Container(299).ListItem(0).Label]</label>
 						<visible>Control.HasFocus(299) + Container(299).Position(5)</visible>
 						<textcolor>Shadow</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
 						<font>homelabel</font>
 						<align>center</align>
 					</control>
 					<control type="label">
-						<posx>810</posx>
+						<posx>850</posx>
 						<posy>246</posy>
 						<width>162</width>
 						<height>30</height>
 						<label>$INFO[Container(299).ListItem(0).Label]</label>
 						<visible>Control.HasFocus(299) + Container(299).Position(5)</visible>
 						<textcolor>Orange</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
 						<font>homelabel</font>
 						<align>center</align>
 					</control>
 					<control type="label">
-						<posx>972</posx>
+						<posx>1019</posx>
 						<posy>244</posy>
 						<width>162</width>
 						<height>30</height>
 						<label>$INFO[Container(299).ListItem(0).Label]</label>
 						<visible>Control.HasFocus(299) + Container(299).Position(6)</visible>
 						<textcolor>Shadow</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
 						<font>homelabel</font>
 						<align>center</align>
 					</control>
 					<control type="label">
-						<posx>972</posx>
+						<posx>1019</posx>
 						<posy>246</posy>
 						<width>162</width>
 						<height>30</height>
 						<label>$INFO[Container(299).ListItem(0).Label]</label>
 						<visible>Control.HasFocus(299) + Container(299).Position(6)</visible>
 						<textcolor>Orange</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
 						<font>homelabel</font>
 						<align>center</align>
 					</control>
