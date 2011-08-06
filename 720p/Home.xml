@@ -247,7 +247,7 @@
 							<width>350</width>
 							<height>30</height>
 							<align>left</align>
-							<label>Recently Added</label>
+							<label>New Movies</label>
 							<posx>18</posx>
 							<posy>2</posy>
 						</control>
@@ -257,7 +257,7 @@
 							<width>350</width>
 							<height>30</height>
 							<align>left</align>
-							<label>Recently Added</label>
+							<label>New Movies</label>
 							<posx>18</posx>
 						</control>
 					</control>
@@ -1138,7 +1138,7 @@
 							<width>350</width>
 							<height>30</height>
 							<align>left</align>
-							<label>Recently Added</label>
+							<label>New Episodes</label>
 							<posx>18</posx>
 							<posy>2</posy>
 						</control>
@@ -1148,7 +1148,7 @@
 							<width>350</width>
 							<height>30</height>
 							<align>left</align>
-							<label>Recently Added</label>
+							<label>New Episodes</label>
 							<posx>18</posx>
 						</control>
 					</control>
