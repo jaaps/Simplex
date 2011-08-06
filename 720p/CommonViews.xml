@@ -367,8 +367,8 @@
 				<posy>253</posy>
 				<width>551</width>
 				<height>426</height>
-				<onleft>9000</onleft>
-				<onright>9000</onright>
+				<onleft>PageUp</onleft>
+				<onright>PageDown</onright>
 				<viewtype label="List">list</viewtype>
 				<scrolltime>200</scrolltime>
 				<preloaditems>2</preloaditems>
