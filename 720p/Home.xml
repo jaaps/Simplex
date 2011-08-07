@@ -188,7 +188,7 @@
 					<item id="5">
 						<description>Settings</description>
 						<label>Settings</label>
-						<onclick>Plex.ActivateWindow(Settings)</onclick>
+						<onclick>Plex.ActivateWindow(6789)</onclick>
 					</item>
 					<item id="6">
 						<description>Quit</description>

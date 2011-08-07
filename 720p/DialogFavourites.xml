@@ -14,7 +14,7 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<posx>423</posx>
+			<posx>424</posx>
 			<posy>364</posy>
 				<control type="list" id="450">
 				<width>422</width>

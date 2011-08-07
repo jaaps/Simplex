@@ -1,160 +1,128 @@
 <?xml version="1.0"?>
-<window id="4567" type="window">
-	<defaultcontrol always="true">300</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
+<window type="dialog" id="4567">
+	<defaultcontrol always="true">450</defaultcontrol>
+	<animation type="WindowOpen">
+		<effect type="fade" start="0" end="100" time="300" />
+	</animation>
+	<animation type="WindowClose">
+		<effect type="fade" start="100" end="0" time="100"/>
+	</animation>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
 	<controls>
 		<control type="group">
-		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<aspectratio>scale</aspectratio>
-			<aligny>top</aligny>
-			<imagepath background="true">http://localhost:32400/library/arts</imagepath>
-			<timeperimage>8000</timeperimage>
-			<fadetime>1700</fadetime>
-			<randomize>true</randomize>
-			<loop>yes</loop>
-			<visible>true</visible>
-			<animation type="WindowOpen" condition="true">
-				<effect type="fade" start="0" end="100" time="300" delay="0"/>
-			</animation>
-		</control>
-			<control type="image">
-				<texture>background_overlay.png</texture>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<visible>true</visible>
-			</control>
-			<control type="image">
-				<texture>plexicon_home.png</texture>
-				<posx>605</posx>
-				<posy>7</posy>
-				<visible>true</visible>
-			</control>
-		</control>
-		<control type="group">
-			<control type="list" id="300">
-				<posx>664</posx>
-				<posy>253</posy>
-				<width>551</width>
-				<height>426</height>
-				<onleft>9000</onleft>
-				<onright>9000</onright>
-				<onup>50</onup>
-				<ondown>50</ondown>
+			<posx>513</posx>
+			<posy>364</posy>
+				<control type="list" id="450">
+				<width>422</width>
+				<height>324</height>
+				<onleft>450</onleft>
+				<onright>450</onright>
 				<scrolltime>200</scrolltime>
-				<focusposition>0</focusposition>
-				<animation effect="fade" start="0" end="100" delay="280" time="100">Visible</animation>
-				<animation effect="fade" start="100" end="0" delay="0" time="100">Hidden</animation>
-				<animation effect="fade" start="0" end="100" delay="280" time="100">WindowOpen</animation>
-				<itemlayout height="52">
+				<itemlayout height="54">
 					<control type="group">
-						<posy>0</posy>
-						<posx>0</posx>
+						<posx>122</posx>
 						<control type="label">
-							<posy>3</posy>
-							<posx>30</posx>
-							<width>430</width>
+							<posy>2</posy>
+							<width>244</width>
 							<height>50</height>
+							<align>center</align>
 							<aligny>center</aligny>
 							<info>ListItem.Label</info>
+							<font>list1</font>
 							<textcolor>Shadow</textcolor>
 							<scroll>false</scroll>
-							<font>list1</font>
 						</control>
 						<control type="label">
-							<posy>1</posy>
-							<posx>30</posx>
-							<width>430</width>
+							<width>244</width>
 							<height>50</height>
+							<align>center</align>
 							<aligny>center</aligny>
 							<info>ListItem.Label</info>
+							<font>list1</font>
 							<textcolor>White</textcolor>
 							<scroll>false</scroll>
-							<font>list1</font>
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout height="52">
+				<focusedlayout height="54">
 					<control type="image">
-						<posy>1</posy>
-						<width>512</width>
+						<width>244</width>
 						<height>54</height>
-						<texture>button_media.png</texture>
+						<texture>button_home.png</texture>
 						<aspectratio>keep</aspectratio>
-						<animation effect="slide" start="0,-52" end="0,0" time="200" reversible="false" easing="out" condition="Container(300).OnNext">Focus</animation>
-						<animation effect="slide" start="0,52" end="0,0" time="200" reversible="false" easing="out" condition="Container(300).OnPrevious">Focus</animation>
+						<animation effect="slide" start="0,-52" end="0,0" time="200" reversible="false" easing="out" condition="Container(450).OnNext">Focus</animation>
+						<animation effect="slide" start="0,52" end="0,0" time="200" reversible="false" easing="out" condition="Container(450).OnPrevious">Focus</animation>
 					</control>
 					<control type="group">
-						<posy>0</posy>
-						<posx>0</posx>
+						<posx>122</posx>
 						<control type="label">
-							<posy>3</posy>
-							<posx>30</posx>
-							<width>430</width>
+							<posy>2</posy>
+							<width>244</width>
 							<height>50</height>
+							<align>center</align>
 							<aligny>center</aligny>
 							<info>ListItem.Label</info>
-							<textcolor>Shadow</textcolor>
-							<scroll>true</scroll>
 							<font>list1</font>
+							<textcolor>Shadow</textcolor>
+							<scroll>false</scroll>
 						</control>
 						<control type="label">
-							<posy>1</posy>
-							<posx>30</posx>
-							<width>430</width>
+							<posy>0</posy>
+							<width>244</width>
 							<height>50</height>
+							<align>center</align>
 							<aligny>center</aligny>
 							<info>ListItem.Label</info>
+							<font>list1</font>
 							<textcolor>White</textcolor>
 							<scroll>true</scroll>
-							<font>list1</font>
 							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 						</control>
 						<control type="label">
-							<posy>1</posy>
-							<posx>30</posx>
-							<width>430</width>
+							<width>244</width>
 							<height>50</height>
+							<align>center</align>
 							<aligny>center</aligny>
 							<info>ListItem.Label</info>
+							<font>list1</font>
 							<textcolor>Orange</textcolor>
 							<scroll>true</scroll>
-							<font>list1</font>
-  							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(300).OnNext">Focus</animation>
-   							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(300).OnPrevious">Focus</animation>
+							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(450).OnNext">Focus</animation>
+							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(450).OnPrevious">Focus</animation>
 						</control>
 					</control>
 				</focusedlayout>
 				<content>
 					<item id="1">
 						<description>Video Channels</description>
-						<label>Video Channels</label>
+						<label>Video</label>
 						<onclick>xbmc.activatewindow(6)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
 					</item>
 					<item id="2">
 						<description>Audio Channels</description>
-						<label>Audio Channels</label>
+						<label>Audio</label>
 						<onclick>xbmc.activatewindow(5)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
 					</item>
 					<item id="3">
 						<description>Picture Channels</description>
-						<label>Picture Channels</label>
+						<label>Picture</label>
 						<onclick>xbmc.activatewindow(2)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
 					</item>
 					<item id="4">
-						<description>Channel Store</description>
+						<description>Plex Connect</description>
 						<label>Channel Store</label>
 						<onclick>Plex.ActivateWindow(1,plex://localhost/system/plexonline,return)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
 					</item>
 				</content>
 			</control>
 		</control>
-		<include>Header</include>
-		<include>Time</include>
 	</controls>
 </window>

@@ -1,65 +1,151 @@
 <?xml version="1.0"?>
-<window id="56">
-	<defaultcontrol always="true">5</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
+<window type="dialog" id="6789">
+	<defaultcontrol always="true">450</defaultcontrol>
+	<animation type="WindowOpen">
+		<effect type="fade" start="0" end="100" time="300" />
+	</animation>
+	<animation type="WindowClose">
+		<effect type="fade" start="100" end="0" time="100"/>
+	</animation>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
 	<controls>
-		<include>Background</include>
-		<control type="grouplist" id="5">
-			<description>Control Area</description>
-			<posx>170</posx>
-			<posy>100</posy>
-			<width>900</width>
-			<height>563</height>
-			<itemgap>4</itemgap>
-			<onleft>3</onleft>
-			<onright>3</onright>
-			<orientation>vertical</orientation>
-			<control type="radiobutton" id="2018">
-				<label>Hide Plex Logo in Home</label>
-				<selected>Skin.HasSetting(HidePlexLogo)</selected>
-				<onclick>Skin.ToggleSetting(HidePlexLogo)</onclick>
-			</control>
-			<control type="radiobutton" id="2019">
-				<label>Show HD Icon</label>
-				<onclick>Skin.ToggleSetting(Flags)</onclick>
-				<selected>Skin.HasSetting(Flags)</selected>
-			</control>
-			<control type="radiobutton" id="2020">
-				<label>Use Posters for TV Shows instead of Fanart</label>
-				<onclick>Skin.ToggleSetting(PosterTVShows)</onclick>
-				<selected>Skin.HasSetting(PosterTVShows)</selected>
-			</control>
-			<control type="radiobutton" id="2021">
-				<label>Hide Unwatched flags</label>
-				<onclick>Skin.ToggleSetting(NoWatchedFlags)</onclick>
-				<selected>Skin.HasSetting(NoWatchedFlags)</selected>
-			</control>
-			<control type="radiobutton" id="2022">
-				<label>[COLOR=WhiteTrans]Wait before showing info: [/COLOR]Don't wait</label>
-				<onclick>Skin.Reset(WaitShort)</onclick>
-				<onclick>Skin.ToggleSetting(NoWait)</onclick>
-				<selected>Skin.HasSetting(NoWait)</selected>
-			</control>
-			<control type="radiobutton" id="2023">
-				<label>[COLOR=WhiteTrans]Wait before showing info: [/COLOR]Wait for 1 second</label>
-				<onclick>Skin.Reset(NoWait)</onclick>
-				<onclick>Skin.ToggleSetting(WaitShort)</onclick>
-				<selected>Skin.HasSetting(WaitShort)</selected>
-			</control>
-			<control type="radiobutton" id="2024">
-				<label>[COLOR=WhiteTrans]Wait before showing info: [/COLOR]Wait for 3 seconds</label>
-				<onclick>Skin.Reset(NoWait)</onclick>
-				<onclick>Skin.Reset(WaitShort)</onclick>
-				<selected>!Skin.HasSetting(WaitShort) + !Skin.HasSetting(NoWait)</selected>
-			</control>
-			<control type="image">
-				<posy>0</posy>
-				<posx>0</posx>
-				<width>510</width>
-				<height>1</height>
-				<texture>white.png</texture>
-				<aspectratio>scale</aspectratio>
-				<colordiffuse>WhiteTrans</colordiffuse>
+		<control type="group">
+			<posx>513</posx>
+			<posy>364</posy>
+				<control type="list" id="450">
+				<width>422</width>
+				<height>324</height>
+				<onleft>450</onleft>
+				<onright>450</onright>
+				<scrolltime>200</scrolltime>
+				<itemlayout height="54">
+					<control type="group">
+						<posx>122</posx>
+						<control type="label">
+							<posy>2</posy>
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>Shadow</textcolor>
+							<scroll>false</scroll>
+						</control>
+						<control type="label">
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>White</textcolor>
+							<scroll>false</scroll>
+						</control>
+					</control>
+				</itemlayout>
+				<focusedlayout height="54">
+					<control type="image">
+						<width>244</width>
+						<height>54</height>
+						<texture>button_home.png</texture>
+						<aspectratio>keep</aspectratio>
+						<animation effect="slide" start="0,-52" end="0,0" time="200" reversible="false" easing="out" condition="Container(450).OnNext">Focus</animation>
+						<animation effect="slide" start="0,52" end="0,0" time="200" reversible="false" easing="out" condition="Container(450).OnPrevious">Focus</animation>
+					</control>
+					<control type="group">
+						<posx>122</posx>
+						<control type="label">
+							<posy>2</posy>
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>Shadow</textcolor>
+							<scroll>false</scroll>
+						</control>
+						<control type="label">
+							<posy>0</posy>
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>White</textcolor>
+							<scroll>true</scroll>
+							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+						</control>
+						<control type="label">
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>Orange</textcolor>
+							<scroll>true</scroll>
+							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(450).OnNext">Focus</animation>
+							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(450).OnPrevious">Focus</animation>
+						</control>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<description>Videos</description>
+						<label>$LOCALIZE[3]</label>
+						<onclick>activatewindow(MyVideosSettings)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+					<item id="2">
+						<description>Music</description>
+						<label>$LOCALIZE[2]</label>
+						<onclick>activatewindow(MyMusicSettings)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+					<item id="3">
+						<description>Pictures</description>
+						<label>$LOCALIZE[1]</label>
+						<onclick>activatewindow(MyPicturesSettings)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+					<item id="4">
+						<description>Weather</description>
+						<label>$LOCALIZE[8]</label>
+						<onclick>activatewindow(MyWeatherSettings)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+					<item id="5">
+						<description>Network</description>
+						<label>$LOCALIZE[705]</label>
+						<onclick>activatewindow(NetworkSettings)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+					<item id="6">
+						<description>System</description>
+						<label>$LOCALIZE[13000]</label>
+						<onclick>activatewindow(SystemSettings)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+					<item id="7">
+						<description>Appearance</description>
+						<label>$LOCALIZE[480]</label>
+						<onclick>activatewindow(AppearanceSettings)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>					
+					<item id="8">
+						<description>Skin Settings</description>
+						<label>Skin</label>
+						<onclick>activatewindow(56)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+				</content>
 			</control>
 		</control>
 	</controls>

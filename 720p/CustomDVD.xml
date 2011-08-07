@@ -18,7 +18,7 @@
 			<posy>364</posy>
 				<control type="list" id="450">
 				<width>422</width>
-				<height>270</height>
+				<height>324</height>
 				<onleft>450</onleft>
 				<onright>450</onright>
 				<scrolltime>200</scrolltime>
