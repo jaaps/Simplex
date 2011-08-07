@@ -68,7 +68,7 @@
 							<info>ListItem.Label</info>
 							<font>list1</font>
 							<textcolor>Shadow</textcolor>
-							<scroll>false</scroll>
+							<scroll>true</scroll>
 						</control>
 						<control type="label">
 							<posy>0</posy>
