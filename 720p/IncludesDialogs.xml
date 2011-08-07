@@ -74,6 +74,20 @@
 		<pulseonselect>false</pulseonselect>
 		<width>422</width>
 	</include>
+	<include name="homeMenuButton">
+		<font>list1</font>
+		<textcolor>White</textcolor>
+		<focusedcolor>Orange</focusedcolor>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>button_home.png</texturefocus>
+		<height>54</height>
+		<align>center</align>
+		<aligny>center</aligny>
+		<textoffsety>0</textoffsety>
+		<textoffsetx>0</textoffsetx>
+		<pulseonselect>false</pulseonselect>
+		<width>244</width>
+	</include>
 	<include name="dialogLabel">
 		<textoffsetx>15</textoffsetx>
 		<textoffsety>10</textoffsety>

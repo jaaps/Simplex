@@ -1,54 +1,116 @@
 <?xml version="1.0"?>
 <window type="dialog" id="5678">
-	<defaultcontrol always="true">1</defaultcontrol>
-	<include>dialogOpen</include>
+	<defaultcontrol always="true">450</defaultcontrol>
+	<animation type="WindowOpen">
+		<effect type="fade" start="0" end="100" time="300" />
+	</animation>
+	<animation type="WindowClose">
+		<effect type="fade" start="100" end="0" time="100"/>
+	</animation>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
 		<posy>0</posy>
 	</coordinates>
 	<controls>
-		<control type="image">
-			<include>dialogDiffuse</include>
-		</control>
 		<control type="group">
-			<posx>309</posx>
-			<posy>212</posy>
-			<control type="image">
-				<include>dialogWindowTop</include>
-			</control>
-			<control type="image">
-				<posy>94</posy>
-				<height>108</height>
-				<include>dialogWindowCenter</include>
-			</control>		
-			<control type="image">
-				<posy>202</posy>
-				<include>dialogWindowBottom</include>
-			</control>
-			<control type="group">
-				<posx>120</posx>
-				<posy>94</posy>
-				<control type="button" id="1">
-					<description>Play button</description>
-					<label>Play</label>
-					<onup>2</onup>
-					<ondown>2</ondown>
-					<include>contextMenuButton</include>
-					<onclick>XBMC.PlayDVD</onclick>
-					<onclick>dialog.close(all,true)</onclick>
-				</control>
-				<control type="button" id="2">
-					<description>Eject button</description>
-					<posy>54</posy>
-					<label>Eject Disc</label>
-					<ondown>1</ondown>
-					<onup>1</onup>
-					<include>contextMenuButton</include>
-					<onclick>XBMC.EjectTray()</onclick>
-					<onclick>XBMC.EjectTray()</onclick>
-					<onclick>dialog.close(all,true)</onclick>
-				</control>
+			<posx>513</posx>
+			<posy>364</posy>
+				<control type="list" id="450">
+				<width>422</width>
+				<height>270</height>
+				<onleft>450</onleft>
+				<onright>450</onright>
+				<scrolltime>200</scrolltime>
+				<itemlayout height="54">
+					<control type="group">
+						<posx>122</posx>
+						<control type="label">
+							<posy>2</posy>
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>Shadow</textcolor>
+							<scroll>false</scroll>
+						</control>
+						<control type="label">
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>White</textcolor>
+							<scroll>false</scroll>
+						</control>
+					</control>
+				</itemlayout>
+				<focusedlayout height="54">
+					<control type="image">
+						<width>244</width>
+						<height>54</height>
+						<texture>button_home.png</texture>
+						<aspectratio>keep</aspectratio>
+						<animation effect="slide" start="0,-52" end="0,0" time="200" reversible="false" easing="out" condition="Container(450).OnNext">Focus</animation>
+						<animation effect="slide" start="0,52" end="0,0" time="200" reversible="false" easing="out" condition="Container(450).OnPrevious">Focus</animation>
+					</control>
+					<control type="group">
+						<posx>122</posx>
+						<control type="label">
+							<posy>2</posy>
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>Shadow</textcolor>
+							<scroll>false</scroll>
+						</control>
+						<control type="label">
+							<posy>0</posy>
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>White</textcolor>
+							<scroll>true</scroll>
+							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+						</control>
+						<control type="label">
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>Orange</textcolor>
+							<scroll>true</scroll>
+							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(450).OnNext">Focus</animation>
+							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(450).OnPrevious">Focus</animation>
+						</control>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<description>Play</description>
+						<label>Play</label>
+						<onclick>XBMC.PlayDVD</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+					<item id="2">
+						<description>Eject</description>
+						<label>Eject Disc</label>
+						<onclick>XBMC.EjectTray()</onclick>
+						<onclick>XBMC.EjectTray()</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+				</content>
 			</control>
 		</control>
 	</controls>
