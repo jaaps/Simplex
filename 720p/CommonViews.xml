@@ -579,7 +579,7 @@
 								<height>50</height>
 								<label>$INFO[ListItem.Episode]. $INFO[ListItem.Label]</label>
 								<textcolor>Shadow</textcolor>
-								<scroll>false</scroll>
+								<scroll>true</scroll>
 								<font>list1</font>
 							</control>
 							<control type="label">
@@ -733,7 +733,7 @@
 								<aligny>center</aligny>
 								<info>ListItem.Label</info>
 								<textcolor>Shadow</textcolor>
-								<scroll>false</scroll>
+								<scroll>true</scroll>
 								<font>list1</font>
 							</control>
 							<control type="label">
