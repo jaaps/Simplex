@@ -5,8 +5,11 @@
 		<posx>0</posx>
 		<posy>0</posy>
 	</coordinates>
-	<include>dialogOpen</include>
+		<include>dialogOpen</include>
 	<controls>
+	<control type="image">
+		<include>dialogDiffuse</include>
+	</control>
 		<control type="group">
 			<posx>309</posx>
 			<posy>191</posy>

@@ -73,5 +73,9 @@
       <activate>notify.wav</activate>
       <deactivate>out.wav</deactivate>
     </window>
-  </windows>
+    <window>
+		<name>favourites</name>
+		<deactivate>click-back.wav</deactivate>
+	</window>  
+	</windows>
 </sounds>

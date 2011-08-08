@@ -40,7 +40,7 @@
 	<include name="dialogDiffuse">
 		<width>1920</width>
 		<height>1080</height>
-		<posx>-320</posx>
+		<posx>-420</posx>
 		<posy>-180</posy>
 		<texture>dialogs/diffuse.png</texture>
 		<aspectratio>scale</aspectratio>

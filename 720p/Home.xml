@@ -58,7 +58,7 @@
 				<posy>298</posy>
 				<width>1280</width>
 				<height>76</height>
-				<visible>Control.HasFocus(300)</visible>
+				<visible>Control.HasFocus(300) + ![Window.IsVisible(Favourites) | Window.IsVisible(4567) | Window.IsVisible(5678) | Window.IsVisible(6789)]</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
 			</control>
 			<control type="wraplist" id="300">
@@ -67,6 +67,7 @@
 				<posy>292</posy>
 				<width>1480</width>
 				<height>300</height>
+				<onup>-</onup>
 				<ondown>SetFocus(350)</ondown>
 				<onright>300</onright>
 				<focusposition>3</focusposition>
@@ -279,6 +280,7 @@
 						<orientation>horizontal</orientation>
 						<onright>-</onright>
 						<onleft>-</onleft>
+						<ondown>-</ondown>
 						<onup>300</onup>
 						<width>1200</width>
 						<height>340</height>

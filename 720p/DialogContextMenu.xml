@@ -8,6 +8,9 @@
 		<posy>0</posy>
 	</coordinates>
 	<controls>
+		<control type="image">
+			<include>dialogDiffuse</include>
+		</control>
 		<control type="image" id="997">
 			<posy>-94</posy>
 			<include>dialogWindowTop</include>
