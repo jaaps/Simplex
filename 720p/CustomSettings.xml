@@ -126,7 +126,7 @@
 						<label>$LOCALIZE[13000]</label>
 						<onclick>activatewindow(SystemSettings)</onclick>
 						<onclick>dialog.close(all,true)</onclick>
-					</item>
+					</item>			
 				</content>
 			</control>
 		</control>
