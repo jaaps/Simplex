@@ -27,7 +27,7 @@
 						<posx>211</posx>
 						<control type="label">
 							<posy>2</posy>
-							<width>402</width>
+							<width>362</width>
 							<height>50</height>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -37,7 +37,7 @@
 							<scroll>false</scroll>
 						</control>
 						<control type="label">
-							<width>402</width>
+							<width>362</width>
 							<height>50</height>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -61,7 +61,7 @@
 						<posx>211</posx>
 						<control type="label">
 							<posy>2</posy>
-							<width>402</width>
+							<width>362</width>
 							<height>50</height>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -72,7 +72,7 @@
 						</control>
 						<control type="label">
 							<posy>0</posy>
-							<width>402</width>
+							<width>362</width>
 							<height>50</height>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -83,7 +83,7 @@
 							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 						</control>
 						<control type="label">
-							<width>402</width>
+							<width>362</width>
 							<height>50</height>
 							<align>center</align>
 							<aligny>center</aligny>

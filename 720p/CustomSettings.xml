@@ -98,51 +98,33 @@
 				</focusedlayout>
 				<content>
 					<item id="1">
+						<description>Appearance</description>
+						<label>$LOCALIZE[480]</label>
+						<onclick>activatewindow(AppearanceSettings)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+					<item id="2">
 						<description>Videos</description>
 						<label>$LOCALIZE[3]</label>
 						<onclick>activatewindow(MyVideosSettings)</onclick>
 						<onclick>dialog.close(all,true)</onclick>
 					</item>
-					<item id="2">
+					<item id="3">
 						<description>Music</description>
 						<label>$LOCALIZE[2]</label>
 						<onclick>activatewindow(MyMusicSettings)</onclick>
 						<onclick>dialog.close(all,true)</onclick>
 					</item>
-					<item id="3">
+					<item id="4">
 						<description>Pictures</description>
 						<label>$LOCALIZE[1]</label>
 						<onclick>activatewindow(MyPicturesSettings)</onclick>
 						<onclick>dialog.close(all,true)</onclick>
 					</item>
-					<item id="4">
-						<description>Weather</description>
-						<label>$LOCALIZE[8]</label>
-						<onclick>activatewindow(MyWeatherSettings)</onclick>
-						<onclick>dialog.close(all,true)</onclick>
-					</item>
 					<item id="5">
-						<description>Network</description>
-						<label>$LOCALIZE[705]</label>
-						<onclick>activatewindow(NetworkSettings)</onclick>
-						<onclick>dialog.close(all,true)</onclick>
-					</item>
-					<item id="6">
 						<description>System</description>
 						<label>$LOCALIZE[13000]</label>
 						<onclick>activatewindow(SystemSettings)</onclick>
-						<onclick>dialog.close(all,true)</onclick>
-					</item>
-					<item id="7">
-						<description>Appearance</description>
-						<label>$LOCALIZE[480]</label>
-						<onclick>activatewindow(AppearanceSettings)</onclick>
-						<onclick>dialog.close(all,true)</onclick>
-					</item>					
-					<item id="8">
-						<description>Skin Settings</description>
-						<label>Skin</label>
-						<onclick>activatewindow(56)</onclick>
 						<onclick>dialog.close(all,true)</onclick>
 					</item>
 				</content>
