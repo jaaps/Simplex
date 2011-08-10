@@ -5,6 +5,7 @@
 	<controls>
 		<include>Background</include>
 		<include>HeaderSettings</include>
+		<include>Time</include>
 		<control type="grouplist" id="3">
 			<description>Button Area</description>
 			<posx>30</posx>

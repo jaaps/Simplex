@@ -40,73 +40,73 @@
 	</include>
 	<include name="Time">
 		<control type="label">
-			<info>System.Time</info>
 			<posx>1189</posx>
 			<posy>2</posy>
 			<width>1280</width>
 			<height>46</height>
 			<align>right</align>
 			<aligny>center</aligny>
+			<info>System.Time</info>
 			<font>title1</font>
 			<textcolor>Shadow</textcolor>
 		</control>
 		<control type="label">
-			<info>System.Time</info>
 			<posx>1189</posx>
 			<posy>0</posy>
 			<width>1280</width>
 			<height>46</height>
 			<align>right</align>
 			<aligny>center</aligny>
+			<info>System.Time</info>
 			<font>title1</font>
 			<textcolor>Gray</textcolor>
 		</control>
 	</include>
-	<include name="HeaderVideo">
+	<include name="Header">
 		<control type="label">
-			<label>$INFO[Container.FirstTitle]</label>
 			<posx>91</posx>
 			<posy>2</posy>
 			<width>1280</width>
 			<height>46</height>
 			<align>left</align>
 			<aligny>center</aligny>
+			<label>$INFO[Container.FirstTitle]</label>
 			<font>title1</font>
 			<textcolor>Shadow</textcolor>
 			<visible>IsEmpty(Container.SecondTitle)</visible>
 		</control>
 		<control type="label">
-			<label>$INFO[Container.FirstTitle]</label>
 			<posx>91</posx>
 			<posy>0</posy>
 			<width>1280</width>
 			<height>46</height>
 			<align>left</align>
 			<aligny>center</aligny>
+			<label>$INFO[Container.FirstTitle]</label>
 			<font>title1</font>
 			<textcolor>Gray</textcolor>
 			<visible>IsEmpty(Container.SecondTitle)</visible>
 		</control>
 		<control type="label">
-			<label>$INFO[Container.FirstTitle]  |  $INFO[Container.SecondTitle]</label>
 			<posx>91</posx>
 			<posy>2</posy>
 			<width>1280</width>
 			<height>46</height>
 			<align>left</align>
 			<aligny>center</aligny>
+			<label>$INFO[Container.FirstTitle]  |  $INFO[Container.SecondTitle]</label>
 			<font>title1</font>
 			<textcolor>Shadow</textcolor>
 			<visible>!IsEmpty(Container.SecondTitle)</visible>
 		</control>
 		<control type="label">
-			<label>$INFO[Container.FirstTitle]  |  $INFO[Container.SecondTitle]</label>
 			<posx>91</posx>
 			<posy>0</posy>
 			<width>1280</width>
 			<height>46</height>
 			<align>left</align>
 			<aligny>center</aligny>
+			<label>$INFO[Container.FirstTitle]  |  $INFO[Container.SecondTitle]</label>
 			<font>title1</font>
 			<textcolor>Gray</textcolor>
 			<visible>!IsEmpty(Container.SecondTitle)</visible>
@@ -114,182 +114,202 @@
 	</include>
 	<include name="HeaderAudio">
 		<control type="label">
-			<description>First title</description>
-			<label>Audio Channels</label>
-			<posx>0</posx>
+			<posx>91</posx>
 			<posy>2</posy>
 			<width>1280</width>
-			<height>50</height>
-			<align>center</align>
+			<height>46</height>
+			<align>left</align>
 			<aligny>center</aligny>
-			<font>list1</font>
+			<label>Audio Channels</label>
+			<font>title1</font>
 			<textcolor>Shadow</textcolor>
 			<visible>IsEmpty(Container.FirstTitle)</visible>
 		</control>
 		<control type="label">
-			<description>First title</description>
-			<label>Audio Channels</label>
-			<posx>0</posx>
+			<posx>91</posx>
 			<posy>0</posy>
 			<width>1280</width>
-			<height>50</height>
-			<align>center</align>
+			<height>46</height>
+			<align>left</align>
 			<aligny>center</aligny>
-			<font>list1</font>
+			<label>Audio Channels</label>
+			<font>title1</font>
+			<textcolor>Gray</textcolor>
+			<visible>IsEmpty(Container.FirstTitle)</visible>
+		</control>
+	</include>
+	<include name="HeaderVideo">
+		<control type="label">
+			<posx>91</posx>
+			<posy>2</posy>
+			<width>1280</width>
+			<height>46</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<label>Video Channels</label>
+			<font>title1</font>
+			<textcolor>Shadow</textcolor>
+			<visible>IsEmpty(Container.FirstTitle)</visible>
+		</control>
+		<control type="label">
+			<posx>91</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>46</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<label>Video Channels</label>
+			<font>title1</font>
 			<textcolor>Gray</textcolor>
 			<visible>IsEmpty(Container.FirstTitle)</visible>
 		</control>
 	</include>
 	<include name="HeaderPictures">
 		<control type="label">
-			<description>First title</description>
-			<label>Picture Channels</label>
-			<posx>0</posx>
+			<posx>91</posx>
 			<posy>2</posy>
 			<width>1280</width>
-			<height>50</height>
-			<align>center</align>
+			<height>46</height>
+			<align>left</align>
 			<aligny>center</aligny>
-			<font>list1</font>
+			<label>Picture Channels</label>
+			<font>title1</font>
 			<textcolor>Shadow</textcolor>
 			<visible>IsEmpty(Container.FirstTitle)</visible>
 		</control>
 		<control type="label">
-			<description>First title</description>
-			<label>Picture Channels</label>
-			<posx>0</posx>
+			<posx>91</posx>
 			<posy>0</posy>
 			<width>1280</width>
-			<height>50</height>
-			<align>center</align>
+			<height>46</height>
+			<align>left</align>
 			<aligny>center</aligny>
-			<font>list1</font>
+			<label>Picture Channels</label>
+			<font>title1</font>
 			<textcolor>Gray</textcolor>
 			<visible>IsEmpty(Container.FirstTitle)</visible>
 		</control>
 	</include>
 	<include name="HeaderSettings">
 		<control type="label">
-			<posx>44</posx>
-			<posy>35</posy>
-			<width>500</width>
-			<height>56</height>
+			<posx>91</posx>
+			<posy>2</posy>
+			<width>1280</width>
+			<height>46</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>homeheader</font>
-			<textcolor>White</textcolor>
-			<label>Settings</label>
-			<visible>Window.IsActive(settings)</visible>
-		</control>
-		<control type="label">
-			<posx>44</posx>
-			<posy>35</posy>
-			<width>500</width>
-			<height>56</height>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>homeheader</font>
-			<textcolor>White</textcolor>
 			<label>Appearance Settings</label>
+			<font>title1</font>
+			<textcolor>Shadow</textcolor>
 			<visible>Window.IsActive(appearancesettings)</visible>
 		</control>
 		<control type="label">
-			<posx>44</posx>
-			<posy>35</posy>
-			<width>500</width>
-			<height>56</height>
+			<posx>91</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>46</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>homeheader</font>
-			<textcolor>White</textcolor>
+			<label>Appearance Settings</label>
+			<font>title1</font>
+			<textcolor>Gray</textcolor>
+			<visible>Window.IsActive(appearancesettings)</visible>
+		</control>
+		<control type="label">
+			<posx>91</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>46</height>
+			<align>left</align>
+			<aligny>center</aligny>
 			<label>Video Settings</label>
+			<font>title1</font>
+			<textcolor>Shadow</textcolor>
 			<visible>Window.IsActive(videossettings)</visible>
 		</control>
 		<control type="label">
-			<posx>44</posx>
-			<posy>35</posy>
-			<width>500</width>
-			<height>56</height>
+			<posx>91</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>46</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>homeheader</font>
-			<textcolor>White</textcolor>
-			<label>Program Settings</label>
-			<visible>Window.IsActive(programssettings)</visible>
+			<label>Video Settings</label>
+			<font>title1</font>
+			<textcolor>Gray</textcolor>
+			<visible>Window.IsActive(videossettings)</visible>
 		</control>
 		<control type="label">
-			<posx>44</posx>
-			<posy>35</posy>
-			<width>500</width>
-			<height>56</height>
+			<posx>91</posx>
+			<posy>2</posy>
+			<width>1280</width>
+			<height>46</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>homeheader</font>
-			<textcolor>White</textcolor>
 			<label>Music Settings</label>
+			<font>title1</font>
+			<textcolor>Shadow</textcolor>
 			<visible>Window.IsActive(musicsettings)</visible>
 		</control>
 		<control type="label">
-			<posx>44</posx>
-			<posy>35</posy>
-			<width>500</width>
-			<height>56</height>
+			<posx>91</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>46</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>homeheader</font>
-			<textcolor>White</textcolor>
+			<label>Music Settings</label>
+			<font>title1</font>
+			<textcolor>Gray</textcolor>
+			<visible>Window.IsActive(musicsettings)</visible>
+		</control>
+		<control type="label">
+			<posx>91</posx>
+			<posy>2</posy>
+			<width>1280</width>
+			<height>46</height>
+			<align>left</align>
+			<aligny>center</aligny>
 			<label>Picture Settings</label>
+			<font>title1</font>
+			<textcolor>Shadow</textcolor>
 			<visible>Window.IsActive(picturessettings)</visible>
 		</control>
 		<control type="label">
-			<posx>44</posx>
-			<posy>35</posy>
-			<width>500</width>
-			<height>56</height>
+			<posx>91</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>46</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>homeheader</font>
-			<textcolor>White</textcolor>
-			<label>Network Settings</label>
-			<visible>Window.IsActive(networksettings)</visible>
+			<label>Picture Settings</label>
+			<font>title1</font>
+			<textcolor>Gray</textcolor>
+			<visible>Window.IsActive(picturessettings)</visible>
 		</control>
 		<control type="label">
-			<posx>44</posx>
-			<posy>35</posy>
-			<width>500</width>
-			<height>56</height>
+			<posx>91</posx>
+			<posy>2</posy>
+			<width>1280</width>
+			<height>46</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>homeheader</font>
-			<textcolor>White</textcolor>
-			<label>Weather Settings</label>
-			<visible>Window.IsActive(weathersettings)</visible>
-		</control>
-		<control type="label">
-			<posx>44</posx>
-			<posy>35</posy>
-			<width>500</width>
-			<height>56</height>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>homeheader</font>
-			<textcolor>White</textcolor>
 			<label>System Settings</label>
+			<font>title1</font>
+			<textcolor>Shadow</textcolor>
 			<visible>Window.IsActive(systemsettings)</visible>
 		</control>
-	</include>
-	<include name="HeaderHome">
 		<control type="label">
-			<description>First title</description>
-			<label>[UPPERCASE]Welcome to Plex[/UPPERCASE]</label>
-			<posx>30</posx>
-			<posy>15</posy>
-			<width>1000</width>
-			<height>56</height>
+			<posx>91</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>46</height>
 			<align>left</align>
 			<aligny>center</aligny>
+			<label>System Settings</label>
 			<font>title1</font>
-			<textcolor>White</textcolor>
+			<textcolor>Gray</textcolor>
+			<visible>Window.IsActive(systemsettings)</visible>
 		</control>
 	</include>
 	<include name="SideMenuBackground">
