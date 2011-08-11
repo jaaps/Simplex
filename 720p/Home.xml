@@ -75,7 +75,6 @@
 				<orientation>horizontal</orientation>
 				<itemlayout width="210" height="76">
 					<control type="group">
-						<visible>Control.HasFocus(300)</visible>
 						<control type="label">
 							<posx>105</posx>
 							<posy>2</posy>
@@ -86,7 +85,8 @@
 							<aligny>center</aligny>
 							<font>HomeMenuItem</font>
 							<textcolor>Shadow</textcolor>
-							<animation effect="fade" time="200">VisibleChange</animation>
+							<visible>Control.HasFocus(300)</visible>
+							<animation effect="fade" time="2000">VisibleChange</animation>
 						</control>
 						<control type="label">
 							<posx>105</posx>
@@ -98,11 +98,11 @@
 							<aligny>center</aligny>
 							<font>HomeMenuItem</font>
 							<textcolor>White</textcolor>
+							<visible>Control.HasFocus(300)</visible>
 							<animation effect="fade" time="200">VisibleChange</animation>
 						</control>
 					</control>
 					<control type="group">
-						<visible>!Control.HasFocus(300)</visible>
 						<control type="label">
 							<posx>105</posx>
 							<posy>2</posy>
@@ -113,6 +113,7 @@
 							<aligny>center</aligny>
 							<font>HomeMenuItem</font>
 							<textcolor>Shadow</textcolor>
+							<visible>!Control.HasFocus(300)</visible>
 							<animation effect="fade" time="200">VisibleChange</animation>
 						</control>
 						<control type="label">
@@ -125,6 +126,7 @@
 							<aligny>center</aligny>
 							<font>HomeMenuItem</font>
 							<textcolor>DarkGray</textcolor>
+							<visible>!Control.HasFocus(300)</visible>
 							<animation effect="fade" time="200">VisibleChange</animation>
 						</control>
 					</control>
