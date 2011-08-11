@@ -4,8 +4,9 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Background</include>
-		<include>Header</include>
-		<include>Time</include>
-		<include>List</include>
+		<control type="group">
+			<include>Header</include>
+			<include>List</include>
+		</control>
 	</controls>
 </window>

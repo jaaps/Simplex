@@ -41,7 +41,7 @@
 		<width>1920</width>
 		<height>1080</height>
 		<posx>-420</posx>
-		<posy>-280</posy>
+		<posy>-180</posy>
 		<texture>dialogs/diffuse.png</texture>
 		<aspectratio>scale</aspectratio>
 		<animation effect="fade" time="200">VisibleChange</animation>
