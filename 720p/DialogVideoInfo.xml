@@ -3,7 +3,7 @@
 	<defaultcontrol always="true">9001</defaultcontrol>
 	<controls>
 		<include>Background</include>
-		<include>HeaderVideo</include>
+		<include>Header</include>
 		<include>Time</include>
 		<control type="group">
 			<visible>Container.Content(Movies)</visible>
