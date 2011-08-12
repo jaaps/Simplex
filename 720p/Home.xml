@@ -97,7 +97,7 @@
 						<aligny>center</aligny>
 						<font>HomeMenuItem</font>
 						<textcolor>White</textcolor>
-						<visible>Control.HasFocus(300)</visible>
+						<visible>Control.HasFocus(300) + ![Window.IsVisible(4567) | Window.IsVisible(5678) | Window.IsVisible(6789)]</visible>
 						<animation effect="fade" time="200">VisibleChange</animation>
 					</control>
 					<control type="label">
@@ -123,7 +123,7 @@
 						<aligny>center</aligny>
 						<font>HomeMenuItem</font>
 						<textcolor>DarkGray</textcolor>
-						<visible>!Control.HasFocus(300)</visible>
+						<visible>!Control.HasFocus(300) | Window.IsVisible(4567) | Window.IsVisible(5678) | Window.IsVisible(6789)</visible>
 						<animation effect="fade" time="200">VisibleChange</animation>
 					</control>
 				</itemlayout>
@@ -149,7 +149,7 @@
 						<aligny>center</aligny>
 						<font>HomeMenuItem</font>
 						<textcolor>Orange</textcolor>
-						<visible>Control.HasFocus(300) + ![Window.IsVisible(4567) | Window.IsVisible(5678) | Window.IsVisible(6789)]</visible>
+						<visible>![Window.IsVisible(4567) | Window.IsVisible(5678) | Window.IsVisible(6789)]</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
