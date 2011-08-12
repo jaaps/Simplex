@@ -58,14 +58,14 @@
 				<posy>298</posy>
 				<width>1280</width>
 				<height>76</height>
-				<visible>Control.HasFocus(300) + !Window.IsVisible(4567) | Window.IsVisible(5678) | Window.IsVisible(6789)]</visible>
+				<visible>Control.HasFocus(300) + ![Window.IsVisible(4567) | Window.IsVisible(5678) | Window.IsVisible(6789)]</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
 			</control>
 			<control type="wraplist" id="300">
 				<description>Home Main Menu</description>
-				<posx>-100</posx>
+				<posx>0</posx>
 				<posy>292</posy>
-				<width>1480</width>
+				<width>1280</width>
 				<height>300</height>
 				<onup>-</onup>
 				<ondown>SetFocus(350)</ondown>
@@ -74,66 +74,62 @@
 				<scrolltime>200</scrolltime>
 				<orientation>horizontal</orientation>
 				<itemlayout width="210" height="76">
-					<control type="group">
-						<control type="label">
-							<posx>105</posx>
-							<posy>2</posy>
-							<width>190</width>
-							<height>76</height>
-							<label>$INFO[ListItem.Label]</label>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>HomeMenuItem</font>
-							<textcolor>Shadow</textcolor>
-							<visible>Control.HasFocus(300)</visible>
-							<animation effect="fade" time="2000">VisibleChange</animation>
-						</control>
-						<control type="label">
-							<posx>105</posx>
-							<posy>0</posy>
-							<width>190</width>
-							<height>76</height>
-							<label>$INFO[ListItem.Label]</label>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>HomeMenuItem</font>
-							<textcolor>White</textcolor>
-							<visible>Control.HasFocus(300)</visible>
-							<animation effect="fade" time="200">VisibleChange</animation>
-						</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>2</posy>
+						<width>190</width>
+						<height>76</height>
+						<label>$INFO[ListItem.Label]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>HomeMenuItem</font>
+						<textcolor>Shadow</textcolor>
+						<visible>Control.HasFocus(300)</visible>
+						<animation effect="fade" time="2000">VisibleChange</animation>
 					</control>
-					<control type="group">
-						<control type="label">
-							<posx>105</posx>
-							<posy>2</posy>
-							<width>190</width>
-							<height>76</height>
-							<label>$INFO[ListItem.Label]</label>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>HomeMenuItem</font>
-							<textcolor>Shadow</textcolor>
-							<visible>!Control.HasFocus(300)</visible>
-							<animation effect="fade" time="200">VisibleChange</animation>
-						</control>
-						<control type="label">
-							<posx>105</posx>
-							<posy>0</posy>
-							<width>190</width>
-							<height>76</height>
-							<label>$INFO[ListItem.Label]</label>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>HomeMenuItem</font>
-							<textcolor>DarkGray</textcolor>
-							<visible>!Control.HasFocus(300)</visible>
-							<animation effect="fade" time="200">VisibleChange</animation>
-						</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>190</width>
+						<height>76</height>
+						<label>$INFO[ListItem.Label]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>HomeMenuItem</font>
+						<textcolor>White</textcolor>
+						<visible>Control.HasFocus(300)</visible>
+						<animation effect="fade" time="200">VisibleChange</animation>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>2</posy>
+						<width>190</width>
+						<height>76</height>
+						<label>$INFO[ListItem.Label]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>HomeMenuItem</font>
+						<textcolor>Shadow</textcolor>
+						<visible>!Control.HasFocus(300)</visible>
+						<animation effect="fade" time="200">VisibleChange</animation>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>190</width>
+						<height>76</height>
+						<label>$INFO[ListItem.Label]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>HomeMenuItem</font>
+						<textcolor>DarkGray</textcolor>
+						<visible>!Control.HasFocus(300)</visible>
+						<animation effect="fade" time="200">VisibleChange</animation>
 					</control>
 				</itemlayout>
 				<focusedlayout width="210" height="76">
 					<control type="label">
-						<posx>105</posx>
+						<posx>0</posx>
 						<posy>2</posy>
 						<width>190</width>
 						<height>76</height>
@@ -144,7 +140,7 @@
 						<textcolor>Shadow</textcolor>
 					</control>
 					<control type="label">
-						<posx>105</posx>
+						<posx>0</posx>
 						<posy>0</posy>
 						<width>190</width>
 						<height>76</height>
@@ -153,10 +149,10 @@
 						<aligny>center</aligny>
 						<font>HomeMenuItem</font>
 						<textcolor>Orange</textcolor>
-						<visible>Control.HasFocus(300)</visible>
+						<visible>Control.HasFocus(300) + ![Window.IsVisible(4567) | Window.IsVisible(5678) | Window.IsVisible(6789)]</visible>
 					</control>
 					<control type="label">
-						<posx>105</posx>
+						<posx>0</posx>
 						<posy>0</posy>
 						<width>190</width>
 						<height>76</height>
@@ -165,7 +161,7 @@
 						<aligny>center</aligny>
 						<font>HomeMenuItem</font>
 						<textcolor>Gray</textcolor>
-						<visible>!Control.HasFocus(300)</visible>
+						<visible>Window.IsVisible(4567) | Window.IsVisible(5678) | Window.IsVisible(6789)</visible>
 					</control>
 				</focusedlayout>
 				<content>
@@ -175,22 +171,22 @@
 						<visible>System.HasMediadvd</visible>
 						<onclick>xbmc.activatewindow(5678)</onclick>
 					</item>
-					<item id="3">
+					<item id="2">
 						<description>Channels</description>
 						<label>Channels</label>
 						<onclick>xbmc.activatewindow(4567)</onclick>
 					</item>
-					<item id="4">
+					<item id="3">
 						<description>Search</description>
 						<label>Search</label>
 						<onclick>-</onclick>
 					</item>
-					<item id="5">
+					<item id="4">
 						<description>Preferences</description>
 						<label>Preferences</label>
 						<onclick>Plex.ActivateWindow(6789)</onclick>
 					</item>
-					<item id="6">
+					<item id="5">
 						<description>Quit</description>
 						<label>Quit</label>
 						<onclick>Plex.Shutdown()</onclick>
@@ -198,7 +194,7 @@
 				</content>
 			</control>
 			<control type="label">
-				<posx>540</posx>
+				<posx>535</posx>
 				<posy>292</posy>
 				<width>190</width>
 				<height>76</height>

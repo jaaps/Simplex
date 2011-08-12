@@ -579,8 +579,9 @@
 								<height>50</height>
 								<label>$INFO[ListItem.Episode]. $INFO[ListItem.Label]</label>
 								<textcolor>Shadow</textcolor>
-								<scroll>true</scroll>
+								<scroll>false</scroll>
 								<font>list1</font>
+								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 							</control>
 							<control type="label">
 								<visible>Container.Content(episodes) + IsEmpty(Container.Property(mixedParents))</visible>
@@ -594,6 +595,20 @@
 								<scroll>false</scroll>
 								<font>list1</font>
 								<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+							</control>
+							<control type="label">
+								<visible>Container.Content(episodes) + IsEmpty(Container.Property(mixedParents))</visible>
+								<posy>3</posy>
+								<posx>30</posx>
+								<width>395</width>
+								<aligny>center</aligny>
+								<height>50</height>
+								<label>$INFO[ListItem.Episode]. $INFO[ListItem.Label]</label>
+								<textcolor>Shadow</textcolor>
+								<scroll>true</scroll>
+								<font>list1</font>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
+								<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
 							</control>
 							<control type="label">
 								<visible>Container.Content(episodes) + IsEmpty(Container.Property(mixedParents))</visible>
