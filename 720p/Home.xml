@@ -4,16 +4,39 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<control type="group">
+			<!-- The control defined below manages the focus from the main menu (300) when pressing down -->
 			<control type="group" id="350">
+				<posy>900</posy>
 				<control type="button">
-					<visible>Container(11000).ListItem(0).Type(episode)</visible>
+					<visible>Container(11000).ListItem(0).Type(episode) + Control.IsVisible(11000)</visible>
 					<onfocus>SetFocus(298,0)</onfocus>
 				</control>
 				<control type="button">
-					<visible>Container(11000).ListItem(0).Type(movie)</visible>
+					<visible>Container(11000).ListItem(0).Type(movie) + Control.IsVisible(11000)</visible>
 					<onfocus>SetFocus(299,0)</onfocus>
 				</control>
+				<control type="button">
+					<visible>Stringcompare(Container(300).ListItem(0).Label2,pref)</visible>
+					<onfocus>SetFocus(301,0)</onfocus>
+				</control>
+				<control type="button">
+					<visible>Stringcompare(Container(300).ListItem(0).Label2,chan)</visible>
+					<onfocus>SetFocus(302,0)</onfocus>
+				</control>
+				<control type="button">
+					<visible>Stringcompare(Container(300).ListItem(0).Label2,dvd)</visible>
+					<onfocus>SetFocus(303,0)</onfocus>
+				</control>
+				<control type="button">
+					<visible>Control.IsVisible(11003)</visible>
+					<onfocus>SetFocus(11003,0)</onfocus>
+				</control>
+				<control type="button">
+					<visible>!Stringcompare(Container(300).ListItem(0).Label2,pref) + !Control.IsVisible(11000) + !Control.IsVisible(11003)</visible>
+					<onfocus>SetFocus(300)</onfocus>
+				</control>
 			</control>
+			<!-- Fanart from PMS -->
 			<control type="multiimage">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -44,7 +67,8 @@
 				<height>415</height>
 				<visible>Control.IsVisible(11000)</visible>
 				<animation effect="fade" start="0" end="100" time="300" delay="300">Visible</animation>
-				</control>
+			</control>
+			<!-- Menubar focus/unfocus -->
 			<control type="image">
 				<texture>homemenu_unfocus.png</texture>
 				<posx>0</posx>
@@ -61,6 +85,7 @@
 				<visible>Control.HasFocus(300) + ![Window.IsVisible(4567) | Window.IsVisible(5678) | Window.IsVisible(6789)]</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
 			</control>
+			<!-- The main menu. Label2 is used for tracking focus -->
 			<control type="wraplist" id="300">
 				<description>Home Main Menu</description>
 				<posx>0</posx>
@@ -168,13 +193,15 @@
 					<item id="1">
 						<description>DVD Button</description>
 						<label>DVD</label>
+						<label2>dvd</label2>
 						<visible>System.HasMediadvd</visible>
 						<onclick>xbmc.activatewindow(5678)</onclick>
 					</item>
 					<item id="2">
 						<description>Channels</description>
 						<label>Channels</label>
-						<onclick>xbmc.activatewindow(4567)</onclick>
+						<label2>chan</label2>
+						<onclick>SetFocus(302,0)</onclick>
 					</item>
 					<item id="3">
 						<description>Search</description>
@@ -184,7 +211,8 @@
 					<item id="4">
 						<description>Preferences</description>
 						<label>Preferences</label>
-						<onclick>Plex.ActivateWindow(6789)</onclick>
+						<label2>pref</label2>
+						<onclick>SetFocus(301,0)</onclick>
 					</item>
 					<item id="5">
 						<description>Quit</description>
@@ -193,6 +221,341 @@
 					</item>
 				</content>
 			</control>
+			<!-- The submenu for Preferences -->
+			<control type="list" id="301">
+				<visible allowhiddenfocus="true">Control.HasFocus(301)</visible>
+				<animation effect="fade" time="200">VisibleChange</animation>
+				<posx>508</posx>
+				<posy>364</posy>
+				<width>422</width>
+				<height>324</height>
+				<onup>300</onup>
+				<onleft>301</onleft>
+				<onright>301</onright>
+				<scrolltime>200</scrolltime>
+				<itemlayout height="54">
+					<control type="group">
+						<posx>122</posx>
+						<control type="label">
+							<posy>2</posy>
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>Shadow</textcolor>
+							<scroll>false</scroll>
+						</control>
+						<control type="label">
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>White</textcolor>
+							<scroll>false</scroll>
+						</control>
+					</control>
+				</itemlayout>
+				<focusedlayout height="54">
+					<control type="image">
+						<width>244</width>
+						<height>54</height>
+						<texture>button_home.png</texture>
+						<aspectratio>keep</aspectratio>
+						<animation effect="slide" start="0,-52" end="0,0" time="200" reversible="false" easing="out" condition="Container(301).OnNext">Focus</animation>
+						<animation effect="slide" start="0,52" end="0,0" time="200" reversible="false" easing="out" condition="Container(301).OnPrevious">Focus</animation>
+					</control>
+					<control type="group">
+						<posx>122</posx>
+						<control type="label">
+							<posy>2</posy>
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>Shadow</textcolor>
+							<scroll>false</scroll>
+						</control>
+						<control type="label">
+							<posy>0</posy>
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>White</textcolor>
+							<scroll>true</scroll>
+							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+						</control>
+						<control type="label">
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>Orange</textcolor>
+							<scroll>true</scroll>
+							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(301).OnNext">Focus</animation>
+							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(301).OnPrevious">Focus</animation>
+						</control>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<description>Appearance</description>
+						<label>$LOCALIZE[480]</label>
+						<onclick>activatewindow(AppearanceSettings)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+					<item id="2">
+						<description>Videos</description>
+						<label>$LOCALIZE[3]</label>
+						<onclick>activatewindow(MyVideosSettings)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+					<item id="3">
+						<description>Music</description>
+						<label>$LOCALIZE[2]</label>
+						<onclick>activatewindow(MyMusicSettings)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+					<item id="4">
+						<description>Pictures</description>
+						<label>$LOCALIZE[1]</label>
+						<onclick>activatewindow(MyPicturesSettings)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+					<item id="5">
+						<description>System</description>
+						<label>$LOCALIZE[13000]</label>
+						<onclick>activatewindow(SystemSettings)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+				</content>
+			</control>
+			<!-- The submenu for Channels -->
+			<control type="list" id="302">
+				<visible allowhiddenfocus="true">Control.HasFocus(302)</visible>
+				<animation effect="fade" time="200">VisibleChange</animation>
+				<posx>508</posx>
+				<posy>364</posy>
+				<width>422</width>
+				<height>324</height>
+				<onup>300</onup>
+				<onleft>302</onleft>
+				<onright>302</onright>
+				<scrolltime>200</scrolltime>
+				<itemlayout height="54">
+					<control type="group">
+						<posx>122</posx>
+						<control type="label">
+							<posy>2</posy>
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>Shadow</textcolor>
+							<scroll>false</scroll>
+						</control>
+						<control type="label">
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>White</textcolor>
+							<scroll>false</scroll>
+						</control>
+					</control>
+				</itemlayout>
+				<focusedlayout height="54">
+					<control type="image">
+						<width>244</width>
+						<height>54</height>
+						<texture>button_home.png</texture>
+						<aspectratio>keep</aspectratio>
+						<animation effect="slide" start="0,-52" end="0,0" time="200" reversible="false" easing="out" condition="Container(302).OnNext">Focus</animation>
+						<animation effect="slide" start="0,52" end="0,0" time="200" reversible="false" easing="out" condition="Container(302).OnPrevious">Focus</animation>
+					</control>
+					<control type="group">
+						<posx>122</posx>
+						<control type="label">
+							<posy>2</posy>
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>Shadow</textcolor>
+							<scroll>false</scroll>
+						</control>
+						<control type="label">
+							<posy>0</posy>
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>White</textcolor>
+							<scroll>true</scroll>
+							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+						</control>
+						<control type="label">
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>Orange</textcolor>
+							<scroll>true</scroll>
+							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(302).OnNext">Focus</animation>
+							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(302).OnPrevious">Focus</animation>
+						</control>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<description>Video Channels</description>
+						<label>Video</label>
+						<onclick>xbmc.activatewindow(6)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+					<item id="2">
+						<description>Audio Channels</description>
+						<label>Audio</label>
+						<onclick>xbmc.activatewindow(5)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+					<item id="3">
+						<description>Picture Channels</description>
+						<label>Picture</label>
+						<onclick>xbmc.activatewindow(2)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+					<item id="4">
+						<description>Plex Connect</description>
+						<label>Channel Store</label>
+						<onclick>Plex.ActivateWindow(1,plex://localhost/system/plexonline,return)</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+				</content>
+			</control>
+			<!-- The submenu for DVD -->
+			<control type="list" id="303">
+				<visible allowhiddenfocus="true">Control.HasFocus(303)</visible>
+				<animation effect="fade" time="200">VisibleChange</animation>
+				<posx>508</posx>
+				<posy>364</posy>
+				<width>422</width>
+				<height>324</height>
+				<onup>300</onup>
+				<onleft>303</onleft>
+				<onright>303</onright>
+				<scrolltime>200</scrolltime>
+				<itemlayout height="54">
+					<control type="group">
+						<posx>122</posx>
+						<control type="label">
+							<posy>2</posy>
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>Shadow</textcolor>
+							<scroll>false</scroll>
+						</control>
+						<control type="label">
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>White</textcolor>
+							<scroll>false</scroll>
+						</control>
+					</control>
+				</itemlayout>
+				<focusedlayout height="54">
+					<control type="image">
+						<width>244</width>
+						<height>54</height>
+						<texture>button_home.png</texture>
+						<aspectratio>keep</aspectratio>
+						<animation effect="slide" start="0,-52" end="0,0" time="200" reversible="false" easing="out" condition="Container(303).OnNext">Focus</animation>
+						<animation effect="slide" start="0,52" end="0,0" time="200" reversible="false" easing="out" condition="Container(303).OnPrevious">Focus</animation>
+					</control>
+					<control type="group">
+						<posx>122</posx>
+						<control type="label">
+							<posy>2</posy>
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>Shadow</textcolor>
+							<scroll>false</scroll>
+						</control>
+						<control type="label">
+							<posy>0</posy>
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>White</textcolor>
+							<scroll>true</scroll>
+							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+						</control>
+						<control type="label">
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
+							<textcolor>Orange</textcolor>
+							<scroll>true</scroll>
+							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(303).OnNext">Focus</animation>
+							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(303).OnPrevious">Focus</animation>
+						</control>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<description>Play</description>
+						<label>Play</label>
+						<onclick>XBMC.PlayDVD</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+					<item id="2">
+						<description>Eject</description>
+						<label>Eject Disc</label>
+						<onclick>XBMC.EjectTray()</onclick>
+						<onclick>XBMC.EjectTray()</onclick>
+						<onclick>dialog.close(all,true)</onclick>
+					</item>
+				</content>
+			</control>
+			<!-- This label show when the menubar is unfocused -->
 			<control type="label">
 				<posx>535</posx>
 				<posy>292</posy>
@@ -212,6 +575,7 @@
 				<width>1280</width>
 				<height>76</height>
 			</control>
+			<!-- The following controls are for Queue/On Deck/Recently Added -->
 			<control type="grouplist" id="5100">
 				<posx>47</posx>
 				<posy>392</posy>
@@ -246,6 +610,7 @@
 						</control>
 					</control>
 					<control type="group">
+						<!-- Move labels depending on container content -->
 						<animation effect="slide" start="0" end="0" time="1" condition="!Control.IsVisible(11001)">Conditional</animation>
 						<animation effect="slide" start="0" end="169" time="1" condition="IntegerGreaterThan(Container(11001).NumItems,0) + Control.IsVisible(11001)">Conditional</animation>
 						<animation effect="slide" start="0" end="169" time="1" condition="IntegerGreaterThan(Container(11001).NumItems,1) + Control.IsVisible(11001)">Conditional</animation>
@@ -270,6 +635,7 @@
 							<posx>18</posx>
 						</control>
 					</control>
+					<!-- Container used for Movies - Combines both container content of 110001 and 110000 and limit items that are visible -->
 					<control type="list" id="299">
 						<visible>Container(11000).ListItem(0).Type(movie) + !Window.IsVisible(106) + !Control.HasFocus(340) + Control.IsVisible(11000)</visible>
 						<orientation>horizontal</orientation>
@@ -330,6 +696,7 @@
 							</control>
 						</focusedlayout>
 						<content>
+							<!-- The following code looks messy, and it is. It hide/show items depending on how much are available and what focus position the containers have. -->
 							<!-- on deck -->
 							<item id="1">
 								<label>$INFO[Container(11001).ListItem(0).label]</label>
@@ -914,6 +1281,7 @@
 							</item>
 						</content>
 					</control>
+					<!-- Here we have several labels that are visible depending on the focus position of the list above -->
 					<control type="label">
 						<posx>5</posx>
 						<posy>244</posy>
@@ -1829,6 +2197,388 @@
 						<height>30</height>
 						<label>$INFO[Container(298).ListItem(0).Label2]</label>
 						<visible>Control.HasFocus(298) + Container(298).Position(4)</visible>
+						<textcolor>White</textcolor>
+						<scrollsuffix>  -  </scrollsuffix>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+				</control>
+				<control type="group">
+					<visible>!Window.IsVisible(106) + !Control.HasFocus(340) + Control.IsVisible(11003)</visible>
+					<animation effect="fade" start="0" end="100" time="300" delay="300">Visible</animation>
+					<animation effect="fade" start="100" end="0" time="1" delay="0">Hidden</animation>
+					<width>1200</width>
+					<control type="group">
+						<visible>IntegerGreaterThan(Container(11001).NumItems,0) + Control.IsVisible(11001)</visible>
+						<control type="label" id="8002">
+							<font>info1</font>
+							<textcolor>Shadow</textcolor>
+							<width>350</width>
+							<height>30</height>
+							<align>left</align>
+							<label>On Deck</label>
+							<posx>18</posx>
+							<posy>2</posy>
+						</control>
+						<control type="label" id="8002">
+							<font>info1</font>
+							<textcolor>Gray</textcolor>
+							<width>350</width>
+							<height>30</height>
+							<align>left</align>
+							<label>On Deck</label>
+							<posx>18</posx>
+						</control>
+					</control>
+					<control type="group">
+						<animation effect="slide" start="0" end="0" time="1" condition="!Control.IsVisible(11001)">Conditional</animation>
+						<animation effect="slide" start="0" end="238" time="1" condition="IntegerGreaterThan(Container(11001).NumItems,0) + Control.IsVisible(11001)">Conditional</animation>
+						<animation effect="slide" start="0" end="238" time="1" condition="IntegerGreaterThan(Container(11001).NumItems,1) + Control.IsVisible(11001)">Conditional</animation>
+						<control type="label" id="8002">
+							<font>info1</font>
+							<textcolor>Shadow</textcolor>
+							<width>350</width>
+							<height>30</height>
+							<align>left</align>
+							<label>New Episodes</label>
+							<posx>18</posx>
+							<posy>2</posy>
+						</control>
+						<control type="label" id="8002">
+							<font>info1</font>
+							<textcolor>Gray</textcolor>
+							<width>350</width>
+							<height>30</height>
+							<align>left</align>
+							<label>New Episodes</label>
+							<posx>18</posx>
+						</control>
+					</control>
+					<control type="list" id="11003">
+						<visible allowhiddenfocus="false">false</visible>
+						<orientation>horizontal</orientation>
+						<onright>-</onright>
+						<onleft>-</onleft>
+						<onup>300</onup>
+						<width>1200</width>
+						<height>340</height>
+						<posy>21</posy>
+						<posx>0</posx>
+						<itemlayout width="238" height="280">
+							<control type="group">
+								<control type="image">
+									<posx>19</posx>
+									<posy>219</posy>
+									<width>200</width>
+									<height>200</height>
+									<texture diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
+								</control>
+								<control type="image">
+									<posx>19</posx>
+									<posy>19</posy>
+									<width>200</width>
+									<height>200</height>
+									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
+									<texture diffuse="diffuse_square_home.png">$INFO[ListItem.Thumb]</texture>
+									<bordertexture>border_square_home.png</bordertexture>
+								</control>
+							</control>
+						</itemlayout>
+						<focusedlayout width="238" height="280">
+							<control type="image">
+								<posx>19</posx>
+								<posy>219</posy>
+								<width>200</width>
+								<height>200</height>
+								<texture diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+								<aspectratio scalediffuse="false" align="center">scale</aspectratio>
+							</control>
+							<control type="image">
+								<posx>19</posx>
+								<posy>19</posy>
+								<width>200</width>
+								<height>200</height>
+								<aspectratio scalediffuse="false" align="center">scale</aspectratio>
+								<texture diffuse="diffuse_square_home.png">$INFO[ListItem.Thumb]</texture>
+								<bordertexture>border_square_home.png</bordertexture>
+							</control>
+							<control type="image">
+								<posx>1</posx>
+								<posy>1</posy>
+								<width>236</width>
+								<height>236</height>
+								<aspectratio scalediffuse="false" align="center">scale</aspectratio>
+								<texture>home_square_focus.png</texture>
+							</control>
+						</focusedlayout>
+						<height>200</height>
+					</control>
+					<control type="label">
+						<posx>5</posx>
+						<posy>244</posy>
+						<width>228</width>
+						<height>30</height>
+						<label>$INFO[Container(11003).ListItem(0).Label]</label>
+						<visible>Control.HasFocus(11003) + Container(11003).Position(0)</visible>
+						<textcolor>Shadow</textcolor>
+						<scroll>false</scroll>
+						<scrollspeed>30</scrollspeed>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>5</posx>
+						<posy>246</posy>
+						<width>228</width>
+						<height>30</height>
+						<label>$INFO[Container(11003).ListItem(0).Label]</label>
+						<visible>Control.HasFocus(11003) + Container(11003).Position(0)</visible>
+						<textcolor>Orange</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>5</posx>
+						<posy>264</posy>
+						<width>228</width>
+						<height>30</height>
+						<label>$INFO[Container(11003).ListItem(0).Label2]</label>
+						<visible>Control.HasFocus(11003) + Container(11003).Position(0)</visible>
+						<textcolor>Shadow</textcolor>
+						<scrollsuffix>  -  </scrollsuffix>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>5</posx>
+						<posy>266</posy>
+						<width>228</width>
+						<height>30</height>
+						<label>$INFO[Container(11003).ListItem(0).Label2]</label>
+						<visible>Control.HasFocus(11003) + Container(11003).Position(0)</visible>
+						<textcolor>White</textcolor>
+						<scrollsuffix>  -  </scrollsuffix>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>243</posx>
+						<posy>244</posy>
+						<width>228</width>
+						<height>30</height>
+						<label>$INFO[Container(11003).ListItem(0).Label]</label>
+						<visible>Control.HasFocus(11003) + Container(11003).Position(1)</visible>
+						<textcolor>Shadow</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>243</posx>
+						<posy>246</posy>
+						<width>228</width>
+						<height>30</height>
+						<label>$INFO[Container(11003).ListItem(0).Label]</label>
+						<visible>Control.HasFocus(11003) + Container(11003).Position(1)</visible>
+						<textcolor>Orange</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>243</posx>
+						<posy>264</posy>
+						<width>228</width>
+						<height>30</height>
+						<label>$INFO[Container(11003).ListItem(0).Label2]</label>
+						<visible>Control.HasFocus(11003) + Container(11003).Position(1)</visible>
+						<textcolor>Shadow</textcolor>
+						<scrollsuffix>  -  </scrollsuffix>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>243</posx>
+						<posy>266</posy>
+						<width>228</width>
+						<height>30</height>
+						<label>$INFO[Container(11003).ListItem(0).Label2]</label>
+						<visible>Control.HasFocus(11003) + Container(11003).Position(1)</visible>
+						<textcolor>White</textcolor>
+						<scrollsuffix>  -  </scrollsuffix>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>481</posx>
+						<posy>244</posy>
+						<width>228</width>
+						<height>30</height>
+						<label>$INFO[Container(11003).ListItem(0).Label]</label>
+						<visible>Control.HasFocus(11003) + Container(11003).Position(2)</visible>
+						<textcolor>Shadow</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>481</posx>
+						<posy>246</posy>
+						<width>228</width>
+						<height>30</height>
+						<label>$INFO[Container(11003).ListItem(0).Label]</label>
+						<visible>Control.HasFocus(11003) + Container(11003).Position(2)</visible>
+						<textcolor>Orange</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>481</posx>
+						<posy>264</posy>
+						<width>228</width>
+						<height>30</height>
+						<label>$INFO[Container(11003).ListItem(0).Label2]</label>
+						<visible>Control.HasFocus(11003) + Container(11003).Position(2)</visible>
+						<textcolor>Shadow</textcolor>
+						<scrollsuffix>  -  </scrollsuffix>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>481</posx>
+						<posy>266</posy>
+						<width>228</width>
+						<height>30</height>
+						<label>$INFO[Container(11003).ListItem(0).Label2]</label>
+						<visible>Control.HasFocus(11003) + Container(11003).Position(2)</visible>
+						<textcolor>White</textcolor>
+						<scrollsuffix>  -  </scrollsuffix>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>719</posx>
+						<posy>244</posy>
+						<width>228</width>
+						<height>30</height>
+						<label>$INFO[Container(11003).ListItem(0).Label]</label>
+						<visible>Control.HasFocus(11003) + Container(11003).Position(3)</visible>
+						<textcolor>Shadow</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>719</posx>
+						<posy>246</posy>
+						<width>228</width>
+						<height>30</height>
+						<label>$INFO[Container(11003).ListItem(0).Label]</label>
+						<visible>Control.HasFocus(11003) + Container(11003).Position(3)</visible>
+						<textcolor>Orange</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>719</posx>
+						<posy>264</posy>
+						<width>228</width>
+						<height>30</height>
+						<label>$INFO[Container(11003).ListItem(0).Label2]</label>
+						<visible>Control.HasFocus(11003) + Container(11003).Position(3)</visible>
+						<textcolor>Shadow</textcolor>
+						<scrollsuffix>  -  </scrollsuffix>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>719</posx>
+						<posy>266</posy>
+						<width>228</width>
+						<height>30</height>
+						<label>$INFO[Container(11003).ListItem(0).Label2]</label>
+						<visible>Control.HasFocus(11003) + Container(11003).Position(3)</visible>
+						<textcolor>White</textcolor>
+						<scrollsuffix>  -  </scrollsuffix>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>957</posx>
+						<posy>244</posy>
+						<width>228</width>
+						<height>30</height>
+						<label>$INFO[Container(11003).ListItem(0).Label]</label>
+						<visible>Control.HasFocus(11003) + Container(11003).Position(4)</visible>
+						<textcolor>Shadow</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>957</posx>
+						<posy>246</posy>
+						<width>228</width>
+						<height>30</height>
+						<label>$INFO[Container(11003).ListItem(0).Label]</label>
+						<visible>Control.HasFocus(11003) + Container(11003).Position(4)</visible>
+						<textcolor>Orange</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>957</posx>
+						<posy>264</posy>
+						<width>228</width>
+						<height>30</height>
+						<label>$INFO[Container(11003).ListItem(0).Label2]</label>
+						<visible>Control.HasFocus(11003) + Container(11003).Position(4)</visible>
+						<textcolor>Shadow</textcolor>
+						<scrollsuffix>  -  </scrollsuffix>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+						<font>homelabel</font>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>957</posx>
+						<posy>266</posy>
+						<width>228</width>
+						<height>30</height>
+						<label>$INFO[Container(11003).ListItem(0).Label2]</label>
+						<visible>Control.HasFocus(11003) + Container(11003).Position(4)</visible>
 						<textcolor>White</textcolor>
 						<scrollsuffix>  -  </scrollsuffix>
 						<scroll>true</scroll>
