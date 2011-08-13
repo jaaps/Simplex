@@ -195,7 +195,7 @@
 						<label>DVD</label>
 						<label2>dvd</label2>
 						<visible>System.HasMediadvd</visible>
-						<onclick>xbmc.activatewindow(5678)</onclick>
+						<onclick>SetFocus(303,0)</onclick>
 					</item>
 					<item id="2">
 						<description>Channels</description>
@@ -230,6 +230,7 @@
 				<width>422</width>
 				<height>324</height>
 				<onup>300</onup>
+				<ondown>-</ondown>
 				<onleft>301</onleft>
 				<onright>301</onright>
 				<scrolltime>200</scrolltime>
@@ -312,31 +313,26 @@
 						<description>Appearance</description>
 						<label>$LOCALIZE[480]</label>
 						<onclick>activatewindow(AppearanceSettings)</onclick>
-						<onclick>dialog.close(all,true)</onclick>
 					</item>
 					<item id="2">
 						<description>Videos</description>
 						<label>$LOCALIZE[3]</label>
 						<onclick>activatewindow(MyVideosSettings)</onclick>
-						<onclick>dialog.close(all,true)</onclick>
 					</item>
 					<item id="3">
 						<description>Music</description>
 						<label>$LOCALIZE[2]</label>
 						<onclick>activatewindow(MyMusicSettings)</onclick>
-						<onclick>dialog.close(all,true)</onclick>
 					</item>
 					<item id="4">
 						<description>Pictures</description>
 						<label>$LOCALIZE[1]</label>
 						<onclick>activatewindow(MyPicturesSettings)</onclick>
-						<onclick>dialog.close(all,true)</onclick>
 					</item>
 					<item id="5">
 						<description>System</description>
 						<label>$LOCALIZE[13000]</label>
 						<onclick>activatewindow(SystemSettings)</onclick>
-						<onclick>dialog.close(all,true)</onclick>
 					</item>
 				</content>
 			</control>
@@ -349,6 +345,7 @@
 				<width>422</width>
 				<height>324</height>
 				<onup>300</onup>
+				<ondown>-</ondown>
 				<onleft>302</onleft>
 				<onright>302</onright>
 				<scrolltime>200</scrolltime>
@@ -431,25 +428,21 @@
 						<description>Video Channels</description>
 						<label>Video</label>
 						<onclick>xbmc.activatewindow(6)</onclick>
-						<onclick>dialog.close(all,true)</onclick>
 					</item>
 					<item id="2">
 						<description>Audio Channels</description>
 						<label>Audio</label>
 						<onclick>xbmc.activatewindow(5)</onclick>
-						<onclick>dialog.close(all,true)</onclick>
 					</item>
 					<item id="3">
 						<description>Picture Channels</description>
 						<label>Picture</label>
 						<onclick>xbmc.activatewindow(2)</onclick>
-						<onclick>dialog.close(all,true)</onclick>
 					</item>
 					<item id="4">
 						<description>Plex Connect</description>
 						<label>Channel Store</label>
 						<onclick>Plex.ActivateWindow(1,plex://localhost/system/plexonline,return)</onclick>
-						<onclick>dialog.close(all,true)</onclick>
 					</item>
 				</content>
 			</control>
@@ -462,6 +455,7 @@
 				<width>422</width>
 				<height>324</height>
 				<onup>300</onup>
+				<ondown>-</ondown>
 				<onleft>303</onleft>
 				<onright>303</onright>
 				<scrolltime>200</scrolltime>
@@ -544,14 +538,12 @@
 						<description>Play</description>
 						<label>Play</label>
 						<onclick>XBMC.PlayDVD</onclick>
-						<onclick>dialog.close(all,true)</onclick>
 					</item>
 					<item id="2">
 						<description>Eject</description>
 						<label>Eject Disc</label>
 						<onclick>XBMC.EjectTray()</onclick>
 						<onclick>XBMC.EjectTray()</onclick>
-						<onclick>dialog.close(all,true)</onclick>
 					</item>
 				</content>
 			</control>
