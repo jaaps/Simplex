@@ -206,7 +206,7 @@
 					<item id="3">
 						<description>Search</description>
 						<label>Search</label>
-						<onclick>-</onclick>
+						<onclick>Plex.ActivateWindow(10051)</onclick>
 					</item>
 					<item id="4">
 						<description>Preferences</description>
