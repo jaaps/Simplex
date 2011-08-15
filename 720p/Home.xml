@@ -114,7 +114,7 @@
 						<font>HomeMenuItem</font>
 						<textcolor>Shadow</textcolor>
 						<visible>Control.HasFocus(300)</visible>
-						<animation effect="fade" time="2000">VisibleChange</animation>
+						<animation effect="fade" time="200">VisibleChange</animation>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -195,48 +195,46 @@
 				</focusedlayout>
 				<content>
 					<item id="1">
+						<description>Quit</description>
+						<label>Quit</label>
+						<onclick>Plex.Shutdown()</onclick>
+					</item>
+					<item id="2">
 						<description>DVD Button</description>
 						<label>DVD</label>
 						<label2>dvd</label2>
 						<visible>System.HasMediadvd</visible>
-						<onclick>SetFocus(303,0)</onclick>
-					</item>
-					<item id="2">
-						<description>Channels</description>
-						<label>Channels</label>
-						<label2>chan</label2>
-						<onclick>SetFocus(302,0)</onclick>
+						<onclick>-</onclick>
 					</item>
 					<item id="3">
-						<description>Search</description>
-						<label>Search</label>
-						<onclick>Plex.ActivateWindow(10051)</onclick>
-					</item>
-					<item id="4">
 						<description>Preferences</description>
 						<label>Preferences</label>
 						<label2>pref</label2>
-						<onclick>SetFocus(301,0)</onclick>
+						<onclick>-</onclick>
+					</item>
+					<item id="4">
+						<description>Channels</description>
+						<label>Channels</label>
+						<label2>chan</label2>
+						<onclick>-</onclick>
 					</item>
 					<item id="5">
-						<description>Quit</description>
-						<label>Quit</label>
-						<onclick>Plex.Shutdown()</onclick>
+						<description>Search</description>
+						<label>Search</label>
+						<onclick>Plex.ActivateWindow(10051)</onclick>
 					</item>
 				</content>
 			</control>
 			<!-- The submenu for Preferences -->
 			<control type="list" id="301">
 				<visible allowhiddenfocus="true">Control.HasFocus(301) | Stringcompare(Container(300).ListItem(0).Label2,pref)</visible>
-				<animation effect="fade" time="200">VisibleChange</animation>
+				<animation effect="fade" delay="300" time="200">Visible</animation>
 				<posx>508</posx>
 				<posy>364</posy>
 				<width>422</width>
 				<height>324</height>
 				<onup>300</onup>
 				<ondown>-</ondown>
-				<onleft>301</onleft>
-				<onright>301</onright>
 				<scrolltime>200</scrolltime>
 				<itemlayout height="54">
 					<control type="group">
@@ -259,8 +257,20 @@
 							<aligny>center</aligny>
 							<info>ListItem.Label</info>
 							<font>list1</font>
+							<textcolor>Gray</textcolor>
+							<scroll>false</scroll>
+							<visible>!Control.HasFocus(301)</visible>
+						</control>
+						<control type="label">
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
 							<textcolor>White</textcolor>
 							<scroll>false</scroll>
+							<visible>Control.HasFocus(301)</visible>
 						</control>
 					</control>
 				</itemlayout>
@@ -343,15 +353,13 @@
 			<!-- The submenu for Channels -->
 			<control type="list" id="302">
 				<visible allowhiddenfocus="true">Control.HasFocus(302) | Stringcompare(Container(300).ListItem(0).Label2,chan)</visible>
-				<animation effect="fade" time="200">VisibleChange</animation>
+				<animation effect="fade" delay="300" time="200">Visible</animation>
 				<posx>508</posx>
 				<posy>364</posy>
 				<width>422</width>
 				<height>324</height>
 				<onup>300</onup>
 				<ondown>-</ondown>
-				<onleft>302</onleft>
-				<onright>302</onright>
 				<scrolltime>200</scrolltime>
 				<itemlayout height="54">
 					<control type="group">
@@ -374,8 +382,20 @@
 							<aligny>center</aligny>
 							<info>ListItem.Label</info>
 							<font>list1</font>
+							<textcolor>Gray</textcolor>
+							<scroll>false</scroll>
+							<visible>!Control.HasFocus(302)</visible>
+						</control>
+						<control type="label">
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
 							<textcolor>White</textcolor>
 							<scroll>false</scroll>
+							<visible>Control.HasFocus(302)</visible>
 						</control>
 					</control>
 				</itemlayout>
@@ -452,16 +472,14 @@
 			</control>
 			<!-- The submenu for DVD -->
 			<control type="list" id="303">
-				<visible allowhiddenfocus="true">Control.HasFocus(303) | Stringcompare(Container(300).ListItem(0).Label2,dvd)</visible>
-				<animation effect="fade" time="200">VisibleChange</animation>
+				<visible allowhiddenfocus="true">Control.HasFocus(303) + System.HasMediadvd | Stringcompare(Container(300).ListItem(0).Label2,dvd)</visible>
+				<animation effect="fade" delay="300" time="200">Visible</animation>
 				<posx>508</posx>
 				<posy>364</posy>
 				<width>422</width>
 				<height>324</height>
 				<onup>300</onup>
 				<ondown>-</ondown>
-				<onleft>303</onleft>
-				<onright>303</onright>
 				<scrolltime>200</scrolltime>
 				<itemlayout height="54">
 					<control type="group">
@@ -484,8 +502,20 @@
 							<aligny>center</aligny>
 							<info>ListItem.Label</info>
 							<font>list1</font>
+							<textcolor>Gray</textcolor>
+							<scroll>false</scroll>
+							<visible>!Control.HasFocus(303)</visible>
+						</control>
+						<control type="label">
+							<width>244</width>
+							<height>50</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<font>list1</font>
 							<textcolor>White</textcolor>
 							<scroll>false</scroll>
+							<visible>Control.HasFocus(303)</visible>
 						</control>
 					</control>
 				</itemlayout>
@@ -548,6 +578,7 @@
 						<label>Eject Disc</label>
 						<onclick>XBMC.EjectTray()</onclick>
 						<onclick>XBMC.EjectTray()</onclick>
+						<onclick>Control.SetFocus(300,3)</onclick>
 					</item>
 				</content>
 			</control>

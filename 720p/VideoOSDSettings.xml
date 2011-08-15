@@ -27,7 +27,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>list1</font>
-				<textcolor>White</textcolor>
+				<textcolor>Gray</textcolor>
 			</control>
 			<control type="grouplist" id="5">
 				<description>control area</description>
