@@ -73,7 +73,7 @@
 		</control>
 		<control type="group">
 			<posx>628</posx>
-			<posy>306</posy>		
+			<posy>306</posy>
 			<description>Progress</description>
 			<control type="label">
 				<posy>142</posy>
