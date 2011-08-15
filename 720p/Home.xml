@@ -16,6 +16,10 @@
 					<onfocus>SetFocus(299,0)</onfocus>
 				</control>
 				<control type="button">
+					<visible>Container(11000).ListItem(0).Type(album) + Control.IsVisible(11000)</visible>
+					<onfocus>SetFocus(296,0)</onfocus>
+				</control>
+				<control type="button">
 					<visible>Stringcompare(Container(300).ListItem(0).Label2,pref)</visible>
 					<onfocus>SetFocus(301,0)</onfocus>
 				</control>
@@ -32,7 +36,7 @@
 					<onfocus>SetFocus(11003,0)</onfocus>
 				</control>
 				<control type="button">
-					<visible>!Stringcompare(Container(300).ListItem(0).Label2,pref) + !Control.IsVisible(11000) + !Control.IsVisible(11003)</visible>
+					<visible>!Stringcompare(Container(300).ListItem(0).Label2,pref) + !Stringcompare(Container(300).ListItem(0).Label2,chan) + !Stringcompare(Container(300).ListItem(0).Label2,dvd) + !Control.IsVisible(11000) + !Control.IsVisible(11003)</visible>
 					<onfocus>SetFocus(300)</onfocus>
 				</control>
 			</control>
@@ -223,7 +227,7 @@
 			</control>
 			<!-- The submenu for Preferences -->
 			<control type="list" id="301">
-				<visible allowhiddenfocus="true">Control.HasFocus(301)</visible>
+				<visible allowhiddenfocus="true">Control.HasFocus(301) | Stringcompare(Container(300).ListItem(0).Label2,pref)</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<posx>508</posx>
 				<posy>364</posy>
@@ -338,7 +342,7 @@
 			</control>
 			<!-- The submenu for Channels -->
 			<control type="list" id="302">
-				<visible allowhiddenfocus="true">Control.HasFocus(302)</visible>
+				<visible allowhiddenfocus="true">Control.HasFocus(302) | Stringcompare(Container(300).ListItem(0).Label2,chan)</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<posx>508</posx>
 				<posy>364</posy>
@@ -448,7 +452,7 @@
 			</control>
 			<!-- The submenu for DVD -->
 			<control type="list" id="303">
-				<visible allowhiddenfocus="true">Control.HasFocus(303)</visible>
+				<visible allowhiddenfocus="true">Control.HasFocus(303) | Stringcompare(Container(300).ListItem(0).Label2,dvd)</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<posx>508</posx>
 				<posy>364</posy>
@@ -685,6 +689,34 @@
 								<height>236</height>
 								<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 								<texture>home_poster_focus.png</texture>
+							</control>
+							<control type="label">
+								<posx>86</posx>
+								<posy>223</posy>
+								<width>162</width>
+								<height>30</height>
+								<label>$INFO[ListItem.Label]</label>
+								<visible>Control.HasFocus(299)</visible>
+								<textcolor>Shadow</textcolor>
+								<scrollsuffix>  -  </scrollsuffix>
+								<scroll>true</scroll>
+								<scrollspeed>30</scrollspeed>
+								<font>homelabel</font>
+								<align>center</align>
+							</control>
+							<control type="label">
+								<posx>86</posx>
+								<posy>225</posy>
+								<width>162</width>
+								<height>30</height>
+								<label>$INFO[ListItem.Label]</label>
+								<visible>Control.HasFocus(299)</visible>
+								<textcolor>Orange</textcolor>
+								<scrollsuffix>  -  </scrollsuffix>
+								<scroll>true</scroll>
+								<scrollspeed>30</scrollspeed>
+								<font>homelabel</font>
+								<align>center</align>
 							</control>
 						</focusedlayout>
 						<content>
@@ -1273,203 +1305,6 @@
 							</item>
 						</content>
 					</control>
-					<!-- Here we have several labels that are visible depending on the focus position of the list above -->
-					<control type="label">
-						<posx>5</posx>
-						<posy>244</posy>
-						<width>162</width>
-						<height>30</height>
-						<label>$INFO[Container(299).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(299) + Container(299).Position(0)</visible>
-						<textcolor>Shadow</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>5</posx>
-						<posy>246</posy>
-						<width>162</width>
-						<height>30</height>
-						<label>$INFO[Container(299).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(299) + Container(299).Position(0)</visible>
-						<textcolor>Orange</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>174</posx>
-						<posy>244</posy>
-						<width>162</width>
-						<height>30</height>
-						<label>$INFO[Container(299).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(299) + Container(299).Position(1)</visible>
-						<textcolor>Shadow</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>174</posx>
-						<posy>246</posy>
-						<width>162</width>
-						<height>30</height>
-						<label>$INFO[Container(299).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(299) + Container(299).Position(1)</visible>
-						<textcolor>Orange</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>343</posx>
-						<posy>244</posy>
-						<width>162</width>
-						<height>30</height>
-						<label>$INFO[Container(299).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(299) + Container(299).Position(2)</visible>
-						<textcolor>Shadow</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>343</posx>
-						<posy>246</posy>
-						<width>162</width>
-						<height>30</height>
-						<label>$INFO[Container(299).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(299) + Container(299).Position(2)</visible>
-						<textcolor>Orange</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>512</posx>
-						<posy>244</posy>
-						<width>162</width>
-						<height>30</height>
-						<label>$INFO[Container(299).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(299) + Container(299).Position(3)</visible>
-						<textcolor>Shadow</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>512</posx>
-						<posy>246</posy>
-						<width>162</width>
-						<height>30</height>
-						<label>$INFO[Container(299).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(299) + Container(299).Position(3)</visible>
-						<textcolor>Orange</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>681</posx>
-						<posy>244</posy>
-						<width>162</width>
-						<height>30</height>
-						<label>$INFO[Container(299).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(299) + Container(299).Position(4)</visible>
-						<textcolor>Shadow</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>681</posx>
-						<posy>246</posy>
-						<width>162</width>
-						<height>30</height>
-						<label>$INFO[Container(299).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(299) + Container(299).Position(4)</visible>
-						<textcolor>Orange</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>850</posx>
-						<posy>244</posy>
-						<width>162</width>
-						<height>30</height>
-						<label>$INFO[Container(299).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(299) + Container(299).Position(5)</visible>
-						<textcolor>Shadow</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>850</posx>
-						<posy>246</posy>
-						<width>162</width>
-						<height>30</height>
-						<label>$INFO[Container(299).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(299) + Container(299).Position(5)</visible>
-						<textcolor>Orange</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>1019</posx>
-						<posy>244</posy>
-						<width>162</width>
-						<height>30</height>
-						<label>$INFO[Container(299).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(299) + Container(299).Position(6)</visible>
-						<textcolor>Shadow</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>1019</posx>
-						<posy>246</posy>
-						<width>162</width>
-						<height>30</height>
-						<label>$INFO[Container(299).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(299) + Container(299).Position(6)</visible>
-						<textcolor>Orange</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
 				</control>
 				<control type="group">
 					<visible>Container(11000).ListItem(0).Type(episode) + !Window.IsVisible(106) + !Control.HasFocus(340) + Control.IsVisible(11000)</visible>
@@ -1578,6 +1413,60 @@
 								<height>236</height>
 								<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 								<texture>home_square_focus.png</texture>
+							</control>
+							<control type="label">
+								<posx>119</posx>
+								<posy>223</posy>
+								<width>228</width>
+								<height>30</height>
+								<label>$INFO[ListItem.Label]</label>
+								<visible>Control.HasFocus(298)</visible>
+								<textcolor>Shadow</textcolor>
+								<scroll>false</scroll>
+								<scrollspeed>30</scrollspeed>
+								<font>homelabel</font>
+								<align>center</align>
+							</control>
+							<control type="label">
+								<posx>119</posx>
+								<posy>225</posy>
+								<width>228</width>
+								<height>30</height>
+								<label>$INFO[ListItem.Label]</label>
+								<visible>Control.HasFocus(298)</visible>
+								<textcolor>Orange</textcolor>
+								<scroll>true</scroll>
+								<scrollspeed>30</scrollspeed>
+								<font>homelabel</font>
+								<align>center</align>
+							</control>
+							<control type="label">
+								<posx>119</posx>
+								<posy>243</posy>
+								<width>228</width>
+								<height>30</height>
+								<label>$INFO[ListItem.Label2]</label>
+								<visible>Control.HasFocus(298)</visible>
+								<textcolor>Shadow</textcolor>
+								<scrollsuffix>  -  </scrollsuffix>
+								<scroll>true</scroll>
+								<scrollspeed>30</scrollspeed>
+								<font>homelabel</font>
+								<align>center</align>
+							</control>
+							<control type="label">
+								<posx>119</posx>
+								<posy>245</posy>
+								<width>228</width>
+								<height>30</height>
+								<label>$INFO[ListItem.Label2]</label>
+								<visible>Control.HasFocus(298)</visible>
+								<textcolor>White</textcolor>
+								<scrollsuffix>  -  </scrollsuffix>
+								<scroll>true</scroll>
+								<scrollspeed>30</scrollspeed>
+								<font>homelabel</font>
+								<align>center</align>
 							</control>
 						</focusedlayout>
 						<content>
@@ -1695,7 +1584,7 @@
 							</item>
 							<item id="5">
 								<label>$INFO[Container(11000).ListItem(4).Episode]. $INFO[Container(11000).ListItem(4).label]</label>
-								<label2>$INFO[Container(11000).ListItem(4)).TVShowTitle], Season $INFO[Container(11000).ListItem(4).Season]</label2>
+								<label2>$INFO[Container(11000).ListItem(4).TVShowTitle], Season $INFO[Container(11000).ListItem(4).Season]</label2>
 								<thumb>$INFO[Container(11000).ListItem(4).Thumb]</thumb>
 								<icon>$INFO[Container(11000).ListItem(4).Icon]</icon>
 								<onclick>Control.SetFocus(340,0)</onclick>
@@ -1926,275 +1815,515 @@
 							</item>
 						</content>
 					</control>
-					<control type="label">
-						<posx>5</posx>
-						<posy>244</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(298).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(0)</visible>
-						<textcolor>Shadow</textcolor>
-						<scroll>false</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
+				</control>
+				<control type="group">
+					<visible>Container(11000).ListItem(0).Type(album) + !Window.IsVisible(106) + !Control.HasFocus(340) + Control.IsVisible(11000)</visible>
+					<animation effect="fade" start="0" end="100" time="300" delay="300">Visible</animation>
+					<animation effect="fade" start="100" end="0" time="1" delay="0">Hidden</animation>
+					<width>1200</width>
+					<control type="group">
+						<visible>IntegerGreaterThan(Container(11001).NumItems,0) + Control.IsVisible(11001)</visible>
+						<control type="label" id="8002">
+							<font>info1</font>
+							<textcolor>Shadow</textcolor>
+							<width>350</width>
+							<height>30</height>
+							<align>left</align>
+							<label>On Deck</label>
+							<posx>18</posx>
+							<posy>2</posy>
+						</control>
+						<control type="label" id="8002">
+							<font>info1</font>
+							<textcolor>Gray</textcolor>
+							<width>350</width>
+							<height>30</height>
+							<align>left</align>
+							<label>On Deck</label>
+							<posx>18</posx>
+						</control>
 					</control>
-					<control type="label">
-						<posx>5</posx>
-						<posy>246</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(298).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(0)</visible>
-						<textcolor>Orange</textcolor>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
+					<control type="group">
+						<animation effect="slide" start="0" end="0" time="1" condition="!Control.IsVisible(11001)">Conditional</animation>
+						<animation effect="slide" start="0" end="238" time="1" condition="IntegerGreaterThan(Container(11001).NumItems,0) + Control.IsVisible(11001)">Conditional</animation>
+						<animation effect="slide" start="0" end="238" time="1" condition="IntegerGreaterThan(Container(11001).NumItems,1) + Control.IsVisible(11001)">Conditional</animation>
+						<control type="label" id="8002">
+							<font>info1</font>
+							<textcolor>Shadow</textcolor>
+							<width>350</width>
+							<height>30</height>
+							<align>left</align>
+							<label>New Albums</label>
+							<posx>18</posx>
+							<posy>2</posy>
+						</control>
+						<control type="label" id="8002">
+							<font>info1</font>
+							<textcolor>Gray</textcolor>
+							<width>350</width>
+							<height>30</height>
+							<align>left</align>
+							<label>New Albums</label>
+							<posx>18</posx>
+						</control>
 					</control>
-					<control type="label">
-						<posx>5</posx>
-						<posy>264</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(298).ListItem(0).Label2]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(0)</visible>
-						<textcolor>Shadow</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>5</posx>
-						<posy>266</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(298).ListItem(0).Label2]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(0)</visible>
-						<textcolor>White</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>243</posx>
-						<posy>244</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(298).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(1)</visible>
-						<textcolor>Shadow</textcolor>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>243</posx>
-						<posy>246</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(298).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(1)</visible>
-						<textcolor>Orange</textcolor>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>243</posx>
-						<posy>264</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(298).ListItem(0).Label2]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(1)</visible>
-						<textcolor>Shadow</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>243</posx>
-						<posy>266</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(298).ListItem(0).Label2]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(1)</visible>
-						<textcolor>White</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>481</posx>
-						<posy>244</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(298).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(2)</visible>
-						<textcolor>Shadow</textcolor>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>481</posx>
-						<posy>246</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(298).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(2)</visible>
-						<textcolor>Orange</textcolor>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>481</posx>
-						<posy>264</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(298).ListItem(0).Label2]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(2)</visible>
-						<textcolor>Shadow</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>481</posx>
-						<posy>266</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(298).ListItem(0).Label2]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(2)</visible>
-						<textcolor>White</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>719</posx>
-						<posy>244</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(298).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(3)</visible>
-						<textcolor>Shadow</textcolor>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>719</posx>
-						<posy>246</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(298).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(3)</visible>
-						<textcolor>Orange</textcolor>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>719</posx>
-						<posy>264</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(298).ListItem(0).Label2]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(3)</visible>
-						<textcolor>Shadow</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>719</posx>
-						<posy>266</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(298).ListItem(0).Label2]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(3)</visible>
-						<textcolor>White</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>957</posx>
-						<posy>244</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(298).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(4)</visible>
-						<textcolor>Shadow</textcolor>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>957</posx>
-						<posy>246</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(298).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(4)</visible>
-						<textcolor>Orange</textcolor>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>957</posx>
-						<posy>264</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(298).ListItem(0).Label2]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(4)</visible>
-						<textcolor>Shadow</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>957</posx>
-						<posy>266</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(298).ListItem(0).Label2]</label>
-						<visible>Control.HasFocus(298) + Container(298).Position(4)</visible>
-						<textcolor>White</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
+					<control type="list" id="296">
+						<visible>Container(11000).ListItem(0).Type(album) + !Window.IsVisible(106) + !Control.HasFocus(340) + Control.IsVisible(11000)</visible>
+						<orientation>horizontal</orientation>
+						<onright>-</onright>
+						<onleft>-</onleft>
+						<onup>300</onup>
+						<width>1200</width>
+						<height>340</height>
+						<posy>21</posy>
+						<posx>0</posx>
+						<itemlayout width="238" height="280">
+							<control type="group">
+								<control type="image">
+									<posx>19</posx>
+									<posy>219</posy>
+									<width>200</width>
+									<height>200</height>
+									<texture diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
+								</control>
+								<control type="image">
+									<posx>19</posx>
+									<posy>19</posy>
+									<width>200</width>
+									<height>200</height>
+									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
+									<texture diffuse="diffuse_square_home.png">$INFO[ListItem.Thumb]</texture>
+									<bordertexture>border_square_home.png</bordertexture>
+								</control>
+							</control>
+						</itemlayout>
+						<focusedlayout width="238" height="280">
+							<control type="image">
+								<posx>19</posx>
+								<posy>219</posy>
+								<width>200</width>
+								<height>200</height>
+								<texture diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+								<aspectratio scalediffuse="false" align="center">scale</aspectratio>
+							</control>
+							<control type="image">
+								<posx>19</posx>
+								<posy>19</posy>
+								<width>200</width>
+								<height>200</height>
+								<aspectratio scalediffuse="false" align="center">scale</aspectratio>
+								<texture diffuse="diffuse_square_home.png">$INFO[ListItem.Thumb]</texture>
+								<bordertexture>border_square_home.png</bordertexture>
+							</control>
+							<control type="image">
+								<posx>1</posx>
+								<posy>1</posy>
+								<width>236</width>
+								<height>236</height>
+								<aspectratio scalediffuse="false" align="center">scale</aspectratio>
+								<texture>home_square_focus.png</texture>
+							</control>
+							<control type="label">
+								<posx>119</posx>
+								<posy>223</posy>
+								<width>228</width>
+								<height>30</height>
+								<label>$INFO[ListItem.Label]</label>
+								<visible>Control.HasFocus(296)</visible>
+								<textcolor>Shadow</textcolor>
+								<scroll>false</scroll>
+								<scrollspeed>30</scrollspeed>
+								<font>homelabel</font>
+								<align>center</align>
+							</control>
+							<control type="label">
+								<posx>119</posx>
+								<posy>225</posy>
+								<width>228</width>
+								<height>30</height>
+								<label>$INFO[ListItem.Label]</label>
+								<visible>Control.HasFocus(296)</visible>
+								<textcolor>Orange</textcolor>
+								<scroll>true</scroll>
+								<scrollspeed>30</scrollspeed>
+								<font>homelabel</font>
+								<align>center</align>
+							</control>
+							<control type="label">
+								<posx>119</posx>
+								<posy>243</posy>
+								<width>228</width>
+								<height>30</height>
+								<label>$INFO[ListItem.Label2]</label>
+								<visible>Control.HasFocus(296)</visible>
+								<textcolor>Shadow</textcolor>
+								<scrollsuffix>  -  </scrollsuffix>
+								<scroll>true</scroll>
+								<scrollspeed>30</scrollspeed>
+								<font>homelabel</font>
+								<align>center</align>
+							</control>
+							<control type="label">
+								<posx>119</posx>
+								<posy>245</posy>
+								<width>228</width>
+								<height>30</height>
+								<label>$INFO[ListItem.Label2]</label>
+								<visible>Control.HasFocus(296)</visible>
+								<textcolor>White</textcolor>
+								<scrollsuffix>  -  </scrollsuffix>
+								<scroll>true</scroll>
+								<scrollspeed>30</scrollspeed>
+								<font>homelabel</font>
+								<align>center</align>
+							</control>
+						</focusedlayout>
+						<content>
+							<!-- on deck -->
+							<item id="1">
+								<label>$INFO[Container(11001).ListItem(0).Album]</label>
+								<label2>$INFO[Container(11001).ListItem(0).Artist]</label2>
+								<thumb>$INFO[Container(11001).ListItem(0).Thumb]</thumb>
+								<icon>$INFO[Container(11001).ListItem(0).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11001,0)</onclick>
+								<onclick>SendClick(0,11001)</onclick>
+								<visible>Container(11001).Column(0) + IntegerGreaterThan(Container(11001).NumItems,0) + Control.IsVisible(11001)</visible>
+							</item>
+							<item id="1">
+								<label>$INFO[Container(11001).ListItem(1).Album]</label>
+								<label2>$INFO[Container(11001).ListItem(1).Artist]</label2>
+								<thumb>$INFO[Container(11001).ListItem(1).Thumb]</thumb>
+								<icon>$INFO[Container(11001).ListItem(1).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11001,1)</onclick>
+								<onclick>SendClick(0,11001)</onclick>
+								<visible>Container(11001).Column(0) + IntegerGreaterThan(Container(11001).NumItems,1) + Control.IsVisible(11001)</visible>
+							</item>
+							<item id="1">
+								<label>$INFO[Container(11001).ListItem(-1).Album]</label>
+								<label2>$INFO[Container(11001).ListItem(-1).Artist]</label2>
+								<thumb>$INFO[Container(11001).ListItem(-1).Thumb]</thumb>
+								<icon>$INFO[Container(11001).ListItem(-1).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11001,-1)</onclick>
+								<onclick>SendClick(0,11001)</onclick>
+								<visible>Container(11001).Position(1) + IntegerGreaterThan(Container(11001).NumItems,0) + Control.IsVisible(11001)</visible>
+							</item>
+							<item id="1">
+								<label>$INFO[Container(11001).ListItem(0).Album]</label>
+								<label2>$INFO[Container(11001).ListItem(0).Artist]</label2>
+								<thumb>$INFO[Container(11001).ListItem(0).Thumb]</thumb>
+								<icon>$INFO[Container(11001).ListItem(0).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11001,0)</onclick>
+								<onclick>SendClick(0,11001)</onclick>
+								<visible>Container(11001).Position(1) + IntegerGreaterThan(Container(11001).NumItems,1) + Control.IsVisible(11001)</visible>
+							</item>
+							<item id="1">
+								<label>$INFO[Container(11001).ListItem(-2).Album]</label>
+								<label2>$INFO[Container(11001).ListItem(-2).Artist]</label2>
+								<thumb>$INFO[Container(11001).ListItem(-2).Thumb]</thumb>
+								<icon>$INFO[Container(11001).ListItem(-2).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11001,-2)</onclick>
+								<onclick>SendClick(0,11001)</onclick>
+								<visible>Container(11001).Position(2) + IntegerGreaterThan(Container(11001).NumItems,0) + Control.IsVisible(11001)</visible>
+							</item>
+							<item id="1">
+								<label>$INFO[Container(11001).ListItem(-1).Album]</label>
+								<label2>$INFO[Container(11001).ListItem(-1).Artist]</label2>
+								<thumb>$INFO[Container(11001).ListItem(-1).Thumb]</thumb>
+								<icon>$INFO[Container(11001).ListItem(-1).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11001,-1)</onclick>
+								<onclick>SendClick(0,11001)</onclick>
+								<visible>Container(11001).Position(2) + IntegerGreaterThan(Container(11001).NumItems,1) + Control.IsVisible(11001)</visible>
+							</item>
+							<!--- recently added -->
+							<item id="1">
+								<label>$INFO[Container(11000).ListItem(0).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(0).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(0).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(0).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,0)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(0) + IntegerGreaterThan(Container(11000).NumItems,0) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="2">
+								<label>$INFO[Container(11000).ListItem(1).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(1).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(1).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(1).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,1)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(0) + IntegerGreaterThan(Container(11000).NumItems,1) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="3">
+								<label>$INFO[Container(11000).ListItem(2).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(2).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(2).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(2).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,2)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(0) + IntegerGreaterThan(Container(11000).NumItems,2) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="4">
+								<label>$INFO[Container(11000).ListItem(3).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(3).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(3).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(3).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,3)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(0) + ![IntegerGreaterThan(Container(11001).NumItems,0) + Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,3) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="5">
+								<label>$INFO[Container(11000).ListItem(4).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(4).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(4).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(4).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,4)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(0) + ![IntegerGreaterThan(Container(11001).NumItems,1) + Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,4) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="1">
+								<label>$INFO[Container(11000).ListItem(-1).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(-1).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(-1).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(-1).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,-1)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(1) + IntegerGreaterThan(Container(11000).NumItems,0) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="2">
+								<label>$INFO[Container(11000).ListItem(0).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(0).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(0).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(0).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,0)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(1) + IntegerGreaterThan(Container(11000).NumItems,1) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="3">
+								<label>$INFO[Container(11000).ListItem(1).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(1).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(1).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(1).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,1)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(1) + IntegerGreaterThan(Container(11000).NumItems,2) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="4">
+								<label>$INFO[Container(11000).ListItem(2).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(2).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(2).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(2).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,2)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(1) + ![IntegerGreaterThan(Container(11001).NumItems,0) + Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,3) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="5">
+								<label>$INFO[Container(11000).ListItem(3).Episode]. $INFO[Container(11000).ListItem(3)).label]</label>
+								<label2>$INFO[Container(11000).ListItem(3).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(3).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(3).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,3)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(1) + ![IntegerGreaterThan(Container(11001).NumItems,1) + Control.IsVisible(11001)]+ IntegerGreaterThan(Container(11000).NumItems,4) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="1">
+								<label>$INFO[Container(11000).ListItem(-2).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(-2).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(-2).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(-2).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,-2)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(2) + IntegerGreaterThan(Container(11000).NumItems,0) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="2">
+								<label>$INFO[Container(11000).ListItem(-1).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(-1).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(-1).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(-1).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,-1)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(2) + IntegerGreaterThan(Container(11000).NumItems,1) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="3">
+								<label>$INFO[Container(11000).ListItem(0).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(0).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(0).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(0).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,0)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(2) + IntegerGreaterThan(Container(11000).NumItems,2) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="4">
+								<label>$INFO[Container(11000).ListItem(1).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(1).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(1).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(1).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,1)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(2) + ![IntegerGreaterThan(Container(11001).NumItems,0) + Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,3) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="5">
+								<label>$INFO[Container(11000).ListItem(2).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(2).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(2).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(2).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,2)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(2) + ![IntegerGreaterThan(Container(11001).NumItems,1) + Control.IsVisible(11001)]+ IntegerGreaterThan(Container(11000).NumItems,4) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="1">
+								<label>$INFO[Container(11000).ListItem(-3).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(-3).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(-3).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(-3).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,-3)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(3) + IntegerGreaterThan(Container(11000).NumItems,0) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="2">
+								<label>$INFO[Container(11000).ListItem(-2).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(-2).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(-2).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(-2).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,-2)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(3) + IntegerGreaterThan(Container(11000).NumItems,1) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="3">
+								<label>$INFO[Container(11000).ListItem(-1).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(-1).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(-1).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(-1).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,-1)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(3) + IntegerGreaterThan(Container(11000).NumItems,2) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="4">
+								<label>$INFO[Container(11000).ListItem(0).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(0).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(0).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(0).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,0)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(3) + ![IntegerGreaterThan(Container(11001).NumItems,0) + Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,3) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="5">
+								<label>$INFO[Container(11000).ListItem(1).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(1).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(1).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(1).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,1)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(3) + ![IntegerGreaterThan(Container(11001).NumItems,1) + Control.IsVisible(11001)]+ IntegerGreaterThan(Container(11000).NumItems,4) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="1">
+								<label>$INFO[Container(11000).ListItem(-4).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(-4).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(-4).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(-4).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,-4)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(4) + IntegerGreaterThan(Container(11000).NumItems,0) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="2">
+								<label>$INFO[Container(11000).ListItem(-3).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(-3).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(-3).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(-3).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,-3)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(4) + IntegerGreaterThan(Container(11000).NumItems,1) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="3">
+								<label>$INFO[Container(11000).ListItem(-2).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(-2).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(-2).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(-2).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,-2)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(4) + IntegerGreaterThan(Container(11000).NumItems,2) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="4">
+								<label>$INFO[Container(11000).ListItem(-1).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(-1).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(-1).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(-1).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,-1)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(4) + ![IntegerGreaterThan(Container(11001).NumItems,0) + Control.IsVisible(11001)] + IntegerGreaterThan(Container(11000).NumItems,3) + Control.IsVisible(11000)</visible>
+							</item>
+							<item id="5">
+								<label>$INFO[Container(11000).ListItem(0).Album]</label>
+								<label2>$INFO[Container(11000).ListItem(0).Artist]</label2>
+								<thumb>$INFO[Container(11000).ListItem(0).Thumb]</thumb>
+								<icon>$INFO[Container(11000).ListItem(0).Icon]</icon>
+								<onclick>Control.SetFocus(340,0)</onclick>
+								<onclick>Control.SetFocus(296,0)</onclick>
+								<onclick>Control.Move(11000,-1)</onclick>
+								<onclick>SendClick(0,11000)</onclick>
+								<visible>Container(11000).Column(4) + ![IntegerGreaterThan(Container(11001).NumItems,1) + Control.IsVisible(11001)]+ IntegerGreaterThan(Container(11000).NumItems,4) + Control.IsVisible(11000)</visible>
+							</item>
+						</content>
 					</control>
 				</control>
 				<control type="group">
@@ -2305,278 +2434,62 @@
 								<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 								<texture>home_square_focus.png</texture>
 							</control>
+							<control type="label">
+								<posx>119</posx>
+								<posy>223</posy>
+								<width>228</width>
+								<height>30</height>
+								<label>$INFO[ListItem.Label]</label>
+								<visible>Control.HasFocus(11003)</visible>
+								<textcolor>Shadow</textcolor>
+								<scroll>false</scroll>
+								<scrollspeed>30</scrollspeed>
+								<font>homelabel</font>
+								<align>center</align>
+							</control>
+							<control type="label">
+								<posx>119</posx>
+								<posy>225</posy>
+								<width>228</width>
+								<height>30</height>
+								<label>$INFO[ListItem.Label]</label>
+								<visible>Control.HasFocus(11003)</visible>
+								<textcolor>Orange</textcolor>
+								<scroll>true</scroll>
+								<scrollspeed>30</scrollspeed>
+								<font>homelabel</font>
+								<align>center</align>
+							</control>
+							<control type="label">
+								<posx>119</posx>
+								<posy>243</posy>
+								<width>228</width>
+								<height>30</height>
+								<label>$INFO[ListItem.Property(sourceTitle)]</label>
+								<visible>Control.HasFocus(11003)</visible>
+								<textcolor>Shadow</textcolor>
+								<scrollsuffix>  -  </scrollsuffix>
+								<scroll>true</scroll>
+								<scrollspeed>30</scrollspeed>
+								<font>homelabel</font>
+								<align>center</align>
+							</control>
+							<control type="label">
+								<posx>119</posx>
+								<posy>245</posy>
+								<width>228</width>
+								<height>30</height>
+								<label>$INFO[ListItem.Property(sourceTitle)]</label>
+								<visible>Control.HasFocus(11003)</visible>
+								<textcolor>White</textcolor>
+								<scrollsuffix>  -  </scrollsuffix>
+								<scroll>true</scroll>
+								<scrollspeed>30</scrollspeed>
+								<font>homelabel</font>
+								<align>center</align>
+							</control>
 						</focusedlayout>
 						<height>200</height>
-					</control>
-					<control type="label">
-						<posx>5</posx>
-						<posy>244</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(11003).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(11003) + Container(11003).Position(0)</visible>
-						<textcolor>Shadow</textcolor>
-						<scroll>false</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>5</posx>
-						<posy>246</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(11003).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(11003) + Container(11003).Position(0)</visible>
-						<textcolor>Orange</textcolor>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>5</posx>
-						<posy>264</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(11003).ListItem(0).Label2]</label>
-						<visible>Control.HasFocus(11003) + Container(11003).Position(0)</visible>
-						<textcolor>Shadow</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>5</posx>
-						<posy>266</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(11003).ListItem(0).Label2]</label>
-						<visible>Control.HasFocus(11003) + Container(11003).Position(0)</visible>
-						<textcolor>White</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>243</posx>
-						<posy>244</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(11003).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(11003) + Container(11003).Position(1)</visible>
-						<textcolor>Shadow</textcolor>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>243</posx>
-						<posy>246</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(11003).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(11003) + Container(11003).Position(1)</visible>
-						<textcolor>Orange</textcolor>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>243</posx>
-						<posy>264</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(11003).ListItem(0).Label2]</label>
-						<visible>Control.HasFocus(11003) + Container(11003).Position(1)</visible>
-						<textcolor>Shadow</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>243</posx>
-						<posy>266</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(11003).ListItem(0).Label2]</label>
-						<visible>Control.HasFocus(11003) + Container(11003).Position(1)</visible>
-						<textcolor>White</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>481</posx>
-						<posy>244</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(11003).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(11003) + Container(11003).Position(2)</visible>
-						<textcolor>Shadow</textcolor>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>481</posx>
-						<posy>246</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(11003).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(11003) + Container(11003).Position(2)</visible>
-						<textcolor>Orange</textcolor>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>481</posx>
-						<posy>264</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(11003).ListItem(0).Label2]</label>
-						<visible>Control.HasFocus(11003) + Container(11003).Position(2)</visible>
-						<textcolor>Shadow</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>481</posx>
-						<posy>266</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(11003).ListItem(0).Label2]</label>
-						<visible>Control.HasFocus(11003) + Container(11003).Position(2)</visible>
-						<textcolor>White</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>719</posx>
-						<posy>244</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(11003).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(11003) + Container(11003).Position(3)</visible>
-						<textcolor>Shadow</textcolor>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>719</posx>
-						<posy>246</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(11003).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(11003) + Container(11003).Position(3)</visible>
-						<textcolor>Orange</textcolor>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>719</posx>
-						<posy>264</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(11003).ListItem(0).Label2]</label>
-						<visible>Control.HasFocus(11003) + Container(11003).Position(3)</visible>
-						<textcolor>Shadow</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>719</posx>
-						<posy>266</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(11003).ListItem(0).Label2]</label>
-						<visible>Control.HasFocus(11003) + Container(11003).Position(3)</visible>
-						<textcolor>White</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>957</posx>
-						<posy>244</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(11003).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(11003) + Container(11003).Position(4)</visible>
-						<textcolor>Shadow</textcolor>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>957</posx>
-						<posy>246</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(11003).ListItem(0).Label]</label>
-						<visible>Control.HasFocus(11003) + Container(11003).Position(4)</visible>
-						<textcolor>Orange</textcolor>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>957</posx>
-						<posy>264</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(11003).ListItem(0).Label2]</label>
-						<visible>Control.HasFocus(11003) + Container(11003).Position(4)</visible>
-						<textcolor>Shadow</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
-					</control>
-					<control type="label">
-						<posx>957</posx>
-						<posy>266</posy>
-						<width>228</width>
-						<height>30</height>
-						<label>$INFO[Container(11003).ListItem(0).Label2]</label>
-						<visible>Control.HasFocus(11003) + Container(11003).Position(4)</visible>
-						<textcolor>White</textcolor>
-						<scrollsuffix>  -  </scrollsuffix>
-						<scroll>true</scroll>
-						<scrollspeed>30</scrollspeed>
-						<font>homelabel</font>
-						<align>center</align>
 					</control>
 				</control>
 			</control>
