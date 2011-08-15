@@ -11,7 +11,7 @@
 					<width>598</width>
 					<height>415</height>
 					<texture>poster_background.png</texture>
-					<visible>IsEmpty(ListItem.Plot) + !IsEmpty(ListItem.Thumb)</visible>
+					<visible>[IsEmpty(ListItem.Plot) | Container.Content(albums) | Container.Content(songs)] + !IsEmpty(ListItem.Thumb)</visible>
 				</control>
 				<control type="image">
 					<posx>44</posx>
@@ -19,7 +19,7 @@
 					<width>598</width>
 					<height>415</height>
 					<texture>poster_background.png</texture>
-					<visible>!IsEmpty(ListItem.Plot)</visible>
+					<visible>!IsEmpty(ListItem.Plot) + ![Container.Content(albums) | Container.Content(songs)]</visible>
 				</control>
 				<control type="image">
 					<posx>111</posx>
@@ -29,7 +29,7 @@
 					<texture background="true" diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<aspectratio aligny="top" align="center">keep</aspectratio>
 					<fadetime>1</fadetime>
-					<visible>IsEmpty(ListItem.Plot)</visible>
+					<visible>IsEmpty(ListItem.Plot) | Container.Content(albums) | Container.Content(songs)</visible>
 				</control>
 				<control type="image">
 					<posx>111</posx>
@@ -39,7 +39,7 @@
 					<texture background="true" diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<aspectratio aligny="top" align="center">keep</aspectratio>
 					<fadetime>1</fadetime>
-					<visible>!IsEmpty(ListItem.Plot)</visible>
+					<visible>!IsEmpty(ListItem.Plot) + ![Container.Content(albums) | Container.Content(songs)]</visible>
 				</control>
 				<control type="image">
 					<posx>111</posx>
@@ -50,7 +50,7 @@
 					<aspectratio aligny="bottom" align="center">keep</aspectratio>
 					<bordertexture>border_square.png</bordertexture>
 					<fadetime>1</fadetime>
-					<visible>IsEmpty(ListItem.Plot)</visible>
+					<visible>IsEmpty(ListItem.Plot) | Container.Content(albums) | Container.Content(songs)</visible>
 				</control>
 				<control type="image">
 					<posx>111</posx>
@@ -61,7 +61,7 @@
 					<aspectratio aligny="bottom" align="center">keep</aspectratio>
 					<bordertexture>border_square.png</bordertexture>
 					<fadetime>1</fadetime>
-					<visible>!IsEmpty(ListItem.Plot)</visible>
+					<visible>!IsEmpty(ListItem.Plot) + ![Container.Content(albums) | Container.Content(songs)]</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -308,7 +308,7 @@
 			<control type="grouplist">
 				<posx>91</posx>
 				<posy>534</posy>
-				<visible>!Container.Content(movies) + !Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(albums) + !Container.Content(songs) + !Container.Content(artists) + !IsEmpty(ListItem.Plot)</visible>
+				<visible>!Container.Content(movies) + !Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(albums) + !Container.Content(songs) + !IsEmpty(ListItem.Plot)</visible>
 				<control type="group">
 					<height>31</height>
 					<visible>!IsEmpty(ListItem.Rating)</visible>
