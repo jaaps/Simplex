@@ -7,6 +7,13 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
+			<texture>background.png</texture>
+		</control>
+		<control type="image" id="0">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>404</width>
+			<height>720</height>
 			<texture>background_search.png</texture>
 		</control>
 		<!-- Loading indicator -->
@@ -41,12 +48,12 @@
 				<posx>58</posx>
 				<posy>74</posy>
 				<width>294</width>
-				<height>43</height>
+				<height>42</height>
 				<texture>search_input.png</texture>
 			</control>
 			<!-- text field -->
 			<control type="label" id="310">
-				<posx>62</posx>
+				<posx>61</posx>
 				<posy>73</posy>
 				<font>keyboardentry</font>
 				<textcolor>Gray</textcolor>
@@ -544,7 +551,7 @@
 						<control type="button" id="8">
 							<font>keyboardbuttonsmall</font>
 							<posx>0</posx>
-							<posy>17</posy>
+							<posy>9</posy>
 							<onleft>100</onleft>
 							<onright>32</onright>
 							<onup>95</onup>
@@ -557,7 +564,7 @@
 						</control>
 						<control type="group">
 							<posx>112</posx>
-							<posy>17</posy>
+							<posy>9</posy>
 							<!-- Space -->
 							<control type="button" id="32">
 								<font>keyboardbuttonsmall</font>
@@ -577,7 +584,7 @@
 						<control type="group">
 							<!-- Clear -->
 							<posx>224</posx>
-							<posy>17</posy>
+							<posy>9</posy>
 							<control type="button" id="10">
 								<font>keyboardbuttonsmall</font>
 								<posx>0</posx>
@@ -606,24 +613,24 @@
 				<control type="grouplist" id="5100">
 					<visible>true</visible>
 					<posx>0</posx>
-					<posy>1</posy>
-					<width>870</width>
+					<posy>-1</posy>
+					<width>856</width>
 					<height>720</height>
 					<ondown>5200</ondown>
 					<onup>310</onup>
 					<onright>350</onright>
 					<onleft>350</onleft>
 					<orientation>vertical</orientation>
-					<itemgap>-44</itemgap>
+					<itemgap>-30</itemgap>					
 					<!-- Movies -->
 					<control type="group" id="7001">
 						<height>260</height>
 						<control type="image">
-							<posx>0</posx>
-							<posy>16</posy>
-							<width>863</width>
+							<posx>50</posx>
+							<posy>28</posy>
+							<width>806</width>
 							<height>207</height>
-							<texture>search_result_background.png</texture>
+							<texture>thumb_background_search.png</texture>
 						</control>
 						<control type="image">
 							<posx>11</posx>
@@ -652,98 +659,96 @@
 							<posx>45</posx>
 							<width>890</width>
 							<height>200</height>
-							<itemlayout width="136" height="172">
+							<itemlayout width="134" height="172">
 								<control type="group">
 									<control type="image">
 										<posx>19</posx>
-										<posy>151</posy>
-										<width>88</width>
-										<height>132</height>
+										<posy>163</posy>
+										<width>96</width>
+										<height>144</height>
 										<texture background="true" diffuse="reflection_poster.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 										<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 									</control>
 									<control type="image">
 										<posx>19</posx>
 										<posy>19</posy>
-										<width>88</width>
-										<height>132</height>
+										<width>96</width>
+										<height>144</height>
 										<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-										<texture background="true" diffuse="diffuse_poster_home.png">$INFO[ListItem.Thumb]</texture>
-										<bordertexture>border_poster_home.png</bordertexture>
+										<texture background="true" diffuse="diffuse_poster_search.png">$INFO[ListItem.Thumb]</texture>
+										<bordertexture>border_poster_search.png</bordertexture>
 									</control>
 								</control>
 								<control type="label">
-									<posx>63</posx>
-									<posy>151</posy>
-									<width>106</width>
+									<posx>67</posx>
+									<posy>163</posy>
+									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Shadow</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
 									<scroll>false</scroll>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>63</posx>
-									<posy>153</posy>
-									<width>106</width>
+									<posx>67</posx>
+									<posy>165</posy>
+									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Gray</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
 									<scroll>false</scroll>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 							</itemlayout>
-							<focusedlayout width="136" height="172">
+							<focusedlayout width="134" height="172">
 								<control type="image">
 									<posx>19</posx>
-									<posy>151</posy>
-									<width>88</width>
-									<height>132</height>
+									<posy>163</posy>
+									<width>96</width>
+									<height>144</height>
 									<texture background="true" diffuse="reflection_poster.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 								</control>
 								<control type="image">
 									<posx>19</posx>
 									<posy>19</posy>
-									<width>88</width>
-									<height>132</height>
+									<width>96</width>
+									<height>144</height>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-									<texture background="true" diffuse="diffuse_poster_home.png">$INFO[ListItem.Thumb]</texture>
-									<bordertexture>border_poster_home.png</bordertexture>
+									<texture background="true" diffuse="diffuse_poster_search.png">$INFO[ListItem.Thumb]</texture>
+									<bordertexture>border_poster_search.png</bordertexture>
 								</control>
 								<control type="image">
-									<posx>7</posx>
-									<posy>7</posy>
-									<width>112</width>
-									<height>156</height>
+									<posx>1</posx>
+									<posy>1</posy>
+									<width>132</width>
+									<height>180</height>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-									<texture>home_poster_focus.png</texture>
+									<texture>focus_poster_search.png</texture>
 								</control>
 								<control type="label">
-									<posx>63</posx>
-									<posy>151</posy>
-									<width>106</width>
+									<posx>67</posx>
+									<posy>163</posy>
+									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Shadow</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
+									<scrollsuffix>  |  </scrollsuffix>
 									<scroll>true</scroll>
 									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>63</posx>
-									<posy>153</posy>
-									<width>106</width>
+									<posx>67</posx>
+									<posy>165</posy>
+									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Orange</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
+									<scrollsuffix>  |  </scrollsuffix>
 									<scroll>true</scroll>
 									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
@@ -756,11 +761,11 @@
 					<control type="group" id="7002">
 						<height>260</height>
 						<control type="image">
-							<posx>0</posx>
-							<posy>16</posy>
-							<width>863</width>
+							<posx>50</posx>
+							<posy>28</posy>
+							<width>806</width>
 							<height>207</height>
-							<texture>search_result_background.png</texture>
+							<texture>thumb_background_search.png</texture>
 						</control>
 						<control type="image">
 							<posx>11</posx>
@@ -789,98 +794,96 @@
 							<posy>0</posy>
 							<width>890</width>
 							<height>200</height>
-							<itemlayout width="136" height="172">
+							<itemlayout width="134" height="172">
 								<control type="group">
 									<control type="image">
 										<posx>19</posx>
-										<posy>151</posy>
-										<width>88</width>
-										<height>132</height>
+										<posy>163</posy>
+										<width>96</width>
+										<height>144</height>
 										<texture background="true" diffuse="reflection_poster.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 										<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 									</control>
 									<control type="image">
 										<posx>19</posx>
 										<posy>19</posy>
-										<width>88</width>
-										<height>132</height>
+										<width>96</width>
+										<height>144</height>
 										<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-										<texture background="true" diffuse="diffuse_poster_home.png">$INFO[ListItem.Thumb]</texture>
-										<bordertexture>border_poster_home.png</bordertexture>
+										<texture background="true" diffuse="diffuse_poster_search.png">$INFO[ListItem.Thumb]</texture>
+										<bordertexture>border_poster_search.png</bordertexture>
 									</control>
 								</control>
 								<control type="label">
-									<posx>63</posx>
-									<posy>151</posy>
-									<width>106</width>
+									<posx>67</posx>
+									<posy>163</posy>
+									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Shadow</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
 									<scroll>false</scroll>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>63</posx>
-									<posy>153</posy>
+									<posx>67</posx>
+									<posy>165</posy>
 									<width>106</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Gray</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
 									<scroll>false</scroll>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 							</itemlayout>
-							<focusedlayout width="136" height="172">
+							<focusedlayout width="134" height="172">
 								<control type="image">
 									<posx>19</posx>
-									<posy>151</posy>
-									<width>88</width>
-									<height>132</height>
+									<posy>163</posy>
+									<width>96</width>
+									<height>144</height>
 									<texture background="true" diffuse="reflection_poster.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 								</control>
 								<control type="image">
 									<posx>19</posx>
 									<posy>19</posy>
-									<width>88</width>
-									<height>132</height>
+									<width>96</width>
+									<height>144</height>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-									<texture background="true" diffuse="diffuse_poster_home.png">$INFO[ListItem.Thumb]</texture>
-									<bordertexture>border_poster_home.png</bordertexture>
+									<texture background="true" diffuse="diffuse_poster_search.png">$INFO[ListItem.Thumb]</texture>
+									<bordertexture>border_poster_search.png</bordertexture>
 								</control>
 								<control type="image">
-									<posx>7</posx>
-									<posy>7</posy>
-									<width>112</width>
-									<height>156</height>
+									<posx>1</posx>
+									<posy>1</posy>
+									<width>132</width>
+									<height>180</height>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-									<texture>home_poster_focus.png</texture>
+									<texture>focus_poster_search.png</texture>
 								</control>
 								<control type="label">
-									<posx>63</posx>
-									<posy>151</posy>
-									<width>106</width>
+									<posx>67</posx>
+									<posy>163</posy>
+									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Shadow</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
+									<scrollsuffix>  |  </scrollsuffix>
 									<scroll>true</scroll>
 									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>63</posx>
-									<posy>153</posy>
-									<width>106</width>
+									<posx>67</posx>
+									<posy>165</posy>
+									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Orange</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
+									<scrollsuffix>  |  </scrollsuffix>
 									<scroll>true</scroll>
 									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
@@ -891,13 +894,13 @@
 					</control>
 					<!-- Episodes -->
 					<control type="group" id="7004">
-						<height>280</height>
+						<height>260</height>
 						<control type="image">
-							<posx>0</posx>
-							<posy>16</posy>
-							<width>863</width>
+							<posx>50</posx>
+							<posy>8</posy>
+							<width>806</width>
 							<height>207</height>
-							<texture>search_result_background.png</texture>
+							<texture>thumb_background_search.png</texture>
 						</control>
 						<control type="image">
 							<posx>11</posx>
@@ -924,148 +927,144 @@
 							<onleft>350</onleft>
 							<posx>45</posx>
 							<width>880</width>
-							<itemlayout width="212" height="280">
+							<itemlayout width="160" height="280">
 								<control type="group">
 									<control type="image">
 										<posx>19</posx>
-										<posy>151</posy>
-										<width>132</width>
-										<height>132</height>
+										<posy>143</posy>
+										<width>124</width>
+										<height>124</height>
 										<texture background="true" diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 										<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 									</control>
 									<control type="image">
 										<posx>19</posx>
 										<posy>19</posy>
-										<width>132</width>
-										<height>132</height>
+										<width>124</width>
+										<height>124</height>
 										<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-										<texture background="true" diffuse="diffuse_square_home.png">$INFO[ListItem.Thumb]</texture>
-										<bordertexture>border_square_home.png</bordertexture>
+										<texture background="true" diffuse="diffuse_square_search.png">$INFO[ListItem.Thumb]</texture>
+										<bordertexture>border_square_search.png</bordertexture>
 									</control>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>151</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>143</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Episode]. $INFO[ListItem.Label]</label>
 									<textcolor>Shadow</textcolor>
 									<scroll>false</scroll>
-									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>153</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>145</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Episode]. $INFO[ListItem.Label]</label>
 									<textcolor>Gray</textcolor>
 									<scroll>false</scroll>
-									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>171</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>163</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.TVShowTitle], Season $INFO[ListItem.Season]</label>
 									<textcolor>Shadow</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
 									<scroll>false</scroll>
-									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>173</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>165</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.TVShowTitle], Season $INFO[ListItem.Season]</label>
 									<textcolor>DarkGray</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
 									<scroll>false</scroll>
-									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 							</itemlayout>
-							<focusedlayout width="212" height="280">
+							<focusedlayout width="160" height="280">
 								<control type="image">
 									<posx>19</posx>
-									<posy>151</posy>
-									<width>132</width>
-									<height>132</height>
+									<posy>143</posy>
+									<width>124</width>
+									<height>124</height>
 									<texture background="true" diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 								</control>
 								<control type="image">
 									<posx>19</posx>
 									<posy>19</posy>
-									<width>132</width>
-									<height>132</height>
+									<width>124</width>
+									<height>124</height>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-									<texture background="true" diffuse="diffuse_square_home.png">$INFO[ListItem.Thumb]</texture>
-									<bordertexture>border_square_home.png</bordertexture>
+									<texture background="true" diffuse="diffuse_square_search.png">$INFO[ListItem.Thumb]</texture>
+									<bordertexture>border_square_search.png</bordertexture>
 								</control>
 								<control type="image">
-									<posx>7</posx>
-									<posy>7</posy>
-									<width>156</width>
-									<height>156</height>
+									<posx>1</posx>
+									<posy>1</posy>
+									<width>160</width>
+									<height>160</height>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-									<texture>home_square_focus.png</texture>
+									<texture>focus_square_search.png</texture>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>151</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>143</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Episode]. $INFO[ListItem.Label]</label>
 									<textcolor>Shadow</textcolor>
+									<scrollsuffix>  |  </scrollsuffix>
 									<scroll>true</scroll>
 									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>153</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>145</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Episode]. $INFO[ListItem.Label]</label>
 									<textcolor>Orange</textcolor>
+									<scrollsuffix>  |  </scrollsuffix>
 									<scroll>true</scroll>
 									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>171</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>163</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.TVShowTitle], Season $INFO[ListItem.Season]</label>
 									<textcolor>Shadow</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
+									<scrollsuffix>  |  </scrollsuffix>
 									<scroll>true</scroll>
 									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>173</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>165</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.TVShowTitle], Season $INFO[ListItem.Season]</label>
 									<textcolor>White</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
+									<scrollsuffix>  |  </scrollsuffix>
 									<scroll>true</scroll>
 									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
@@ -1079,11 +1078,11 @@
 					<control type="group" id="7008">
 						<height>260</height>
 						<control type="image">
-							<posx>0</posx>
-							<posy>16</posy>
-							<width>863</width>
+							<posx>50</posx>
+							<posy>28</posy>
+							<width>806</width>
 							<height>207</height>
-							<texture>search_result_background.png</texture>
+							<texture>thumb_background_search.png</texture>
 						</control>
 						<control type="image">
 							<posx>11</posx>
@@ -1111,98 +1110,96 @@
 							<posx>45</posx>
 							<posy>0</posy>
 							<width>880</width>
-							<itemlayout width="136" height="172">
+							<itemlayout width="134" height="172">
 								<control type="group">
 									<control type="image">
 										<posx>19</posx>
-										<posy>151</posy>
-										<width>88</width>
-										<height>132</height>
+										<posy>163</posy>
+										<width>96</width>
+										<height>144</height>
 										<texture background="true" diffuse="reflection_poster.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 										<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 									</control>
 									<control type="image">
 										<posx>19</posx>
 										<posy>19</posy>
-										<width>88</width>
-										<height>132</height>
+										<width>96</width>
+										<height>144</height>
 										<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-										<texture background="true" diffuse="diffuse_poster_home.png">$INFO[ListItem.Thumb]</texture>
-										<bordertexture>border_poster_home.png</bordertexture>
+										<texture background="true" diffuse="diffuse_poster_search.png">$INFO[ListItem.Thumb]</texture>
+										<bordertexture>border_poster_search.png</bordertexture>
 									</control>
 								</control>
 								<control type="label">
-									<posx>63</posx>
-									<posy>151</posy>
-									<width>106</width>
+									<posx>67</posx>
+									<posy>163</posy>
+									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Shadow</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
 									<scroll>false</scroll>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>63</posx>
-									<posy>153</posy>
-									<width>106</width>
+									<posx>67</posx>
+									<posy>165</posy>
+									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Gray</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
 									<scroll>false</scroll>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 							</itemlayout>
-							<focusedlayout width="136" height="172">
+							<focusedlayout width="134" height="172">
 								<control type="image">
 									<posx>19</posx>
-									<posy>151</posy>
-									<width>88</width>
-									<height>132</height>
+									<posy>163</posy>
+									<width>96</width>
+									<height>144</height>
 									<texture background="true" diffuse="reflection_poster.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 								</control>
 								<control type="image">
 									<posx>19</posx>
 									<posy>19</posy>
-									<width>88</width>
-									<height>132</height>
+									<width>96</width>
+									<height>144</height>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-									<texture background="true" diffuse="diffuse_poster_home.png">$INFO[ListItem.Thumb]</texture>
-									<bordertexture>border_poster_home.png</bordertexture>
+									<texture background="true" diffuse="diffuse_poster_search.png">$INFO[ListItem.Thumb]</texture>
+									<bordertexture>border_poster_search.png</bordertexture>
 								</control>
 								<control type="image">
-									<posx>7</posx>
-									<posy>7</posy>
-									<width>112</width>
-									<height>156</height>
+									<posx>1</posx>
+									<posy>1</posy>
+									<width>132</width>
+									<height>180</height>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-									<texture>home_poster_focus.png</texture>
+									<texture>focus_poster_search.png</texture>
 								</control>
 								<control type="label">
-									<posx>63</posx>
-									<posy>151</posy>
-									<width>106</width>
+									<posx>67</posx>
+									<posy>163</posy>
+									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Shadow</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
+									<scrollsuffix>  |  </scrollsuffix>
 									<scroll>true</scroll>
 									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>63</posx>
-									<posy>153</posy>
-									<width>106</width>
+									<posx>67</posx>
+									<posy>165</posy>
+									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Orange</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
+									<scrollsuffix>  |  </scrollsuffix>
 									<scroll>true</scroll>
 									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
@@ -1214,13 +1211,13 @@
 					</control>
 					<!-- Albums -->
 					<control type="group" id="7009">
-						<height>280</height>
+						<height>260</height>
 						<control type="image">
-							<posx>0</posx>
-							<posy>16</posy>
-							<width>863</width>
+							<posx>50</posx>
+							<posy>8</posy>
+							<width>806</width>
 							<height>207</height>
-							<texture>search_result_background.png</texture>
+							<texture>thumb_background_search.png</texture>
 						</control>
 						<control type="image">
 							<posx>11</posx>
@@ -1248,148 +1245,144 @@
 							<posx>45</posx>
 							<posy>0</posy>
 							<width>890</width>
-							<itemlayout width="212" height="280">
+							<itemlayout width="160" height="280">
 								<control type="group">
 									<control type="image">
 										<posx>19</posx>
-										<posy>151</posy>
-										<width>132</width>
-										<height>132</height>
+										<posy>143</posy>
+										<width>124</width>
+										<height>124</height>
 										<texture background="true" diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 										<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 									</control>
 									<control type="image">
 										<posx>19</posx>
 										<posy>19</posy>
-										<width>132</width>
-										<height>132</height>
+										<width>124</width>
+										<height>124</height>
 										<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-										<texture background="true" diffuse="diffuse_square_home.png">$INFO[ListItem.Thumb]</texture>
-										<bordertexture>border_square_home.png</bordertexture>
+										<texture background="true" diffuse="diffuse_square_search.png">$INFO[ListItem.Thumb]</texture>
+										<bordertexture>border_square_search.png</bordertexture>
 									</control>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>151</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>143</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Shadow</textcolor>
 									<scroll>false</scroll>
-									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>153</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>145</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Gray</textcolor>
 									<scroll>false</scroll>
-									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>171</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>163</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Artist]</label>
 									<textcolor>Shadow</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
 									<scroll>false</scroll>
-									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>173</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>165</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Artist]</label>
 									<textcolor>DarkGray</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
 									<scroll>false</scroll>
-									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 							</itemlayout>
-							<focusedlayout width="212" height="280">
+							<focusedlayout width="160" height="280">
 								<control type="image">
 									<posx>19</posx>
-									<posy>151</posy>
-									<width>132</width>
-									<height>132</height>
+									<posy>143</posy>
+									<width>124</width>
+									<height>124</height>
 									<texture background="true" diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 								</control>
 								<control type="image">
 									<posx>19</posx>
 									<posy>19</posy>
-									<width>132</width>
-									<height>132</height>
+									<width>124</width>
+									<height>124</height>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-									<texture background="true" diffuse="diffuse_square_home.png">$INFO[ListItem.Thumb]</texture>
-									<bordertexture>border_square_home.png</bordertexture>
+									<texture background="true" diffuse="diffuse_square_search.png">$INFO[ListItem.Thumb]</texture>
+									<bordertexture>border_square_search.png</bordertexture>
 								</control>
 								<control type="image">
-									<posx>7</posx>
-									<posy>7</posy>
-									<width>156</width>
-									<height>156</height>
+									<posx>1</posx>
+									<posy>1</posy>
+									<width>160</width>
+									<height>160</height>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-									<texture>home_square_focus.png</texture>
+									<texture>focus_square_search.png</texture>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>151</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>143</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Shadow</textcolor>
+									<scrollsuffix>  |  </scrollsuffix>
 									<scroll>true</scroll>
 									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>153</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>145</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Orange</textcolor>
+									<scrollsuffix>  |  </scrollsuffix>
 									<scroll>true</scroll>
 									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>171</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>163</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Artist]</label>
 									<textcolor>Shadow</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
+									<scrollsuffix>  |  </scrollsuffix>
 									<scroll>true</scroll>
 									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>173</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>165</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Artist]</label>
 									<textcolor>White</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
+									<scrollsuffix>  |  </scrollsuffix>
 									<scroll>true</scroll>
 									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
@@ -1399,15 +1392,15 @@
 							<height>230</height>
 						</control>
 					</control>
-					<!-- Tracks -->
+					<!-- Songs -->
 					<control type="group" id="7010">
-						<height>280</height>
+						<height>260</height>
 						<control type="image">
-							<posx>0</posx>
-							<posy>16</posy>
-							<width>863</width>
+							<posx>50</posx>
+							<posy>8</posy>
+							<width>806</width>
 							<height>207</height>
-							<texture>search_result_background.png</texture>
+							<texture>thumb_background_search.png</texture>
 						</control>
 						<control type="image">
 							<posx>11</posx>
@@ -1418,7 +1411,7 @@
 							<visible>Control.HasFocus(9010)</visible>
 						</control>
 						<control type="label" id="8001">
-							<label>Tracks</label>
+							<label>Songs</label>
 							<font>searchresultheader</font>
 							<textcolor>Gray</textcolor>
 							<posx>63</posx>
@@ -1435,148 +1428,144 @@
 							<posx>45</posx>
 							<posy>0</posy>
 							<width>890</width>
-							<itemlayout width="212" height="280">
+							<itemlayout width="160" height="280">
 								<control type="group">
 									<control type="image">
 										<posx>19</posx>
-										<posy>151</posy>
-										<width>132</width>
-										<height>132</height>
+										<posy>143</posy>
+										<width>124</width>
+										<height>124</height>
 										<texture background="true" diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 										<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 									</control>
 									<control type="image">
 										<posx>19</posx>
 										<posy>19</posy>
-										<width>132</width>
-										<height>132</height>
+										<width>124</width>
+										<height>124</height>
 										<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-										<texture background="true" diffuse="diffuse_square_home.png">$INFO[ListItem.Thumb]</texture>
-										<bordertexture>border_square_home.png</bordertexture>
+										<texture background="true" diffuse="diffuse_square_search.png">$INFO[ListItem.Thumb]</texture>
+										<bordertexture>border_square_search.png</bordertexture>
 									</control>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>151</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>143</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Shadow</textcolor>
 									<scroll>false</scroll>
-									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>153</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>145</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Gray</textcolor>
 									<scroll>false</scroll>
-									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>171</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>163</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Artist]</label>
 									<textcolor>Shadow</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
 									<scroll>false</scroll>
-									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>173</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>165</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Artist]</label>
 									<textcolor>DarkGray</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
 									<scroll>false</scroll>
-									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 							</itemlayout>
-							<focusedlayout width="212" height="280">
+							<focusedlayout width="160" height="280">
 								<control type="image">
 									<posx>19</posx>
-									<posy>151</posy>
-									<width>132</width>
-									<height>132</height>
+									<posy>143</posy>
+									<width>124</width>
+									<height>124</height>
 									<texture background="true" diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 								</control>
 								<control type="image">
 									<posx>19</posx>
 									<posy>19</posy>
-									<width>132</width>
-									<height>132</height>
+									<width>124</width>
+									<height>124</height>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-									<texture background="true" diffuse="diffuse_square_home.png">$INFO[ListItem.Thumb]</texture>
-									<bordertexture>border_square_home.png</bordertexture>
+									<texture background="true" diffuse="diffuse_square_search.png">$INFO[ListItem.Thumb]</texture>
+									<bordertexture>border_square_search.png</bordertexture>
 								</control>
 								<control type="image">
-									<posx>7</posx>
-									<posy>7</posy>
-									<width>156</width>
-									<height>156</height>
+									<posx>1</posx>
+									<posy>1</posy>
+									<width>160</width>
+									<height>160</height>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-									<texture>home_square_focus.png</texture>
+									<texture>focus_square_search.png</texture>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>151</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>143</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Shadow</textcolor>
+									<scrollsuffix>  |  </scrollsuffix>
 									<scroll>true</scroll>
 									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>153</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>145</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Orange</textcolor>
+									<scrollsuffix>  |  </scrollsuffix>
 									<scroll>true</scroll>
 									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>171</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>163</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Artist]</label>
 									<textcolor>Shadow</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
+									<scrollsuffix>  |  </scrollsuffix>
 									<scroll>true</scroll>
 									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>85</posx>
-									<posy>173</posy>
-									<width>146</width>
+									<posx>81</posx>
+									<posy>165</posy>
+									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Artist]</label>
 									<textcolor>White</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
+									<scrollsuffix>  |  </scrollsuffix>
 									<scroll>true</scroll>
 									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
@@ -1590,11 +1579,11 @@
 					<control type="group" id="7013">
 						<height>260</height>
 						<control type="image">
-							<posx>0</posx>
-							<posy>16</posy>
-							<width>863</width>
+							<posx>50</posx>
+							<posy>28</posy>
+							<width>806</width>
 							<height>207</height>
-							<texture>search_result_background.png</texture>
+							<texture>thumb_background_search.png</texture>
 						</control>
 						<control type="image">
 							<posx>11</posx>
@@ -1622,100 +1611,96 @@
 							<posx>45</posx>
 							<posy>0</posy>
 							<width>880</width>
-							<itemlayout width="138" height="172">
+							<itemlayout width="134" height="172">
 								<control type="group">
 									<control type="image">
 										<posx>19</posx>
-										<posy>151</posy>
-										<width>88</width>
-										<height>132</height>
+										<posy>163</posy>
+										<width>96</width>
+										<height>144</height>
 										<texture background="true" diffuse="reflection_poster.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 										<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 									</control>
 									<control type="image">
 										<posx>19</posx>
 										<posy>19</posy>
-										<width>88</width>
-										<height>132</height>
+										<width>96</width>
+										<height>144</height>
 										<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-										<texture background="true" diffuse="diffuse_poster_home.png">$INFO[ListItem.Thumb]</texture>
-										<bordertexture>border_poster_home.png</bordertexture>
+										<texture background="true" diffuse="diffuse_poster_search.png">$INFO[ListItem.Thumb]</texture>
+										<bordertexture>border_poster_search.png</bordertexture>
 									</control>
 								</control>
 								<control type="label">
-									<posx>63</posx>
-									<posy>151</posy>
-									<width>106</width>
+									<posx>67</posx>
+									<posy>163</posy>
+									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Shadow</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
 									<scroll>false</scroll>
-									<scrollspeed>0</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>63</posx>
-									<posy>153</posy>
-									<width>106</width>
+									<posx>67</posx>
+									<posy>165</posy>
+									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Gray</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
 									<scroll>false</scroll>
-									<scrollspeed>0</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 							</itemlayout>
-							<focusedlayout width="138" height="172">
+							<focusedlayout width="134" height="172">
 								<control type="image">
 									<posx>19</posx>
-									<posy>151</posy>
-									<width>88</width>
-									<height>132</height>
+									<posy>163</posy>
+									<width>96</width>
+									<height>144</height>
 									<texture background="true" diffuse="reflection_poster.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 								</control>
 								<control type="image">
 									<posx>19</posx>
 									<posy>19</posy>
-									<width>88</width>
-									<height>132</height>
+									<width>96</width>
+									<height>144</height>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-									<texture background="true" diffuse="diffuse_poster_home.png">$INFO[ListItem.Thumb]</texture>
-									<bordertexture>border_poster_home.png</bordertexture>
+									<texture background="true" diffuse="diffuse_poster_search.png">$INFO[ListItem.Thumb]</texture>
+									<bordertexture>border_poster_search.png</bordertexture>
 								</control>
 								<control type="image">
-									<posx>7</posx>
-									<posy>7</posy>
-									<width>112</width>
-									<height>156</height>
+									<posx>1</posx>
+									<posy>1</posy>
+									<width>132</width>
+									<height>180</height>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-									<texture>home_poster_focus.png</texture>
+									<texture>focus_poster_search.png</texture>
 								</control>
 								<control type="label">
-									<posx>63</posx>
-									<posy>151</posy>
-									<width>106</width>
+									<posx>67</posx>
+									<posy>163</posy>
+									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Shadow</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
+									<scrollsuffix>  |  </scrollsuffix>
 									<scroll>true</scroll>
 									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>63</posx>
-									<posy>153</posy>
-									<width>106</width>
+									<posx>67</posx>
+									<posy>165</posy>
+									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>Orange</textcolor>
-									<scrollsuffix>  -  </scrollsuffix>
+									<scrollsuffix>  |  </scrollsuffix>
 									<scroll>true</scroll>
 									<scrollspeed>30</scrollspeed>
 									<font>homelabel</font>
@@ -1952,6 +1937,13 @@
 					</control>
 				</control>
 			</control>
+		</control>
+		<control type="image" id="0">
+			<posx>404</posx>
+			<posy>0</posy>
+			<width>876</width>
+			<height>4</height>
+			<texture>background_search_top.png</texture>
 		</control>
 	</controls>
 </window>
