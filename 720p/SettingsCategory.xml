@@ -3,28 +3,36 @@
 	<defaultcontrol always="true">3</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
-		<include>Background</include>
+		<control type="largeimage">
+			<texture>background_settings.png</texture>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<visible>true</visible>
+		</control>
 		<include>HeaderSettings</include>
-		<include>Time</include>
 		<control type="grouplist" id="3">
 			<description>Button Area</description>
-			<posx>30</posx>
-			<posy>100</posy>
-			<width>300</width>
+			<posx>47</posx>
+			<posy>80</posy>
+			<width>356</width>
 			<height>480</height>
-			<itemgap>-20</itemgap>
+			<itemgap>1</itemgap>
 			<onleft>5</onleft>
 			<onright>5</onright>
 			<onup>3</onup>
 			<ondown>3</ondown>
 			<orientation>vertical</orientation>
 		</control>
+
+		
 		<control type="grouplist" id="5">
 			<description>Control Area</description>
-			<posx>370</posx>
-			<posy>100</posy>
+			<posx>454</posx>
+			<posy>80</posy>
 			<width>800</width>
-			<height>480</height>
+			<height>600</height>
 			<itemgap>1</itemgap>
 			<onleft>3</onleft>
 			<onright>3</onright>
@@ -33,21 +41,60 @@
 			<orientation>vertical</orientation>
 		</control>
 		<control type="button" id="7">
+			<width>770</width>
+			<font>list1</font>
+			<textcolor>White</textcolor>
+			<focusedcolor>Orange</focusedcolor>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>button_settings_wide.png</texturefocus>
+			<height>54</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<textoffsety>0</textoffsety>
+			<textoffsetx>34</textoffsetx>
+			<pulseonselect>false</pulseonselect>
 		</control>
 		<control type="radiobutton" id="8">
+			<width>770</width>
+			<font>list1</font>
+			<textcolor>White</textcolor>
+			<focusedcolor>Orange</focusedcolor>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>button_settings_wide.png</texturefocus>
+			<height>54</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<textoffsety>0</textoffsety>
+			<textoffsetx>34</textoffsetx>
+			<pulseonselect>false</pulseonselect>
 			
 		</control>
 		<control type="spincontrolex" id="9">
+			<width>770</width>
+			<font>list1</font>
+			<textcolor>White</textcolor>
+			<focusedcolor>Orange</focusedcolor>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>button_settings_wide.png</texturefocus>
+			<height>54</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<textoffsety>0</textoffsety>
+			<textoffsetx>34</textoffsetx>
+			<pulseonselect>false</pulseonselect>
 		</control>
 		<control type="button" id="10">
-			<description>Default Category Button</description>
+			<width>306</width>
+			<font>list1</font>
 			<textcolor>White</textcolor>
-			<focusedcolor>White</focusedcolor>
-			<height>86</height>
+			<focusedcolor>Orange</focusedcolor>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>button_settings.png</texturefocus>
+			<height>54</height>
 			<align>left</align>
-			<textoffsety>63</textoffsety>
-			<textoffsetx>30</textoffsetx>
-			<width>300</width>
+			<aligny>center</aligny>
+			<textoffsety>0</textoffsety>
+			<textoffsetx>34</textoffsetx>
 			<pulseonselect>false</pulseonselect>
 		</control>
 	</controls>
