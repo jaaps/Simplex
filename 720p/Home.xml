@@ -62,7 +62,7 @@
 				<width>1280</width>
 				<height>415</height>
 				<visible>Control.IsVisible(11000) | Control.IsVisible(11003)</visible>
-				<animation effect="fade" start="0" end="100" time="300" delay="300">Visible</animation>
+				<animation effect="fade" start="0" end="100" time="400" delay="460">Visible</animation>
 			</control>
 			<!-- Menubar focus/unfocus -->
 			<control type="image">
@@ -598,10 +598,9 @@
 				<width>1280</width>
 				<height>76</height>
 			</control>
-			<control type="group" id="5100">
+			<control type="grouplist" id="5100">
 				<visible>Control.IsVisible(11000) | Control.IsVisible(11003)</visible>
-				<animation effect="fade" start="0" end="100" time="300" delay="300">Visible</animation>
-				<animation effect="fade" start="100" end="0" time="1" delay="0">Hidden</animation>
+				<animation effect="fade" start="0" end="100" time="400" delay="460">Visible</animation>
 				<posx>47</posx>
 				<posy>392</posy>
 				<onup>300</onup>
