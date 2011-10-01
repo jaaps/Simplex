@@ -15,7 +15,7 @@
 					<description>Panel</description>
 					<posx>0</posx>
 					<posy>0</posy>
-					<height>118</height>
+					<height>120</height>
 					<width>1072</width>
 					<texture>osd/osd_back.png</texture>
 				</control>
@@ -111,7 +111,7 @@
 				<control type="grouplist" id="214">
 					<width>790</width>
 					<posx>895</posx>
-					<posy>16</posy>
+					<posy>17</posy>
 					<height>96</height>
 					<itemgap>-14</itemgap>
 					<onup>-</onup>
@@ -151,7 +151,7 @@
 				<control type="progress" id="23">
 					<description>Progressbar</description>
 					<posx>132</posx>
-					<posy>64</posy>
+					<posy>66</posy>
 					<width>808</width>
 					<height>16</height>
 					<info>Player.Progress</info>
@@ -183,7 +183,7 @@
 				</control>
 				<control type="label">
 					<posx>-5</posx>
-					<posy>64</posy>
+					<posy>66</posy>
 					<width>160</width>
 					<height>16</height>
 					<font>info1</font>
@@ -193,7 +193,7 @@
 				</control>
 				<control type="label">
 					<posx>-5</posx>
-					<posy>62</posy>
+					<posy>64</posy>
 					<width>160</width>
 					<height>16</height>
 					<font>info1</font>
@@ -203,7 +203,7 @@
 				</control>
 				<control type="label">
 					<posx>918</posx>
-					<posy>64</posy>
+					<posy>66</posy>
 					<width>160</width>
 					<height>16</height>
 					<font>info1</font>
@@ -213,7 +213,7 @@
 				</control>
 				<control type="label">
 					<posx>918</posx>
-					<posy>62</posy>
+					<posy>64</posy>
 					<width>160</width>
 					<height>16</height>
 					<font>info1</font>
