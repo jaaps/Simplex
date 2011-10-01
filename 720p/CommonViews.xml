@@ -1089,7 +1089,7 @@
 							<posy>32</posy>
 							<posx>30</posx>
 							<width>395</width>
-							<label>$INFO[ListItem.Artist]</label>
+							<label>$INFO[ListItem.Album], $INFO[ListItem.Artist]</label>
 							<textcolor>Shadow</textcolor>
 							<scroll>false</scroll>
 							<font>plot1</font>
@@ -1098,7 +1098,7 @@
 							<posy>30</posy>
 							<posx>30</posx>
 							<width>395</width>
-							<label>$INFO[ListItem.Artist]</label>
+							<label>$INFO[ListItem.Album], $INFO[ListItem.Artist]</label>
 							<textcolor>DarkGray</textcolor>
 							<scroll>false</scroll>
 							<font>plot1</font>
@@ -1183,7 +1183,7 @@
 							<posy>32</posy>
 							<posx>30</posx>
 							<width>395</width>
-							<label>$INFO[ListItem.Artist]</label>
+							<label>$INFO[ListItem.Album], $INFO[ListItem.Artist]</label>
 							<textcolor>Shadow</textcolor>
 							<scroll>false</scroll>
 							<font>plot1</font>
@@ -1192,7 +1192,7 @@
 							<posy>30</posy>
 							<posx>30</posx>
 							<width>395</width>
-							<label>$INFO[ListItem.Artist]</label>
+							<label>$INFO[ListItem.Album], $INFO[ListItem.Artist]</label>
 							<textcolor>DarkGray</textcolor>
 							<scroll>false</scroll>
 							<font>plot1</font>
@@ -1202,7 +1202,7 @@
 							<posy>30</posy>
 							<posx>30</posx>
 							<width>395</width>
-							<label>$INFO[ListItem.Artist]</label>
+							<label>$INFO[ListItem.Album], $INFO[ListItem.Artist]</label>
 							<textcolor>Gray</textcolor>
 							<scroll>false</scroll>
 							<font>plot1</font>
