@@ -871,7 +871,7 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>list3</font>
-							<textcolor>White</textcolor>
+							<textcolor>Gray</textcolor>
 							<info>ListItem.Duration</info>
 							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
 							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
@@ -1250,7 +1250,7 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>list3</font>
-							<textcolor>White</textcolor>
+							<textcolor>Gray</textcolor>
 							<info>ListItem.Duration</info>
 							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
 							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
