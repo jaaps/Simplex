@@ -835,8 +835,7 @@
 							<width>54</width>
 							<height>24</height>
 							<texture>tracktime.png</texture>
-							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
-							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
+							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 						</control>
 						<control type="label">
 							<visible>Container.Content(songs)</visible>
@@ -849,8 +848,7 @@
 							<font>list3</font>
 							<textcolor>DarkGray</textcolor>
 							<info>ListItem.Duration</info>
-							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
-							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
+							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 						</control>
 						<control type="image">
 							<visible>Container.Content(songs)</visible>
