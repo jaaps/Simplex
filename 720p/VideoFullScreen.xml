@@ -5,9 +5,9 @@
 	<animation effect="fade" time="100">WindowClose</animation>
 	<controls>
 		<control type="group" id="1">
-			<posx>104</posx>
+			<posx>103</posx>
 			<posy>562</posy>
-			<width>1072</width>
+			<width>1074</width>
 			<height>118</height>
 			<visible>Window.IsActive(2005) + !Window.IsActive(142) + !Window.IsActive(2901) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
 			<control type="image" id="1">
@@ -15,7 +15,7 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<height>120</height>
-				<width>1072</width>
+				<width>1074</width>
 				<texture>osd/osd_back_small.png</texture>
 			</control>
 			<control type="progress" id="23">

@@ -7,16 +7,16 @@
 		<control type="group">
 			<visible>!Window.IsActive(123) + !Window.IsActive(124)</visible>
 			<control type="group">
-				<posx>104</posx>
+				<posx>103</posx>
 				<posy>562</posy>
-				<width>1072</width>
+				<width>1074</width>
 				<height>118</height>
 				<control type="image">
 					<description>Panel</description>
 					<posx>0</posx>
 					<posy>0</posy>
 					<height>120</height>
-					<width>1072</width>
+					<width>1074</width>
 					<texture>osd/osd_back.png</texture>
 				</control>
 				<control type="grouplist" id="213">

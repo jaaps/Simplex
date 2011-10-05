@@ -48,7 +48,7 @@
 				<visible>true</visible>
 			</control>
 			<control type="image">
-				<texture>background_overlay_home.png</texture>
+				<texture>background_home.png</texture>
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
