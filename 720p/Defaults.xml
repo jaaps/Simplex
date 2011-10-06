@@ -150,20 +150,4 @@
 		<aligny>center</aligny>
 		<pulseonselect>false</pulseonselect>
 	</default>
-	<default type="scrollbar">
-		<description>Scroll Bar</description>
-		<posx>0</posx>
-		<posy>0</posy>
-		<width>24</width>
-		<height>504</height>
-		<orientation>vertical</orientation>
-		<texturesliderbackground border="10,12,8,14">OSDProgressBackV.png</texturesliderbackground>
-		<texturesliderbar border="10,12,8,14">ScrollBarV.png</texturesliderbar>
-		<texturesliderbarfocus border="10,12,8,14">ScrollBarV.png</texturesliderbarfocus>
-		<textureslidernib>ScrollBarNibVNF.png</textureslidernib>
-		<textureslidernibfocus>ScrollBarNibVFO.png</textureslidernibfocus>
-		<pulseonselect>false</pulseonselect>
-		<showonepage>false</showonepage>
-		<visible allowhiddenfocus="true">true</visible>
-	</default>
 </includes>

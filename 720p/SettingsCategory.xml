@@ -4,12 +4,19 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<control type="image">
-			<texture>background_settings.png</texture>
+			<texture>background.png</texture>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
 			<visible>true</visible>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>404</width>
+			<height>720</height>
+			<texture>background_sidebar.png</texture>
 		</control>
 		<include>HeaderSettings</include>
 		<control type="grouplist" id="3">

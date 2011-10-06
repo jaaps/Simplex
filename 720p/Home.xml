@@ -50,9 +50,9 @@
 			<control type="image">
 				<texture>background_home.png</texture>
 				<posx>0</posx>
-				<posy>0</posy>
+				<posy>304</posy>
 				<width>1280</width>
-				<height>720</height>
+				<height>416</height>
 				<visible>true</visible>
 			</control>
 			<control type="image">
@@ -60,24 +60,31 @@
 				<posx>0</posx>
 				<posy>278</posy>
 				<width>1280</width>
-				<height>415</height>
+				<height>414</height>
 				<visible>Control.IsVisible(11000) | Control.IsVisible(11003)</visible>
 				<animation effect="fade" start="0" end="100" time="400" delay="460">Visible</animation>
 			</control>
 			<!-- Menubar focus/unfocus -->
 			<control type="image">
-				<texture>homemenu_unfocus.png</texture>
+				<texture>homemenu_shadow.png</texture>
 				<posx>0</posx>
-				<posy>298</posy>
+				<posy>294</posy>
 				<width>1280</width>
 				<height>76</height>
 			</control>
 			<control type="image">
+				<texture>homemenu.png</texture>
+				<posx>0</posx>
+				<posy>304</posy>
+				<width>1280</width>
+				<height>50</height>
+			</control>
+			<control type="image">
 				<texture>homemenu_focus.png</texture>
 				<posx>0</posx>
-				<posy>298</posy>
+				<posy>304</posy>
 				<width>1280</width>
-				<height>76</height>
+				<height>50</height>
 				<visible>Control.HasFocus(300) + ![Window.IsVisible(4567) | Window.IsVisible(5678) | Window.IsVisible(6789)]</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
 			</control>
@@ -85,7 +92,7 @@
 			<control type="wraplist" id="300">
 				<description>Home Main Menu</description>
 				<posx>0</posx>
-				<posy>292</posy>
+				<posy>291</posy>
 				<width>1280</width>
 				<height>300</height>
 				<onup>-</onup>
@@ -581,7 +588,7 @@
 			<!-- This label show when the menubar is unfocused -->
 			<control type="label">
 				<posx>535</posx>
-				<posy>292</posy>
+				<posy>291</posy>
 				<width>190</width>
 				<height>76</height>
 				<label>$INFO[Container(300).ListItem(0).Label]</label>
@@ -592,11 +599,11 @@
 				<visible>!Control.HasFocus(300)</visible>
 			</control>
 			<control type="image">
-				<texture background="true">homemenu_overlay.png</texture>
+				<texture background="true">homemenu_diffuse.png</texture>
 				<posx>0</posx>
-				<posy>298</posy>
+				<posy>304</posy>
 				<width>1280</width>
-				<height>76</height>
+				<height>50</height>
 			</control>
 			<control type="grouplist" id="5100">
 				<visible>Control.IsVisible(11000) | Control.IsVisible(11003)</visible>
@@ -702,7 +709,7 @@
 								<width>170</width>
 								<height>236</height>
 								<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-								<texture>home_poster_focus.png</texture>
+								<texture>focus_poster_home.png</texture>
 							</control>
 							<control type="label">
 								<posx>86</posx>
@@ -757,7 +764,7 @@
 								<width>236</width>
 								<height>236</height>
 								<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-								<texture>home_square_focus.png</texture>
+								<texture>focus_square_home.png</texture>
 							</control>
 							<control type="label">
 								<posx>119</posx>
@@ -861,7 +868,7 @@
 								<width>236</width>
 								<height>236</height>
 								<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-								<texture>home_square_focus.png</texture>
+								<texture>focus_square_home.png</texture>
 							</control>
 							<control type="label">
 								<posx>119</posx>
@@ -963,7 +970,7 @@
 								<width>236</width>
 								<height>236</height>
 								<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-								<texture>home_square_focus.png</texture>
+								<texture>focus_square_home.png</texture>
 							</control>
 							<control type="label">
 								<posx>119</posx>

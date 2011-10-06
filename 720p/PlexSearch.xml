@@ -14,7 +14,7 @@
 			<posy>0</posy>
 			<width>404</width>
 			<height>720</height>
-			<texture>background_search.png</texture>
+			<texture>background_sidebar.png</texture>
 		</control>
 		<!-- Loading indicator -->
 		<control type="group">
@@ -632,14 +632,6 @@
 							<height>207</height>
 							<texture>thumb_background_search.png</texture>
 						</control>
-						<control type="image">
-							<posx>11</posx>
-							<posy>118</posy>
-							<width>22</width>
-							<height>44</height>
-							<texture>search_selection_arrow.png</texture>
-							<visible>Control.HasFocus(9001)</visible>
-						</control>
 						<control type="label" id="8001">
 							<label>Movies</label>
 							<font>searchresultheader</font>
@@ -767,14 +759,6 @@
 							<height>207</height>
 							<texture>thumb_background_search.png</texture>
 						</control>
-						<control type="image">
-							<posx>11</posx>
-							<posy>118</posy>
-							<width>22</width>
-							<height>44</height>
-							<texture>search_selection_arrow.png</texture>
-							<visible>Control.HasFocus(9002)</visible>
-						</control>
 						<control type="label" id="8001">
 							<label>TV Shows</label>
 							<font>searchresultheader</font>
@@ -901,14 +885,6 @@
 							<width>806</width>
 							<height>207</height>
 							<texture>thumb_background_search.png</texture>
-						</control>
-						<control type="image">
-							<posx>11</posx>
-							<posy>118</posy>
-							<width>22</width>
-							<height>44</height>
-							<texture>search_selection_arrow.png</texture>
-							<visible>Control.HasFocus(9004)</visible>
 						</control>
 						<control type="label" id="8001">
 							<label>Episodes</label>
@@ -1084,14 +1060,6 @@
 							<height>207</height>
 							<texture>thumb_background_search.png</texture>
 						</control>
-						<control type="image">
-							<posx>11</posx>
-							<posy>118</posy>
-							<width>22</width>
-							<height>44</height>
-							<texture>search_selection_arrow.png</texture>
-							<visible>Control.HasFocus(9008)</visible>
-						</control>
 						<control type="label" id="8001">
 							<label>Artists</label>
 							<font>searchresultheader</font>
@@ -1218,14 +1186,6 @@
 							<width>806</width>
 							<height>207</height>
 							<texture>thumb_background_search.png</texture>
-						</control>
-						<control type="image">
-							<posx>11</posx>
-							<posy>118</posy>
-							<width>22</width>
-							<height>44</height>
-							<texture>search_selection_arrow.png</texture>
-							<visible>Control.HasFocus(9009)</visible>
 						</control>
 						<control type="label" id="8001">
 							<label>Albums</label>
@@ -1402,14 +1362,6 @@
 							<height>207</height>
 							<texture>thumb_background_search.png</texture>
 						</control>
-						<control type="image">
-							<posx>11</posx>
-							<posy>118</posy>
-							<width>22</width>
-							<height>44</height>
-							<texture>search_selection_arrow.png</texture>
-							<visible>Control.HasFocus(9010)</visible>
-						</control>
 						<control type="label" id="8001">
 							<label>Songs</label>
 							<font>searchresultheader</font>
@@ -1584,14 +1536,6 @@
 							<width>806</width>
 							<height>207</height>
 							<texture>thumb_background_search.png</texture>
-						</control>
-						<control type="image">
-							<posx>11</posx>
-							<posy>118</posy>
-							<width>22</width>
-							<height>44</height>
-							<texture>search_selection_arrow.png</texture>
-							<visible>Control.HasFocus(9013)</visible>
 						</control>
 						<control type="label" id="8001">
 							<label>Actors</label>
