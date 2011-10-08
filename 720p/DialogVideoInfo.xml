@@ -9,7 +9,7 @@
 			<visible>Container.Content(Movies)</visible>
 			<control type="group">
 				<control type="image">
-					<texture>poster_background.png</texture>
+					<texture>thumb_background.png</texture>
 					<width>598</width>
 					<height>415</height>
 					<posx>-87</posx>
@@ -228,7 +228,7 @@
 			<visible>Container.Content(TVShows)</visible>
 			<control type="group">
 				<control type="image">
-					<texture>poster_background.png</texture>
+					<texture>thumb_background.png</texture>
 					<width>598</width>
 					<height>415</height>
 					<posx>-87</posx>
@@ -367,7 +367,7 @@
 					<posy>114</posy>
 					<width>598</width>
 					<height>415</height>
-					<texture>poster_background.png</texture>
+					<texture>thumb_background.png</texture>
 				</control>
 				<control type="image">
 					<posx>82</posx>

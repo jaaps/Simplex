@@ -190,6 +190,68 @@
 			<visible>IsEmpty(Container.FirstTitle) + IsEmpty(Container.SecondTitle)</visible>
 		</control>
 	</include>
+	-    <include name="HeaderSettings">
+        <control type="label">
+            <posx>80</posx>
+            <posy>26</posy>
+            <width>1280</width>
+            <height>46</height>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label>Appearance Settings</label>
+            <font>list1</font>
+            <textcolor>Gray</textcolor>
+            <visible>Window.IsActive(appearancesettings)</visible>
+        </control>
+        <control type="label">
+            <posx>80</posx>
+            <posy>26</posy>
+            <width>1280</width>
+            <height>46</height>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label>Video Settings</label>
+            <font>list1</font>
+            <textcolor>Gray</textcolor>
+            <visible>Window.IsActive(videossettings)</visible>
+        </control>
+        <control type="label">
+            <posx>80</posx>
+            <posy>26</posy>
+            <width>1280</width>
+            <height>46</height>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label>Music Settings</label>
+            <font>list1</font>
+            <textcolor>Gray</textcolor>
+            <visible>Window.IsActive(musicsettings)</visible>
+        </control>
+        <control type="label">
+            <posx>80</posx>
+            <posy>26</posy>
+            <width>1280</width>
+            <height>46</height>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label>Picture Settings</label>
+            <font>list1</font>
+            <textcolor>Gray</textcolor>
+            <visible>Window.IsActive(picturessettings)</visible>
+        </control>
+        <control type="label">
+            <posx>80</posx>
+            <posy>26</posy>
+            <width>1280</width>
+            <height>46</height>
+			<align>left</align>
+            <aligny>center</aligny>
+            <label>System Settings</label>
+            <font>list1</font>
+            <textcolor>Gray</textcolor>
+            <visible>Window.IsActive(systemsettings)</visible>
+        </control>
+    </include>
 	<include name="SideMenuBackground">
 		<control type="image">
 			<animation effect="slide" start="0" end="-250" time="400" tween="cubic" easing="inout" condition="!ControlGroup(9000).HasFocus">Conditional</animation>

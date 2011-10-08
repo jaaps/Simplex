@@ -58,20 +58,6 @@
 			</control>
 		</control>
 	</include>
-	<include name="NowPlayingNextCover">
-		<control type="group">
-			<description>Next cover</description>
-			<visible>Player.HasMusicPlaylist</visible>
-			<control type="image">
-				<width>264</width>
-				<height>264</height>
-				<info>MusicPlayer.NextNewCover</info>
-				<aspectratio>stretch</aspectratio>
-				<bordertexture border="20">thumb_background.png</bordertexture>
-				<bordersize>20</bordersize>
-			</control>
-		</control>
-	</include>
 	<include name="NowPlayingCurrentInfo">
 		<control type="group">
 			<description>Current track info</description>

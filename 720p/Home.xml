@@ -56,7 +56,7 @@
 				<visible>true</visible>
 			</control>
 			<control type="image">
-				<texture background="true">poster_background_home.png</texture>
+				<texture background="true">thumb_background_home.png</texture>
 				<posx>0</posx>
 				<posy>278</posy>
 				<width>1280</width>
