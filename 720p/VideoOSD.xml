@@ -27,7 +27,7 @@
 					<itemgap>0</itemgap>
 					<onup>-</onup>
 					<ondown>-</ondown>
-					<onright>17</onright>
+					<onright>18</onright>
 					<onleft>19</onleft>
 					<orientation>horizontal</orientation>
 					<control type="button" id="1009">
@@ -73,9 +73,17 @@
 						<height>38</height>
 					</control>
 					<control type="button" id="1015">
-						<texturenofocus>osd/osd_button_book.png</texturenofocus>
-						<texturefocus>osd/osd_button_book_fo.png</texturefocus>
+						<texturenofocus>osd/osd_button_settings.png</texturenofocus>
+						<texturefocus>osd/osd_button_settings_fo.png</texturefocus>
 						<onclick>XBMC.ActivateWindow(125)</onclick>
+						<width>62</width>
+						<height>38</height>
+					</control>
+					<control type="button" id="1016">
+						<texturenofocus>osd/osd_button_dvd.png</texturenofocus>
+						<texturefocus>osd/osd_button_dvd_fo.png</texturefocus>
+						<onclick>XBMC.PlayerControl(ShowVideoMenu)</onclick>
+						<visible>VideoPlayer.HasMenu</visible>
 						<width>62</width>
 						<height>38</height>
 					</control>
@@ -110,7 +118,7 @@
 				</control>
 				<control type="grouplist" id="214">
 					<width>790</width>
-					<posx>895</posx>
+					<posx>943</posx>
 					<posy>17</posy>
 					<height>96</height>
 					<itemgap>-14</itemgap>
@@ -119,20 +127,6 @@
 					<onright>1009</onright>
 					<onleft>1015</onleft>
 					<orientation>horizontal</orientation>
-					<control type="button" id="17">
-						<texturenofocus>osd/osd_button_dvd.png</texturenofocus>
-						<texturefocus>osd/osd_button_dvd_fo.png</texturefocus>
-						<onclick>XBMC.PlayerControl(ShowVideoMenu)</onclick>
-						<visible>VideoPlayer.HasMenu</visible>
-						<width>62</width>
-						<height>38</height>
-					</control>
-					<control type="image" id="180">
-						<texture>osd/osd_button_dvd_dis.png</texture>
-						<visible>!VideoPlayer.HasMenu</visible>
-						<width>62</width>
-						<height>38</height>
-					</control>
 					<control type="button" id="18">
 						<texturenofocus>osd/osd_button_audio.png</texturenofocus>
 						<texturefocus>osd/osd_button_audio_fo.png</texturefocus>
