@@ -4,7 +4,7 @@
 		<control type="group">
 			<description>List View</description>
 			<control type="group">
-				<visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes) | Container.Content(photo) | Window.IsActive(2) | Container.Content(artists) | Container.Content(albums)]</visible>
+				<visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes) | Container.Content(photo) | Window.IsActive(2) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]</visible>
 				<control type="image">
 					<posx>44</posx>
 					<posy>266</posy>
@@ -230,7 +230,7 @@
 				<!-- /Current Thumb -->
 			</control>
 			<control type="group">
-				<visible>Container.Content(albums)</visible>
+				<visible>Container.Content(albums) | Container.Content(songs)</visible>
 				<control type="image">
 					<posx>44</posx>
 					<posy>266</posy>
