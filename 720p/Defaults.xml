@@ -34,13 +34,13 @@
 		<width>512</width>
 		<align>left</align>
 		<aligny>center</aligny>
-		<textoffsetx>16</textoffsetx>
+		<textoffsetx>30</textoffsetx>
 		<font>list1</font>
 		<label>-</label>
 		<textcolor>White</textcolor>
 		<focusedcolor>Orange</focusedcolor>
 		<disabledcolor>DarkGray</disabledcolor>
-		<texturefocus>button_settings.png</texturefocus>
+		<texturefocus>dialogs/button_settings_dialog.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</default>
@@ -65,8 +65,8 @@
 		<font>list1</font>
 		<textcolor>White</textcolor>
 		<align>left</align>
-		<textoffsetx>16</textoffsetx>
-		<texturefocus>button_settings.png</texturefocus>
+		<textoffsetx>30</textoffsetx>
+		<texturefocus>dialogs/button_settings_dialog.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<textureradiofocus>dialogs/Radio.png</textureradiofocus>
 		<textureradionofocus>-</textureradionofocus>
@@ -76,7 +76,7 @@
 		<selectedcolor>White</selectedcolor>
 		<disabledcolor>DarkGray</disabledcolor>
 		<aligny>center</aligny>
-		<radioposx>594</radioposx>
+		<radioposx>900</radioposx>
 		<pulseonselect>false</pulseonselect>
 	</default>
 	<default type="spincontrol">
@@ -88,7 +88,7 @@
 		<font>list2</font>
 		<textcolor>White</textcolor>
 		<textoffsetx>70</textoffsetx>
-		<texturefocus>button_settings.png</texturefocus>
+		<texturefocus>dialogs/button_settings_dialog.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<textureup>ArrowUpNF.png</textureup>
 		<textureupfocus>ArrowUpFO.png</textureupfocus>
@@ -109,7 +109,7 @@
 		<align>left</align>
 		<aligny>center</aligny>
 		<texturenofocus>-</texturenofocus>
-		<texturefocus>button_settings.png</texturefocus>
+		<texturefocus>dialogs/button_settings_dialog.png</texturefocus>
 		<textureup>ArrowUpNF.png</textureup>
 		<textureupfocus>ArrowUpFO.png</textureupfocus>
 		<texturedown>ArrowDownNF.png</texturedown>
@@ -121,7 +121,7 @@
 		<selectedcolor>White</selectedcolor>
 		<disabledcolor>DarkGray</disabledcolor>
 		<aligny>center</aligny>
-		<textoffsetx>16</textoffsetx>
+		<textoffsetx>30</textoffsetx>
 		<pulseonselect>false</pulseonselect>
 	</default>
 	<default type="progress">
@@ -139,14 +139,14 @@
 		<texturesliderbar>dialogs/sliderbackground.png</texturesliderbar>
 		<textureslidernib>dialogs/slidernib.png</textureslidernib>
 		<textureslidernibfocus>dialogs/slidernibfocus.png</textureslidernibfocus>
-		<texturefocus>button_settings.png</texturefocus>
+		<texturefocus>dialogs/button_settings_dialog.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<font>list1</font>
 		<height>54</height>
 		<width>512</width>
 		<textcolor>White</textcolor>
 		<focusedcolor>Orange</focusedcolor>
-		<textoffsetx>16</textoffsetx>
+		<textoffsetx>30</textoffsetx>
 		<aligny>center</aligny>
 		<pulseonselect>false</pulseonselect>
 	</default>

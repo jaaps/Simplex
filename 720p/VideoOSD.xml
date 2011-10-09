@@ -73,13 +73,6 @@
 						<height>38</height>
 					</control>
 					<control type="button" id="1015">
-						<texturenofocus>osd/osd_button_settings.png</texturenofocus>
-						<texturefocus>osd/osd_button_settings_fo.png</texturefocus>
-						<onclick>XBMC.ActivateWindow(125)</onclick>
-						<width>62</width>
-						<height>38</height>
-					</control>
-					<control type="button" id="1016">
 						<texturenofocus>osd/osd_button_dvd.png</texturenofocus>
 						<texturefocus>osd/osd_button_dvd_fo.png</texturefocus>
 						<onclick>XBMC.PlayerControl(ShowVideoMenu)</onclick>
@@ -87,7 +80,13 @@
 						<width>62</width>
 						<height>38</height>
 					</control>
-				</control>
+                    <control type="image" id="180">
+                        <texture>osd/osd_button_dvd_dis.png</texture>
+                        <visible>!VideoPlayer.HasMenu</visible>
+                        <width>62</width>
+                        <height>38</height>
+                    </control>
+                </control>
 				<control type="group">
 					<posx>505</posx>
 					<posy>16</posy>

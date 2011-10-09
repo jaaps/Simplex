@@ -12,11 +12,11 @@
 			<include>dialogDiffuse</include>
 		</control>
 		<control type="image">
-			<posx>204</posx>
+			<posx>44</posx>
 			<posy>20</posy>
-			<width>872</width>
+			<width>1192</width>
 			<height>680</height>
-			<texture>dialogs/dialog_osd.png</texture>
+			<texture>dialogs/dialog_settings.png</texture>
 		</control>
 		<control type="group">
 			<posy>112</posy>
@@ -28,14 +28,14 @@
 				<height>56</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>Channel Settings</label>
+				<label>Channel Preferences</label>
 				<font>list1</font>
-				<textcolor>White</textcolor>
+				<textcolor>Gray</textcolor>
 			</control>
 			<control type="grouplist" id="2">
-				<posx>325</posx>
+				<posx>165</posx>
 				<posy>60</posy>
-				<width>630</width>
+				<width>950</width>
 				<height>440</height>
 				<itemgap>0</itemgap>
 				<onleft>-</onleft>
