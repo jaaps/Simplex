@@ -440,7 +440,7 @@
 		<control type="grouplist">
 			<posx>91</posx>
 			<posy>534</posy>
-			<visible>!Container.Content(movies) + !Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(albums) + !Container.Content(songs) + !IsEmpty(ListItem.Plot)</visible>
+			<visible>!Container.Content(movies) + !Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(albums) + !Container.Content(songs) + !Window.IsActive(2) + !IsEmpty(ListItem.Plot)</visible>
 			<control type="group">
 				<height>31</height>
 				<visible>!IsEmpty(ListItem.Rating)</visible>
@@ -509,7 +509,7 @@
 					<posy>0</posy>
 					<posx>0</posx>
 					<control type="group">
-						<visible>Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies) | Container.Content(clips)</visible>
+						<visible>Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies) | !Container.Content(clips)</visible>
 						<control type="label">
 							<visible>!Container.Content(episodes)</visible>
 							<posy>3</posy>
@@ -691,7 +691,7 @@
 					<posy>0</posy>
 					<posx>0</posx>
 					<control type="group">
-						<visible>Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies) | Container.Content(clips)</visible>
+						<visible>Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies) | !Container.Content(clips)</visible>
 						<control type="label">
 							<visible>!Container.Content(episodes)</visible>
 							<posy>3</posy>
@@ -909,7 +909,7 @@
 							<aligny>center</aligny>
 							<info>ListItem.Label</info>
 							<textcolor>Shadow</textcolor>
-							<scroll>false</scroll>
+							<scroll>true</scroll>
 							<font>list1</font>
 							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 						</control>
@@ -921,7 +921,7 @@
 							<aligny>center</aligny>
 							<info>ListItem.Label</info>
 							<textcolor>White</textcolor>
-							<scroll>false</scroll>
+							<scroll>true</scroll>
 							<font>list1</font>
 							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 						</control>
