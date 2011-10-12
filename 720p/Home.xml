@@ -47,6 +47,14 @@
 				<loop>yes</loop>
 				<visible>true</visible>
 			</control>
+			<control type="largeimage">
+				<texture>background_overlay_diffuse.png</texture>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
 			<control type="image">
 				<texture>background_home.png</texture>
 				<posx>0</posx>
