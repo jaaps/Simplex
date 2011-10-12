@@ -34,13 +34,12 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>1094</posx>
-				<posy>248</posy>
+				<posx>1083</posx>
+				<posy>256</posy>
 				<width>128</width>
-				<height>50</height>
+				<height>36</height>
 				<aspectratio align="right">keep</aspectratio>
-				<texture>$INFO[Listitem.Property(mediaTag-Studio),flags/Studios/,.png]</texture>
-				<colordiffuse>White</colordiffuse>
+				<texture>$INFO[Listitem.Property(mediaTag::studio)]</texture>
 			</control>
 			<control type="grouplist">
 				<posx>381</posx>
@@ -60,7 +59,7 @@
 						<textcolor>Orange</textcolor>
 					</control>
 					<control type="label">
-						<width>830</width>
+						<width>600</width>
 						<posy>36</posy>
 						<font>info3</font>
 						<align>left</align>
@@ -167,6 +166,16 @@
 							<label>Length $INFO[ListItem.Duration]</label>
 							<wrapmultiline>false</wrapmultiline>
 						</control>
+						<control type="label">
+							<height>1</height>
+							<label/>
+						</control>
+						<control type="image">
+							<height>20</height>
+							<info>Listitem.Property(mediaTag::contentRating)</info>
+							<aspectratio aligny="bottom" align="left">keep</aspectratio>
+							<colordiffuse>Gray</colordiffuse>
+						</control>
 						<control type="image">
 							<width>106</width>
 							<height>20</height>
@@ -223,6 +232,63 @@
 					</control>
 				</control>
 			</control>
+			<control type="group">
+				<posx>-69</posx>
+				<posy>620</posy>
+				<control type="grouplist">
+					<orientation>horizontal</orientation>
+					<itemgap>15</itemgap>
+					<align>right</align>
+					<control type="image">
+						<visible>!IsEmpty(Listitem.Property(mediaTag::videoResolution))</visible>
+						<height>18</height>
+						<width min="1" max="95">auto</width>
+						<info>Listitem.Property(mediaTag::videoResolution)</info>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>DarkGray</colordiffuse>
+					</control>
+					<control type="image">
+						<visible>!IsEmpty(Listitem.Property(mediaTag::aspectRatio))</visible>
+						<height>18</height>
+						<width min="1" max="95">auto</width>
+						<info>Listitem.Property(mediaTag::aspectRatio)</info>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>DarkGray</colordiffuse>
+					</control>
+					<control type="image">
+						<visible>!IsEmpty(Listitem.Property(mediaTag::videoCodec))</visible>
+						<height>18</height>
+						<width min="1" max="95">auto</width>
+						<info>Listitem.Property(mediaTag::videoCodec)</info>
+						<colordiffuse>DarkGray</colordiffuse>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="image">
+						<visible>!IsEmpty(Listitem.Property(mediaTag::videoFrameRate))</visible>
+						<height>18</height>
+						<width min="1" max="95">auto</width>
+						<info>Listitem.Property(mediaTag::videoFrameRate)</info>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>DarkGray</colordiffuse>
+					</control>
+					<control type="image">
+						<visible>!IsEmpty(Listitem.Property(mediaTag::audioCodec))</visible>
+						<height>18</height>
+						<width min="1" max="95">auto</width>
+						<info>Listitem.Property(mediaTag::audioCodec)</info>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>DarkGray</colordiffuse>
+					</control>
+					<control type="image">
+						<visible>!IsEmpty(Listitem.Property(mediaTag::audioChannels))</visible>
+						<height>18</height>
+						<width min="1" max="95">auto</width>
+						<info>Listitem.Property(mediaTag::audioChannels)</info>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>DarkGray</colordiffuse>
+					</control>
+				</control>
+			</control>
 		</control>
 		<control type="group">
 			<visible>Container.Content(TVShows)</visible>
@@ -253,13 +319,12 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>1094</posx>
-				<posy>237</posy>
+				<posx>1083</posx>
+				<posy>248</posy>
 				<width>128</width>
-				<height>50</height>
+				<height>26</height>
 				<aspectratio align="right">keep</aspectratio>
-				<texture>$INFO[Listitem.Property(mediaTag-Studio),flags/Studios/,.png]</texture>
-				<colordiffuse>White</colordiffuse>
+				<texture>$INFO[Listitem.Property(mediaTag::studio)]</texture>
 			</control>
 			<control type="grouplist">
 				<posx>381</posx>
@@ -347,6 +412,16 @@
 							<label>$INFO[ListItem.Episode] Episodes ($INFO[ListItem.Property(UnWatchedEpisodes)] Unwatched)</label>
 							<wrapmultiline>false</wrapmultiline>
 						</control>
+						<control type="label">
+							<height>1</height>
+							<label/>
+						</control>
+						<control type="image">
+							<height>30</height>
+							<info>Listitem.Property(mediaTag::contentRating)</info>
+							<aspectratio aligny="bottom" align="left">keep</aspectratio>
+							<colordiffuse>Gray</colordiffuse>
+						</control>
 						<control type="image">
 							<width>106</width>
 							<height>20</height>
@@ -393,8 +468,8 @@
 				<width>128</width>
 				<height>50</height>
 				<aspectratio align="right">keep</aspectratio>
-				<texture>$INFO[Listitem.Property(mediaTag-Studio),flags/Studios/,.png]</texture>
-				<colordiffuse>White</colordiffuse>
+				<texture>$INFO[Listitem.Property(mediaTag::studio)</texture>
+				<colordiffuse>Grey</colordiffuse>
 			</control>
 			<control type="grouplist">
 				<posx>521</posx>
@@ -499,6 +574,16 @@
 							<label>Length $INFO[ListItem.Duration]</label>
 							<wrapmultiline>false</wrapmultiline>
 						</control>
+						<control type="label">
+							<height>1</height>
+							<label/>
+						</control>
+						<control type="image">
+							<height>30</height>
+							<info>Listitem.Property(mediaTag::contentRating)</info>
+							<aspectratio aligny="bottom" align="left">keep</aspectratio>
+							<colordiffuse>Gray</colordiffuse>
+						</control>
 						<control type="image">
 							<width>106</width>
 							<height>20</height>
@@ -537,6 +622,63 @@
 							<label>$INFO[ListItem.Writer]</label>
 							<wrapmultiline>true</wrapmultiline>
 						</control>
+					</control>
+				</control>
+			</control>
+			<control type="group">
+				<posx>-69</posx>
+				<posy>620</posy>
+				<control type="grouplist">
+					<orientation>horizontal</orientation>
+					<itemgap>15</itemgap>
+					<align>right</align>
+					<control type="image">
+						<visible>!IsEmpty(Listitem.Property(mediaTag::videoResolution))</visible>
+						<height>18</height>
+						<width min="1" max="95">auto</width>
+						<info>Listitem.Property(mediaTag::videoResolution)</info>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>DarkGray</colordiffuse>
+					</control>
+					<control type="image">
+						<visible>!IsEmpty(Listitem.Property(mediaTag::aspectRatio))</visible>
+						<height>18</height>
+						<width min="1" max="95">auto</width>
+						<info>Listitem.Property(mediaTag::aspectRatio)</info>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>DarkGray</colordiffuse>
+					</control>
+					<control type="image">
+						<visible>!IsEmpty(Listitem.Property(mediaTag::videoCodec))</visible>
+						<height>18</height>
+						<width min="1" max="95">auto</width>
+						<info>Listitem.Property(mediaTag::videoCodec)</info>
+						<colordiffuse>DarkGray</colordiffuse>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="image">
+						<visible>!IsEmpty(Listitem.Property(mediaTag::videoFrameRate))</visible>
+						<height>18</height>
+						<width min="1" max="95">auto</width>
+						<info>Listitem.Property(mediaTag::videoFrameRate)</info>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>DarkGray</colordiffuse>
+					</control>
+					<control type="image">
+						<visible>!IsEmpty(Listitem.Property(mediaTag::audioCodec))</visible>
+						<height>18</height>
+						<width min="1" max="95">auto</width>
+						<info>Listitem.Property(mediaTag::audioCodec)</info>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>DarkGray</colordiffuse>
+					</control>
+					<control type="image">
+						<visible>!IsEmpty(Listitem.Property(mediaTag::audioChannels))</visible>
+						<height>18</height>
+						<width min="1" max="95">auto</width>
+						<info>Listitem.Property(mediaTag::audioChannels)</info>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>DarkGray</colordiffuse>
 					</control>
 				</control>
 			</control>
