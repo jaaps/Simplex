@@ -178,7 +178,7 @@
 						</control>
 						<control type="image">
 							<width>106</width>
-							<height>20</height>
+							<height>18</height>
 							<info>ListItem.StarRating</info>
 							<posx>357</posx>
 							<posy>26</posy>
@@ -424,7 +424,7 @@
 						</control>
 						<control type="image">
 							<width>106</width>
-							<height>20</height>
+							<height>18</height>
 							<info>ListItem.StarRating</info>
 							<posx>357</posx>
 							<posy>26</posy>
@@ -450,7 +450,7 @@
 					<width>400</width>
 					<height>224</height>
 					<texture diffuse="reflection_episode.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-					<aspectratio>stretch</aspectratio>
+					<aspectratio scalediffuse="false">scale</aspectratio>
 				</control>
 				<control type="image">
 					<posx>82</posx>
@@ -458,7 +458,7 @@
 					<width>400</width>
 					<height>224</height>
 					<texture diffuse="diffuse_episode.png">$INFO[ListItem.Thumb]</texture>
-					<aspectratio>stretch</aspectratio>
+					<aspectratio scalediffuse="false">scale</aspectratio>
 					<bordertexture>border_episode.png</bordertexture>
 				</control>
 			</control>
@@ -586,7 +586,7 @@
 						</control>
 						<control type="image">
 							<width>106</width>
-							<height>20</height>
+							<height>18</height>
 							<info>ListItem.StarRating</info>
 							<posx>357</posx>
 							<posy>26</posy>

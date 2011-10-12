@@ -113,7 +113,7 @@
 					<width>400</width>
 					<height>224</height>
 					<texture background="true" diffuse="reflection_episode.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-					<aspectratio>stretch</aspectratio>
+					<aspectratio scalediffuse="false">scale</aspectratio>
 					<fadetime>1</fadetime>
 				</control>
 				<!-- /Current Thumb reflection-->
@@ -284,10 +284,10 @@
 					</control>
 				</control>
 				<control type="image">
-					<posx>406</posx>
-					<posy>5</posy>
-					<width>98</width>
-					<height>17</height>
+					<posx>399</posx>
+					<posy>4</posy>
+					<width>106</width>
+					<height>18</height>
 					<align>left</align>
 					<info>ListItem.StarRating</info>
 					<aspectratio aligny="bottom" align="left">keep</aspectratio>
@@ -338,10 +338,10 @@
 					<textcolor>Orange</textcolor>
 				</control>
 				<control type="image">
-					<posx>406</posx>
-					<posy>5</posy>
-					<width>98</width>
-					<height>17</height>
+					<posx>399</posx>
+					<posy>4</posy>
+					<width>106</width>
+					<height>18</height>
 					<align>left</align>
 					<info>ListItem.StarRating</info>
 					<aspectratio aligny="bottom" align="left">keep</aspectratio>
@@ -418,12 +418,12 @@
 					<textcolor>Orange</textcolor>
 				</control>
 				<control type="image">
-					<posx>406</posx>
-					<posy>5</posy>
-					<width>98</width>
-					<height>17</height>
-					<info>ListItem.StarRating</info>
+					<posx>399</posx>
+					<posy>4</posy>
+					<width>106</width>
+					<height>18</height>
 					<align>left</align>
+					<info>ListItem.StarRating</info>
 					<aspectratio aligny="bottom" align="left">keep</aspectratio>
 				</control>
 			</control>
@@ -457,11 +457,11 @@
 					</control>
 				</control>
 				<control type="image">
-					<posx>406</posx>
-					<posy>5</posy>
-					<width>98</width>
-					<height>17</height>
-					<align>right</align>
+					<posx>399</posx>
+					<posy>4</posy>
+					<width>106</width>
+					<height>18</height>
+					<align>left</align>
 					<info>ListItem.StarRating</info>
 					<aspectratio aligny="bottom" align="left">keep</aspectratio>
 				</control>
