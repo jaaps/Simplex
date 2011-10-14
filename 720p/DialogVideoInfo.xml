@@ -177,6 +177,7 @@
 							<colordiffuse>Gray</colordiffuse>
 						</control>
 						<control type="image">
+							<visible>!IsEmpty(ListItem.Rating)</visible>
 							<width>106</width>
 							<height>18</height>
 							<info>ListItem.StarRating</info>
@@ -423,6 +424,7 @@
 							<colordiffuse>Gray</colordiffuse>
 						</control>
 						<control type="image">
+							<visible>!IsEmpty(ListItem.Rating)</visible>
 							<width>106</width>
 							<height>18</height>
 							<info>ListItem.StarRating</info>
@@ -585,6 +587,7 @@
 							<colordiffuse>Gray</colordiffuse>
 						</control>
 						<control type="image">
+							<visible>!IsEmpty(ListItem.Rating)</visible>
 							<width>106</width>
 							<height>18</height>
 							<info>ListItem.StarRating</info>
