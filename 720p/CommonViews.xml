@@ -915,7 +915,6 @@
 							<textcolor>Shadow</textcolor>
 							<scroll>true</scroll>
 							<font>list1</font>
-							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 						</control>
 						<control type="label">
 							<posy>1</posy>
