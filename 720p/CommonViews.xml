@@ -930,19 +930,6 @@
 							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 						</control>
 						<control type="label">
-							<posy>3</posy>
-							<posx>30</posx>
-							<width>395</width>
-							<height>50</height>
-							<aligny>center</aligny>
-							<info>ListItem.Label</info>
-							<textcolor>Shadow</textcolor>
-							<scroll>true</scroll>
-							<font>list1</font>
-							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
-							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
-						</control>
-						<control type="label">
 							<posy>1</posy>
 							<posx>30</posx>
 							<width>395</width>

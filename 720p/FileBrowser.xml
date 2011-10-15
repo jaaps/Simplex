@@ -25,11 +25,10 @@
 			<height>294</height>
 			<texture>dialogs/browse.png</texture>
 		</control>
-		<control type="label">
+		<control type="label" id="411">
 			<description>heading label</description>
 			<posy>180</posy>
 			<width>1280</width>
-			<label>Browse for subtitle</label>
 			<align>center</align>
 			<font>list1</font>
 			<textcolor>White</textcolor>
