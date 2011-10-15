@@ -15,7 +15,7 @@
 			<posy>78</posy>
 			<width>732</width>
 			<height>564</height>
-			<texture>dialogs/dialog_keyboard.png</texture>
+			<texture>dialogs/dialog_keyboard&browse.png</texture>
 		</control>
 		<control type="image">
 			<posx>394</posx>
@@ -31,7 +31,7 @@
 				<posy>13</posy>
 				<posx>34</posx>
 				<width>542</width>
-				<textcolor>White</textcolor>
+				<textcolor>Gray</textcolor>
 				<align>center</align>
 				<font>list1</font>
 			</control>
