@@ -147,7 +147,7 @@
 					<width>330</width>
 					<height>330</height>
 					<texture background="true" diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-					<aspectratio scalediffuse="false" aligny="top" align="center">scale</aspectratio>
+					<aspectratio scalediffuse="false" aligny="center" align="center">scale</aspectratio>
 					<fadetime>1</fadetime>
 				</control>
 				<!-- /Current Thumb reflection-->
