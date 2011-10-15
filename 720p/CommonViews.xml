@@ -509,7 +509,7 @@
 					<posy>0</posy>
 					<posx>0</posx>
 					<control type="group">
-						<visible>[Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies)] + !Container.Content(clips)</visible>
+						<visible>Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies) | Container.Content(clips)</visible>
 						<control type="label">
 							<visible>!Container.Content(episodes)</visible>
 							<posy>3</posy>
@@ -622,7 +622,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>!Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(movies)</visible>
+						<visible>!Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(movies) + !Container.Content(clips)</visible>
 						<control type="label">
 							<posy>3</posy>
 							<posx>30</posx>
@@ -695,7 +695,7 @@
 					<posy>0</posy>
 					<posx>0</posx>
 					<control type="group">
-						<visible>[Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies)] + Container.Content(clips)</visible>
+						<visible>Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies) | Container.Content(clips)</visible>
 						<control type="label">
 							<visible>!Container.Content(episodes)</visible>
 							<posy>3</posy>
@@ -904,7 +904,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>!Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(movies)</visible>
+						<visible>!Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(movies) + !Container.Content(clips)</visible>
 						<control type="label">
 							<posy>3</posy>
 							<posx>30</posx>
