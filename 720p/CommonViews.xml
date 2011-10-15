@@ -947,7 +947,7 @@
 							<posx>10</posx>
 							<width>12</width>
 							<height>12</height>
-							<texture>OverlayNowPlaying.png</texture>
+							<texture>OverlayNowPlayingFO.png</texture>
 							<aspectratio align="left" alingy="center">keep</aspectratio>
 							<visible>StringCompare(MusicPlayer.Title,ListItem.Title) + StringCompare(MusicPlayer.Artist,ListItem.Artist) + StringCompare(MusicPlayer.Album,ListItem.Album) + Container.Content(songs)</visible>
 						</control>
@@ -1263,7 +1263,7 @@
 							<posx>10</posx>
 							<width>12</width>
 							<height>12</height>
-							<texture>OverlayNowPlaying.png</texture>
+							<texture>OverlayNowPlayingFO.png</texture>
 							<aspectratio align="left" alingy="center">keep</aspectratio>
 							<visible>StringCompare(MusicPlayer.Title,ListItem.Title) + StringCompare(MusicPlayer.Artist,ListItem.Artist) + StringCompare(MusicPlayer.Album,ListItem.Album) + Container.Content(songs)</visible>
 						</control>
