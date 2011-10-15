@@ -654,23 +654,27 @@
 							<aspectratio align="left" alingy="center">keep</aspectratio>
 							<visible>StringCompare(MusicPlayer.Title,ListItem.Title) + StringCompare(MusicPlayer.Artist,ListItem.Artist) + StringCompare(MusicPlayer.Album,ListItem.Album) + Container.Content(songs)</visible>
 						</control>
-						<control type="image">
+						<control type="label">
 							<visible>Container.Content(songs)</visible>
-							<posy>17</posy>
-							<posx>442</posx>
-							<width>54</width>
-							<height>24</height>
-							<texture>tracktime.png</texture>
+							<posy>15</posy>
+							<posx>468</posx>
+							<width>50</width>
+							<height>31</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>plot1</font>
+							<textcolor>Shadow</textcolor>
+							<info>ListItem.Duration</info>
 						</control>
 						<control type="label">
 							<visible>Container.Content(songs)</visible>
 							<posy>13</posy>
 							<posx>468</posx>
-							<width>42</width>
+							<width>50</width>
 							<height>31</height>
 							<align>center</align>
 							<aligny>center</aligny>
-							<font>list3</font>
+							<font>plot1</font>
 							<textcolor>DarkGray</textcolor>
 							<info>ListItem.Duration</info>
 						</control>
@@ -960,47 +964,40 @@
 							<aspectratio align="left" alingy="center">keep</aspectratio>
 							<visible>StringCompare(MusicPlayer.Title,ListItem.Title) + StringCompare(MusicPlayer.Artist,ListItem.Artist) + StringCompare(MusicPlayer.Album,ListItem.Album) + Container.Content(songs)</visible>
 						</control>
-						<control type="image">
+						<control type="label">
 							<visible>Container.Content(songs)</visible>
-							<posy>17</posy>
-							<posx>442</posx>
-							<width>54</width>
-							<height>24</height>
-							<texture>tracktime.png</texture>
-							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+							<posy>15</posy>
+							<posx>468</posx>
+							<width>50</width>
+							<height>31</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>plot1</font>
+							<textcolor>Shadow</textcolor>
+							<info>ListItem.Duration</info>
 						</control>
 						<control type="label">
 							<visible>Container.Content(songs)</visible>
 							<posy>13</posy>
 							<posx>468</posx>
-							<width>42</width>
+							<width>50</width>
 							<height>31</height>
 							<align>center</align>
 							<aligny>center</aligny>
-							<font>list3</font>
+							<font>plot1</font>
 							<textcolor>DarkGray</textcolor>
 							<info>ListItem.Duration</info>
 							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 						</control>
-						<control type="image">
-							<visible>Container.Content(songs)</visible>
-							<posy>17</posy>
-							<posx>442</posx>
-							<width>54</width>
-							<height>24</height>
-							<texture>tracktimefocus.png</texture>
-							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
-							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
-						</control>
 						<control type="label">
 							<visible>Container.Content(songs)</visible>
 							<posy>13</posy>
 							<posx>468</posx>
-							<width>42</width>
+							<width>50</width>
 							<height>31</height>
 							<align>center</align>
 							<aligny>center</aligny>
-							<font>list3</font>
+							<font>plot1</font>
 							<textcolor>Gray</textcolor>
 							<info>ListItem.Duration</info>
 							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
@@ -1233,23 +1230,27 @@
 							<scroll>false</scroll>
 							<font>plot1</font>
 						</control>
-						<control type="image">
+						<control type="label">
 							<visible>Container.Content(songs)</visible>
-							<posy>22</posy>
-							<posx>442</posx>
-							<width>54</width>
-							<height>24</height>
-							<texture>tracktime.png</texture>
+							<posy>20</posy>
+							<posx>468</posx>
+							<width>50</width>
+							<height>31</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>plot1</font>
+							<textcolor>Shadow</textcolor>
+							<info>ListItem.Duration</info>
 						</control>
 						<control type="label">
 							<visible>Container.Content(songs)</visible>
 							<posy>18</posy>
 							<posx>468</posx>
-							<width>42</width>
+							<width>50</width>
 							<height>31</height>
 							<align>center</align>
 							<aligny>center</aligny>
-							<font>list3</font>
+							<font>plot1</font>
 							<textcolor>DarkGray</textcolor>
 							<info>ListItem.Duration</info>
 						</control>
@@ -1339,47 +1340,40 @@
 							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
 							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
 						</control>
-						<control type="image">
+						<control type="label">
 							<visible>Container.Content(songs)</visible>
-							<posy>22</posy>
-							<posx>442</posx>
-							<width>54</width>
-							<height>24</height>
-							<texture>tracktime.png</texture>
-							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+							<posy>20</posy>
+							<posx>468</posx>
+							<width>50</width>
+							<height>31</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>plot1</font>
+							<textcolor>Shadow</textcolor>
+							<info>ListItem.Duration</info>
 						</control>
 						<control type="label">
 							<visible>Container.Content(songs)</visible>
 							<posy>18</posy>
 							<posx>468</posx>
-							<width>42</width>
+							<width>50</width>
 							<height>31</height>
 							<align>center</align>
 							<aligny>center</aligny>
-							<font>list3</font>
+							<font>plot1</font>
 							<textcolor>DarkGray</textcolor>
 							<info>ListItem.Duration</info>
 							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
 						</control>
-						<control type="image">
-							<visible>Container.Content(songs)</visible>
-							<posy>22</posy>
-							<posx>442</posx>
-							<width>54</width>
-							<height>24</height>
-							<texture>tracktimefocus.png</texture>
-							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
-							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
-						</control>
 						<control type="label">
 							<visible>Container.Content(songs)</visible>
 							<posy>18</posy>
 							<posx>468</posx>
-							<width>42</width>
+							<width>50</width>
 							<height>31</height>
 							<align>center</align>
 							<aligny>center</aligny>
-							<font>list3</font>
+							<font>plot1</font>
 							<textcolor>Gray</textcolor>
 							<info>ListItem.Duration</info>
 							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
