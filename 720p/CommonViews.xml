@@ -501,7 +501,6 @@
 			<height>426</height>
 			<onleft>PageUp</onleft>
 			<onright>PageDown</onright>
-			<viewtype label="List">list</viewtype>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
 			<itemlayout height="52" condition="![!IsEmpty(Container.Property(mixedParents)) + Container.Content(episodes)] + ![!IsEmpty(Container.Property(mixedParents)) + Container.Content(songs)]">
@@ -1390,6 +1389,50 @@
 							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
 						</control>
 					</control>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="panel" id="52">
+			<posx>650</posx>
+			<posy>264</posy>
+			<width>532</width>
+			<height>388</height>
+			<onleft>-</onleft>
+			<onright>-</onright>
+			<onup>52</onup>
+			<ondown>52</ondown>
+			<scrolltime>200</scrolltime>
+			<visible>!Container.Content(plugins) + Window.IsActive(2)</visible>
+			<enable>!Container.Content(plugins) + Window.IsActive(2)</enable>
+			<viewtype label="Photo">Photo</viewtype>
+			<itemlayout height="130" width="130">
+				<control type="image">
+					<posx>4</posx>
+					<posy>4</posy>
+					<width>122</width>
+					<height>122</height>
+					<aspectratio scalediffuse="false" align="center">scale</aspectratio>
+					<texture diffuse="diffuse_square_home.png">$INFO[ListItem.Thumb]</texture>
+					<bordertexture>border_square_home.png</bordertexture>
+				</control>
+			</itemlayout>
+			<focusedlayout height="130" width="130">
+				<control type="image">
+					<posx>4</posx>
+					<posy>4</posy>
+					<width>122</width>
+					<height>122</height>
+					<aspectratio scalediffuse="false" align="center">scale</aspectratio>
+					<texture diffuse="diffuse_square_home.png">$INFO[ListItem.Thumb]</texture>
+					<bordertexture>border_square_home.png</bordertexture>
+				</control>
+				<control type="image">
+					<posx>-7</posx>
+					<posy>-7</posy>
+					<width>144</width>
+					<height>144</height>
+					<aspectratio scalediffuse="false" align="center">scale</aspectratio>
+					<texture>focus_square_home.png</texture>
 				</control>
 			</focusedlayout>
 		</control>
