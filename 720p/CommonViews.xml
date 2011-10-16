@@ -1392,7 +1392,7 @@
 				</control>
 			</focusedlayout>
 		</control>
-		<control type="panel" id="52">
+		<control type="panel" id="51">
 			<posx>650</posx>
 			<posy>264</posy>
 			<width>532</width>
@@ -1402,9 +1402,7 @@
 			<onup>52</onup>
 			<ondown>52</ondown>
 			<scrolltime>200</scrolltime>
-			<visible>!Container.Content(plugins) + Window.IsActive(2)</visible>
-			<enable>!Container.Content(plugins) + Window.IsActive(2)</enable>
-			<viewtype label="Photo">Photo</viewtype>
+			<visible>Window.IsActive(2) + Container.HasFiles</visible>
 			<itemlayout height="130" width="130">
 				<control type="image">
 					<posx>4</posx>
