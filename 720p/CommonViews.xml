@@ -131,40 +131,6 @@
 				<!-- /Current Thumb -->
 			</control>
 			<control type="group">
-				<visible>Container.Content(photo) | Window.IsActive(2)</visible>
-				<control type="image">
-					<posx>44</posx>
-					<posy>266</posy>
-					<width>598</width>
-					<height>415</height>
-					<texture>thumb_background.png</texture>
-					<visible>!IsEmpty(ListItem.Thumb)</visible>
-				</control>
-				<!-- Current Thumb reflection-->
-				<control type="image">
-					<posx>178</posx>
-					<posy>630</posy>
-					<width>330</width>
-					<height>330</height>
-					<texture background="true" diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-					<aspectratio scalediffuse="false" aligny="center" align="center">scale</aspectratio>
-					<fadetime>1</fadetime>
-				</control>
-				<!-- /Current Thumb reflection-->
-				<!-- Current Thumb -->
-				<control type="image">
-					<posx>178</posx>
-					<posy>300</posy>
-					<width>330</width>
-					<height>330</height>
-					<texture background="true" diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
-					<aspectratio scalediffuse="false" aligny="center" align="center">scale</aspectratio>
-					<bordertexture>border_square.png</bordertexture>
-					<fadetime>1</fadetime>
-				</control>
-				<!-- /Current Thumb -->
-			</control>
-			<control type="group">
 				<visible>Container.Content(artists)</visible>
 				<control type="image">
 					<posx>44</posx>
@@ -1393,32 +1359,32 @@
 			</focusedlayout>
 		</control>
 		<control type="panel" id="51">
-			<posx>650</posx>
-			<posy>264</posy>
-			<width>532</width>
-			<height>390</height>
+			<posx>141</posx>
+			<posy>250</posy>
+			<width>1132</width>
+			<height>440</height>
 			<onleft>-</onleft>
 			<onright>-</onright>
 			<scrolltime>200</scrolltime>
 			<visible>Window.IsActive(2) + Container.HasFiles</visible>
 			<preloaditems>2</preloaditems>
-			<itemlayout height="130" width="130">
+			<itemlayout height="146" width="146">
 				<control type="image">
 					<posx>4</posx>
 					<posy>4</posy>
-					<width>122</width>
-					<height>122</height>
+					<width>128</width>
+					<height>128</height>
 					<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 					<texture background="true" diffuse="diffuse_square_home.png">$INFO[ListItem.Thumb]</texture>
 					<bordertexture>border_square_home.png</bordertexture>
 				</control>
 			</itemlayout>
-			<focusedlayout height="130" width="130">
+			<focusedlayout height="146" width="146">
 				<control type="image">
 					<posx>4</posx>
 					<posy>4</posy>
-					<width>122</width>
-					<height>122</height>
+					<width>128</width>
+					<height>128</height>
 					<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 					<texture background="true" diffuse="diffuse_square_home.png">$INFO[ListItem.Thumb]</texture>
 					<bordertexture>border_square_home.png</bordertexture>
