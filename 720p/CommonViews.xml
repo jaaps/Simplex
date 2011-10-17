@@ -1396,13 +1396,12 @@
 			<posx>650</posx>
 			<posy>264</posy>
 			<width>532</width>
-			<height>388</height>
+			<height>390</height>
 			<onleft>-</onleft>
 			<onright>-</onright>
-			<onup>52</onup>
-			<ondown>52</ondown>
 			<scrolltime>200</scrolltime>
 			<visible>Window.IsActive(2) + Container.HasFiles</visible>
+			<preloaditems>2</preloaditems>
 			<itemlayout height="130" width="130">
 				<control type="image">
 					<posx>4</posx>
@@ -1410,7 +1409,7 @@
 					<width>122</width>
 					<height>122</height>
 					<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-					<texture diffuse="diffuse_square_home.png">$INFO[ListItem.Thumb]</texture>
+					<texture background="true" diffuse="diffuse_square_home.png">$INFO[ListItem.Thumb]</texture>
 					<bordertexture>border_square_home.png</bordertexture>
 				</control>
 			</itemlayout>
@@ -1421,7 +1420,7 @@
 					<width>122</width>
 					<height>122</height>
 					<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-					<texture diffuse="diffuse_square_home.png">$INFO[ListItem.Thumb]</texture>
+					<texture background="true" diffuse="diffuse_square_home.png">$INFO[ListItem.Thumb]</texture>
 					<bordertexture>border_square_home.png</bordertexture>
 				</control>
 				<control type="image">
