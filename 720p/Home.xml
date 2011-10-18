@@ -190,7 +190,7 @@
 					<control type="label">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>190</width>
+						<width>200</width>
 						<height>76</height>
 						<label>$INFO[ListItem.Label]</label>
 						<align>center</align>
@@ -669,26 +669,6 @@
 									<aspectratio scalediffuse="false" align="center" background="true">scale</aspectratio>
 									<texture diffuse="diffuse_poster_home.png">$INFO[ListItem.Thumb]</texture>
 									<bordertexture>border_poster_home.png</bordertexture>
-								</control>
-								<control type="label">
-									<posx>86</posx>
-									<posy>223</posy>
-									<width>162</width>
-									<height>30</height>
-									<label>$INFO[ListItem.Label]</label>
-									<textcolor>Shadow</textcolor>
-									<font>homelabel</font>
-									<align>center</align>
-								</control>
-								<control type="label">
-									<posx>86</posx>
-									<posy>225</posy>
-									<width>162</width>
-									<height>30</height>
-									<label>$INFO[ListItem.Label]</label>
-									<textcolor>Gray</textcolor>
-									<font>homelabel</font>
-									<align>center</align>
 								</control>
 							</control>
 						</itemlayout>
