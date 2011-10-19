@@ -86,11 +86,6 @@
 			<size>23</size>
 		</font>
 		<font>
-			<name>list1active</name>
-			<filename>HelveticaNeue</filename>
-			<size>36</size>
-		</font>
-		<font>
 			<name>plot1</name>
 			<filename>HelveticaNeue</filename>
 			<variant>Medium</variant>
@@ -118,7 +113,7 @@
 			<name>homelabel</name>
 			<filename>HelveticaNeue</filename>
 			<variant>Medium</variant>
-			<size>17</size>
+			<size>15</size>
 		</font>
 		<font>
 			<name>searchresultheader</name>

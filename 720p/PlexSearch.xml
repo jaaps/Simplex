@@ -635,7 +635,7 @@
 						<control type="label" id="8001">
 							<label>Movies</label>
 							<font>searchresultheader</font>
-							<textcolor>Gray</textcolor>
+							<textcolor>DarkGray</textcolor>
 							<posx>63</posx>
 							<posy>20</posy>
 						</control>
@@ -673,7 +673,7 @@
 								</control>
 								<control type="label">
 									<posx>67</posx>
-									<posy>163</posy>
+									<posy>162</posy>
 									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -684,7 +684,7 @@
 								</control>
 								<control type="label">
 									<posx>67</posx>
-									<posy>165</posy>
+									<posy>164</posy>
 									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -722,7 +722,7 @@
 								</control>
 								<control type="label">
 									<posx>67</posx>
-									<posy>163</posy>
+									<posy>162</posy>
 									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -735,7 +735,7 @@
 								</control>
 								<control type="label">
 									<posx>67</posx>
-									<posy>165</posy>
+									<posy>164</posy>
 									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -762,7 +762,7 @@
 						<control type="label" id="8001">
 							<label>TV Shows</label>
 							<font>searchresultheader</font>
-							<textcolor>Gray</textcolor>
+							<textcolor>DarkGray</textcolor>
 							<posx>63</posx>
 							<posy>20</posy>
 						</control>
@@ -800,7 +800,7 @@
 								</control>
 								<control type="label">
 									<posx>67</posx>
-									<posy>163</posy>
+									<posy>162</posy>
 									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -811,7 +811,7 @@
 								</control>
 								<control type="label">
 									<posx>67</posx>
-									<posy>165</posy>
+									<posy>164</posy>
 									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -849,7 +849,7 @@
 								</control>
 								<control type="label">
 									<posx>67</posx>
-									<posy>163</posy>
+									<posy>162</posy>
 									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -862,7 +862,7 @@
 								</control>
 								<control type="label">
 									<posx>67</posx>
-									<posy>165</posy>
+									<posy>164</posy>
 									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -889,7 +889,7 @@
 						<control type="label" id="8001">
 							<label>Episodes</label>
 							<font>searchresultheader</font>
-							<textcolor>Gray</textcolor>
+							<textcolor>DarkGray</textcolor>
 							<posx>63</posx>
 							<posy>20</posy>
 						</control>
@@ -925,7 +925,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>143</posy>
+									<posy>142</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Episode]. $INFO[ListItem.Label]</label>
@@ -936,7 +936,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>145</posy>
+									<posy>144</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Episode]. $INFO[ListItem.Label]</label>
@@ -947,7 +947,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>163</posy>
+									<posy>161</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.TVShowTitle], Season $INFO[ListItem.Season]</label>
@@ -958,7 +958,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>165</posy>
+									<posy>163</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.TVShowTitle], Season $INFO[ListItem.Season]</label>
@@ -996,7 +996,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>143</posy>
+									<posy>142</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Episode]. $INFO[ListItem.Label]</label>
@@ -1009,7 +1009,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>145</posy>
+									<posy>144</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Episode]. $INFO[ListItem.Label]</label>
@@ -1022,7 +1022,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>163</posy>
+									<posy>161</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.TVShowTitle], Season $INFO[ListItem.Season]</label>
@@ -1035,7 +1035,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>165</posy>
+									<posy>163</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.TVShowTitle], Season $INFO[ListItem.Season]</label>
@@ -1063,7 +1063,7 @@
 						<control type="label" id="8001">
 							<label>Artists</label>
 							<font>searchresultheader</font>
-							<textcolor>Gray</textcolor>
+							<textcolor>DarkGray</textcolor>
 							<posx>63</posx>
 							<posy>20</posy>
 						</control>
@@ -1100,7 +1100,7 @@
 								</control>
 								<control type="label">
 									<posx>67</posx>
-									<posy>163</posy>
+									<posy>162</posy>
 									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -1111,7 +1111,7 @@
 								</control>
 								<control type="label">
 									<posx>67</posx>
-									<posy>165</posy>
+									<posy>164</posy>
 									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -1149,7 +1149,7 @@
 								</control>
 								<control type="label">
 									<posx>67</posx>
-									<posy>163</posy>
+									<posy>162</posy>
 									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -1162,7 +1162,7 @@
 								</control>
 								<control type="label">
 									<posx>67</posx>
-									<posy>165</posy>
+									<posy>164</posy>
 									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -1190,7 +1190,7 @@
 						<control type="label" id="8001">
 							<label>Albums</label>
 							<font>searchresultheader</font>
-							<textcolor>Gray</textcolor>
+							<textcolor>DarkGray</textcolor>
 							<posx>63</posx>
 							<posy>20</posy>
 						</control>
@@ -1227,7 +1227,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>143</posy>
+									<posy>142</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -1238,7 +1238,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>145</posy>
+									<posy>144</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -1249,7 +1249,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>163</posy>
+									<posy>161</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Artist]</label>
@@ -1260,7 +1260,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>165</posy>
+									<posy>163</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Artist]</label>
@@ -1298,7 +1298,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>143</posy>
+									<posy>142</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -1311,7 +1311,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>145</posy>
+									<posy>144</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -1324,7 +1324,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>163</posy>
+									<posy>161</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Artist]</label>
@@ -1337,7 +1337,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>165</posy>
+									<posy>163</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Artist]</label>
@@ -1365,7 +1365,7 @@
 						<control type="label" id="8001">
 							<label>Songs</label>
 							<font>searchresultheader</font>
-							<textcolor>Gray</textcolor>
+							<textcolor>DarkGray</textcolor>
 							<posx>63</posx>
 							<posy>20</posy>
 						</control>
@@ -1402,7 +1402,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>143</posy>
+									<posy>142</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -1413,7 +1413,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>145</posy>
+									<posy>144</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -1424,7 +1424,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>163</posy>
+									<posy>161</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Artist]</label>
@@ -1435,7 +1435,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>165</posy>
+									<posy>163</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Artist]</label>
@@ -1473,7 +1473,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>143</posy>
+									<posy>142</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -1486,7 +1486,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>145</posy>
+									<posy>144</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -1499,7 +1499,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>163</posy>
+									<posy>161</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Artist]</label>
@@ -1512,7 +1512,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>165</posy>
+									<posy>163</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Artist]</label>
@@ -1540,7 +1540,7 @@
 						<control type="label" id="8001">
 							<label>Actors</label>
 							<font>searchresultheader</font>
-							<textcolor>Gray</textcolor>
+							<textcolor>DarkGray</textcolor>
 							<posx>63</posx>
 							<posy>20</posy>
 						</control>
@@ -1577,7 +1577,7 @@
 								</control>
 								<control type="label">
 									<posx>67</posx>
-									<posy>163</posy>
+									<posy>162</posy>
 									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -1588,7 +1588,7 @@
 								</control>
 								<control type="label">
 									<posx>67</posx>
-									<posy>165</posy>
+									<posy>164</posy>
 									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -1626,7 +1626,7 @@
 								</control>
 								<control type="label">
 									<posx>67</posx>
-									<posy>163</posy>
+									<posy>162</posy>
 									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -1639,7 +1639,7 @@
 								</control>
 								<control type="label">
 									<posx>67</posx>
-									<posy>165</posy>
+									<posy>164</posy>
 									<width>112</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -1667,7 +1667,7 @@
 						<control type="label" id="8001">
 							<label>Videos</label>
 							<font>searchresultheader</font>
-							<textcolor>Gray</textcolor>
+							<textcolor>DarkGray</textcolor>
 							<posx>63</posx>
 							<posy>20</posy>
 						</control>
@@ -1704,7 +1704,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>143</posy>
+									<posy>142</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -1715,7 +1715,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>145</posy>
+									<posy>144</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -1726,7 +1726,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>163</posy>
+									<posy>161</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Property(sourceTitle)]</label>
@@ -1737,7 +1737,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>165</posy>
+									<posy>163</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Property(sourceTitle)]</label>
@@ -1775,7 +1775,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>143</posy>
+									<posy>142</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -1788,7 +1788,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>145</posy>
+									<posy>144</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Label]</label>
@@ -1801,7 +1801,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>163</posy>
+									<posy>161</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Property(sourceTitle)]</label>
@@ -1814,7 +1814,7 @@
 								</control>
 								<control type="label">
 									<posx>81</posx>
-									<posy>165</posy>
+									<posy>163</posy>
 									<width>140</width>
 									<height>30</height>
 									<label>$INFO[ListItem.Property(sourceTitle)]</label>
