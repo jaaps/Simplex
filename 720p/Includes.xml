@@ -261,13 +261,6 @@
 			<texture>divider.png</texture>
 		</control>
 	</include>
-	<include name="WindowID">
-		<posx>10</posx>
-		<posy>10</posy>
-		<font>Small</font>
-		<textcolor>Gray</textcolor>
-		<align>left</align>
-	</include>
 	<include name="Background">
 		<control type="largeimage">
 			<info background="true">ListItem.Property(fanart_image)</info>			

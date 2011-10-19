@@ -38,12 +38,6 @@
 			<size>42</size>
 		</font>
 		<font>
-			<name>plex</name>
-			<size>80</size>
-			<filename>Helvetica</filename>
-			<variant>Bold</variant>
-		</font>
-		<font>
 			<name>HomeMenuItem</name>
 			<size>27</size>
 			<filename>HelveticaNeue</filename>
@@ -74,12 +68,6 @@
 			<size>16</size>
 		</font>
 		<font>
-			<name>settings</name>
-			<filename>Helvetica</filename>
-			<variant>Bold</variant>
-			<size>20</size>
-		</font>
-		<font>
 			<name>keyboardbutton</name>
 			<filename>HelveticaNeue</filename>
 			<variant>Medium</variant>
@@ -96,11 +84,6 @@
 			<filename>HelveticaNeue</filename>
 			<variant>Medium</variant>
 			<size>23</size>
-		</font>
-		<font>
-			<name>album1</name>
-			<filename>GraublauWeb.ttf</filename>
-			<size>27</size>
 		</font>
 		<font>
 			<name>list1active</name>
@@ -142,22 +125,6 @@
 			<filename>HelveticaNeue</filename>
 			<variant>Medium</variant>
 			<size>22</size>
-		</font>
-		<font>
-			<name>info4</name>
-			<filename>Helvetica</filename>
-			<variant>Regular</variant>
-			<size>14</size>
-		</font>
-		<font>
-			<name>Large</name>
-			<filename>Arial.ttf</filename>
-			<size>50</size>
-		</font>
-		<font>
-			<name>Small</name>
-			<filename>Arial.ttf</filename>
-			<size>20</size>
 		</font>
 		<!-- Required for system -->
 		<font>
