@@ -133,7 +133,7 @@
 						<aligny>center</aligny>
 						<font>HomeMenuItem</font>
 						<textcolor>White</textcolor>
-						<visible>Control.HasFocus(300)</visible>
+						<visible>Control.HasFocus(300) + ![Window.IsVisible(4567) | Window.IsVisible(5678) | Window.IsVisible(6789)]</visible>
 						<animation effect="fade" time="200">VisibleChange</animation>
 					</control>
 					<control type="label">
@@ -159,7 +159,7 @@
 						<aligny>center</aligny>
 						<font>HomeMenuItem</font>
 						<textcolor>DarkGray</textcolor>
-						<visible>!Control.HasFocus(300)</visible>
+						<visible>!Control.HasFocus(300) | Window.IsVisible(4567) | Window.IsVisible(5678) | Window.IsVisible(6789)</visible>
 						<animation effect="fade" time="200">VisibleChange</animation>
 					</control>
 				</itemlayout>
@@ -174,7 +174,6 @@
 						<aligny>center</aligny>
 						<font>HomeMenuItem</font>
 						<textcolor>Shadow</textcolor>
-						<visible>Control.HasFocus(300)</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -186,7 +185,7 @@
 						<aligny>center</aligny>
 						<font>HomeMenuItem</font>
 						<textcolor>Orange</textcolor>
-						<visible>Control.HasFocus(300)</visible>
+						<visible>![Window.IsVisible(4567) | Window.IsVisible(5678) | Window.IsVisible(6789)]</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -198,35 +197,35 @@
 						<aligny>center</aligny>
 						<font>HomeMenuItem</font>
 						<textcolor>Gray</textcolor>
-						<visible>!Control.HasFocus(300)</visible>
+						<visible>Window.IsVisible(4567) | Window.IsVisible(5678) | Window.IsVisible(6789)</visible>
 					</control>
 				</focusedlayout>
 				<content>
-					<item>
+					<item id="1">
 						<description>Quit</description>
 						<label>Quit</label>
 						<onclick>Plex.Shutdown()</onclick>
 					</item>
-					<item>
+					<item id="2">
 						<description>DVD Button</description>
 						<label>DVD</label>
 						<label2>dvd</label2>
 						<visible>System.HasMediadvd</visible>
 						<onclick>-</onclick>
 					</item>
-					<item>
+					<item id="3">
 						<description>Preferences</description>
 						<label>Preferences</label>
 						<label2>pref</label2>
 						<onclick>-</onclick>
 					</item>
-					<item>
+					<item id="4">
 						<description>Channels</description>
 						<label>Channels</label>
 						<label2>chan</label2>
 						<onclick>-</onclick>
 					</item>
-					<item>
+					<item id="5">
 						<description>Search</description>
 						<label>Search</label>
 						<onclick>Plex.ActivateWindow(10051)</onclick>
