@@ -201,31 +201,31 @@
 					</control>
 				</focusedlayout>
 				<content>
-					<item>
+					<item id="9001">
 						<description>Quit</description>
 						<label>Quit</label>
 						<onclick>Plex.Shutdown()</onclick>
 					</item>
-					<item>
+					<item id="9002">
 						<description>DVD Button</description>
 						<label>DVD</label>
 						<label2>dvd</label2>
 						<visible>System.HasMediadvd</visible>
 						<onclick>-</onclick>
 					</item>
-					<item>
+					<item id="9003">
 						<description>Preferences</description>
 						<label>Preferences</label>
 						<label2>pref</label2>
 						<onclick>-</onclick>
 					</item>
-					<item>
+					<item id="9004">
 						<description>Channels</description>
 						<label>Channels</label>
 						<label2>chan</label2>
 						<onclick>-</onclick>
 					</item>
-					<item>
+					<item id="9005">
 						<description>Search</description>
 						<label>Search</label>
 						<onclick>Plex.ActivateWindow(10051)</onclick>
@@ -1234,6 +1234,8 @@
 					</control>
 				</control>
 				<control type="list" id="11001">
+				</control>
+				<control type="list" id="11002">
 				</control>
 			</control>
 		</control>
