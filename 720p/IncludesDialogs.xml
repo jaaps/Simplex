@@ -244,7 +244,7 @@
 		<texturefocus>dialogs/buttonkb-wide.png</texturefocus>
 		<alttexturefocus>dialogs/buttonkb-wide.png</alttexturefocus>
 		<textcolor>White</textcolor>
-		<textoffsety>17</textoffsety>
+		<textoffsety>14</textoffsety>
 		<focusedcolor>Orange</focusedcolor>
 		<width>92</width>
 		<height>54</height>
@@ -256,7 +256,7 @@
 		<texturenofocus>-</texturenofocus>
 		<texturefocus>dialogs/buttonkb-space.png</texturefocus>
 		<textcolor>White</textcolor>
-		<textoffsety>17</textoffsety>
+		<textoffsety>14</textoffsety>
 		<focusedcolor>Orange</focusedcolor>
 		<width>222</width>
 		<height>54</height>
