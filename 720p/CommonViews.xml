@@ -80,7 +80,7 @@
 					<width>188</width>
 					<height>280</height>
 					<texture background="true" diffuse="reflection_poster.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-					<aspectratio>stretch</aspectratio>
+					<aspectratio scalediffuse="false">scale</aspectratio>
 					<fadetime>1</fadetime>
 				</control>
 				<!-- /Current Thumb reflection-->
@@ -91,7 +91,7 @@
 					<width>188</width>
 					<height>280</height>
 					<texture background="true" diffuse="diffuse_poster.png">$INFO[ListItem.Thumb]</texture>
-					<aspectratio>stretch</aspectratio>
+					<aspectratio scalediffuse="false">scale</aspectratio>
 					<bordertexture>border_poster.png</bordertexture>
 					<fadetime>1</fadetime>
 				</control>
