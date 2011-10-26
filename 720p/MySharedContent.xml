@@ -9,67 +9,40 @@
 		<include>Time</include>
 		<control type="group">
 			<control type="image">
-				<posx>20</posx>
-				<posy>246</posy>
+				<posx>44</posx>
+				<posy>266</posy>
 				<width>598</width>
 				<height>415</height>
 				<texture>thumb_background.png</texture>
 			</control>
 			<control type="image">
-				<posx>21</posx>
-				<posy>600</posy>
-				<width>464</width>
-				<height>330</height>
-				<texture background="true" diffuse="reflection_poster.png" flipy="true">$INFO[ListItem.Thumb1]</texture>
-				<aspectratio aligny="top" align="center">keep</aspectratio>
+				<posx>156</posx>
+				<posy>360</posy>
+				<width>182</width>
+				<height>270</height>
+				<texture background="true" diffuse="diffuse_big_poster.png">$INFO[ListItem.Thumb1]</texture>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<bordertexture>border_big_poster.png</bordertexture>
 				<fadetime>1</fadetime>
 			</control>
 			<control type="image">
-				<posx>21</posx>
-				<posy>280</posy>
-				<width>464</width>
-				<height>330</height>
-				<texture background="true" diffuse="diffuse_poster.png">$INFO[ListItem.Thumb1]</texture>
-				<aspectratio aligny="bottom" align="center">keep</aspectratio>
-				<bordertexture>border_square.png</bordertexture>
+				<posx>233</posx>
+				<posy>330</posy>
+				<width>200</width>
+				<height>300</height>
+				<texture background="true" diffuse="diffuse_big_poster.png">$INFO[ListItem.Thumb2]</texture>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<bordertexture>border_big_poster.png</bordertexture>
 				<fadetime>1</fadetime>
 			</control>
 			<control type="image">
-				<posx>81</posx>
-				<posy>620</posy>
-				<width>464</width>
-				<height>330</height>
-				<texture background="true" diffuse="reflection_poster.png" flipy="true">$INFO[ListItem.Thumb2]</texture>
-				<aspectratio aligny="top" align="center">keep</aspectratio>
-				<fadetime>1</fadetime>
-			</control>
-			<control type="image">
-				<posx>81</posx>
+				<posx>310</posx>
 				<posy>300</posy>
-				<width>464</width>
+				<width>220</width>
 				<height>330</height>
-				<texture background="true" diffuse="diffuse_poster.png">$INFO[ListItem.Thumb2]</texture>
-				<aspectratio aligny="bottom" align="center">keep</aspectratio>
-				<bordertexture>border_square.png</bordertexture>
-				<fadetime>1</fadetime>
-			</control>
-			<control type="image">
-				<posx>141</posx>
-				<posy>640</posy>
-				<width>464</width>
-				<height>330</height>
-				<texture background="true" diffuse="reflection_poster.png" flipy="true">$INFO[ListItem.Thumb3]</texture>
-				<aspectratio aligny="top" align="center">keep</aspectratio>
-				<fadetime>1</fadetime>
-			</control>
-			<control type="image">
-				<posx>141</posx>
-				<posy>320</posy>
-				<width>464</width>
-				<height>330</height>
-				<texture background="true" diffuse="diffuse_poster.png">$INFO[ListItem.Thumb3]</texture>
-				<aspectratio aligny="bottom" align="center">keep</aspectratio>
-				<bordertexture>border_square.png</bordertexture>
+				<texture background="true" diffuse="diffuse_big_poster.png">$INFO[ListItem.Thumb3]</texture>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<bordertexture>border_big_poster.png</bordertexture>
 				<fadetime>1</fadetime>
 			</control>
 		</control>

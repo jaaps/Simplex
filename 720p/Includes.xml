@@ -94,7 +94,7 @@
 			<height>46</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<label>$INFO[Container.FirstTitle,,  |  ]$INFO[Container.SecondTitle]</label>
+			<label>$INFO[Container.FirstTitle,,  &#xB7;  ]$INFO[Container.SecondTitle]</label>
 			<font>title1</font>
 			<textcolor>Shadow</textcolor>
 			<visible>!IsEmpty(Container.SecondTitle)</visible>
@@ -106,7 +106,7 @@
 			<height>46</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<label>$INFO[Container.FirstTitle,,  |  ]$INFO[Container.SecondTitle]</label>
+			<label>$INFO[Container.FirstTitle,,  &#xB7;  ]$INFO[Container.SecondTitle]</label>
 			<font>title1</font>
 			<textcolor>Gray</textcolor>
 			<visible>!IsEmpty(Container.SecondTitle)</visible>
