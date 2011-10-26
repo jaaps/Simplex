@@ -1,12 +1,208 @@
 <?xml version="1.0"?>
-<window id="6">
+<window id="100">
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Background</include>
 		<include>Header</include>
-		<include>HeaderVideo</include>
+		<include>HeaderShared</include>
 		<include>Time</include>
-		<include>List</include>
+		<control type="group">
+			<control type="image">
+				<posx>20</posx>
+				<posy>246</posy>
+				<width>598</width>
+				<height>415</height>
+				<texture>thumb_background.png</texture>
+			</control>
+			<control type="image">
+				<posx>21</posx>
+				<posy>600</posy>
+				<width>464</width>
+				<height>330</height>
+				<texture background="true" diffuse="reflection_poster.png" flipy="true">$INFO[ListItem.Thumb1]</texture>
+				<aspectratio aligny="top" align="center">keep</aspectratio>
+				<fadetime>1</fadetime>
+			</control>
+			<control type="image">
+				<posx>21</posx>
+				<posy>280</posy>
+				<width>464</width>
+				<height>330</height>
+				<texture background="true" diffuse="diffuse_poster.png">$INFO[ListItem.Thumb1]</texture>
+				<aspectratio aligny="bottom" align="center">keep</aspectratio>
+				<bordertexture>border_square.png</bordertexture>
+				<fadetime>1</fadetime>
+			</control>
+			<control type="image">
+				<posx>81</posx>
+				<posy>620</posy>
+				<width>464</width>
+				<height>330</height>
+				<texture background="true" diffuse="reflection_poster.png" flipy="true">$INFO[ListItem.Thumb2]</texture>
+				<aspectratio aligny="top" align="center">keep</aspectratio>
+				<fadetime>1</fadetime>
+			</control>
+			<control type="image">
+				<posx>81</posx>
+				<posy>300</posy>
+				<width>464</width>
+				<height>330</height>
+				<texture background="true" diffuse="diffuse_poster.png">$INFO[ListItem.Thumb2]</texture>
+				<aspectratio aligny="bottom" align="center">keep</aspectratio>
+				<bordertexture>border_square.png</bordertexture>
+				<fadetime>1</fadetime>
+			</control>
+			<control type="image">
+				<posx>141</posx>
+				<posy>640</posy>
+				<width>464</width>
+				<height>330</height>
+				<texture background="true" diffuse="reflection_poster.png" flipy="true">$INFO[ListItem.Thumb3]</texture>
+				<aspectratio aligny="top" align="center">keep</aspectratio>
+				<fadetime>1</fadetime>
+			</control>
+			<control type="image">
+				<posx>141</posx>
+				<posy>320</posy>
+				<width>464</width>
+				<height>330</height>
+				<texture background="true" diffuse="diffuse_poster.png">$INFO[ListItem.Thumb3]</texture>
+				<aspectratio aligny="bottom" align="center">keep</aspectratio>
+				<bordertexture>border_square.png</bordertexture>
+				<fadetime>1</fadetime>
+			</control>
+		</control>
+		<control type="list" id="50">
+			<posx>664</posx>
+			<posy>253</posy>
+			<width>551</width>
+			<height>426</height>
+			<onleft>PageUp</onleft>
+			<onright>PageDown</onright>
+			<scrolltime>200</scrolltime>
+			<preloaditems>2</preloaditems>
+			<itemlayout height="70">
+				<control type="group">
+					<posy>0</posy>
+					<posx>0</posx>
+					<control type="group">
+						<control type="label">
+							<posy>6</posy>
+							<posx>30</posx>
+							<width>395</width>
+							<label>[ListItem.Label]</label>
+							<textcolor>Shadow</textcolor>
+							<scroll>false</scroll>
+							<font>list2</font>
+						</control>
+						<control type="label">
+							<posy>4</posy>
+							<posx>30</posx>
+							<width>395</width>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>White</textcolor>
+							<scroll>false</scroll>
+							<font>list2</font>
+						</control>
+						<control type="label">
+							<posy>32</posy>
+							<posx>30</posx>
+							<width>395</width>
+							<label>$INFO[ListItem.Property(sourceTitle)] &#xB7; $INFO[ListItem.Property(serverName)]</label>
+							<textcolor>Shadow</textcolor>
+							<scroll>false</scroll>
+							<font>plot1</font>
+						</control>
+						<control type="label">
+							<posy>30</posy>
+							<posx>30</posx>
+							<width>395</width>
+							<label>$INFO[ListItem.Property(sourceTitle)] &#xB7; $INFO[ListItem.Property(serverName)]</label>
+							<textcolor>DarkGray</textcolor>
+							<scroll>false</scroll>
+							<font>plot1</font>
+						</control>
+					</control>
+				</control>
+			</itemlayout>
+			<focusedlayout height="70">
+				<control type="image">
+					<posy>1</posy>
+					<width>512</width>
+					<height>70</height>
+					<texture>button_media_info.png</texture>
+					<aspectratio>keep</aspectratio>
+					<animation effect="slide" start="0,-52" end="0,0" time="200" reversible="false" easing="out" condition="Container(50).OnNext">Focus</animation>
+					<animation effect="slide" start="0,52" end="0,0" time="200" reversible="false" easing="out" condition="Container(50).OnPrevious">Focus</animation>
+				</control>
+				<control type="group">
+					<posy>0</posy>
+					<posx>0</posx>
+					<control type="group">
+						<control type="label">
+							<posy>6</posy>
+							<posx>30</posx>
+							<width>395</width>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>Shadow</textcolor>
+							<scroll>true</scroll>
+							<font>list2</font>
+						</control>
+						<control type="label">
+							<posy>4</posy>
+							<posx>30</posx>
+							<width>395</width>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>White</textcolor>
+							<scroll>true</scroll>
+							<font>list2</font>
+							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+						</control>
+						<control type="label">
+							<posy>4</posy>
+							<posx>30</posx>
+							<width>395</width>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>Orange</textcolor>
+							<scroll>true</scroll>
+							<font>list2</font>
+							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
+							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
+						</control>
+						<control type="label">
+							<posy>32</posy>
+							<posx>30</posx>
+							<width>395</width>
+							<label>$INFO[ListItem.Property(sourceTitle)] &#xB7; $INFO[ListItem.Property(serverName)]</label>
+							<textcolor>Shadow</textcolor>
+							<scroll>false</scroll>
+							<font>plot1</font>
+						</control>
+						<control type="label">
+							<posy>30</posy>
+							<posx>30</posx>
+							<width>395</width>
+							<label>$INFO[ListItem.Property(sourceTitle)] &#xB7; $INFO[ListItem.Property(serverName)]</label>
+							<textcolor>DarkGray</textcolor>
+							<scroll>false</scroll>
+							<font>plot1</font>
+							<animation effect="fade" start="100" end="0" time="100" delay="100" reversible="false">Focus</animation>
+						</control>
+						<control type="label">
+							<posy>30</posy>
+							<posx>30</posx>
+							<width>395</width>
+							<label>$INFO[ListItem.Property(sourceTitle)] &#xB7; $INFO[ListItem.Property(serverName)]</label>
+							<textcolor>Gray</textcolor>
+							<scroll>false</scroll>
+							<font>plot1</font>
+							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnNext">Focus</animation>
+							<animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false" condition="Container(50).OnPrevious">Focus</animation>
+						</control>
+					</control>
+				</control>
+			</focusedlayout>
+		</control>
 	</controls>
 </window>

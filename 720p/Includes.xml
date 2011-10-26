@@ -164,6 +164,35 @@
 			<visible>IsEmpty(Container.FirstTitle) + IsEmpty(Container.SecondTitle)</visible>
 		</control>
 	</include>
+	
+	<include name="HeaderShared">
+		<control type="label">
+			<posx>91</posx>
+			<posy>2</posy>
+			<width>800</width>
+			<height>46</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<label>Shared Content</label>
+			<font>title1</font>
+			<textcolor>Shadow</textcolor>
+			<visible>IsEmpty(Container.FirstTitle) + IsEmpty(Container.SecondTitle)</visible>
+		</control>
+		<control type="label">
+			<posx>91</posx>
+			<posy>0</posy>
+			<width>800</width>
+			<height>46</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<label>Shared Content</label>
+			<font>title1</font>
+			<textcolor>Gray</textcolor>
+			<visible>IsEmpty(Container.FirstTitle) + IsEmpty(Container.SecondTitle)</visible>
+		</control>
+	</include>
+	
+	
 	<include name="HeaderPictures">
 		<control type="label">
 			<posx>91</posx>
