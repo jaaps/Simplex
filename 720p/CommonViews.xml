@@ -134,31 +134,12 @@
 				<visible>Container.Content(artists)</visible>
 				<control type="image">
 					<posx>44</posx>
-					<posy>266</posy>
-					<width>598</width>
-					<height>415</height>
-					<texture>thumb_background.png</texture>
-					<visible>IsEmpty(ListItem.Plot)</visible>
-				</control>
-				<control type="image">
-					<posx>44</posx>
 					<posy>159</posy>
 					<width>598</width>
 					<height>415</height>
 					<texture>thumb_background.png</texture>
-					<visible>!IsEmpty(ListItem.Plot)</visible>
 				</control>
 				<!-- Current Thumb reflection-->
-				<control type="image">
-					<posx>178</posx>
-					<posy>630</posy>
-					<width>330</width>
-					<height>330</height>
-					<texture background="true" diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-					<aspectratio scalediffuse="false" aligny="bottom" align="center">scale</aspectratio>
-					<fadetime>1</fadetime>
-					<visible>IsEmpty(ListItem.Plot)</visible>
-				</control>
 				<control type="image">
 					<posx>203</posx>
 					<posy>519</posy>
@@ -167,21 +148,9 @@
 					<texture background="true" diffuse="reflection_artist.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<aspectratio scalediffuse="false" aligny="bottom" align="center">scale</aspectratio>
 					<fadetime>1</fadetime>
-					<visible>!IsEmpty(ListItem.Plot)</visible>
 				</control>
 				<!-- /Current Thumb reflection-->
 				<!-- Current Thumb -->
-				<control type="image">
-					<posx>178</posx>
-					<posy>300</posy>
-					<width>330</width>
-					<height>330</height>
-					<texture background="true" diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
-					<aspectratio scalediffuse="false" aligny="top" align="center">scale</aspectratio>
-					<bordertexture>border_square.png</bordertexture>
-					<fadetime>1</fadetime>
-					<visible>IsEmpty(ListItem.Plot)</visible>
-				</control>
 				<control type="image">
 					<posx>203</posx>
 					<posy>239</posy>
@@ -191,7 +160,6 @@
 					<aspectratio scalediffuse="false" aligny="top" align="center">scale</aspectratio>
 					<bordertexture>border_artist.png</bordertexture>
 					<fadetime>1</fadetime>
-					<visible>!IsEmpty(ListItem.Plot)</visible>
 				</control>
 				<!-- /Current Thumb -->
 			</control>

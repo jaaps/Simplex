@@ -91,7 +91,7 @@
 							<posy>6</posy>
 							<posx>30</posx>
 							<width>395</width>
-							<label>[ListItem.Label]</label>
+							<label>$INFO[ListItem.Label]</label>
 							<textcolor>Shadow</textcolor>
 							<scroll>false</scroll>
 							<font>list2</font>
