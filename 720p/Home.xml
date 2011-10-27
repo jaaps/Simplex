@@ -122,7 +122,7 @@
 				<posy>291</posy>
 				<width>1280</width>
 				<height>300</height>
-				<onup>351</onup>
+				<onup>-</onup>
 				<ondown>350</ondown>
 				<onright>300</onright>
 				<focusposition>3</focusposition>
