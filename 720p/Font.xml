@@ -121,6 +121,12 @@
 			<variant>Medium</variant>
 			<size>22</size>
 		</font>
+		<font>
+			<name>sortletter</name>
+			<filename>HelveticaNeue</filename>
+			<variant>Bold</variant>
+			<size>82</size>
+		</font>
 		<!-- Required for system -->
 		<font>
 			<name>font13</name>

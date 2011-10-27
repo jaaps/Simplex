@@ -1370,22 +1370,22 @@
 		<control type="group">
 			<visible>Container.Scrolling</visible>
 			<control type="image">
-				<posx>815</posx>
-				<posy>370</posy>
-				<width>212</width>
-				<height>204</height>
-				<texture>dialogs/overlay.png</texture>
+				<posx>850</posx>
+				<posy>396</posy>
+				<width>140</width>
+				<height>134</height>
+				<texture>scroll_letter.png</texture>
 			</control>
 			<control type="label">
+				<posx>850</posx>
+				<posy>396</posy>
+				<width>140</width>
+				<height>134</height>
 				<label>$INFO[ListItem.SortLetter]</label>
-				<font>tracktitle</font>
+				<font>sortletter</font>
 				<textcolor>White</textcolor>
-				<width>212</width>
-				<height>204</height>
 				<aligny>center</aligny>
 				<align>center</align>
-				<posx>815</posx>
-				<posy>370</posy>
 			</control>
 		</control>
 	</include>
