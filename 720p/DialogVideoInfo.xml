@@ -21,7 +21,7 @@
 					<width>260</width>
 					<height>388</height>
 					<texture diffuse="reflection_big_poster.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-					<aspectratio>stretch</aspectratio>
+					<aspectratio scalediffuse="false">scale</aspectratio>
 				</control>
 				<control type="image">
 					<posx>82</posx>
@@ -29,7 +29,7 @@
 					<width>260</width>
 					<height>388</height>
 					<texture diffuse="diffuse_big_poster.png">$INFO[ListItem.Thumb]</texture>
-					<aspectratio>stretch</aspectratio>
+					<aspectratio scalediffuse="false">scale</aspectratio>
 					<bordertexture>border_big_poster.png</bordertexture>
 				</control>
 			</control>
