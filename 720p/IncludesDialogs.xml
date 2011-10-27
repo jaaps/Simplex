@@ -123,32 +123,6 @@
 		<font>list1</font>
 		<textcolor>White</textcolor>
 	</include>
-	<include name="dialogButton">
-		<width>120</width>
-		<height>42</height>
-		<font>info1</font>
-		<align>center</align>
-		<aligny>-</aligny>
-		<textoffsety>6</textoffsety>
-		<texturenofocus border="20">dialogs/buttonD.png</texturenofocus>
-		<texturefocus border="20">dialogs/buttonD-focus.png</texturefocus>
-		<textcolor>White</textcolor>
-		<focusedcolor>White</focusedcolor>
-		<pulseonselect>false</pulseonselect>
-	</include>
-	<include name="dialogConfirmButton">
-		<width>120</width>
-		<height>42</height>
-		<font>info1</font>
-		<align>center</align>
-		<aligny>-</aligny>
-		<textoffsety>6</textoffsety>
-		<texturenofocus border="20">dialogs/buttonD.png</texturenofocus>
-		<texturefocus border="20,16,20,16">dialogs/buttonD-focus.png</texturefocus>
-		<textcolor>WhiteTrans</textcolor>
-		<focusedcolor>White</focusedcolor>
-		<pulseonselect>false</pulseonselect>
-	</include>
 	<include name="dialogListButton">
 		<textcolor>White</textcolor>
 		<textoffsetx>15</textoffsetx>
@@ -169,18 +143,6 @@
 		<aligny>center</aligny>
 		<height>40</height>
 		<texture border="3">dialogs/list-nofocus.png</texture>
-	</include>
-	<include name="dialogTextField">
-		<height>40</height>
-		<font>info1</font>
-		<align>center</align>
-		<textoffsety>5</textoffsety>
-		<texturenofocus border="10,0,10,0">dialogs/textField.png</texturenofocus>
-		<texturefocus border="10,0,10,0">dialogs/textFieldFocus.png</texturefocus>
-		<textcolor>Black</textcolor>
-		<shadowcolor>-</shadowcolor>
-		<focusedcolor>Black</focusedcolor>
-		<pulseonselect>false</pulseonselect>
 	</include>
 	<include name="dialogRadio">
 		<height>40</height>

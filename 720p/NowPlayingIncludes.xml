@@ -1,37 +1,5 @@
 <?xml version="1.0"?>
 <includes>
-	<include name="BackgroundNowPlaying">
-		<control type="group">
-			<visible>MusicPlayer.NowPlayingFlipped</visible>
-			<animation effect="fade" start="0" end="100" time="900">Visible</animation>
-			<animation effect="fade" start="100" end="0" time="900">Hidden</animation>
-			<control type="image">
-				<description>Background Image</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<aspectratio>stretch</aspectratio>
-				<texture flipx="true">background_music.png</texture>
-				<fadetime>200</fadetime>
-			</control>
-		</control>
-		<control type="group">
-			<visible>!MusicPlayer.NowPlayingFlipped</visible>
-			<animation effect="fade" start="0" end="100" time="900">Visible</animation>
-			<animation effect="fade" start="100" end="0" time="900">Hidden</animation>
-			<control type="image">
-				<description>Background Image</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<aspectratio>stretch</aspectratio>
-				<texture>background_music.png</texture>
-				<fadetime>200</fadetime>
-			</control>
-		</control>
-	</include>
 	<include name="NowPlayingCurrentCover">
 		<control type="group">
 			<description>Current cover</description>
