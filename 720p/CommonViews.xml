@@ -1367,5 +1367,26 @@
 				</control>
 			</focusedlayout>
 		</control>
+		<control type="group">
+			<visible>Container.Scrolling</visible>
+			<control type="image">
+				<posx>815</posx>
+				<posy>370</posy>
+				<width>212</width>
+				<height>204</height>
+				<texture>dialogs/overlay.png</texture>
+			</control>
+			<control type="label">
+				<label>$INFO[ListItem.SortLetter]</label>
+				<font>tracktitle</font>
+				<textcolor>White</textcolor>
+				<width>212</width>
+				<height>204</height>
+				<aligny>center</aligny>
+				<align>center</align>
+				<posx>815</posx>
+				<posy>370</posy>
+			</control>
+		</control>
 	</include>
 </includes>
