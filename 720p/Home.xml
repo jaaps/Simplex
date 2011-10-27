@@ -54,7 +54,7 @@
 			<!-- Fanart from PMS -->
 			<control type="multiimage">
 				<posx>0</posx>
-				<posy>0</posy>
+				<posy>-50</posy>
 				<width>1280</width>
 				<height>720</height>
 				<aspectratio>scale</aspectratio>
@@ -85,7 +85,7 @@
 			<control type="image">
 				<texture background="true">thumb_background_home.png</texture>
 				<posx>0</posx>
-				<posy>278</posy>
+				<posy>265</posy>
 				<width>1280</width>
 				<height>414</height>
 				<visible>Control.IsVisible(11000) | Control.IsVisible(11003)</visible>
@@ -708,10 +708,10 @@
 			</control>
 			<control type="grouplist" id="5100">
 				<posx>47</posx>
-				<posy>392</posy>
+				<posy>379</posy>
 				<onup>300</onup>
 				<height>330</height>
-				<itemgap>-35</itemgap>
+				<itemgap>-39</itemgap>
 				<!-- Recently Added (11000) -->
 				<control type="group" id="7001">
 					<visible>Control.IsVisible(11000) + !Container(300).OnNext + !Container(300).OnPrevious</visible>
@@ -1768,11 +1768,11 @@
 			</control>
 		</control>
 		<control type="image">
-			<texture>home_gradientbottom.png</texture>
+			<texture>home_fade_bottom.png</texture>
 			<posx>0</posx>
-			<posy>695</posy>
+			<posy>675</posy>
 			<width>1280</width>
-			<height>35</height>
+			<height>45</height>
 		</control>
 	</controls>
 </window>
