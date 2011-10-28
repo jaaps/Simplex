@@ -180,15 +180,6 @@
 		<textoffsety>15</textoffsety>
 		<pulseonselect>false</pulseonselect>
 	</include>
-	<include name="dialogScroller">
-		<width>20</width>
-		<texturesliderbackground border="4,7,4,7">dialogScrollerBackground.png</texturesliderbackground>
-		<texturesliderbar border="4">scrollbar_bar.png</texturesliderbar>
-		<texturesliderbarfocus border="4">scrollbar_bar_focus.png</texturesliderbarfocus>
-		<textureslidernib>white.png</textureslidernib>
-		<textureslidernibfocus>-</textureslidernibfocus>
-		<orientation>vertical</orientation>
-	</include>
 	<include name="keyboardButton">
 		<font>keyboardbutton</font>
 		<texturenofocus>-</texturenofocus>
