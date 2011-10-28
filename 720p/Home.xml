@@ -1341,7 +1341,7 @@
 						<posx>18</posx>
 						<posy>2</posy>
 						<visible>!Control.HasFocus(300)</visible>
-						<animation effect="fade" start="0" end="100" time="400" delay="300">Visible</animation>
+						<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
 					</control>
 					<control type="label" id="8002">
 						<font>info1</font>
@@ -1352,7 +1352,7 @@
 						<label>On Deck</label>
 						<posx>18</posx>
 						<visible>!Control.HasFocus(300)</visible>
-						<animation effect="fade" start="0" end="100" time="400">Visible</animation>
+						<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
 					</control>
 					<control type="list" id="11001">
 						<visible allowhiddenfocus="false">false</visible>
