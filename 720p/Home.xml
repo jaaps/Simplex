@@ -148,7 +148,26 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>HomeMenuItem</font>
+<<<<<<< HEAD
 						<textcolor>DarkGray</textcolor>
+=======
+						<textcolor>White</textcolor>
+						<animation effect="fade" start="100" end="0" time="200" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11002) | Control.HasFocus(11003) | Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303)">Conditional</animation>
+						<animation effect="fade" start="0" end="100" time="200" condition="![Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11002) | Control.HasFocus(11003) | Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303)]">Conditional</animation>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>2</posy>
+						<width>200</width>
+						<height>76</height>
+						<label>$INFO[ListItem.Label]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>HomeMenuItem</font>
+						<textcolor>Shadow</textcolor>
+						<animation effect="fade" start="0" end="100" time="200" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11002) | Control.HasFocus(11003) | Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303)">Conditional</animation>
+						<animation effect="fade" start="100" end="0" time="200" condition="![Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11002) | Control.HasFocus(11003) | Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303)]">Conditional</animation>
+>>>>>>> f5ccfefb98d6bf12948ae53c1b0d3f6a4ebdd091
 					</control>
 					<control type="label">
 						<posx>0</posx>
