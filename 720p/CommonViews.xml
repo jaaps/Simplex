@@ -131,7 +131,7 @@
 				<!-- /Current Thumb -->
 			</control>
 			<control type="group">
-				<visible>Container.Content(artists)</visible>
+				<visible>Container.Content(artists) + !SubString(Container.FirstTitle,iTunes,Left)</visible>
 				<control type="image">
 					<posx>44</posx>
 					<posy>159</posy>
@@ -164,7 +164,7 @@
 				<!-- /Current Thumb -->
 			</control>
 			<control type="group">
-				<visible>Container.Content(albums) | Container.Content(songs)</visible>
+				<visible>Container.Content(albums) | Container.Content(songs) | [Container.Content(artists) + SubString(Container.FirstTitle,iTunes,Left)]</visible>
 				<control type="image">
 					<posx>44</posx>
 					<posy>266</posy>
