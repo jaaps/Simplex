@@ -59,7 +59,8 @@
 				<height>720</height>
 				<aspectratio>scale</aspectratio>
 				<aligny>top</aligny>
-				<imagepath background="true">http://localhost:32400/library/arts</imagepath>				<timeperimage>8000</timeperimage>
+				<imagepath background="true">http://localhost:32400/library/arts</imagepath>
+				<timeperimage>8000</timeperimage>
 				<fadetime>1500</fadetime>
 				<randomize>true</randomize>
 				<loop>yes</loop>
@@ -137,8 +138,8 @@
 						<aligny>center</aligny>
 						<font>HomeMenuItem</font>
 						<textcolor>Shadow</textcolor>
-						<visible>Control.HasFocus(300)</visible>
-						<animation effect="fade" time="200">VisibleChange</animation>
+						<animation effect="fade" start="100" end="0" time="200" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11002) | Control.HasFocus(11003) | Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303)">Conditional</animation>
+						<animation effect="fade" start="0" end="100" time="200" condition="![Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11002) | Control.HasFocus(11003) | Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303)]">Conditional</animation>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -151,7 +152,8 @@
 						<font>HomeMenuItem</font>
 						<textcolor>White</textcolor>
 						<visible>Control.HasFocus(300)</visible>
-						<animation effect="fade" time="200">VisibleChange</animation>
+						<animation effect="fade" start="100" end="0" time="200" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11002) | Control.HasFocus(11003) | Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303)">Conditional</animation>
+						<animation effect="fade" start="0" end="100" time="200" condition="![Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11002) | Control.HasFocus(11003) | Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303)]">Conditional</animation>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -163,8 +165,8 @@
 						<aligny>center</aligny>
 						<font>HomeMenuItem</font>
 						<textcolor>Shadow</textcolor>
-						<visible>!Control.HasFocus(300)</visible>
-						<animation effect="fade" time="200">VisibleChange</animation>
+						<animation effect="fade" start="0" end="100" time="200" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11002) | Control.HasFocus(11003) | Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303)">Conditional</animation>
+						<animation effect="fade" start="100" end="0" time="200" condition="![Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11002) | Control.HasFocus(11003) | Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303)]">Conditional</animation>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -176,8 +178,8 @@
 						<aligny>center</aligny>
 						<font>HomeMenuItem</font>
 						<textcolor>DarkGray</textcolor>
-						<visible>!Control.HasFocus(300)</visible>
-						<animation effect="fade" time="200">VisibleChange</animation>
+						<animation effect="fade" start="0" end="100" time="200" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11002) | Control.HasFocus(11003) | Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303)">Conditional</animation>
+						<animation effect="fade" start="100" end="0" time="200" condition="![Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11002) | Control.HasFocus(11003) | Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303)]">Conditional</animation>
 					</control>
 				</itemlayout>
 				<focusedlayout width="210" height="76">
