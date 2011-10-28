@@ -220,7 +220,7 @@
 					<font>info1</font>
 					<align>right</align>
 					<colordiffuse>d0FFFFFF</colordiffuse>
-					<label>$INFO[MusicPlayer.TimeRemaining]</label>
+					<label>$INFO[MusicPlayer.Time]</label>
 				</control>
 				<control type="label">
 					<posx>556</posx>
