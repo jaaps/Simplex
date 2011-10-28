@@ -2,9 +2,6 @@
 <window id="106">
 	<defaultcontrol>1000</defaultcontrol>
 	<include>dialogOpen</include>
-	<coordinates>
-		<origin x="309" y="230">true</origin>
-	</coordinates>
 	<controls>
 		<control type="image">
 			<include>dialogDiffuse</include>

@@ -297,7 +297,17 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<visible>true</visible>
+			<visible>!IsEmpty(ListItem.Property(fanart_image))</visible>
+			<fadetime>300</fadetime>
+		</control>
+		<control type="largeimage">
+			<visible>IsEmpty(ListItem.Property(fanart_image)) + !IsEmpty(ListItem.Thumb)</visible>
+			<info background="true">ListItem.Thumb</info>
+			<aspectratio align="center" aligny="center">scale</aspectratio>			
+			<posx>-50</posx>
+			<posy>-50</posy>
+			<width>1380</width>
+			<height>820</height>
 			<fadetime>300</fadetime>
 		</control>
 		<control type="largeimage">
