@@ -1328,7 +1328,7 @@
 					</control>
 				</control>
 				<control type="group" id="7003">
-					<visible>Control.IsVisible(11001) + !Container(300).OnNext + !Container(300).OnPrevious</visible>
+					<visible>Control.IsVisible(11001) + Control.IsVisible(11000) + !Container(300).OnNext + !Container(300).OnPrevious</visible>
 					<height>330</height>
 					<animation effect="fade" start="0" end="100" time="400" delay="300">Visible</animation>
 					<control type="label" id="8002">
