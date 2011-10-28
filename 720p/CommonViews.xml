@@ -4,7 +4,7 @@
 		<control type="group">
 			<description>List View</description>
 			<control type="group">
-				<visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Control.IsVisible(53)]</visible>
+				<visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes) | Container.Content(photo) | Window.IsActive(2) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Control.IsVisible(53)]</visible>
 				<control type="image">
 					<posx>44</posx>
 					<posy>266</posy>
@@ -126,6 +126,40 @@
 					<texture background="true" diffuse="diffuse_episode.png">$INFO[ListItem.Thumb]</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<bordertexture>border_episode.png</bordertexture>
+					<fadetime>1</fadetime>
+				</control>
+				<!-- /Current Thumb -->
+			</control>
+			<control type="group">
+				<visible>[Container.Content(photo) | Window.IsActive(2)] + !Control.IsVisible(53)</visible>
+				<control type="image">
+					<posx>44</posx>
+					<posy>266</posy>
+					<width>598</width>
+					<height>415</height>
+					<texture>thumb_background.png</texture>
+					<visible>!IsEmpty(ListItem.Thumb)</visible>
+				</control>
+				<!-- Current Thumb reflection-->
+				<control type="image">
+					<posx>178</posx>
+					<posy>630</posy>
+					<width>330</width>
+					<height>330</height>
+					<texture background="true" diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+					<aspectratio scalediffuse="false" aligny="center" align="center">scale</aspectratio>
+					<fadetime>1</fadetime>
+				</control>
+				<!-- /Current Thumb reflection-->
+				<!-- Current Thumb -->
+				<control type="image">
+					<posx>178</posx>
+					<posy>300</posy>
+					<width>330</width>
+					<height>330</height>
+					<texture background="true" diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
+					<aspectratio scalediffuse="false" aligny="center" align="center">scale</aspectratio>
+					<bordertexture>border_square.png</bordertexture>
 					<fadetime>1</fadetime>
 				</control>
 				<!-- /Current Thumb -->
@@ -1369,7 +1403,7 @@
 		</control>
 		<control type="group">
 			<visible>Container.Scrolling + !Control.IsVisible(53)</visible>
-			<animation effect="fade" start="0" end="100" time="200" delay="500">Visible</animation>
+		    <animation effect="fade" start="0" end="100" time="200" delay="500">Visible</animation>
 			<control type="image">
 				<posx>850</posx>
 				<posy>396</posy>
