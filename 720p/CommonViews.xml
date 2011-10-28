@@ -21,47 +21,95 @@
 					<texture>thumb_background.png</texture>
 					<visible>!IsEmpty(ListItem.Plot) + !IsEmpty(ListItem.Thumb)</visible>
 				</control>
-				<control type="image">
-					<posx>111</posx>
-					<posy>630</posy>
-					<width>464</width>
-					<height>330</height>
-					<texture background="true" diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-					<aspectratio aligny="top" align="center">keep</aspectratio>
-					<fadetime>1</fadetime>
-					<visible>IsEmpty(ListItem.Plot)</visible>
+				<control type="group">
+					<visible>!Window.IsActive(MyPics.xml)</visible>
+					<control type="image">
+						<posx>111</posx>
+						<posy>630</posy>
+						<width>464</width>
+						<height>330</height>
+						<texture background="true" diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+						<aspectratio aligny="top" align="center">keep</aspectratio>
+						<fadetime>1</fadetime>
+						<visible>IsEmpty(ListItem.Plot)</visible>
+					</control>
+					<control type="image">
+						<posx>111</posx>
+						<posy>519</posy>
+						<width>464</width>
+						<height>280</height>
+						<texture background="true" diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+						<aspectratio aligny="top" align="center">keep</aspectratio>
+						<fadetime>1</fadetime>
+						<visible>!IsEmpty(ListItem.Plot)</visible>
+					</control>
+					<control type="image">
+						<posx>111</posx>
+						<posy>300</posy>
+						<width>464</width>
+						<height>330</height>
+						<texture background="true" diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
+						<aspectratio aligny="bottom" align="center">keep</aspectratio>
+						<bordertexture>border_square.png</bordertexture>
+						<fadetime>1</fadetime>
+						<visible>IsEmpty(ListItem.Plot)</visible>
+					</control>
+					<control type="image">
+						<posx>111</posx>
+						<posy>239</posy>
+						<width>464</width>
+						<height>280</height>
+						<texture background="true" diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
+						<aspectratio aligny="bottom" align="center">keep</aspectratio>
+						<bordertexture>border_square.png</bordertexture>
+						<fadetime>1</fadetime>
+						<visible>!IsEmpty(ListItem.Plot)</visible>
+					</control>
 				</control>
-				<control type="image">
-					<posx>111</posx>
-					<posy>519</posy>
-					<width>464</width>
-					<height>280</height>
-					<texture background="true" diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-					<aspectratio aligny="top" align="center">keep</aspectratio>
-					<fadetime>1</fadetime>
-					<visible>!IsEmpty(ListItem.Plot)</visible>
-				</control>
-				<control type="image">
-					<posx>111</posx>
-					<posy>300</posy>
-					<width>464</width>
-					<height>330</height>
-					<texture background="true" diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
-					<aspectratio aligny="bottom" align="center">keep</aspectratio>
-					<bordertexture>border_square.png</bordertexture>
-					<fadetime>1</fadetime>
-					<visible>IsEmpty(ListItem.Plot)</visible>
-				</control>
-				<control type="image">
-					<posx>111</posx>
-					<posy>239</posy>
-					<width>464</width>
-					<height>280</height>
-					<texture background="true" diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
-					<aspectratio aligny="bottom" align="center">keep</aspectratio>
-					<bordertexture>border_square.png</bordertexture>
-					<fadetime>1</fadetime>
-					<visible>!IsEmpty(ListItem.Plot)</visible>
+				<control type="group">
+					<visible>Window.IsActive(MyPics.xml)</visible>
+					<control type="image">
+						<posx>178</posx>
+						<posy>630</posy>
+						<width>330</width>
+						<height>330</height>
+						<texture background="true" diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+						<aspectratio aligny="top" align="center" scalediffuse="false">scale</aspectratio>
+						<fadetime>1</fadetime>
+						<visible>IsEmpty(ListItem.Plot)</visible>
+					</control>
+					<control type="image">
+						<posx>203</posx>
+						<posy>519</posy>
+						<width>280</width>
+						<height>280</height>
+						<texture background="true" diffuse="reflection_square.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+						<aspectratio aligny="top" align="center" scalediffuse="false">scale</aspectratio>
+						<fadetime>1</fadetime>
+						<visible>!IsEmpty(ListItem.Plot)</visible>
+					</control>
+					<control type="image">
+						<posx>178</posx>
+						<posy>300</posy>
+						<width>330</width>
+						<height>330</height>
+						<texture background="true" diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
+						<aspectratio aligny="bottom" align="center" scalediffuse="false">scale</aspectratio>
+						<bordertexture>border_square.png</bordertexture>
+						<fadetime>1</fadetime>
+						<visible>IsEmpty(ListItem.Plot)</visible>
+					</control>
+					<control type="image">
+						<posx>203</posx>
+						<posy>239</posy>
+						<width>280</width>
+						<height>280</height>
+						<texture background="true" diffuse="diffuse_square.png">$INFO[ListItem.Thumb]</texture>
+						<aspectratio aligny="bottom" align="center" scalediffuse="false">scale</aspectratio>
+						<bordertexture>border_square.png</bordertexture>
+						<fadetime>1</fadetime>
+						<visible>!IsEmpty(ListItem.Plot)</visible>
+					</control>
 				</control>
 			</control>
 			<control type="group">
