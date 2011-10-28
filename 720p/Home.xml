@@ -52,15 +52,15 @@
 				</control>
 			</control>
 			<!-- Fanart from PMS -->
-			<control type="multiimage" id="10101">
+			<control type="multiimage">
 				<posx>0</posx>
 				<posy>-50</posy>
 				<width>1280</width>
 				<height>720</height>
 				<aspectratio>scale</aspectratio>
 				<aligny>top</aligny>
-				<timeperimage>8000</timeperimage>
-				<fadetime>1000</fadetime>
+				<imagepath background="true">http://localhost:32400/library/arts</imagepath>				<timeperimage>8000</timeperimage>
+				<fadetime>1500</fadetime>
 				<randomize>true</randomize>
 				<loop>yes</loop>
 			</control>

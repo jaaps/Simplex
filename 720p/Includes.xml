@@ -12,12 +12,12 @@
 		<texturenofocus>osd/osd_button_pause.png</texturenofocus>
 		<texturefocus>osd/osd_button_pause_fo.png</texturefocus>
 	</include>
-	<include name="Control298Focus">
-		<onfocus>SetFocus(298,0)</onfocus>
-	</include>
-	<include name="Control299Focus">
+		<include name="Control298Focus">
+	<onfocus>SetFocus(298,0)</onfocus>
+		</include>
+			<include name="Control299Focus">
 		<onfocus>SetFocus(299,0)</onfocus>
-	</include>
+			</include>
 	<include name="videoPageLabel">
 		<posx>30</posx>
 		<posy>15</posy>
@@ -164,6 +164,7 @@
 			<visible>IsEmpty(Container.FirstTitle) + IsEmpty(Container.SecondTitle)</visible>
 		</control>
 	</include>
+	
 	<include name="HeaderShared">
 		<control type="label">
 			<posx>91</posx>
@@ -190,6 +191,8 @@
 			<visible>IsEmpty(Container.FirstTitle) + IsEmpty(Container.SecondTitle)</visible>
 		</control>
 	</include>
+	
+	
 	<include name="HeaderPictures">
 		<control type="label">
 			<posx>91</posx>
@@ -216,68 +219,68 @@
 			<visible>IsEmpty(Container.FirstTitle) + IsEmpty(Container.SecondTitle)</visible>
 		</control>
 	</include>
-	<include name="HeaderSettings">
-		<control type="label">
-			<posx>80</posx>
-			<posy>26</posy>
-			<width>1280</width>
-			<height>46</height>
+	-    <include name="HeaderSettings">
+        <control type="label">
+            <posx>80</posx>
+            <posy>26</posy>
+            <width>1280</width>
+            <height>46</height>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label>Appearance Settings</label>
+            <font>list1</font>
+            <textcolor>Gray</textcolor>
+            <visible>Window.IsActive(appearancesettings)</visible>
+        </control>
+        <control type="label">
+            <posx>80</posx>
+            <posy>26</posy>
+            <width>1280</width>
+            <height>46</height>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label>Video Settings</label>
+            <font>list1</font>
+            <textcolor>Gray</textcolor>
+            <visible>Window.IsActive(videossettings)</visible>
+        </control>
+        <control type="label">
+            <posx>80</posx>
+            <posy>26</posy>
+            <width>1280</width>
+            <height>46</height>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label>Music Settings</label>
+            <font>list1</font>
+            <textcolor>Gray</textcolor>
+            <visible>Window.IsActive(musicsettings)</visible>
+        </control>
+        <control type="label">
+            <posx>80</posx>
+            <posy>26</posy>
+            <width>1280</width>
+            <height>46</height>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label>Picture Settings</label>
+            <font>list1</font>
+            <textcolor>Gray</textcolor>
+            <visible>Window.IsActive(picturessettings)</visible>
+        </control>
+        <control type="label">
+            <posx>80</posx>
+            <posy>26</posy>
+            <width>1280</width>
+            <height>46</height>
 			<align>left</align>
-			<aligny>center</aligny>
-			<label>Appearance Settings</label>
-			<font>list1</font>
-			<textcolor>Gray</textcolor>
-			<visible>Window.IsActive(appearancesettings)</visible>
-		</control>
-		<control type="label">
-			<posx>80</posx>
-			<posy>26</posy>
-			<width>1280</width>
-			<height>46</height>
-			<align>left</align>
-			<aligny>center</aligny>
-			<label>Video Settings</label>
-			<font>list1</font>
-			<textcolor>Gray</textcolor>
-			<visible>Window.IsActive(videossettings)</visible>
-		</control>
-		<control type="label">
-			<posx>80</posx>
-			<posy>26</posy>
-			<width>1280</width>
-			<height>46</height>
-			<align>left</align>
-			<aligny>center</aligny>
-			<label>Music Settings</label>
-			<font>list1</font>
-			<textcolor>Gray</textcolor>
-			<visible>Window.IsActive(musicsettings)</visible>
-		</control>
-		<control type="label">
-			<posx>80</posx>
-			<posy>26</posy>
-			<width>1280</width>
-			<height>46</height>
-			<align>left</align>
-			<aligny>center</aligny>
-			<label>Picture Settings</label>
-			<font>list1</font>
-			<textcolor>Gray</textcolor>
-			<visible>Window.IsActive(picturessettings)</visible>
-		</control>
-		<control type="label">
-			<posx>80</posx>
-			<posy>26</posy>
-			<width>1280</width>
-			<height>46</height>
-			<align>left</align>
-			<aligny>center</aligny>
-			<label>System Settings</label>
-			<font>list1</font>
-			<textcolor>Gray</textcolor>
-			<visible>Window.IsActive(systemsettings)</visible>
-		</control>
-	</include>
+            <aligny>center</aligny>
+            <label>System Settings</label>
+            <font>list1</font>
+            <textcolor>Gray</textcolor>
+            <visible>Window.IsActive(systemsettings)</visible>
+        </control>
+    </include>
 	<include name="SideMenuBackground">
 		<control type="image">
 			<animation effect="slide" start="0" end="-250" time="400" tween="cubic" easing="inout" condition="!ControlGroup(9000).HasFocus">Conditional</animation>
@@ -288,104 +291,24 @@
 		</control>
 	</include>
 	<include name="Background">
-		<control type="group">
-			<visible>Window.IsActive(MySharedContent.xml)</visible>
-			<control type="grouplist">
-				<orientation>horizontal</orientation>
-				<itemgap>0</itemgap>
-				<posx>0</posx>
-				<posy>0</posy>
-				<visible>!Container.OnNext + !Container.OnPrevious</visible>
-				<animation effect="fade" start="0" end="80" time="400" delay="0">Visible</animation>
-				<animation effect="fade" start="80" end="0" time="0">Hidden</animation>
-				<control type="image">
-					<width max="500">auto</width>
-					<height>500</height>
-					<texture background="true">$INFO[ListItem(1).Thumb0]</texture>
-					<aspectratio scalediffuse="true" align="center" aligny="top">keep</aspectratio>
-					<visible>!IsEmpty(ListItem(1).Thumb0)</visible>
-				</control>
-				<control type="image">
-					<width max="500">auto</width>
-					<height>500</height>
-					<texture background="true">$INFO[ListItem(0).Thumb2]</texture>
-					<aspectratio scalediffuse="true" align="center" aligny="top">keep</aspectratio>
-					<visible>!IsEmpty(ListItem(0).Thumb2)</visible>
-				</control>
-				<control type="image">
-					<width max="500">auto</width>
-					<height>500</height>
-					<texture background="true">$INFO[ListItem(1).Thumb4]</texture>
-					<aspectratio scalediffuse="true" align="center" aligny="top">keep</aspectratio>
-					<visible>!IsEmpty(ListItem(1).Thumb4)</visible>
-				</control>
-				<control type="image">
-					<width max="500">auto</width>
-					<height>500</height>
-					<texture background="true">$INFO[ListItem(0).Thumb4]</texture>
-					<aspectratio scalediffuse="true" align="center" aligny="top">keep</aspectratio>
-					<visible>!IsEmpty(ListItem(0).Thumb4)</visible>
-				</control>
-				<control type="image">
-					<width max="500">auto</width>
-					<height>500</height>
-					<texture background="true">$INFO[ListItem(1).Thumb1]</texture>
-					<aspectratio scalediffuse="true" align="center" aligny="top">keep</aspectratio>
-					<visible>!IsEmpty(ListItem(1).Thumb1)</visible>
-				</control>
-				<control type="image">
-					<width max="500">auto</width>
-					<height>500</height>
-					<texture background="true">$INFO[ListItem(0).Thumb1]</texture>
-					<aspectratio scalediffuse="true" align="center" aligny="top">keep</aspectratio>
-					<visible>!IsEmpty(ListItem(0).Thumb1)</visible>
-				</control>
-				<control type="image">
-					<width max="500">auto</width>
-					<height>500</height>
-					<texture background="true">$INFO[ListItem(1).Thumb3]</texture>
-					<aspectratio scalediffuse="true" align="center" aligny="top">keep</aspectratio>
-					<visible>!IsEmpty(ListItem(1).Thumb3)</visible>
-				</control>
-				<control type="image">
-					<width max="500">auto</width>
-					<height>500</height>
-					<texture background="true">$INFO[ListItem(0).Thumb3]</texture>
-					<aspectratio scalediffuse="true" align="center" aligny="top">keep</aspectratio>
-					<visible>!IsEmpty(ListItem(0).Thumb3)</visible>
-				</control>
-			</control>
+		<control type="largeimage">
+			<info background="true">ListItem.Property(fanart_image)</info>			
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<visible>!IsEmpty(ListItem.Property(fanart_image))</visible>
+			<fadetime>300</fadetime>
 		</control>
-		<control type="group">
-			<visible>!Window.IsActive(MySharedContent.xml)</visible>
-			<control type="largeimage">
-				<info background="true">ListItem.Property(fanart_image)</info>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<visible>!IsEmpty(ListItem.Property(fanart_image))</visible>
-				<fadetime>300</fadetime>
-			</control>
-			<control type="largeimage">
-				<info background="true">FanArt.Image</info>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<visible>!IsEmpty(FanArt.Image)</visible>
-				<fadetime>300</fadetime>
-			</control>
-			<control type="largeimage">
-				<visible>IsEmpty(ListItem.Property(fanart_image)) + IsEmpty(FanArt.Image) + !IsEmpty(ListItem.Thumb)</visible>
-				<info background="true">ListItem.Thumb</info>
-				<aspectratio align="center" aligny="center">scale</aspectratio>
-				<posx>-50</posx>
-				<posy>-50</posy>
-				<width>1380</width>
-				<height>820</height>
-				<fadetime>300</fadetime>
-			</control>
+		<control type="largeimage">
+			<visible>IsEmpty(ListItem.Property(fanart_image)) + !IsEmpty(ListItem.Thumb)</visible>
+			<info background="true">ListItem.Thumb</info>
+			<aspectratio align="center" aligny="center">scale</aspectratio>			
+			<posx>-50</posx>
+			<posy>-50</posy>
+			<width>1380</width>
+			<height>820</height>
+			<fadetime>300</fadetime>
 		</control>
 		<control type="largeimage">
 			<texture>background_overlay_diffuse.png</texture>
