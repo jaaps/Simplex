@@ -59,7 +59,7 @@
 				<height>720</height>
 				<aspectratio>scale</aspectratio>
 				<aligny>top</aligny>
-				<imagepath background="true">http://localhost:32400/library/arts</imagepath>
+				<imagepath background="true">http://127.0.0.1:32400/library/arts</imagepath>
 				<timeperimage>8000</timeperimage>
 				<fadetime>1500</fadetime>
 				<randomize>true</randomize>
