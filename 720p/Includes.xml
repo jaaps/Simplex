@@ -288,64 +288,13 @@
 		</control>
 	</include>
 	<include name="Background">
-		<control type="group">
-			<visible>Window.IsActive(MySharedContent.xml)</visible>
-			<control type="grouplist">
-				<orientation>horizontal</orientation>
-				<itemgap>0</itemgap>
-				<posx>0</posx>
-				<posy>0</posy>
-				<visible>!Container.OnNext + !Container.OnPrevious</visible>
-				<animation effect="fade" start="0" end="80" time="2000" delay="0">WindowOpen</animation>
-				<animation effect="fade" start="0" end="80" time="400" delay="0">Visible</animation>
-				<animation effect="fade" start="80" end="0" time="0">Hidden</animation>
-				<control type="image">
-					<width max="256">auto</width>
-					<height>500</height>
-					<texture background="true">$INFO[ListItem(0).Thumb0]</texture>
-					<aspectratio scalediffuse="true" align="center" aligny="top">keep</aspectratio>
-					<visible>!IsEmpty(ListItem(0).Thumb0)</visible>
-				</control>
-				<control type="image">
-					<width max="256">auto</width>
-					<height>500</height>
-					<texture background="true">$INFO[ListItem(0).Thumb1]</texture>
-					<aspectratio scalediffuse="true" align="center" aligny="top">keep</aspectratio>
-					<visible>!IsEmpty(ListItem(0).Thumb0)</visible>
-				</control>
-				<control type="image">
-					<width max="256">auto</width>
-					<height>500</height>
-					<texture background="true">$INFO[ListItem(0).Thumb2]</texture>
-					<aspectratio scalediffuse="true" align="center" aligny="top">keep</aspectratio>
-					<visible>!IsEmpty(ListItem(0).Thumb0)</visible>
-				</control>
-				<control type="image">
-					<width max="256">auto</width>
-					<height>500</height>
-					<texture background="true">$INFO[ListItem(0).Thumb3]</texture>
-					<aspectratio scalediffuse="true" align="center" aligny="top">keep</aspectratio>
-					<visible>!IsEmpty(ListItem(0).Thumb2)</visible>
-				</control>
-				<control type="image">
-					<width max="256">auto</width>
-					<height>500</height>
-					<texture background="true">$INFO[ListItem(0).Thumb4]</texture>
-					<aspectratio scalediffuse="true" align="center" aligny="top">keep</aspectratio>
-					<visible>!IsEmpty(ListItem(0).Thumb4)</visible>
-				</control>
-			</control>
-		</control>
-		<control type="group">
-			<visible>!Window.IsActive(MySharedContent.xml)</visible>
-			<control type="largeimage">
-				<info background="true">ListItem.Property(fanart_image)</info>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<fadetime>300</fadetime>
-			</control>
+		<control type="largeimage">
+			<info background="true">ListItem.Property(fanart_image)</info>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<fadetime>300</fadetime>
 		</control>
 		<control type="largeimage">
 			<texture>background_overlay_diffuse.png</texture>
