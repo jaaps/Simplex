@@ -1375,9 +1375,9 @@
 			</focusedlayout>
 		</control>
 		<control type="panel" id="53">
-			<posx>120</posx>
+			<posx>47</posx>
 			<posy>237</posy>
-			<width>1132</width>
+			<width>1200</width>
 			<height>440</height>
 			<onleft>-</onleft>
 			<onright>-</onright>
