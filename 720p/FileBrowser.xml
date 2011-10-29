@@ -46,7 +46,7 @@
 		<control type="group" id="9002">
 			<control type="list" id="450">
 				<posx>413</posx>
-				<posy>260</posy>
+				<posy>259</posy>
 				<width>450</width>
 				<height>280</height>
 				<onleft>PageUp</onleft>
@@ -58,7 +58,8 @@
 						<width>414</width>
 						<height>50</height>
 						<font>keyboardentry</font>
-						<aligny>center</aligny>
+						<aligny>top</aligny>
+						<textoffsety>7</textoffsety>
 						<info>ListItem.Label</info>
 						<scroll>false</scroll>
 						<textcolor>Gray</textcolor>
@@ -76,7 +77,8 @@
 						<width>414</width>
 						<height>50</height>
 						<font>keyboardentry</font>
-						<aligny>center</aligny>
+						<textoffsety>7</textoffsety>
+						<aligny>top</aligny>
 						<info>ListItem.Label</info>
 						<textcolor>White</textcolor>
 					</control>
