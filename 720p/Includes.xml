@@ -218,63 +218,68 @@
 	</include>
 	<include name="HeaderSettings">
 		<control type="label">
-			<posx>80</posx>
 			<posy>26</posy>
-			<width>1280</width>
+			<width>366</width>
 			<height>46</height>
-			<align>left</align>
+			<align>center</align>
 			<aligny>center</aligny>
-			<label>Appearance Settings</label>
+			<label>Preferences</label>
 			<font>list1</font>
 			<textcolor>Gray</textcolor>
+		</control>
+		<control type="label">
+			<posy>55</posy>
+			<width>366</width>
+			<height>46</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<label>Appearance</label>
+			<font>plot1</font>
+			<textcolor>DarkGray</textcolor>
 			<visible>Window.IsActive(appearancesettings)</visible>
 		</control>
 		<control type="label">
-			<posx>80</posx>
-			<posy>26</posy>
-			<width>1280</width>
+			<posy>55</posy>
+			<width>366</width>
 			<height>46</height>
-			<align>left</align>
+			<align>center</align>
 			<aligny>center</aligny>
-			<label>Video Settings</label>
-			<font>list1</font>
-			<textcolor>Gray</textcolor>
+			<label>Video</label>
+			<font>plot1</font>
+			<textcolor>DarkGray</textcolor>
 			<visible>Window.IsActive(videossettings)</visible>
 		</control>
 		<control type="label">
-			<posx>80</posx>
-			<posy>26</posy>
-			<width>1280</width>
+			<posy>55</posy>
+			<width>366</width>
 			<height>46</height>
-			<align>left</align>
+			<align>center</align>
 			<aligny>center</aligny>
-			<label>Music Settings</label>
-			<font>list1</font>
-			<textcolor>Gray</textcolor>
+			<label>Music</label>
+			<font>plot1</font>
+			<textcolor>DarkGray</textcolor>
 			<visible>Window.IsActive(musicsettings)</visible>
 		</control>
 		<control type="label">
-			<posx>80</posx>
-			<posy>26</posy>
-			<width>1280</width>
+			<posy>55</posy>
+			<width>366</width>
 			<height>46</height>
-			<align>left</align>
+			<align>center</align>
 			<aligny>center</aligny>
-			<label>Picture Settings</label>
-			<font>list1</font>
-			<textcolor>Gray</textcolor>
+			<label>Picture</label>
+			<font>plot1</font>
+			<textcolor>DarkGray</textcolor>
 			<visible>Window.IsActive(picturessettings)</visible>
 		</control>
 		<control type="label">
-			<posx>80</posx>
-			<posy>26</posy>
-			<width>1280</width>
+			<posy>55</posy>
+			<width>366</width>
 			<height>46</height>
-			<align>left</align>
+			<align>center</align>
 			<aligny>center</aligny>
-			<label>System Settings</label>
-			<font>list1</font>
-			<textcolor>Gray</textcolor>
+			<label>System</label>
+			<font>plot1</font>
+			<textcolor>DarkGray</textcolor>
 			<visible>Window.IsActive(systemsettings)</visible>
 		</control>
 	</include>

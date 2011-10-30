@@ -12,7 +12,7 @@
 			<visible>true</visible>
 		</control>
 		<control type="image">
-			<posx>0</posx>
+			<posx>-36</posx>
 			<posy>0</posy>
 			<width>404</width>
 			<height>720</height>
@@ -22,8 +22,8 @@
 		<control type="grouplist" id="3">
 			<description>Button Area</description>
 			<posx>47</posx>
-			<posy>80</posy>
-			<width>356</width>
+			<posy>106</posy>
+			<width>272</width>
 			<height>480</height>
 			<itemgap>1</itemgap>
 			<onleft>5</onleft>
@@ -34,9 +34,9 @@
 		</control>
 		<control type="grouplist" id="5">
 			<description>Control Area</description>
-			<posx>454</posx>
-			<posy>80</posy>
-			<width>770</width>
+			<posx>418</posx>
+			<posy>106</posy>
+			<width>806</width>
 			<height>600</height>
 			<itemgap>1</itemgap>
 			<onleft>3</onleft>
@@ -56,7 +56,7 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<textoffsety>0</textoffsety>
-			<textoffsetx>34</textoffsetx>
+			<textoffsetx>30</textoffsetx>
 			<pulseonselect>false</pulseonselect>
 		</control>
 		<control type="radiobutton" id="8">
@@ -70,9 +70,9 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<textoffsety>0</textoffsety>
-			<textoffsetx>34</textoffsetx>
+			<textoffsetx>30</textoffsetx>
 			<pulseonselect>false</pulseonselect>
-			<radioposx>710</radioposx>
+			<radioposx>756</radioposx>
 		</control>
 		<control type="spincontrolex" id="9">
 			<width>770</width>
@@ -85,11 +85,11 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<textoffsety>0</textoffsety>
-			<textoffsetx>34</textoffsetx>
+			<textoffsetx>30</textoffsetx>
 			<pulseonselect>false</pulseonselect>
 		</control>
 		<control type="button" id="10">
-			<width>306</width>
+			<width>272</width>
 			<font>list1</font>
 			<textcolor>White</textcolor>
 			<focusedcolor>Orange</focusedcolor>
@@ -99,7 +99,7 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<textoffsety>0</textoffsety>
-			<textoffsetx>34</textoffsetx>
+			<textoffsetx>30</textoffsetx>
 			<pulseonselect>false</pulseonselect>
 		</control>
 	</controls>

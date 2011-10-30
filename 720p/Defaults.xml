@@ -120,7 +120,6 @@
 		<focusedcolor>Orange</focusedcolor>
 		<selectedcolor>White</selectedcolor>
 		<disabledcolor>DarkGray</disabledcolor>
-		<aligny>center</aligny>
 		<textoffsetx>30</textoffsetx>
 		<pulseonselect>false</pulseonselect>
 	</default>
