@@ -1808,6 +1808,59 @@
 				</control>
 			</control>
 		</control>
+		<control type="group">
+			<posx>47</posx>
+			<control type="label">
+				<font>info1</font>
+				<textcolor>Shadow</textcolor>
+				<width>350</width>
+				<height>30</height>
+				<align>left</align>
+				<label>On Deck</label>
+				<posx>18</posx>
+				<posy>675</posy>
+				<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+				<visible>!Skin.HasSetting(ondeckfirst) + Control.HasFocus(11000) + Control.IsVisible(11001)</visible>
+				<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+			</control>
+			<control type="label">
+				<font>info1</font>
+				<textcolor>Gray</textcolor>
+				<width>350</width>
+				<height>30</height>
+				<align>left</align>
+				<label>On Deck</label>
+				<posx>18</posx>
+				<posy>675</posy>
+				<visible>!Skin.HasSetting(ondeckfirst) + Control.HasFocus(11000) + Control.IsVisible(11001)</visible>
+				<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+			</control>
+			<control type="label">
+				<font>info1</font>
+				<textcolor>Shadow</textcolor>
+				<width>350</width>
+				<height>30</height>
+				<align>left</align>
+				<label>Recently Added</label>
+				<posx>18</posx>
+				<posy>675</posy>
+				<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+				<visible>Skin.HasSetting(ondeckfirst) + Control.HasFocus(11001) + Control.IsVisible(11000)</visible>
+				<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+			</control>
+			<control type="label">
+				<font>info1</font>
+				<textcolor>Gray</textcolor>
+				<width>350</width>
+				<height>30</height>
+				<align>left</align>
+				<label>Recently Added</label>
+				<posx>18</posx>
+				<posy>675</posy>
+				<visible>Skin.HasSetting(ondeckfirst) + Control.HasFocus(11001) + Control.IsVisible(11000)</visible>
+				<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+			</control>
+		</control>
 		<control type="image">
 			<texture>home_fade_bottom.png</texture>
 			<posx>0</posx>
