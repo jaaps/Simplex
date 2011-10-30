@@ -8,10 +8,6 @@
 			<control type="group" id="350">
 				<posy>900</posy>
 				<control type="button">
-					<visible>Control.IsVisible(11001) + Skin.HasSetting(ondeckfirst)</visible>
-					<onfocus>SetFocus(11001)</onfocus>
-				</control>
-				<control type="button">
 					<visible>Control.IsVisible(11000)</visible>
 					<onfocus>SetFocus(11000)</onfocus>
 				</control>
@@ -38,36 +34,6 @@
 				<control type="button">
 					<visible>!Stringcompare(Container(300).ListItem(0).Label2,pref) + !Stringcompare(Container(300).ListItem(0).Label2,chan) + !Stringcompare(Container(300).ListItem(0).Label2,dvd) + !Control.IsVisible(11000) + !Control.IsVisible(11003)</visible>
 					<onfocus>SetFocus(300)</onfocus>
-				</control>
-				<control type="group" id="353">
-					<posy>900</posy>
-					<control type="button">
-						<visible>!Skin.HasSetting(ondeckfirst) + Control.IsVisible(11000)</visible>
-						<onfocus>SetFocus(11000)</onfocus>
-					</control>
-					<control type="button">
-						<visible>!Control.IsVisible(11000) + !Skin.HasSetting(ondeckfirst)</visible>
-						<onfocus>SetFocus(300)</onfocus>
-					</control>
-					<control type="button">
-						<visible>Skin.HasSetting(ondeckfirst)</visible>
-						<onfocus>SetFocus(300)</onfocus>
-					</control>
-				</control>
-				<control type="group" id="354">
-					<posy>900</posy>
-					<control type="button">
-						<visible>Skin.HasSetting(ondeckfirst) + Control.IsVisible(11000)</visible>
-						<onfocus>SetFocus(11000)</onfocus>
-					</control>
-					<control type="button">
-						<visible>!Control.IsVisible(11001) + Skin.HasSetting(ondeckfirst)</visible>
-						<onfocus>SetFocus(11000)</onfocus>
-					</control>
-					<control type="button">
-						<visible>!Skin.HasSetting(ondeckfirst)</visible>
-						<onfocus>SetFocus(11001)</onfocus>
-					</control>
 				</control>
 			</control>
 			<!-- Fanart from PMS -->
@@ -168,6 +134,8 @@
 						<aligny>center</aligny>
 						<font>HomeMenuItem</font>
 						<textcolor>DarkGray</textcolor>
+						<animation effect="fade" start="0" end="100" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11002) | Control.HasFocus(11003) | Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303)">Conditional</animation>
+						<animation effect="fade" start="100" end="0" condition="![Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11002) | Control.HasFocus(11003) | Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303)]">Conditional</animation>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -179,8 +147,8 @@
 						<aligny>center</aligny>
 						<font>HomeMenuItem</font>
 						<textcolor>White</textcolor>
-						<visible>![Control.HasFocus(350) | Control.HasFocus(351) | Control.HasFocus(352) | Control.HasFocus(353) | Control.HasFocus(354) | Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11002) | Control.HasFocus(11003) | Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303)]</visible>
-						<animation effect="fade" start="0" end="100" time="0" delay="50">Visible</animation>
+						<animation effect="fade" start="100" end="0" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11002) | Control.HasFocus(11003) | Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303)">Conditional</animation>
+						<animation effect="fade" start="0" end="100" condition="![Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11002) | Control.HasFocus(11003) | Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303)]">Conditional</animation>
 					</control>
 				</itemlayout>
 				<focusedlayout width="213" height="76">
@@ -222,10 +190,6 @@
 					</control>
 				</focusedlayout>
 				<content>
-					<item>
-						<label>TOGGLE</label>
-						<onclick>Skin.ToggleSetting(ondeckfirst)</onclick>
-					</item>
 					<item>
 						<description>Quit</description>
 						<label>Quit</label>
@@ -334,7 +298,7 @@
 			<control type="list" id="301">
 				<visible allowhiddenfocus="true">Control.HasFocus(301) | Stringcompare(Container(300).ListItem(0).Label2,pref)</visible>
 				<animation effect="fade" delay="300" time="200">Visible</animation>
-				<posx>518</posx>
+				<posx>508</posx>
 				<posy>364</posy>
 				<width>422</width>
 				<height>324</height>
@@ -461,7 +425,7 @@
 			<control type="list" id="302">
 				<visible allowhiddenfocus="true">Control.HasFocus(302) | Stringcompare(Container(300).ListItem(0).Label2,chan)</visible>
 				<animation effect="fade" delay="300" time="200">Visible</animation>
-				<posx>518</posx>
+				<posx>508</posx>
 				<posy>364</posy>
 				<width>422</width>
 				<height>324</height>
@@ -583,7 +547,7 @@
 			<control type="list" id="303">
 				<visible allowhiddenfocus="true">Control.HasFocus(303) + System.HasMediadvd | Stringcompare(Container(300).ListItem(0).Label2,dvd)</visible>
 				<animation effect="fade" delay="300" time="200">Visible</animation>
-				<posx>518</posx>
+				<posx>508</posx>
 				<posy>364</posy>
 				<width>422</width>
 				<height>324</height>
@@ -693,7 +657,7 @@
 			</control>
 			<!-- This label show when the menubar is unfocused -->
 			<control type="label">
-				<posx>544</posx>
+				<posx>535</posx>
 				<posy>291</posy>
 				<width>190</width>
 				<height>76</height>
@@ -714,49 +678,14 @@
 			<control type="grouplist" id="5100">
 				<posx>47</posx>
 				<posy>379</posy>
+				<onup>300</onup>
 				<height>330</height>
-				<itemgap>0</itemgap>
-				<scrolltime>0</scrolltime>
-				<ondown>-</ondown>
-				<onup>-</onup>
+				<itemgap>-39</itemgap>
 				<!-- Recently Added (11000) -->
 				<control type="group" id="7001">
-					<visible>Control.IsVisible(11000) + !Container(300).OnNext + !Container(300).OnPrevious + [!Skin.HasSetting(ondeckfirst) | ControlGroup(7001).HasFocus]</visible>
+					<visible>Control.IsVisible(11000) + !Container(300).OnNext + !Container(300).OnPrevious</visible>
 					<height>330</height>
-					<animation effect="fade" start="0" end="100" time="400" delay="100" condition="!Skin.HasSetting(ondeckfirst)">Visible</animation>
-					<animation effect="slide" start="0,333" end="0,0" time="400" delay="100" condition="Skin.HasSetting(ondeckfirst)">Focus</animation>
-					<ondown>352</ondown>
-					<onup>351</onup>
-					<control type="group" id="351">
-						<posy>900</posy>
-						<control type="button">
-							<visible>!Skin.HasSetting(ondeckfirst)</visible>
-							<onfocus>SetFocus(300)</onfocus>
-						</control>
-						<control type="button">
-							<visible>Control.IsVisible(11001) + Skin.HasSetting(ondeckfirst)</visible>
-							<onfocus>SetFocus(11001)</onfocus>
-						</control>
-						<control type="button">
-							<visible>!Control.IsVisible(11001) + Skin.HasSetting(ondeckfirst)</visible>
-							<onfocus>SetFocus(300)</onfocus>
-						</control>
-					</control>
-					<control type="group" id="352">
-						<posy>900</posy>
-						<control type="button">
-							<visible>Skin.HasSetting(ondeckfirst)</visible>
-							<onfocus>SetFocus(11000)</onfocus>
-						</control>
-						<control type="button">
-							<visible>Control.IsVisible(11001) + !Skin.HasSetting(ondeckfirst)</visible>
-							<onfocus>SetFocus(11001)</onfocus>
-						</control>
-						<control type="button">
-							<visible>!Control.IsVisible(11001) + !Skin.HasSetting(ondeckfirst)</visible>
-							<onfocus>SetFocus(11000)</onfocus>
-						</control>
-					</control>
+					<animation effect="fade" start="0" end="100" time="400" delay="100">Visible</animation>
 					<control type="label" id="8002">
 						<font>info1</font>
 						<textcolor>Shadow</textcolor>
@@ -781,8 +710,8 @@
 						<orientation>horizontal</orientation>
 						<onright>-</onright>
 						<onleft>-</onleft>
-						<ondown>352</ondown>
-						<onup>351</onup>
+						<ondown>11001</ondown>
+						<onup>300</onup>
 						<width>1190</width>
 						<height>340</height>
 						<posy>21</posy>
@@ -1370,7 +1299,7 @@
 					</control>
 				</control>
 				<control type="group" id="7003">
-					<visible>Control.IsVisible(11001) + !Container(300).OnNext + !Container(300).OnPrevious</visible>
+					<visible>Control.IsVisible(11001) + Control.IsVisible(11000) + !Container(300).OnNext + !Container(300).OnPrevious</visible>
 					<height>330</height>
 					<animation effect="fade" start="0" end="100" time="400" delay="300">Visible</animation>
 					<control type="label" id="8002">
@@ -1382,6 +1311,7 @@
 						<label>On Deck</label>
 						<posx>18</posx>
 						<posy>2</posy>
+						<visible>!Control.HasFocus(300)</visible>
 						<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
 					</control>
 					<control type="label" id="8002">
@@ -1392,6 +1322,7 @@
 						<align>left</align>
 						<label>On Deck</label>
 						<posx>18</posx>
+						<visible>!Control.HasFocus(300)</visible>
 						<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
 					</control>
 					<control type="list" id="11001">
@@ -1399,8 +1330,8 @@
 						<orientation>horizontal</orientation>
 						<onright>-</onright>
 						<onleft>-</onleft>
-						<ondown>354</ondown>
-						<onup>353</onup>
+						<ondown>-</ondown>
+						<onup>11000</onup>
 						<width>1190</width>
 						<height>340</height>
 						<posy>21</posy>
@@ -1807,59 +1738,6 @@
 						</focusedlayout>
 					</control>
 				</control>
-			</control>
-		</control>
-		<control type="group">
-			<posx>47</posx>
-			<control type="label">
-				<font>info1</font>
-				<textcolor>Shadow</textcolor>
-				<width>350</width>
-				<height>30</height>
-				<align>left</align>
-				<label>On Deck</label>
-				<posx>18</posx>
-				<posy>675</posy>
-				<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
-				<visible>!Skin.HasSetting(ondeckfirst) + Control.HasFocus(11000) + Control.IsVisible(11001)</visible>
-				<animation effect="fade" start="0" end="100" time="200">Visible</animation>
-			</control>
-			<control type="label">
-				<font>info1</font>
-				<textcolor>Gray</textcolor>
-				<width>350</width>
-				<height>30</height>
-				<align>left</align>
-				<label>On Deck</label>
-				<posx>18</posx>
-				<posy>675</posy>
-				<visible>!Skin.HasSetting(ondeckfirst) + Control.HasFocus(11000) + Control.IsVisible(11001)</visible>
-				<animation effect="fade" start="0" end="100" time="200">Visible</animation>
-			</control>
-			<control type="label">
-				<font>info1</font>
-				<textcolor>Shadow</textcolor>
-				<width>350</width>
-				<height>30</height>
-				<align>left</align>
-				<label>Recently Added</label>
-				<posx>18</posx>
-				<posy>675</posy>
-				<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
-				<visible>Skin.HasSetting(ondeckfirst) + Control.HasFocus(11001) + Control.IsVisible(11000)</visible>
-				<animation effect="fade" start="0" end="100" time="200">Visible</animation>
-			</control>
-			<control type="label">
-				<font>info1</font>
-				<textcolor>Gray</textcolor>
-				<width>350</width>
-				<height>30</height>
-				<align>left</align>
-				<label>Recently Added</label>
-				<posx>18</posx>
-				<posy>675</posy>
-				<visible>Skin.HasSetting(ondeckfirst) + Control.HasFocus(11001) + Control.IsVisible(11000)</visible>
-				<animation effect="fade" start="0" end="100" time="200">Visible</animation>
 			</control>
 		</control>
 		<control type="image">
