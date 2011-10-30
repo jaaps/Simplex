@@ -12,6 +12,10 @@
 					<onfocus>SetFocus(11000)</onfocus>
 				</control>
 				<control type="button">
+					<visible>!Control.IsVisible(11000) + Control.IsVisible(11001)</visible>
+					<onfocus>SetFocus(11001)</onfocus>
+				</control>
+				<control type="button">
 					<visible>Stringcompare(Container(300).ListItem(0).Label2,pref)</visible>
 					<onfocus>SetFocus(301,0)</onfocus>
 				</control>
@@ -30,25 +34,6 @@
 				<control type="button">
 					<visible>!Stringcompare(Container(300).ListItem(0).Label2,pref) + !Stringcompare(Container(300).ListItem(0).Label2,chan) + !Stringcompare(Container(300).ListItem(0).Label2,dvd) + !Control.IsVisible(11000) + !Control.IsVisible(11003)</visible>
 					<onfocus>SetFocus(300)</onfocus>
-				</control>
-				<control type="group" id="351">
-					<posy>900</posy>
-					<control type="button">
-						<visible>Control.IsVisible(11001)</visible>
-						<onfocus>SetFocus(11001)</onfocus>
-					</control>
-					<control type="button">
-						<visible>Control.IsVisible(11003)</visible>
-						<onfocus>SetFocus(11003)</onfocus>
-					</control>
-					<control type="button">
-						<visible>!Control.IsVisible(11000) + !Control.IsVisible(11003) + Control.IsVisible(11000)</visible>
-						<onfocus>SetFocus(110001)</onfocus>
-					</control>
-					<control type="button">
-						<visible>!Control.IsVisible(11000) + !Control.IsVisible(11003) + !Control.IsVisible(11000)</visible>
-						<onfocus>SetFocus(300)</onfocus>
-					</control>
 				</control>
 			</control>
 			<!-- Fanart from PMS -->
