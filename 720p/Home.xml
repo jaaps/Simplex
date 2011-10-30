@@ -1141,7 +1141,7 @@
 						<label>Recently Added</label>
 						<posx>18</posx>
 						<posy>2</posy>
-						<visible>!Control.HasFocus(300) + Control.IsVisible(11001)</visible>
+						<visible>[!Control.HasFocus(300) + Control.IsVisible(11001)] | !Control.IsVisible(11001)</visible>
 						<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
 					</control>
 					<control type="label" id="8002">
@@ -1152,7 +1152,7 @@
 						<align>left</align>
 						<label>Recently Added</label>
 						<posx>18</posx>
-						<visible>!Control.HasFocus(300) + Control.IsVisible(11001)</visible>
+						<visible>[!Control.HasFocus(300) + Control.IsVisible(11001)] | !Control.IsVisible(11001)</visible>
 						<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
 					</control>
 					<control type="list" id="11000">
