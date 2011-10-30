@@ -298,7 +298,7 @@
 			<control type="list" id="301">
 				<visible allowhiddenfocus="true">Control.HasFocus(301) | Stringcompare(Container(300).ListItem(0).Label2,pref)</visible>
 				<animation effect="fade" delay="300" time="200">Visible</animation>
-				<posx>508</posx>
+				<posx>518</posx>
 				<posy>364</posy>
 				<width>422</width>
 				<height>324</height>
@@ -425,7 +425,7 @@
 			<control type="list" id="302">
 				<visible allowhiddenfocus="true">Control.HasFocus(302) | Stringcompare(Container(300).ListItem(0).Label2,chan)</visible>
 				<animation effect="fade" delay="300" time="200">Visible</animation>
-				<posx>508</posx>
+				<posx>518</posx>
 				<posy>364</posy>
 				<width>422</width>
 				<height>324</height>
@@ -547,7 +547,7 @@
 			<control type="list" id="303">
 				<visible allowhiddenfocus="true">Control.HasFocus(303) + System.HasMediadvd | Stringcompare(Container(300).ListItem(0).Label2,dvd)</visible>
 				<animation effect="fade" delay="300" time="200">Visible</animation>
-				<posx>508</posx>
+				<posx>518</posx>
 				<posy>364</posy>
 				<width>422</width>
 				<height>324</height>
@@ -657,7 +657,7 @@
 			</control>
 			<!-- This label show when the menubar is unfocused -->
 			<control type="label">
-				<posx>535</posx>
+				<posx>544</posx>
 				<posy>291</posy>
 				<width>190</width>
 				<height>76</height>
