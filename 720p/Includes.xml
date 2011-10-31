@@ -4,6 +4,7 @@
 	<include file="CommonViews.xml"/>
 	<include file="NowPlayingIncludes.xml"/>
 	<include file="IncludesDialogs.xml"/>
+	<include file="IncludesHome.xml"/>
 	<include name="ButtonPaused">
 		<texturenofocus>osd/osd_button_play.png</texturenofocus>
 		<texturefocus>osd/osd_button_play_fo.png</texturefocus>
@@ -281,6 +282,17 @@
 			<font>plot1</font>
 			<textcolor>DarkGray</textcolor>
 			<visible>Window.IsActive(systemsettings)</visible>
+		</control>
+		<control type="label">
+			<posy>55</posy>
+			<width>366</width>
+			<height>46</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<label>Simplex</label>
+			<font>plot1</font>
+			<textcolor>DarkGray</textcolor>
+			<visible>Window.IsActive(CustomSettings.xml)</visible>
 		</control>
 	</include>
 	<include name="SideMenuBackground">
